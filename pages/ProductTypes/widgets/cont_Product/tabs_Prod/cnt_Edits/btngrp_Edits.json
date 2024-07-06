@@ -11,7 +11,8 @@
         {"key": "groupButtons.groupButtonfdsafiwzfc.onClick"},
         {"key": "isVisible"},
         {"key": "groupButtons.groupButton1.isVisible"},
-        {"key": "groupButtons.groupButton3.isVisible"}
+        {"key": "groupButtons.groupButton3.isVisible"},
+        {"key": "groupButtons.groupButton2.isVisible"}
     ],
     "displayName": "Button Group",
     "iconSVG": "/static/media/icon.ae1401b479d77b1908271bdfed6d12ba.svg",
@@ -111,7 +112,7 @@
             "label": "Add",
             "id": "groupButton2",
             "placement": "CENTER",
-            "isVisible": false,
+            "isVisible": "{{tbl_Entity.selectedRowIndex === -1 ? true : false}}",
             "isDisabled": false
         }
     },
@@ -125,13 +126,14 @@
         {"key": "groupButtons.groupButton3.onClick"},
         {"key": "groupButtons.groupButtonfdsafiwzfc.onClick"}
     ],
-    "leftColumn": 54,
+    "leftColumn": 51,
     "dynamicBindingPathList": [
         {"key": "borderRadius"},
         {"key": "groupButtons.groupButton1.buttonColor"},
         {"key": "groupButtons.groupButton2.buttonColor"},
         {"key": "groupButtons.groupButton3.buttonColor"},
-        {"key": "groupButtons.groupButton3.label"}
+        {"key": "groupButtons.groupButton3.label"},
+        {"key": "groupButtons.groupButton2.isVisible"}
     ],
     "key": "pafyvp4mo9",
     "orientation": "horizontal",

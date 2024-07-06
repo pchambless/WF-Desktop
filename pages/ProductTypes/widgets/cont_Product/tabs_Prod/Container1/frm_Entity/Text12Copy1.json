@@ -28,7 +28,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "Edit, Add or Delete Your Types here",
+    "text": " Types here",
     "key": "r1dbwx8r17",
     "isDeprecated": false,
     "rightColumn": 63,

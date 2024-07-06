@@ -13,7 +13,7 @@
         {"key": "borderRadius"},
         {"key": "text"}
     ],
-    "text": "{{appsmith.store.editMode}}",
+    "text": "{{tbl_Entity.selectedRowIndex === -1 ? \"Add\" : \"Edit\"}}",
     "textAlign": "CENTER",
     "dynamicHeight": "AUTO_HEIGHT",
     "onCanvasUI": {
@@ -56,7 +56,7 @@
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
     "key": "x73c7okrvl",
     "isDeprecated": false,
-    "rightColumn": 54,
+    "rightColumn": 51,
     "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
     "widgetId": "qgq3djrygx",
     "minWidth": 450,
