@@ -10,7 +10,7 @@
     "displayName": "Form",
     "topRow": 0,
     "searchTags": ["group"],
-    "bottomRow": 29,
+    "bottomRow": 37,
     "parentRowSpace": 10,
     "type": "FORM_WIDGET",
     "hideCard": false,
@@ -28,7 +28,7 @@
         "widgetName": "Canvas42Copy",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 290,
+        "bottomRow": 370,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": false,
@@ -98,6 +98,6 @@
     "borderRadius": "1.5rem",
     "mobileLeftColumn": 29,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 29,
+    "originalBottomRow": 37,
     "minDynamicHeight": 10
 }

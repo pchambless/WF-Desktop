@@ -128,7 +128,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
     },
     "shouldShowTabs": true,
-    "isVisible": true,
+    "isVisible": "true",
     "version": 3,
     "tags": ["Layout"],
     "isLoading": false,
@@ -137,6 +137,7 @@
     "needsErrorInfo": false,
     "mobileBottomRow": 76,
     "widgetName": "Tabs1",
+    "dynamicPropertyPathList": [{"key": "isVisible"}],
     "displayName": "Tabs",
     "bottomRow": 65,
     "parentRowSpace": 10,
