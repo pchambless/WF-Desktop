@@ -1,0 +1,5 @@
+select active act, a.name, code, description, grams_per_ounce, default_measure_unit, ingredient_type_id, a.id
+from  ingredients a
+where  a.ingredient_type_id = {{sel_Type.selectedOptionValue}}
+and active = {{appsmith.store.active}}
+order by name;

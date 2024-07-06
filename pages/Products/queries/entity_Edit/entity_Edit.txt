@@ -1,0 +1,10 @@
+update products
+set name = {{Name.text}}
+, code = {{code.text}}
+, product_type_id = {{product_type_id.selectedOptionValue}} 
+, description = {{description.text}}
+, location = {{Location.text}}
+, global_measure_unit_id = {{global_measure_unit_id.selectedOptionValue}}
+, best_by_days = {{best_by_days.text}}
+, updated_by = {{appsmith.store.user_id}}
+where id = {{tbl_entity.selectedRow.id}}

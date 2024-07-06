@@ -1,0 +1,3 @@
+SELECT id value, name label 
+FROM ingredient_types
+where  account_id = {{appsmith.store.acct_id}};

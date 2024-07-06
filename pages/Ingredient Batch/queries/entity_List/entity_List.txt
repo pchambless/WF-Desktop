@@ -1,0 +1,10 @@
+select a.purchase_date, a.batch_number, a.`active`, a.ingredient_id, a.vendor_id
+, a.brand_id, a.lot_number, a.purchase_quantity, a.global_measure_unit_id
+, a.unit_quantity, a.unit_price, a.purchase_total_amount, a.best_by_date
+, a.comments, a.id
+from   ingredient_batches a
+where  a.ingredient_id = {{appsmith.store.ingrID}}
+and    active = {{appsmith.store.active}}
+ORDER by purchase_date desc
+limit 20
+

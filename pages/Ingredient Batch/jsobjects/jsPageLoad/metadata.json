@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "jsPageLoad",
+    "pageId": "Ingredient Batch",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Ingredient Batch_jsPageLoad",
+  "deleted": false,
+  "gitSyncId": "6668cf0988cf8166d347b04c_a2008b9e-fdda-4db2-8c2e-bd9520e60674"
+}

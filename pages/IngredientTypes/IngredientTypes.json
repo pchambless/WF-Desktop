@@ -1,0 +1,81 @@
+{
+  "unpublishedPage": {
+    "name": "IngredientTypes",
+    "slug": "ingredienttypes",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "mobileBottomRow": 1100,
+          "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+          "widgetName": "MainContainer",
+          "topRow": 0,
+          "bottomRow": 580,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "minHeight": 1100,
+          "useAutoLayout": false,
+          "parentColumnSpace": 1,
+          "dynamicTriggerPathList": [],
+          "dynamicBindingPathList": [
+            {
+              "key": "borderRadius"
+            },
+            {
+              "key": "boxShadow"
+            }
+          ],
+          "leftColumn": 0,
+          "positioning": "fixed",
+          "backgroundColor": "none",
+          "rightColumn": 1296,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "containerStyle": "none",
+          "snapRows": 84,
+          "version": 89,
+          "mobileTopRow": 0,
+          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "IngredientTypes_entity_List",
+              "name": "entity_List",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.acct_id",
+                "appsmith.store.active"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "IngredientTypes_entity_acctList",
+              "name": "entity_acctList",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.acct_id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "IngredientTypes",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "gitSyncId": "6668cf0988cf8166d347b04c_8eead09e-ead4-4ded-8c72-f94583b8e89e"
+}

@@ -1,0 +1,4 @@
+update ingredients
+set deleted_at = case when active = 'Y' then now() else null end
+, deleted_by = {{appsmith.store.user_id}}
+where id = {{tbl_Entity.selectedRow.id}}

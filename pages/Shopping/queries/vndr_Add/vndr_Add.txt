@@ -1,0 +1,4 @@
+INSERT INTO vendors
+  		(name, contact_name, contact_phone, account_id,created_at, created_by)
+	VALUES
+  		({{inVendor.text}}, {{inContact.text || ''}}, {{inPhone.text || ''}}, {{appsmith.store.acct_id}}, current_timestamp(), {{appsmith.store.user_id}});

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "jsVendorBrands",
+    "pageId": "Shopping",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Shopping_jsVendorBrands",
+  "deleted": false,
+  "gitSyncId": "6668cf0988cf8166d347b04c_8d9be9a7-aefd-4a2f-848c-64980a032c02"
+}

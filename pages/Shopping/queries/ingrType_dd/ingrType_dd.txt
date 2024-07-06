@@ -1,0 +1,5 @@
+SELECT id value, name    label
+from ingredient_types
+where account_id = {{appsmith.store.acct_id}}
+and Active = 'Y'
+order by name

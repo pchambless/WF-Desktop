@@ -1,0 +1,7 @@
+select *, date_format(batch_start,'%Y-%m-%d') batch_date
+from   product_batches a
+where  a.product_id = {{appsmith.store.prodID}}
+and    active = {{appsmith.store.active}}
+ORDER by batch_start desc
+LIMIT 15
+	;

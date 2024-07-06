@@ -1,0 +1,4 @@
+SELECT id value, name label
+FROM ingredients
+where ingredient_type_id = {{sel_ingrType.selectedOptionValue}}
+and active = 'Y';

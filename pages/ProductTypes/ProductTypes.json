@@ -1,0 +1,92 @@
+{
+  "unpublishedPage": {
+    "name": "ProductTypes",
+    "slug": "producttypes",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "mobileBottomRow": 2605.9999999999995,
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1296,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 670,
+          "containerStyle": "none",
+          "snapRows": 84,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 89,
+          "minHeight": 860,
+          "mobileTopRow": 0,
+          "useAutoLayout": false,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "positioning": "fixed"
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "ProductTypes_entity_List",
+              "name": "entity_List",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.acct_id",
+                "appsmith.store.active"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "ProductTypes_jsPageLoad.load",
+              "name": "jsPageLoad.load",
+              "collectionId": "ProductTypes_jsPageLoad",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  await storeValue('active', 'Y');\n  await storeValue('editMode', '');\n  await entity_List.run();\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "ProductTypes_task_List",
+              "name": "task_List",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.prodTypeID"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "ProductTypes_task_acctList",
+              "name": "task_acctList",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.acct_id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "ProductTypes",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "gitSyncId": "6668cf0988cf8166d347b04c_2bb078e1-d0f0-40c2-ab2d-e45b8b0e1c33"
+}

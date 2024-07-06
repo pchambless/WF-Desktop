@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "jsType",
+    "pageId": "Product Batch",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Product Batch_jsType",
+  "deleted": false,
+  "gitSyncId": "6668cf0988cf8166d347b04c_fe82c23c-d0d8-4e4a-9e01-3997f5f23868"
+}

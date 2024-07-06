@@ -1,0 +1,180 @@
+{
+  "unpublishedPage": {
+    "name": "Product Batch",
+    "slug": "product-batch",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "mobileBottomRow": 2605.9999999999995,
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1296,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 820,
+          "containerStyle": "none",
+          "snapRows": 84,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 89,
+          "minHeight": 860,
+          "mobileTopRow": 0,
+          "useAutoLayout": false,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "positioning": "fixed"
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Product Batch_Measure_dd",
+              "name": "Measure_dd",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Product Batch_entity_List",
+              "name": "entity_List",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.prodID",
+                "appsmith.store.active"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Product Batch_prodType_dd",
+              "name": "prodType_dd",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.acct_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Product Batch_wrkr_dd",
+              "name": "wrkr_dd",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.acct_id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Product Batch_jsPageLoad.load",
+              "name": "jsPageLoad.load",
+              "collectionId": "Product Batch_jsPageLoad",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  await storeValue('active', 'Y');\n  await storeValue('editMode', '');\n  await sel_Type.setSelectedOption(appsmith.store.prodTypeID);\n  await sel_prod.setSelectedOption(appsmith.store.prodID);\n  await prod_Select.run();\n  await entity_List.run();\n  await batch_Last.run();\n  await rcpe_List.run();\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Product Batch_batchIngr_Map",
+              "name": "batchIngr_Map",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "tbl_Entity.selectedRow.id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Product Batch_batchTask_List",
+              "name": "batchTask_List",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "tbl_Entity.selectedRow.prd_btch_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Product Batch_batch_Choices",
+              "name": "batch_Choices",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "tbl_Entity.selectedRow.prd_btch_id",
+                "tbl_Recipe.selectedRow.ingr_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Product Batch_batch_Mapped",
+              "name": "batch_Mapped",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "tbl_Entity.selectedRow.prd_btch_id",
+                "appsmith.store.ingrID"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Product Batch_prod_dd",
+              "name": "prod_dd",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "sel_Type.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Product Batch_entity_Select",
+              "name": "entity_Select",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "tbl_Entity.selectedRow.id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Product Batch_prod_Select",
+              "name": "prod_Select",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "sel_prod.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Product Batch",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "gitSyncId": "66045fda95164773a81f43e1_66045fda95164773a81f43f3"
+}

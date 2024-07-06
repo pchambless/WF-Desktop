@@ -1,0 +1,4 @@
+select task_ordr, task_nm, task_desc, task_id, prd_type_id
+from  v_prd_type_tasks
+where prd_type_id = {{appsmith.store.prodTypeID}}
+and task_active = {{appsmith.store.active}}

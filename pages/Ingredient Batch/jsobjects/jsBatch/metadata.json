@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "jsBatch",
+    "pageId": "Ingredient Batch",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Ingredient Batch_jsBatch",
+  "deleted": false,
+  "gitSyncId": "619679789c793d1e5ededc08_6474ce209b6a88117a11fedb"
+}

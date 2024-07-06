@@ -1,0 +1,5 @@
+select a.name,code, description, a.id, a.product_type_id
+from  products a
+where  a.product_type_id = {{sel_Type.selectedOptionValue}}
+and active = 'Y'
+order by name;

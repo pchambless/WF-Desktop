@@ -1,0 +1,5 @@
+INSERT INTO brands
+  (name, account_id, created_at, created_by)
+VALUES
+  ({{inBrand.text}}, {{appsmith.store.acct_id}}, current_timestamp(), {{appsmith.store.user_id}}
+  );

@@ -1,0 +1,6 @@
+update ingredient_types
+set name = {{Name.text}}
+, description = {{description.text}}
+, updated_at = now()
+, updated_by = {{appsmith.store.user_id}}
+where id = {{tbl_Entity.selectedRow.id}};

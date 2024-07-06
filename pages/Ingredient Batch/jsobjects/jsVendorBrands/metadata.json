@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "jsVendorBrands",
+    "pageId": "Ingredient Batch",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Ingredient Batch_jsVendorBrands",
+  "deleted": false,
+  "gitSyncId": "64ad7946202bab253139dfff_65e126ea7ea41f3da9924098"
+}

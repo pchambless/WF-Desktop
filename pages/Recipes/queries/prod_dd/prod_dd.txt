@@ -1,0 +1,5 @@
+select concat(a.name,' (',code,')') name, a.id
+from  products a
+where  a.product_type_id = {{appsmith.store.prodTypeID}}
+and active = 'Y'
+order by name;

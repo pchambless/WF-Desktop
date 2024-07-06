@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "jsEntity",
+    "pageId": "Shopping",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Shopping_jsEntity",
+  "deleted": false,
+  "gitSyncId": "6668cf0988cf8166d347b04c_3494a752-39ed-4606-84d0-4912a5f12413"
+}

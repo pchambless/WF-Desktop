@@ -1,0 +1,13 @@
+insert into products
+(name, code, account_id, product_type_id, description, best_by_days, global_measure_unit_id, location, created_by)
+VALUES
+(	 {{Name.text}}
+	,{{code.text}}
+	,{{appsmith.store.acct_id}}
+	,{{product_type_id.selectedOptionValue}} 
+	,{{description.text}}
+	,{{best_by_days.text}}
+	,{{global_measure_unit_id.selectedOptionValue}}
+	,{{Location.text}}
+	,{{appsmith.store.user_id}}
+);

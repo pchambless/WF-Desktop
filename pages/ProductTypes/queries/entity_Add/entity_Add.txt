@@ -1,0 +1,9 @@
+insert into product_types
+(name, account_id, created_at, created_by)
+VALUES
+(
+	{{Name.text}}
+	,{{appsmith.store.acct_id}}
+	,now()
+	,{{appsmith.store.user_id}}
+);

@@ -1,0 +1,4 @@
+SELECT * 
+FROM ingredients
+where id = {{sel_ingr.selectedOptionValue}}
+LIMIT 1;

@@ -1,0 +1,3 @@
+select id value, value label
+from global_measure_units
+order by hover_text

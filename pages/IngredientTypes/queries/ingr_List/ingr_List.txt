@@ -1,0 +1,5 @@
+select active act, a.name, code, description, grams_per_ounce, default_measure_unit, ingredient_type_id, a.id
+from  ingredients a
+where  a.ingredient_type_id = {{tbl_Entity.selectedRow.id}}
+and active = 'Y'
+order by name;

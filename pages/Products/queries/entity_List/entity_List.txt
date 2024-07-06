@@ -1,0 +1,5 @@
+select a.name,code, description, a.id, a.product_type_id, best_by_days, active, global_measure_unit_id, location
+from  products a
+where  a.product_type_id = {{sel_Type.selectedOptionValue}}
+and  active = {{appsmith.store.active}}
+order by code;

@@ -1,0 +1,78 @@
+{
+  "pages": [
+    {
+      "id": "Login",
+      "isDefault": true
+    },
+    {
+      "id": "Dashboard",
+      "isDefault": false
+    },
+    {
+      "id": "Product Batch",
+      "isDefault": false
+    },
+    {
+      "id": "Ingredient Batch",
+      "isDefault": false
+    },
+    {
+      "id": "receiptScanner",
+      "isDefault": false
+    },
+    {
+      "id": "Products",
+      "isDefault": false
+    },
+    {
+      "id": "Ingredients",
+      "isDefault": false
+    },
+    {
+      "id": "Recipes",
+      "isDefault": false
+    },
+    {
+      "id": "ProductTypes",
+      "isDefault": false
+    },
+    {
+      "id": "IngredientTypes",
+      "isDefault": false
+    },
+    {
+      "id": "ProductTypeTasks",
+      "isDefault": false
+    },
+    {
+      "id": "Shopping",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "clonedFromApplicationId": "64ad7946202bab253139dfff",
+  "unpublishedApplicationDetail": {
+    "appPositioning": {
+      "type": "FIXED"
+    }
+  },
+  "color": "#D9E7FF",
+  "icon": "website",
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "publishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "unpublishedCustomJSLibs": [
+    {
+      "uidString": "xmlParser_https://cdnjs.cloudflare.com/ajax/libs/fast-xml-parser/3.17.5/parser.min.js"
+    }
+  ],
+  "publishedCustomJSLibs": [],
+  "applicationVersion": 2,
+  "isManualUpdate": false,
+  "deleted": false
+}

@@ -1,0 +1,28 @@
+insert into product_batches
+( product_id, batch_start, batch_number, comments,
+ location, batch_quantity, global_measure_unit_id, best_by_date, 
+ created_at, created_by)
+values
+	(  {{sel_prod.selectedOptionValue}}
+	 	,{{batch_start.formattedDate}}
+	 	,{{batch_number.text}}
+	 	,{{comments.text || ''}}
+		,{{Location.text}}
+	 	, 0
+	  ,{{global_measure_unit_id.selectedOptionValue || 40}}
+		,{{best_by_date.formattedDate}}
+		, current_timestamp()
+	 	, {{appsmith.store.user_id}}
+	)
+	;
+	SET @newID = LAST_INSERT_ID()
+	;
+INSERT INTO product_batch_tasks
+	(product_batch_id, task_id, workers, measure_value, comments, created_at, created_by)
+select
+	@newID, task_id,'', 0 ,'',
+	    current_timestamp(),
+			{{appsmith.store.user_id}} 
+   from v_prd_type_tasks
+   where prd_type_id = {{sel_Type.selectedOptionValue}}
+;

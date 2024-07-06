@@ -1,0 +1,116 @@
+{
+  "unpublishedPage": {
+    "name": "Shopping",
+    "slug": "shopping",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "mobileBottomRow": 1100,
+          "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+          "widgetName": "MainContainer",
+          "topRow": 0,
+          "bottomRow": 880,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "minHeight": 1100,
+          "useAutoLayout": false,
+          "parentColumnSpace": 1,
+          "dynamicTriggerPathList": [],
+          "dynamicBindingPathList": [
+            {
+              "key": "borderRadius"
+            },
+            {
+              "key": "boxShadow"
+            }
+          ],
+          "leftColumn": 0,
+          "positioning": "fixed",
+          "backgroundColor": "none",
+          "rightColumn": 1296,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "containerStyle": "none",
+          "snapRows": 84,
+          "version": 89,
+          "mobileTopRow": 0,
+          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Shopping_vndr_dd",
+              "name": "vndr_dd",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.acct_id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Shopping_brnd_dd",
+              "name": "brnd_dd",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.acct_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Shopping_meas_dd",
+              "name": "meas_dd",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Shopping_jsPageLoad.load",
+              "name": "jsPageLoad.load",
+              "collectionId": "Shopping_jsPageLoad",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  await vndr_dd.run();\n  await sel_vendor.setSelectedOption(appsmith.store.vndrID);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Shopping_jsBatch.batchList",
+              "name": "jsBatch.batchList",
+              "collectionId": "Shopping_jsBatch",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  await entity_List.run();\n  let data = [];\n  data = entity_List.data.length ? entity_List.data : jsBatch.batchFirst();\n  return data;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Shopping",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "6668cf0988cf8166d347b04c_91eb1af8-232f-4a37-a79b-63414f3ac7c1"
+}

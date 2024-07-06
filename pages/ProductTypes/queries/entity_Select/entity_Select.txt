@@ -1,0 +1,3 @@
+SELECT id, name
+from product_types
+where id = {{tbl_Entity.selectedRow.id}};

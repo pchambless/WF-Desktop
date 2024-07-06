@@ -1,0 +1,4 @@
+SELECT * 
+from  v_prd_btch_task_dtl
+where prd_task_id = {{tbl_Tasks.selectedRow.prd_task_id}}
+;

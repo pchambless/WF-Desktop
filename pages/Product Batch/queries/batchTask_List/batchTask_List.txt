@@ -1,0 +1,5 @@
+select ordr, task_name, taskWrkrs, measure_value, comments, prd_task_id
+from   v_prd_btch_task_dtl
+where  prd_btch_id = {{tbl_Entity.selectedRow.prd_btch_id}}
+order by ordr
+;

@@ -1,0 +1,6 @@
+select *
+from products
+where id = {{sel_prod.selectedOptionValue}}
+LIMIT 1
+;	
+

@@ -1,0 +1,4 @@
+SELECT first_name, last_name, email, date_format(last_login,'%Y-%m-%d') last_login 
+FROM users 
+where ifnull(last_login,'') > ''
+order by last_login DESC;

@@ -1,0 +1,13 @@
+INSERT INTO product_batch_tasks
+  		(product_batch_id, task_id, workers, measure_value, comments, created_at, created_by)
+    select
+			{{tbl_Entity.selectedRow.prd_btch_id}},
+	    task_id,
+			'',
+			0,
+			'',
+	    current_timestamp(),
+			{{appsmith.store.user_id}} 
+   from v_prd_type_tasks
+   where prd_type_id = {{sel_Type.selectedOptionValue}} 
+    

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "jsIngr",
+    "pageId": "Shopping",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Shopping_jsIngr",
+  "deleted": false,
+  "gitSyncId": "6668cf0988cf8166d347b04c_fed8eb44-ea00-4354-88e7-f9724ca7d409"
+}

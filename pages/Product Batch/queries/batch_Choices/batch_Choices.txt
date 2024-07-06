@@ -1,0 +1,10 @@
+select ingr_name, a.ingr_btch_nbr, a.purch_date, a.vndr_name, a.ingr_btch_id, ingr_id
+from   v_ingr_btch_dtl a
+where  a.ingr_id = {{tbl_Recipe.selectedRow.ingr_id}}
+and    a.ingr_btch_id not in 
+(select ingr_btch_id
+ from   v_prd_btch_ingr_dtl
+ where  prd_btch_id = {{tbl_Entity.selectedRow.prd_btch_id}}
+ and    ingr_id = {{tbl_Recipe.selectedRow.ingr_id}})
+ order by ingr_btch_id desc
+ limit 20

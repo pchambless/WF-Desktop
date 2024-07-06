@@ -1,0 +1,4 @@
+DELETE 
+	from product_batch_ingredients
+	where id = {{tbl_Mapped.triggeredRow.prd_btch_ingr_id}}
+	;

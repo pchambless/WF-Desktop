@@ -1,0 +1,5 @@
+select active act, a.name, code, ifnull(description,'') description, product_type_id, a.id
+from  products a
+where  a.account_id = {{appsmith.store.acct_id}}
+and active = 'Y'
+order by name;

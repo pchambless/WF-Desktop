@@ -1,0 +1,7 @@
+UPDATE product_batch_tasks  
+set	workers = {{iWrkrs.selectedOptionValues === '[]' ? '' : iWrkrs.selectedOptionValues}}, 
+		comments = {{iTaskComments.text}},
+		measure_value = {{iRecVal.text}},
+		updated_at = current_timestamp(),
+		updated_by = {{appsmith.store.user_id}}
+ WHERE id = {{tbl_Tasks.selectedRow.prd_task_id}}

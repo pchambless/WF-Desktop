@@ -1,0 +1,4 @@
+select id value, name label
+from vendors
+where account_id = {{appsmith.store.acct_id}}
+order by name

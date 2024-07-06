@@ -1,0 +1,3 @@
+SELECT *
+FROM v_prd_btch_dtl
+where prd_btch_id = {{tbl_Entity.selectedRow.id}};

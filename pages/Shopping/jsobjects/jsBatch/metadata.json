@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "jsBatch",
+    "pageId": "Shopping",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Shopping_jsBatch",
+  "deleted": false,
+  "gitSyncId": "6668cf0988cf8166d347b04c_a0fe34ff-b399-4be2-b246-1da9c6dbbfbd"
+}

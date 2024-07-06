@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "jsTabs",
+    "pageId": "Recipes",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Recipes_jsTabs",
+  "deleted": false,
+  "gitSyncId": "6664945988cf8166d347ae8b_3d127a25-9188-43ab-ba40-e3ddf47fc9ea"
+}

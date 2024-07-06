@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "jsEntity",
+    "pageId": "Ingredients",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Ingredients_jsEntity",
+  "deleted": false,
+  "gitSyncId": "6668cf0988cf8166d347b04c_b7267fae-2407-4b4a-98b2-4bd66d2f394f"
+}

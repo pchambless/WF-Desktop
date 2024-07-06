@@ -1,0 +1,2 @@
+SELECT {{select_account.selectedOptionValue}} acct_id
+, {{select_account.selectedOptionLabel}} acct_name;

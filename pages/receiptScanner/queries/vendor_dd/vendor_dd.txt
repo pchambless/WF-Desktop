@@ -1,0 +1,4 @@
+SELECT distinct name label, replace(name,' ','_') value 
+FROM vendors
+where account_id = {{appsmith.store.acct_id}}
+order by name;

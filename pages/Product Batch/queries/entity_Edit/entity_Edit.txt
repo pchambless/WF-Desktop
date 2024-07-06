@@ -1,0 +1,14 @@
+UPDATE product_batches
+  	SET batch_start = {{batch_start.formattedDate}},
+			batch_number = {{batch_number.text}},
+			location = {{Location.text}},
+			batch_quantity = {{batch_quantity.text}},
+			global_measure_unit_id = {{global_measure_unit_id.selectedOptionValue}},
+			best_by_date = {{best_by_date.formattedDate}},
+			comments = {{comments.text}},
+			recipe_multiply_factor = 1,
+			updated_at = current_timestamp(),
+			updated_by = {{appsmith.store.user_id}}
+  WHERE id = {{tbl_Entity.selectedRow.prd_btch_id}}
+  ;
+			

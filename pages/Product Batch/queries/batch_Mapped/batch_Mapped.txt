@@ -1,0 +1,6 @@
+select a.ingr_btch_nbr, a.purch_date, a.vndr_name, a.prd_btch_ingr_id
+from   v_prd_btch_ingr_dtl a
+where  a.ingr_id = {{appsmith.store.ingrID}}
+and  prd_btch_id = {{tbl_Entity.selectedRow.prd_btch_id}}
+order by purch_date desc
+limit 20
