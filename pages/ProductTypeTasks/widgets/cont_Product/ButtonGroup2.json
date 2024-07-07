@@ -13,58 +13,11 @@
         "click",
         "submit"
     ],
-    "topRow": 0,
-    "bottomRow": 4,
+    "topRow": 6,
+    "bottomRow": 10,
     "parentRowSpace": 10,
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
-        "groupButton3": {
-            "buttonType": "SIMPLE",
-            "buttonColor": "#dd4b34",
-            "widgetId": "",
-            "menuItems": {
-                "menuItem1": {
-                    "backgroundColor": "#FFFFFF",
-                    "onClick": "",
-                    "widgetId": "",
-                    "index": 0,
-                    "label": "First Option",
-                    "id": "menuItem1",
-                    "isVisible": true,
-                    "isDisabled": false
-                },
-                "menuItem3": {
-                    "backgroundColor": "#DD4B34",
-                    "onClick": "",
-                    "iconName": "trash",
-                    "widgetId": "",
-                    "iconColor": "#FFFFFF",
-                    "iconAlign": "right",
-                    "index": 2,
-                    "label": "Delete",
-                    "id": "menuItem3",
-                    "isVisible": true,
-                    "isDisabled": false,
-                    "textColor": "#FFFFFF"
-                },
-                "menuItem2": {
-                    "backgroundColor": "#FFFFFF",
-                    "onClick": "",
-                    "widgetId": "",
-                    "index": 1,
-                    "label": "Second Option",
-                    "id": "menuItem2",
-                    "isVisible": true,
-                    "isDisabled": false
-                }
-            },
-            "index": 3,
-            "label": "{{appsmith.store.acct_name}}",
-            "id": "groupButton3",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        },
         "groupButtonmqqnk4m2rg": {
             "itemType": "BUTTON",
             "onClick": "{{navigateTo('ProductTypes', {}, 'SAME_WINDOW');}}",
@@ -103,7 +56,7 @@
             "iconName": "hand-right",
             "widgetId": "mt0y9hdls6",
             "menuItems": {},
-            "index": 4,
+            "index": 2,
             "label": "Products",
             "isVisible": "{{tbl_Entity.selectedRowIndex > 0 ? true : false}}",
             "buttonType": "SIMPLE",
@@ -111,18 +64,6 @@
             "id": "groupButton21nsaimf35",
             "isDisabled": false,
             "placement": "CENTER"
-        },
-        "groupButton2": {
-            "buttonType": "SIMPLE",
-            "buttonColor": "#fee2e2",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 2,
-            "label": "Product Type Tasks",
-            "id": "groupButton2",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
         }
     },
     "hideCard": false,
@@ -134,9 +75,8 @@
         {"key": "groupButtons.groupButton21nsaimf35.onClick"},
         {"key": "groupButtons.groupButtonmqqnk4m2rg.onClick"}
     ],
-    "leftColumn": 2,
+    "leftColumn": 0,
     "dynamicBindingPathList": [
-        {"key": "groupButtons.groupButton3.label"},
         {"key": "groupButtons.groupButton21nsaimf35.buttonColor"},
         {"key": "groupButtons.groupButton21nsaimf35.isVisible"},
         {"key": "groupButtons.groupButtonmqqnk4m2rg.buttonColor"}
@@ -144,7 +84,7 @@
     "key": "o4ohcb5u1o",
     "orientation": "horizontal",
     "isDeprecated": false,
-    "rightColumn": 50,
+    "rightColumn": 26,
     "widgetId": "72a1rjhrm5",
     "minWidth": 450,
     "isVisible": true,

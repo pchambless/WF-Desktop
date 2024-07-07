@@ -13,7 +13,7 @@
         {"key": "borderRadius"},
         {"key": "text"}
     ],
-    "text": "{{appsmith.store.editMode}}",
+    "text": "{{tbl_Entity.selectedRowIndex === -1 ? \"Add\" : \"Edit\"}}",
     "textAlign": "CENTER",
     "dynamicHeight": "AUTO_HEIGHT",
     "onCanvasUI": {
@@ -23,7 +23,7 @@
         "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
     },
-    "isVisible": true,
+    "isVisible": "true",
     "fontStyle": "BOLD",
     "textColor": "#be185d",
     "version": 1,
@@ -37,7 +37,8 @@
     "fontSize": "1.25rem",
     "needsErrorInfo": false,
     "mobileBottomRow": 5,
-    "widgetName": "Text8Copy1",
+    "widgetName": "txt_editMode",
+    "dynamicPropertyPathList": [{"key": "isVisible"}],
     "displayName": "Text",
     "searchTags": [
         "typography",
@@ -55,11 +56,11 @@
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
     "key": "x73c7okrvl",
     "isDeprecated": false,
-    "rightColumn": 54,
+    "rightColumn": 51,
     "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-    "widgetId": "w943owpovj",
+    "widgetId": "yy7s6azxnr",
     "minWidth": 450,
-    "parentId": "9pea0so7gd",
+    "parentId": "v61o9ykwwf",
     "renderMode": "CANVAS",
     "mobileTopRow": 1,
     "responsiveBehavior": "fill",

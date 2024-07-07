@@ -12,8 +12,8 @@
         "parent",
         "group"
     ],
-    "topRow": 8,
-    "bottomRow": 14,
+    "topRow": 16,
+    "bottomRow": 22,
     "parentRowSpace": 10,
     "type": "CONTAINER_WIDGET",
     "hideCard": false,
@@ -27,7 +27,7 @@
         "rightColumn": 103.5,
         "widgetName": "Canvas43",
         "detachFromLayout": true,
-        "widgetId": "9pea0so7gd",
+        "widgetId": "v61o9ykwwf",
         "containerStyle": "none",
         "bottomRow": 60,
         "topRow": 0,
@@ -36,7 +36,7 @@
         "type": "CANVAS_WIDGET",
         "canExtend": false,
         "version": 1,
-        "parentId": "359kd8g0c3",
+        "parentId": "5syhgj5hfn",
         "props": {
             "detachFromLayout": true,
             "children": [],
@@ -57,7 +57,7 @@
     "rightColumn": 63,
     "thumbnailSVG": "/static/media/thumbnail.6cb355b93146b5347bbb048a568ed446.svg",
     "dynamicHeight": "AUTO_HEIGHT_WITH_LIMITS",
-    "widgetId": "359kd8g0c3",
+    "widgetId": "5syhgj5hfn",
     "containerStyle": "card",
     "onCanvasUI": {
         "focusBGCSSVar": "--on-canvas-ui-widget-focus",
@@ -74,9 +74,9 @@
     "renderMode": "CANVAS",
     "isLoading": false,
     "responsiveBehavior": "fill",
-    "originalTopRow": 8,
+    "originalTopRow": 16,
     "borderRadius": "1.5rem",
     "maxDynamicHeight": 8,
-    "originalBottomRow": 14,
+    "originalBottomRow": 22,
     "minDynamicHeight": 5
 }

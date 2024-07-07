@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 860,
+          "bottomRow": 530,
           "containerStyle": "none",
           "snapRows": 84,
           "parentRowSpace": 1,
@@ -32,8 +32,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Dashboard_ddUserAccts",
-              "name": "ddUserAccts",
+              "id": "Dashboard_UserAccts_dd",
+              "name": "UserAccts_dd",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [

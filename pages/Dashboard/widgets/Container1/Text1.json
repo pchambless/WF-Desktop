@@ -19,7 +19,7 @@
     "fontFamily": "Ubuntu",
     "parentColumnSpace": 6.53125,
     "dynamicTriggerPathList": [],
-    "leftColumn": 6,
+    "leftColumn": 10,
     "dynamicBindingPathList": [
         {"key": "truncateButtonColor"},
         {"key": "borderRadius"}
@@ -29,7 +29,7 @@
     "text": "Whatsfresh",
     "key": "lwl6kgh17h",
     "isDeprecated": false,
-    "rightColumn": 42,
+    "rightColumn": 30,
     "textAlign": "LEFT",
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "z7k67px9w9",

@@ -3,6 +3,8 @@
     "boxShadow": "none",
     "mobileBottomRow": 14,
     "widgetName": "img_Receipt",
+    "onClick": "{{storeValue('iconWF',file_Receipt.files[0].data)}}",
+    "dynamicPropertyPathList": [{"key": "onClick"}],
     "displayName": "Image",
     "iconSVG": "/static/media/icon.0ca0b0d56b58addbf45114ae5a79e88a.svg",
     "topRow": 0,
@@ -13,7 +15,7 @@
     "mobileRightColumn": 34,
     "animateLoading": true,
     "parentColumnSpace": 17.765625,
-    "dynamicTriggerPathList": [],
+    "dynamicTriggerPathList": [{"key": "onClick"}],
     "imageShape": "RECTANGLE",
     "leftColumn": 54,
     "dynamicBindingPathList": [

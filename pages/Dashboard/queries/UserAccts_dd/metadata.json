@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "ddUserAccts",
+    "name": "UserAccts_dd",
     "datasource": {
       "name": "wf_stage",
       "pluginId": "mysql-plugin",
@@ -44,7 +44,7 @@
     "userPermissions": [],
     "createdAt": "2024-03-27T18:05:17Z"
   },
-  "id": "Dashboard_ddUserAccts",
+  "id": "Dashboard_UserAccts_dd",
   "deleted": false,
   "gitSyncId": "66045fda95164773a81f43e1_66045fdb95164773a81f4427"
 }

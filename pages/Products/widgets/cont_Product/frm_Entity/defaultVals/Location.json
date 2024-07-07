@@ -1,7 +1,7 @@
 {
     "boxShadow": "none",
     "iconSVG": "/static/media/icon.f4dd498ee72f01127e5bfe3a1a8ad671.svg",
-    "topRow": 4,
+    "topRow": 5,
     "labelWidth": 5,
     "type": "INPUT_WIDGET_V2",
     "animateLoading": true,
@@ -33,7 +33,7 @@
     ],
     "isLoading": false,
     "borderRadius": "1.5rem",
-    "originalBottomRow": 24,
+    "originalBottomRow": 12,
     "needsErrorInfo": false,
     "mobileBottomRow": 12,
     "widgetName": "Location",
@@ -44,7 +44,7 @@
         "number",
         "textarea"
     ],
-    "bottomRow": 11,
+    "bottomRow": 12,
     "parentRowSpace": 10,
     "autoFocus": false,
     "hideCard": false,
@@ -65,11 +65,11 @@
     "renderMode": "CANVAS",
     "mobileTopRow": 5,
     "responsiveBehavior": "fill",
-    "originalTopRow": 17,
+    "originalTopRow": 5,
     "mobileLeftColumn": 1,
     "maxDynamicHeight": 9000,
     "shouldAllowAutofill": false,
     "iconAlign": "left",
-    "defaultText": "{{tbl_entity.selectedRow.location}}",
+    "defaultText": "{{tbl_Entity.selectedRow.location}}",
     "minDynamicHeight": 4
 }

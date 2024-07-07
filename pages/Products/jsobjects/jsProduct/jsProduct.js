@@ -1,7 +1,7 @@
 export default {
 async select () {
 	await storeValue('editMode','Edit')
-	await storeValue('prodID', tbl_entity.selectedRow.id)
+	await storeValue('prodID', tbl_Entity.selectedRow.id)
 },
 editModeRun: async (mode) => {
 	switch(mode) {
@@ -41,11 +41,11 @@ async editMode  (mode) {
 		description.setValue('')
 	},
 	editProduct () {
-		Name.setValue(tbl_entity.selectedRow.name)
-		product_type_id.setSelectedOption(tbl_entity.selectedRow.product_type_id)
-		code.setValue(tbl_entity.selectedRow.code)
-		Location.setValue(tbl_entity.selectedRow.recipe_quantity)
-		global_measure_unit_id.setSelectedOption(tbl_entity.selectedRow.global_measure_unit_id)
-		description.setValue(tbl_entity.selectedRow.description)
+		Name.setValue(tbl_Entity.selectedRow.name)
+		product_type_id.setSelectedOption(tbl_Entity.selectedRow.product_type_id)
+		code.setValue(tbl_Entity.selectedRow.code)
+		Location.setValue(tbl_Entity.selectedRow.recipe_quantity)
+		global_measure_unit_id.setSelectedOption(tbl_Entity.selectedRow.global_measure_unit_id)
+		description.setValue(tbl_Entity.selectedRow.description)
 	}
 }

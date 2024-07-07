@@ -65,7 +65,7 @@
     "isDeprecated": false,
     "rightColumn": 18,
     "thumbnailSVG": "/static/media/thumbnail.eaa22f923be763e8779a46432554f1ed.svg",
-    "widgetId": "ef8zmmeoim",
+    "widgetId": "cql7jjvfqx",
     "onCanvasUI": {
         "focusBGCSSVar": "--on-canvas-ui-widget-focus",
         "disableParentSelection": false,
@@ -76,7 +76,7 @@
     "minWidth": 450,
     "isVisible": "{{appsmith.store.roleID === 1 ? true : false}}",
     "version": 1,
-    "parentId": "9pea0so7gd",
+    "parentId": "v61o9ykwwf",
     "tags": ["Buttons"],
     "renderMode": "CANVAS",
     "isLoading": false,

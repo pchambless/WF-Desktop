@@ -7,4 +7,4 @@ set name = {{Name.text}}
 , global_measure_unit_id = {{global_measure_unit_id.selectedOptionValue}}
 , best_by_days = {{best_by_days.text}}
 , updated_by = {{appsmith.store.user_id}}
-where id = {{tbl_entity.selectedRow.id}}
+where id = {{tbl_Entity.selectedRow.id}}

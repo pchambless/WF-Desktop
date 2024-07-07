@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select a.name,code, description, a.id, a.product_type_id, best_by_days, active, global_measure_unit_id, location\nfrom  products a\nwhere  a.product_type_id = {{sel_Type.selectedOptionValue}}\nand  active = {{appsmith.store.active}}\norder by code;",
+      "body": "select a.name,code, description, a.id, a.product_type_id, best_by_days\n,f_measure_unit(global_measure_unit_id) Units, active, global_measure_unit_id, location\nfrom  products a\nwhere  a.product_type_id = {{sel_Type.selectedOptionValue}}\nand  active = {{appsmith.store.active}}\norder by code;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

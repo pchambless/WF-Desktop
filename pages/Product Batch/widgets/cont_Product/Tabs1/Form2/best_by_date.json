@@ -13,7 +13,7 @@
     ],
     "labelTooltip": "This is automatically calculated based on the Best By Days from Products.",
     "labelStyle": "BOLD",
-    "isDisabled": true,
+    "isDisabled": false,
     "isRequired": false,
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",

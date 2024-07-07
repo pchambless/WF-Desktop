@@ -103,7 +103,7 @@
             "isDisabled": false
         },
         "groupButton2": {
-            "onClick": "{{storeValue('editMode','Add')\njsEntity.editMode('Add')}}",
+            "onClick": "{{tbl_Entity.setSelectedRowIndex(-1)}}",
             "buttonType": "SIMPLE",
             "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
             "widgetId": "",
@@ -112,7 +112,7 @@
             "label": "Add",
             "id": "groupButton2",
             "placement": "CENTER",
-            "isVisible": "{{tbl_Entity.selectedRowIndex === -1 ? true : false}}",
+            "isVisible": "true",
             "isDisabled": false
         }
     },
@@ -132,8 +132,7 @@
         {"key": "groupButtons.groupButton1.buttonColor"},
         {"key": "groupButtons.groupButton2.buttonColor"},
         {"key": "groupButtons.groupButton3.buttonColor"},
-        {"key": "groupButtons.groupButton3.label"},
-        {"key": "groupButtons.groupButton2.isVisible"}
+        {"key": "groupButtons.groupButton3.label"}
     ],
     "key": "pafyvp4mo9",
     "orientation": "horizontal",

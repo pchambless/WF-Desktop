@@ -16,9 +16,6 @@
         {"key": "primaryColumns.id.computedValue"},
         {"key": "primaryColumns.account_id.computedValue"},
         {"key": "defaultSelectedRowIndex"},
-        {"key": "primaryColumns.customColumn1.borderRadius"},
-        {"key": "primaryColumns.customColumn1.boxShadow"},
-        {"key": "primaryColumns.customColumn1.isCellVisible"},
         {"key": "primaryColumns.customColumn2.borderRadius"},
         {"key": "primaryColumns.customColumn2.boxShadow"}
     ],
@@ -69,7 +66,7 @@
         }
     },
     "borderRadius": "1.5rem",
-    "columnUpdatedAt": 1720283026839,
+    "columnUpdatedAt": 1720306711536,
     "originalBottomRow": 43,
     "primaryColumnId": "id",
     "defaultSelectedRowIndices": [0],
@@ -78,7 +75,6 @@
     "widgetName": "tbl_Entity",
     "defaultPageSize": 0,
     "columnOrder": [
-        "customColumn1",
         "name",
         "id",
         "account_id",
@@ -86,13 +82,11 @@
     ],
     "dynamicPropertyPathList": [
         {"key": "tableData"},
-        {"key": "onRowSelected"},
-        {"key": "primaryColumns.customColumn1.isCellVisible"},
-        {"key": "primaryColumns.customColumn1.onClick"}
+        {"key": "onRowSelected"}
     ],
     "compactMode": "SHORT",
     "displayName": "Table",
-    "bottomRow": 37,
+    "bottomRow": 46,
     "columnWidthMap": {
         "name": 227,
         "customColumn1": 65.99999999999999
@@ -101,10 +95,7 @@
     "hideCard": false,
     "mobileRightColumn": 34,
     "parentColumnSpace": 14.2294921875,
-    "dynamicTriggerPathList": [
-        {"key": "onRowSelected"},
-        {"key": "primaryColumns.customColumn1.onClick"}
-    ],
+    "dynamicTriggerPathList": [{"key": "onRowSelected"}],
     "borderWidth": "1",
     "primaryColumns": {
         "account_id": {
@@ -167,44 +158,6 @@
             "sticky": "",
             "originalId": "name",
             "currencyCode": "USD",
-            "verticalAlignment": "CENTER"
-        },
-        "customColumn1": {
-            "boxShadow": "{{tbl_Entity.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-            "computedValue": "",
-            "onClick": "{{await storeValue(\"editMode\",\"Add\");\njsEntity.editMode(\"Add\")}}",
-            "buttonColor": "#dcfce7",
-            "isEditable": false,
-            "notation": "standard",
-            "alias": "Add",
-            "enableSort": true,
-            "isSaveVisible": true,
-            "id": "customColumn1",
-            "isDisabled": false,
-            "allowSameOptionsInNewRow": true,
-            "validation": {},
-            "isCellVisible": "{{tbl_Entity.processedTableData.map((currentRow, currentIndex) => ( currentIndex === 0 ? true : false))}}",
-            "isDerived": true,
-            "textSize": "0.875rem",
-            "buttonStyle": "rgb(3, 179, 101)",
-            "allowCellWrapping": false,
-            "index": 4,
-            "isDiscardVisible": true,
-            "isVisible": true,
-            "label": "Add",
-            "labelColor": "#FFFFFF",
-            "columnType": "iconButton",
-            "thousandSeparator": true,
-            "horizontalAlignment": "LEFT",
-            "isCellEditable": false,
-            "borderRadius": "{{tbl_Entity.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-            "decimals": 0,
-            "width": 150,
-            "enableFilter": true,
-            "sticky": "",
-            "originalId": "customColumn1",
-            "currencyCode": "USD",
-            "customAlias": "",
             "verticalAlignment": "CENTER"
         },
         "id": {
