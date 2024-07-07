@@ -1,7 +1,7 @@
 update products
 set name = {{Name.text}}
 , code = {{code.text}}
-, product_type_id = {{product_type_id.selectedOptionValue}} 
+, product_type_id = {{sel_Type.selectedOptionValue}} 
 , description = {{description.text}}
 , location = {{Location.text}}
 , global_measure_unit_id = {{global_measure_unit_id.selectedOptionValue}}

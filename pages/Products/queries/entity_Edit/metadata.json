@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "update products\nset name = {{Name.text}}\n, code = {{code.text}}\n, product_type_id = {{product_type_id.selectedOptionValue}} \n, description = {{description.text}}\n, location = {{Location.text}}\n, global_measure_unit_id = {{global_measure_unit_id.selectedOptionValue}}\n, best_by_days = {{best_by_days.text}}\n, updated_by = {{appsmith.store.user_id}}\nwhere id = {{tbl_Entity.selectedRow.id}}",
+      "body": "update products\nset name = {{Name.text}}\n, code = {{code.text}}\n, product_type_id = {{sel_Type.selectedOptionValue}} \n, description = {{description.text}}\n, location = {{Location.text}}\n, global_measure_unit_id = {{global_measure_unit_id.selectedOptionValue}}\n, best_by_days = {{best_by_days.text}}\n, updated_by = {{appsmith.store.user_id}}\nwhere id = {{tbl_Entity.selectedRow.id}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -43,7 +43,7 @@
       "code.text",
       "description.text",
       "global_measure_unit_id.selectedOptionValue",
-      "product_type_id.selectedOptionValue",
+      "sel_Type.selectedOptionValue",
       "tbl_Entity.selectedRow.id"
     ],
     "userSetOnLoad": false,

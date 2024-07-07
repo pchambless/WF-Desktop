@@ -29,7 +29,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{txt_editMode.text}} Product <strong>{{tbl_Entity.selectedRow.name || ''}}<\/strong> ",
+    "text": "{{tbl_Entity.selectedRowIndex === -1 ? \"Add\" : \"Edit\"}} Product <strong>{{tbl_Entity.selectedRow.name || ''}}<\/strong> ",
     "key": "r1dbwx8r17",
     "isDeprecated": false,
     "rightColumn": 64,
