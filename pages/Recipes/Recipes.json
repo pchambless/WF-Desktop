@@ -78,7 +78,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async function () {\n  await storeValue('active', 'Y');\n  await storeValue('editMode', '');\n  await prodType_dd.run();\n  await sel_Type.setSelectedOption(appsmith.store.prodTypeID);\n  await prod_dd.run();\n  await sel_prod.setSelectedOption(appsmith.store.prodID);\n  await entity_List.run();\n  await tbl_Entity.setSelectedRowIndex(-1);\n}"
+                "async function () {\n  await storeValue('active', 'Y');\n  await storeValue('editMode', '');\n  await prodType_dd.run();\n  await sel_Type.setSelectedOption(appsmith.store.prodTypeID);\n  await prod_dd.run();\n  await sel_prod.setSelectedOption(appsmith.store.prodID);\n  await entity_List.run();\n}"
               ],
               "timeoutInMillisecond": 10000
             }
