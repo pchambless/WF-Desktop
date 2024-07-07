@@ -6,7 +6,7 @@
     "labelWidth": 5,
     "type": "DATE_PICKER_WIDGET2",
     "animateLoading": true,
-    "leftColumn": 42,
+    "leftColumn": 43,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "defaultDate"}
@@ -55,7 +55,7 @@
     "labelTextSize": "0.875rem",
     "defaultDate": "{{tbl_Entity.selectedRow.batch_date}}",
     "isDeprecated": false,
-    "rightColumn": 59,
+    "rightColumn": 60,
     "thumbnailSVG": "/static/media/thumbnail.6f2ddea04e74f31810326bef3bc239b8.svg",
     "widgetId": "ghfsoffm9u",
     "minWidth": 450,

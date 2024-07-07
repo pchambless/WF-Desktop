@@ -7,5 +7,6 @@ export default {
 		await prod_dd.run()
 		await sel_prod.setSelectedOption(appsmith.store.prodID)
 		await entity_List.run()
+		await tbl_Entity.setSelectedRowIndex(-1)
 	}
 }

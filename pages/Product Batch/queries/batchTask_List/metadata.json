@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select ordr, task_name, taskWrkrs, measure_value, comments, prd_task_id\nfrom   v_prd_btch_task_dtl\nwhere  prd_btch_id = {{tbl_Entity.selectedRow.prd_btch_id}}\norder by ordr\n;",
+      "body": "select ordr, task_name, taskWrkrs, measure_value, comments, prd_task_id\nfrom   v_prd_btch_task_dtl\nwhere  prd_btch_id = {{tbl_Entity.selectedRow.id}}\norder by ordr\n;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "tbl_Entity.selectedRow.prd_btch_id"
+      "tbl_Entity.selectedRow.id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

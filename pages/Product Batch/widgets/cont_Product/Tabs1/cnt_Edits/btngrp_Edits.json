@@ -26,7 +26,7 @@
     "groupButtons": {
         "groupButtonfdsafiwzfc": {
             "itemType": "BUTTON",
-            "onClick": "{{await jsEntity.editModeRun(appsmith.store.editMode)\nawait entity_List.run()}}",
+            "onClick": "{{await jsEntity.editModeRun()\nawait entity_List.run()}}",
             "buttonColor": "#86efac",
             "widgetId": "gjse2hepzr",
             "menuItems": {},
@@ -102,7 +102,7 @@
             "isDisabled": false
         },
         "groupButton2": {
-            "onClick": "{{storeValue('editMode','Add')\njsEntity.editMode('Add')}}",
+            "onClick": "{{tbl_Entity.setSelectedRowIndex(-1)\nawait storeValue('editMode','Add')}}",
             "buttonType": "SIMPLE",
             "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
             "widgetId": "",
@@ -111,7 +111,7 @@
             "label": "Add",
             "id": "groupButton2",
             "placement": "CENTER",
-            "isVisible": false,
+            "isVisible": true,
             "isDisabled": false
         }
     },
@@ -125,7 +125,7 @@
         {"key": "groupButtons.groupButton3.onClick"},
         {"key": "groupButtons.groupButtonfdsafiwzfc.onClick"}
     ],
-    "leftColumn": 42,
+    "leftColumn": 51,
     "dynamicBindingPathList": [
         {"key": "borderRadius"},
         {"key": "groupButtons.groupButton1.buttonColor"},
@@ -136,9 +136,9 @@
     "key": "pafyvp4mo9",
     "orientation": "horizontal",
     "isDeprecated": false,
-    "rightColumn": 53,
+    "rightColumn": 62,
     "thumbnailSVG": "/static/media/thumbnail.eaa22f923be763e8779a46432554f1ed.svg",
-    "widgetId": "t0zgnudbb7",
+    "widgetId": "hb58nfyoss",
     "onCanvasUI": {
         "focusBGCSSVar": "--on-canvas-ui-widget-focus",
         "disableParentSelection": false,
@@ -149,7 +149,7 @@
     "minWidth": 450,
     "isVisible": "true",
     "version": 1,
-    "parentId": "uwv66itcz2",
+    "parentId": "hadkzu5rpr",
     "tags": ["Buttons"],
     "renderMode": "CANVAS",
     "isLoading": false,

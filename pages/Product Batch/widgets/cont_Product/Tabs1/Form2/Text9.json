@@ -31,7 +31,7 @@
     "text": "When Completed",
     "key": "x73c7okrvl",
     "isDeprecated": false,
-    "rightColumn": 37,
+    "rightColumn": 42,
     "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
     "textAlign": "CENTER",
     "dynamicHeight": "AUTO_HEIGHT",
@@ -61,7 +61,7 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 21,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 22,
+    "originalBottomRow": 23,
     "fontSize": "1rem",
     "minDynamicHeight": 4
 }

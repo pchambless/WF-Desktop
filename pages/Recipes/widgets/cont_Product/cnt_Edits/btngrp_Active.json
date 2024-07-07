@@ -6,7 +6,8 @@
     "isCanvas": false,
     "dynamicPropertyPathList": [
         {"key": "groupButtons.groupButton2.onClick"},
-        {"key": "groupButtons.groupButton1.onClick"}
+        {"key": "groupButtons.groupButton1.onClick"},
+        {"key": "isVisible"}
     ],
     "displayName": "Button Group",
     "iconSVG": "/static/media/icon.96e5c7d01c5e1eb6ceaaaa3934b3f655.svg",
@@ -49,19 +50,22 @@
     "hideCard": false,
     "mobileRightColumn": 24,
     "animateLoading": true,
-    "parentColumnSpace": 1.6171875,
+    "parentColumnSpace": 1.6875,
     "dynamicTriggerPathList": [
         {"key": "groupButtons.groupButton2.onClick"},
         {"key": "groupButtons.groupButton1.onClick"}
     ],
-    "leftColumn": 0,
-    "dynamicBindingPathList": [{"key": "borderRadius"}],
+    "leftColumn": 1,
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "isVisible"}
+    ],
     "key": "omg2bmpu8i",
     "orientation": "horizontal",
     "isDeprecated": false,
-    "rightColumn": 16,
+    "rightColumn": 18,
     "thumbnailSVG": "/static/media/thumbnail.eaa22f923be763e8779a46432554f1ed.svg",
-    "widgetId": "devaugnqh8",
+    "widgetId": "n09xpupuf3",
     "onCanvasUI": {
         "focusBGCSSVar": "--on-canvas-ui-widget-focus",
         "disableParentSelection": false,
@@ -70,9 +74,9 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
     },
     "minWidth": 450,
-    "isVisible": true,
+    "isVisible": "{{appsmith.store.roleID === 1 ? true : false}}",
     "version": 1,
-    "parentId": "uwv66itcz2",
+    "parentId": "56qbvtj4dy",
     "tags": ["Buttons"],
     "renderMode": "CANVAS",
     "isLoading": false,

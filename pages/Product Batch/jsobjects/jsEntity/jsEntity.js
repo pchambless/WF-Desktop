@@ -15,8 +15,8 @@ export default {
 		batch_number.setValue(prod_Select.data[0].code)
 		batch_start.setValue('')
 		Location.setValue(prod_Select.data[0].location)
-		batch_quantity.setValue('')
-		global_measure_unit_id.setSelectedOption('')
+		batch_quantity.setValue('0')
+		global_measure_unit_id.setSelectedOption(prod_Select.data[0].global_measure_unit_id)
 		best_by_date.setValue('')
 		comments.setValue('')
 	},
@@ -29,35 +29,11 @@ export default {
 		best_by_date.setValue(this.bestByDate(tbl_Entity.selectedRow.batch_date,daysAdd.text))
 		comments.setValue(tbl_Entity.selectedRow.comments)
 	},
-	async editModeRun (mode)  {
-	switch(mode) {
-		case 'Add':
-			await entity_Add.run();
-			break;
-		case 'Edit':
-			await entity_Edit.run();
-			break;
-		case 'Delete':
-		case 'Activate':
-			await entity_Delete.run();
-			break;
-		default:
-			console.log("Invalid mode");
-		}
-	await entity_List.run()
-	await this.editMode (mode)
-},
-	async editMode  (mode) {
-	switch(mode) {
-		case 'Add':
-			await this.add();
-			break;
-		case 'Edit':
-		case 'Delete':
-			await this.edit();
-			break;
-		default:
-			console.log("Invalid mode");
-		}
-}
+	editModeRun: async () => {
+		tbl_Entity.selectedRowIndex === -1 ? entity_Add.run() : entity_Edit.run()
+		await entity_List.run()
+	},
+	async editMode  () {
+		tbl_Entity.selectedRowIndex === -1 ? this.add() : this.edit()
+	}
 }

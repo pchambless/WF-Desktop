@@ -9,6 +9,6 @@ UPDATE product_batches
 			recipe_multiply_factor = 1,
 			updated_at = current_timestamp(),
 			updated_by = {{appsmith.store.user_id}}
-  WHERE id = {{tbl_Entity.selectedRow.prd_btch_id}}
+  WHERE id = {{tbl_Entity.selectedRow.id}}
   ;
 			

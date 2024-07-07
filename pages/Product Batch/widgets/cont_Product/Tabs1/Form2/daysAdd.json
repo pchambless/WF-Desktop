@@ -7,7 +7,7 @@
     "type": "INPUT_WIDGET_V2",
     "animateLoading": true,
     "resetOnSubmit": true,
-    "leftColumn": 30,
+    "leftColumn": 27,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "defaultText"}

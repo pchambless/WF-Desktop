@@ -8,7 +8,7 @@ values
 	 	,{{batch_number.text}}
 	 	,{{comments.text || ''}}
 		,{{Location.text}}
-	 	, 0
+	 	,{{batch_quantity.text}}
 	  ,{{global_measure_unit_id.selectedOptionValue || 40}}
 		,{{best_by_date.formattedDate}}
 		, current_timestamp()

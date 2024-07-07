@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE product_batches\n  \tSET batch_start = {{batch_start.formattedDate}},\n\t\t\tbatch_number = {{batch_number.text}},\n\t\t\tlocation = {{Location.text}},\n\t\t\tbatch_quantity = {{batch_quantity.text}},\n\t\t\tglobal_measure_unit_id = {{global_measure_unit_id.selectedOptionValue}},\n\t\t\tbest_by_date = {{best_by_date.formattedDate}},\n\t\t\tcomments = {{comments.text}},\n\t\t\trecipe_multiply_factor = 1,\n\t\t\tupdated_at = current_timestamp(),\n\t\t\tupdated_by = {{appsmith.store.user_id}}\n  WHERE id = {{tbl_Entity.selectedRow.prd_btch_id}}\n  ;\n\t\t\t",
+      "body": "UPDATE product_batches\n  \tSET batch_start = {{batch_start.formattedDate}},\n\t\t\tbatch_number = {{batch_number.text}},\n\t\t\tlocation = {{Location.text}},\n\t\t\tbatch_quantity = {{batch_quantity.text}},\n\t\t\tglobal_measure_unit_id = {{global_measure_unit_id.selectedOptionValue}},\n\t\t\tbest_by_date = {{best_by_date.formattedDate}},\n\t\t\tcomments = {{comments.text}},\n\t\t\trecipe_multiply_factor = 1,\n\t\t\tupdated_at = current_timestamp(),\n\t\t\tupdated_by = {{appsmith.store.user_id}}\n  WHERE id = {{tbl_Entity.selectedRow.id}}\n  ;\n\t\t\t",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -44,7 +44,7 @@
       "best_by_date.formattedDate",
       "comments.text",
       "global_measure_unit_id.selectedOptionValue",
-      "tbl_Entity.selectedRow.prd_btch_id"
+      "tbl_Entity.selectedRow.id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

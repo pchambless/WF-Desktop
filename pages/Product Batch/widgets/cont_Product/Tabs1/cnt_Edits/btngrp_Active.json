@@ -2,7 +2,7 @@
     "needsErrorInfo": false,
     "boxShadow": "none",
     "mobileBottomRow": 4,
-    "widgetName": "btngrp_ActiveCopy",
+    "widgetName": "btngrp_Active",
     "isCanvas": false,
     "dynamicPropertyPathList": [
         {"key": "groupButtons.groupButton2.onClick"},
@@ -65,7 +65,7 @@
     "isDeprecated": false,
     "rightColumn": 18,
     "thumbnailSVG": "/static/media/thumbnail.eaa22f923be763e8779a46432554f1ed.svg",
-    "widgetId": "y3i836cojo",
+    "widgetId": "9frw6iyfe6",
     "onCanvasUI": {
         "focusBGCSSVar": "--on-canvas-ui-widget-focus",
         "disableParentSelection": false,
@@ -76,7 +76,7 @@
     "minWidth": 450,
     "isVisible": "{{appsmith.store.roleID === 1 ? true : false}}",
     "version": 1,
-    "parentId": "rxgf9m8c48",
+    "parentId": "hadkzu5rpr",
     "tags": ["Buttons"],
     "renderMode": "CANVAS",
     "isLoading": false,

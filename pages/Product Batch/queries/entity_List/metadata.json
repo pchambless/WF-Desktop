@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select *, date_format(batch_start,'%Y-%m-%d') batch_date\nfrom   product_batches a\nwhere  a.product_id = {{appsmith.store.prodID}}\nand    active = {{appsmith.store.active}}\nORDER by batch_start desc\nLIMIT 15\n\t;",
+      "body": "select *\n, date_format(batch_start,'%Y-%m-%d') batch_date, concat(batch_quantity,' ',f_measure_unit(global_measure_unit_id)) qty_meas\nfrom   product_batches a\nwhere  a.product_id = {{appsmith.store.prodID}}\nand    active = {{appsmith.store.active}}\nORDER by batch_start desc\nLIMIT 15\n\t;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

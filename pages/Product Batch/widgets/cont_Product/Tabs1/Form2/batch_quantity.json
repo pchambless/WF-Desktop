@@ -12,7 +12,7 @@
         {"key": "defaultText"}
     ],
     "labelStyle": "BOLD",
-    "inputType": "NUMBER",
+    "inputType": "TEXT",
     "isDisabled": false,
     "isRequired": false,
     "dynamicHeight": "FIXED",
@@ -70,6 +70,6 @@
     "maxDynamicHeight": 9000,
     "shouldAllowAutofill": false,
     "iconAlign": "left",
-    "defaultText": "{{tbl_Entity.selectedRow.batch_quantity}}",
+    "defaultText": "{{tbl_Entity.selectedRowIndex === -1 ? 0 : tbl_Entity.selectedRow.batch_quantity}}",
     "minDynamicHeight": 4
 }

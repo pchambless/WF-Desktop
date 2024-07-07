@@ -2,7 +2,7 @@ INSERT INTO product_batch_ingredients
   		(product_batch_id, product_recipe_id, ingredient_batch_id, comments, created_at, created_by )
 	VALUES
 	  (
-	    {{tbl_Entity.selectedRow.prd_btch_id }} ,
+	    {{tbl_Entity.selectedRow.id }} ,
 	    {{tbl_Recipe.selectedRow.prd_rcpe_id}} ,
 		 	{{tbl_Batch_Choices.triggeredRow.ingr_btch_id}},
 		 '',

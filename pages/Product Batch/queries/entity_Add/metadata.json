@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "insert into product_batches\n( product_id, batch_start, batch_number, comments,\n location, batch_quantity, global_measure_unit_id, best_by_date, \n created_at, created_by)\nvalues\n\t(  {{sel_prod.selectedOptionValue}}\n\t \t,{{batch_start.formattedDate}}\n\t \t,{{batch_number.text}}\n\t \t,{{comments.text || ''}}\n\t\t,{{Location.text}}\n\t \t, 0\n\t  ,{{global_measure_unit_id.selectedOptionValue || 40}}\n\t\t,{{best_by_date.formattedDate}}\n\t\t, current_timestamp()\n\t \t, {{appsmith.store.user_id}}\n\t)\n\t;\n\tSET @newID = LAST_INSERT_ID()\n\t;\nINSERT INTO product_batch_tasks\n\t(product_batch_id, task_id, workers, measure_value, comments, created_at, created_by)\nselect\n\t@newID, task_id,'', 0 ,'',\n\t    current_timestamp(),\n\t\t\t{{appsmith.store.user_id}} \n   from v_prd_type_tasks\n   where prd_type_id = {{sel_Type.selectedOptionValue}}\n;",
+      "body": "insert into product_batches\n( product_id, batch_start, batch_number, comments,\n location, batch_quantity, global_measure_unit_id, best_by_date, \n created_at, created_by)\nvalues\n\t(  {{sel_prod.selectedOptionValue}}\n\t \t,{{batch_start.formattedDate}}\n\t \t,{{batch_number.text}}\n\t \t,{{comments.text || ''}}\n\t\t,{{Location.text}}\n\t \t,{{batch_quantity.text}}\n\t  ,{{global_measure_unit_id.selectedOptionValue || 40}}\n\t\t,{{best_by_date.formattedDate}}\n\t\t, current_timestamp()\n\t \t, {{appsmith.store.user_id}}\n\t)\n\t;\n\tSET @newID = LAST_INSERT_ID()\n\t;\nINSERT INTO product_batch_tasks\n\t(product_batch_id, task_id, workers, measure_value, comments, created_at, created_by)\nselect\n\t@newID, task_id,'', 0 ,'',\n\t    current_timestamp(),\n\t\t\t{{appsmith.store.user_id}} \n   from v_prd_type_tasks\n   where prd_type_id = {{sel_Type.selectedOptionValue}}\n;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -39,6 +39,7 @@
       "Location.text",
       "appsmith.store.user_id",
       "batch_number.text",
+      "batch_quantity.text",
       "batch_start.formattedDate",
       "best_by_date.formattedDate",
       "comments.text || ''",

@@ -8,9 +8,9 @@
     "dynamicPropertyPathList": [{"key": "isVisible"}],
     "iconSVG": "/static/media/icon.b5185d0532af5856eedbf89336c549ae.svg",
     "displayName": "Form",
-    "topRow": 0,
+    "topRow": 6,
     "searchTags": ["group"],
-    "bottomRow": 41,
+    "bottomRow": 47,
     "parentRowSpace": 10,
     "type": "FORM_WIDGET",
     "hideCard": false,
@@ -19,7 +19,7 @@
     "animateLoading": true,
     "parentColumnSpace": 14.642333984375,
     "dynamicTriggerPathList": [],
-    "leftColumn": 28,
+    "leftColumn": 38,
     "dynamicBindingPathList": [{"key": "isVisible"}],
     "children": [{
         "needsErrorInfo": false,
@@ -94,10 +94,10 @@
     "renderMode": "CANVAS",
     "mobileTopRow": 55,
     "responsiveBehavior": "fill",
-    "originalTopRow": 0,
+    "originalTopRow": 6,
     "borderRadius": "1.5rem",
     "mobileLeftColumn": 29,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 41,
+    "originalBottomRow": 47,
     "minDynamicHeight": 10
 }

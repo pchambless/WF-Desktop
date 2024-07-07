@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select a.ingr_btch_nbr, a.purch_date, a.vndr_name, a.prd_btch_ingr_id\nfrom   v_prd_btch_ingr_dtl a\nwhere  a.ingr_id = {{appsmith.store.ingrID}}\nand  prd_btch_id = {{tbl_Entity.selectedRow.prd_btch_id}}\norder by purch_date desc\nlimit 20\n",
+      "body": "select a.ingr_btch_nbr, a.purch_date, a.vndr_name, a.prd_btch_ingr_id\nfrom   v_prd_btch_ingr_dtl a\nwhere  a.ingr_id = {{tbl_Recipe.selectedRow.ingr_id}}\nand  prd_btch_id = {{tbl_Entity.selectedRow.id}}\norder by purch_date desc\nlimit 20\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,8 +36,8 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.ingrID",
-      "tbl_Entity.selectedRow.prd_btch_id"
+      "tbl_Entity.selectedRow.id",
+      "tbl_Recipe.selectedRow.ingr_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
