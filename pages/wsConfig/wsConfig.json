@@ -33,9 +33,7 @@
               "collectionId": "wsConfig_JSObject1",
               "confirmBeforeExecute": false,
               "pluginType": "JS",
-              "jsonPathKeys": [
-                "() => {\n  return Object.keys(appsmith.store).map(key => ({\n    key: key,\n    value: appsmith.store[key]\n  }));\n}"
-              ],
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]
