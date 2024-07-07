@@ -28,7 +28,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "Mapped Batch(es)",
+    "text": "Mapped Ingredient Batch(es)",
     "key": "wi891oratp",
     "isDeprecated": false,
     "rightColumn": 36,

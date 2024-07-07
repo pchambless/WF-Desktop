@@ -47,6 +47,10 @@
     {
       "id": "Shopping",
       "isDefault": false
+    },
+    {
+      "id": "wsConfig",
+      "isDefault": false
     }
   ],
   "viewMode": false,

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "wsConfig",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "wsConfig_JSObject1",
+  "deleted": false,
+  "gitSyncId": "6668cf0988cf8166d347b04c_fcb3058c-f7d5-43fe-a81d-6a4ff2264561"
+}
