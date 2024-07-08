@@ -1,14 +1,14 @@
 {
     "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "borderColor": "#E0DEDE",
+    "borderColor": "#3f3f46",
     "widgetName": "frm_Batch",
     "isCanvas": true,
     "dynamicPropertyPathList": [{"key": "isVisible"}],
     "displayName": "Form",
     "iconSVG": "/static/media/icon.ea3e08d130e59c56867ae40114c10eed.svg",
     "searchTags": ["group"],
-    "topRow": 0,
-    "bottomRow": 52,
+    "topRow": 5,
+    "bottomRow": 53,
     "parentRowSpace": 10,
     "type": "FORM_WIDGET",
     "hideCard": false,
@@ -24,7 +24,7 @@
         "widgetName": "Canvas13Copy",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 520,
+        "bottomRow": 480,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": false,
@@ -146,6 +146,10 @@
             {"children": [{
                 "id": "je45s55ejz",
                 "align": "start"
+            }]},
+            {"children": [{
+                "id": "16ku40mh0t",
+                "align": "start"
             }]}
         ]
     }],
@@ -162,9 +166,9 @@
     "parentId": "n4674eq33w",
     "renderMode": "CANVAS",
     "isLoading": false,
-    "originalTopRow": 0,
+    "originalTopRow": 5,
     "borderRadius": "1.5rem",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 52,
+    "originalBottomRow": 53,
     "minDynamicHeight": 10
 }

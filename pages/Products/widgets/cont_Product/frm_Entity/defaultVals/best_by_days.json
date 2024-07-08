@@ -60,7 +60,7 @@
     "thumbnailSVG": "/static/media/thumbnail.a4eac1a16753ea7fc54cac7731f9ea6a.svg",
     "widgetId": "wrejde8yaa",
     "minWidth": 450,
-    "label": "Add Days",
+    "label": "BB Days",
     "parentId": "ltpay6c09f",
     "labelAlignment": "left",
     "renderMode": "CANVAS",

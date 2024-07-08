@@ -6,7 +6,7 @@
     "labelWidth": "4",
     "type": "SELECT_WIDGET",
     "serverSideFiltering": false,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( tbl_entity.selectedRow.global_measure_unit_id))(global_measure_unit_id.options, global_measure_unit_id.serverSideFiltering) }}",
+    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( tbl_Entity.selectedRow.global_measure_unit_id))(global_measure_unit_id.options, global_measure_unit_id.serverSideFiltering) }}",
     "animateLoading": true,
     "leftColumn": 33,
     "dynamicBindingPathList": [

@@ -6,7 +6,7 @@
     "labelWidth": "6",
     "type": "SELECT_WIDGET",
     "serverSideFiltering": false,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( tbl_entity.selectedRow.brand_id))(brand_id.options, brand_id.serverSideFiltering) }}",
+    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( tbl_Entity.selectedRow.brand_id))(brand_id.options, brand_id.serverSideFiltering) }}",
     "animateLoading": true,
     "leftColumn": 32,
     "dynamicBindingPathList": [

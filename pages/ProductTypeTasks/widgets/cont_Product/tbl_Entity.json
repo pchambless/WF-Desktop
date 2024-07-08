@@ -3,7 +3,7 @@
     "borderColor": "#E0DEDE",
     "isVisibleDownload": false,
     "iconSVG": "/static/media/icon.e6911f8bb94dc6c4a102a74740c41763.svg",
-    "topRow": 20,
+    "topRow": 21,
     "isSortable": true,
     "type": "TABLE_WIDGET_V2",
     "inlineEditingSaveOption": "ROW_LEVEL",
@@ -65,7 +65,7 @@
     },
     "borderRadius": "1.5rem",
     "columnUpdatedAt": 1720284024170,
-    "originalBottomRow": 59,
+    "originalBottomRow": 60,
     "primaryColumnId": "task_id",
     "defaultSelectedRowIndices": [0],
     "mobileBottomRow": 28,
@@ -89,7 +89,7 @@
     ],
     "compactMode": "SHORT",
     "displayName": "Table",
-    "bottomRow": 59,
+    "bottomRow": 60,
     "columnWidthMap": {
         "task_nm": 174,
         "customColumn1": 67,
@@ -353,7 +353,7 @@
             "verticalAlignment": "CENTER"
         }
     },
-    "onRowSelected": "{{jsEntity.selectType()}}",
+    "onRowSelected": "{{jsEntity.select()}}",
     "key": "rgly1h5mbe",
     "canFreezeColumn": true,
     "isDeprecated": false,
@@ -371,7 +371,7 @@
     "horizontalAlignment": "LEFT",
     "isVisibleSearch": false,
     "responsiveBehavior": "fill",
-    "originalTopRow": 20,
+    "originalTopRow": 21,
     "mobileLeftColumn": 0,
     "isVisiblePagination": false,
     "verticalAlignment": "CENTER"

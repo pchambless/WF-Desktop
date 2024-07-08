@@ -20,7 +20,7 @@
     "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
     "parentColumnSpace": 1.40625,
     "dynamicTriggerPathList": [],
-    "leftColumn": 34,
+    "leftColumn": 35,
     "dynamicBindingPathList": [
         {"key": "truncateButtonColor"},
         {"key": "fontFamily"},
@@ -32,11 +32,11 @@
     "text": "{{appsmith.store.acct_name}}",
     "key": "h1dp78kn3g",
     "isDeprecated": false,
-    "rightColumn": 55,
+    "rightColumn": 56,
     "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
     "textAlign": "CENTER",
     "dynamicHeight": "AUTO_HEIGHT",
-    "widgetId": "4xtju9l8yp",
+    "widgetId": "c23jysin3u",
     "onCanvasUI": {
         "focusBGCSSVar": "--on-canvas-ui-widget-focus",
         "disableParentSelection": false,
@@ -49,7 +49,7 @@
     "fontStyle": "BOLD",
     "textColor": "#231F20",
     "version": 1,
-    "parentId": "87h4hpge6z",
+    "parentId": "id39pphtv0",
     "tags": [
         "Suggested",
         "Content"

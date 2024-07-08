@@ -4,13 +4,13 @@
     "widgetName": "wf_login",
     "iconSVG": "/static/media/icon.a55b701a2ae86aa2c6718ecb7b4083f0.svg",
     "displayName": "Text",
-    "topRow": 41,
+    "topRow": 30,
     "searchTags": [
         "typography",
         "paragraph",
         "label"
     ],
-    "bottomRow": 45,
+    "bottomRow": 34,
     "parentRowSpace": 10,
     "type": "TEXT_WIDGET",
     "hideCard": false,
@@ -20,7 +20,7 @@
     "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
     "parentColumnSpace": 10.791015625,
     "dynamicTriggerPathList": [],
-    "leftColumn": 0,
+    "leftColumn": 13,
     "dynamicBindingPathList": [
         {"key": "truncateButtonColor"},
         {"key": "fontFamily"},
@@ -31,7 +31,7 @@
     "text": "<a href=\"https://whatsfresh.app/login\" target=\"_blank\">Login to the Original Whatsfresh<\/a>",
     "key": "55egcs8n6n",
     "isDeprecated": false,
-    "rightColumn": 33,
+    "rightColumn": 46,
     "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
     "textAlign": "CENTER",
     "dynamicHeight": "AUTO_HEIGHT",
@@ -57,11 +57,11 @@
     "renderMode": "CANVAS",
     "mobileTopRow": 33,
     "responsiveBehavior": "fill",
-    "originalTopRow": 41,
+    "originalTopRow": 30,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 15,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 45,
+    "originalBottomRow": 34,
     "fontSize": "1rem",
     "minDynamicHeight": 4
 }

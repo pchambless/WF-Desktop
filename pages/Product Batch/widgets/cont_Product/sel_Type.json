@@ -1,9 +1,9 @@
 {
     "boxShadow": "none",
     "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
-    "labelText": "",
+    "labelText": "Type",
     "topRow": 10,
-    "labelWidth": "8",
+    "labelWidth": "3",
     "type": "SELECT_WIDGET",
     "serverSideFiltering": false,
     "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.prodTypeID))(sel_Type.options, sel_Type.serverSideFiltering) }}",
@@ -14,6 +14,7 @@
         {"key": "sourceData"},
         {"key": "defaultOptionValue"}
     ],
+    "labelStyle": "BOLD",
     "placeholderText": "Select Product Type",
     "isDisabled": false,
     "isRequired": false,

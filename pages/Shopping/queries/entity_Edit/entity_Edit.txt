@@ -13,4 +13,4 @@ SET 	vendor_id = {{vendor_id.selectedOptionValue}},
 			best_by_date = {{best_by_date.formattedDate || null}},
 			updated_at = current_timestamp(),
 			updated_by = {{appsmith.store.user_id}}
-  	WHERE id = {{tbl_entity.selectedRow.id}};
+  	WHERE id = {{tbl_Entity.selectedRow.id}};

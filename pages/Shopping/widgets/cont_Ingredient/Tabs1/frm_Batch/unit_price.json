@@ -52,6 +52,6 @@
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "{{tbl_entity.selectedRow.unit_price}}",
+    "defaultText": "{{tbl_Entity.selectedRow.unit_price}}",
     "minDynamicHeight": 4
 }

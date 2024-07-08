@@ -10,7 +10,7 @@
         "paragraph",
         "label"
     ],
-    "bottomRow": 4,
+    "bottomRow": 5,
     "parentRowSpace": 10,
     "type": "TEXT_WIDGET",
     "hideCard": false,
@@ -20,7 +20,7 @@
     "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
     "parentColumnSpace": 7.998638153076172,
     "dynamicTriggerPathList": [],
-    "leftColumn": 7,
+    "leftColumn": 1,
     "dynamicBindingPathList": [
         {"key": "truncateButtonColor"},
         {"key": "fontFamily"},
@@ -31,7 +31,7 @@
     "text": "Edit, Add or Delete Your Batches here.",
     "key": "r1dbwx8r17",
     "isDeprecated": false,
-    "rightColumn": 54,
+    "rightColumn": 32,
     "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
     "textAlign": "CENTER",
     "dynamicHeight": "AUTO_HEIGHT",

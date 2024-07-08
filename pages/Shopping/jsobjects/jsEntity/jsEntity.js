@@ -13,47 +13,23 @@ export default {
 		comments.setValue('')
 	},
 	edit () {
-		batch_number.setValue(tbl_entity.selectedRow.batch_number)
-		lot_number.setValue(tbl_entity.selectedRow.lot_number)
-		purchase_date.setValue(tbl_entity.selectedRow.purchase_date)
-		best_by_date.setValue(tbl_entity.selectedRow.best_by_date)
-		vendor_id.setSelectedOption(tbl_entity.selectedRow.vendor_id)
-		brand_id.setSelectedOption(tbl_entity.selectedRow.brand_id)
-		purchase_quantity.setValue(tbl_entity.selectedRow.purchase_quantity)
-		unit_price.setValue(tbl_entity.selectedRow.unit_price)
-		unit_quantity.setValue(tbl_entity.selectedRow.unit_quantity)
-		global_measure_unit_id.setSelectedOption(tbl_entity.selectedRow.global_measure_unit_id)
-		comments.setValue(tbl_entity.selectedRow.comments)
+		batch_number.setValue(tbl_Entity.selectedRow.batch_number)
+		lot_number.setValue(tbl_Entity.selectedRow.lot_number)
+		purchase_date.setValue(tbl_Entity.selectedRow.purchase_date)
+		best_by_date.setValue(tbl_Entity.selectedRow.best_by_date)
+		vendor_id.setSelectedOption(tbl_Entity.selectedRow.vendor_id)
+		brand_id.setSelectedOption(tbl_Entity.selectedRow.brand_id)
+		purchase_quantity.setValue(tbl_Entity.selectedRow.purchase_quantity)
+		unit_price.setValue(tbl_Entity.selectedRow.unit_price)
+		unit_quantity.setValue(tbl_Entity.selectedRow.unit_quantity)
+		global_measure_unit_id.setSelectedOption(tbl_Entity.selectedRow.global_measure_unit_id)
+		comments.setValue(tbl_Entity.selectedRow.comments)
 	},
-	editModeRun: async (mode) => {
-	switch(mode) {
-		case 'Add':
-			await entity_Add.run();
-			break;
-		case 'Edit':
-			await entity_Edit.run();
-			break;
-		case 'Delete':
-		case 'Activate':
-			await entity_Delete.run();
-			break;
-		default:
-			console.log("Invalid mode");
-		}
-	await jsBatch.batchList()
-	await this.editMode (mode)
-},
-	async editMode  (mode) {
-	switch(mode) {
-		case 'Add':
-			await this.add();
-			break;
-		case 'Edit':
-		case 'Delete':
-			await this.edit();
-			break;
-		default:
-			console.log("Invalid mode");
-		}
-}
+	editModeRun: async () => {
+		tbl_Entity.selectedRowIndex === -1 ? entity_Add.run() : entity_Edit.run()
+		await entity_List.run()
+	},
+	async editMode  () {
+		tbl_Entity.selectedRowIndex === -1 ? this.add() : this.edit()
+	}
 }

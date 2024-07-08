@@ -43,7 +43,7 @@
     "labelTextColor": "#3366ff",
     "key": "70behuyqd9",
     "labelTextSize": "0.875rem",
-    "defaultDate": "{{tbl_entity.selectedRow.best_by_date}}",
+    "defaultDate": "{{tbl_Entity.selectedRow.best_by_date}}",
     "isDeprecated": false,
     "rightColumn": 51,
     "widgetId": "50tvfozc7a",

@@ -13,7 +13,7 @@ export default {
 	edit () {
 		Name.setValue(tbl_Entity.selectedRow.name)		
 	},
-editModeRun: async () => {
+	editModeRun: async () => {
 		tbl_Entity.selectedRowIndex === -1 ? entity_Add.run() : entity_Edit.run()
 		await entity_List.run()
 	},

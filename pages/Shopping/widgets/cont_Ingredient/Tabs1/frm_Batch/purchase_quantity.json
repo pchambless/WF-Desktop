@@ -53,6 +53,6 @@
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "{{tbl_entity.selectedRow.purchase_quantity}}",
+    "defaultText": "{{tbl_Entity.selectedRow.purchase_quantity}}",
     "minDynamicHeight": 4
 }

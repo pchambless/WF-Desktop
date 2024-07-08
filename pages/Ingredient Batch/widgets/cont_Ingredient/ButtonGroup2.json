@@ -10,8 +10,8 @@
         "click",
         "submit"
     ],
-    "topRow": 0,
-    "bottomRow": 4,
+    "topRow": 6,
+    "bottomRow": 10,
     "parentRowSpace": 10,
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
@@ -31,53 +31,6 @@
             "isDisabled": false,
             "placement": "CENTER"
         },
-        "groupButton3": {
-            "buttonType": "SIMPLE",
-            "buttonColor": "#dd4b34",
-            "widgetId": "",
-            "menuItems": {
-                "menuItem1": {
-                    "backgroundColor": "#FFFFFF",
-                    "onClick": "",
-                    "widgetId": "",
-                    "index": 0,
-                    "label": "First Option",
-                    "id": "menuItem1",
-                    "isVisible": true,
-                    "isDisabled": false
-                },
-                "menuItem3": {
-                    "backgroundColor": "#DD4B34",
-                    "onClick": "",
-                    "iconName": "trash",
-                    "widgetId": "",
-                    "iconColor": "#FFFFFF",
-                    "iconAlign": "right",
-                    "index": 2,
-                    "label": "Delete",
-                    "id": "menuItem3",
-                    "isVisible": true,
-                    "isDisabled": false,
-                    "textColor": "#FFFFFF"
-                },
-                "menuItem2": {
-                    "backgroundColor": "#FFFFFF",
-                    "onClick": "",
-                    "widgetId": "",
-                    "index": 1,
-                    "label": "Second Option",
-                    "id": "menuItem2",
-                    "isVisible": true,
-                    "isDisabled": false
-                }
-            },
-            "index": 3,
-            "label": "{{appsmith.store.acct_name}}",
-            "id": "groupButton3",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
-        },
         "groupButton1": {
             "onClick": "{{navigateTo('Dashboard', {})}}",
             "buttonType": "SIMPLE",
@@ -91,18 +44,6 @@
             "placement": "CENTER",
             "isVisible": true,
             "isDisabled": false
-        },
-        "groupButton2": {
-            "buttonType": "SIMPLE",
-            "buttonColor": "#fee2e2",
-            "widgetId": "",
-            "menuItems": {},
-            "index": 2,
-            "label": "Ingredient Batch",
-            "id": "groupButton2",
-            "placement": "CENTER",
-            "isVisible": true,
-            "isDisabled": false
         }
     },
     "hideCard": false,
@@ -113,15 +54,12 @@
         {"key": "groupButtons.groupButton1.onClick"},
         {"key": "groupButtons.groupButton8u8vt4hepk.onClick"}
     ],
-    "leftColumn": 2,
-    "dynamicBindingPathList": [
-        {"key": "groupButtons.groupButton3.label"},
-        {"key": "groupButtons.groupButton8u8vt4hepk.buttonColor"}
-    ],
+    "leftColumn": 0,
+    "dynamicBindingPathList": [{"key": "groupButtons.groupButton8u8vt4hepk.buttonColor"}],
     "key": "o4ohcb5u1o",
     "orientation": "horizontal",
     "isDeprecated": false,
-    "rightColumn": 59,
+    "rightColumn": 23,
     "widgetId": "fvpeeqj7ty",
     "minWidth": 450,
     "isVisible": true,

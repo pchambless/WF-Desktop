@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "update ingredient_batches\nset deleted_at = case when active = 'Y' then now() else null end\nWHERE id = {{tbl_entity.selectedRow.id}}\n;",
+      "body": "update ingredient_batches\nset deleted_at = case when active = 'Y' then now() else null end\nWHERE id = {{tbl_Entity.selectedRow.id}}\n;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "tbl_entity.selectedRow.id"
+      "tbl_Entity.selectedRow.id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": true,

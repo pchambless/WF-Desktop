@@ -13,8 +13,8 @@
         "parent",
         "group"
     ],
-    "topRow": 14,
-    "bottomRow": 20,
+    "topRow": 10,
+    "bottomRow": 16,
     "parentRowSpace": 10,
     "type": "CONTAINER_WIDGET",
     "hideCard": false,
@@ -22,7 +22,7 @@
     "animateLoading": true,
     "parentColumnSpace": 1.50390625,
     "dynamicTriggerPathList": [],
-    "leftColumn": 0,
+    "leftColumn": 40,
     "dynamicBindingPathList": [{"key": "isVisible"}],
     "children": [{
         "rightColumn": 96.25,
@@ -55,7 +55,7 @@
     "key": "lllt2gc210",
     "backgroundColor": "#f4f4f5",
     "isDeprecated": false,
-    "rightColumn": 22,
+    "rightColumn": 62,
     "thumbnailSVG": "/static/media/thumbnail.6cb355b93146b5347bbb048a568ed446.svg",
     "dynamicHeight": "FIXED",
     "widgetId": "ajgmlyacr9",
@@ -75,7 +75,9 @@
     "renderMode": "CANVAS",
     "isLoading": false,
     "responsiveBehavior": "fill",
+    "originalTopRow": 10,
     "borderRadius": "1.5rem",
     "maxDynamicHeight": 9000,
+    "originalBottomRow": 16,
     "minDynamicHeight": 10
 }

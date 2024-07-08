@@ -1,3 +1,3 @@
 SELECT *
 from   v_ingr_btch_trace
-where  ingr_btch_id = {{tbl_entity.selectedRow.id}}
+where  ingr_btch_id = {{tbl_Entity.selectedRow.id}}

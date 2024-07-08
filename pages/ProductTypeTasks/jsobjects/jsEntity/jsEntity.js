@@ -1,45 +1,22 @@
 export default {
-async selectType () {
-	await storeValue("editMode","")	
-	await storeValue('prodTypeID',sel_Type.selectedOptionValue)
-	entity_List.run()
-},
-editModeRun: async (mode) => {
-	switch(mode) {
-		case 'Add':
-			await entity_Add.run();
-			break;
-		case 'Edit':
-			await entity_Edit.run();
-			break;
-		case 'Delete':
-		case 'Activate':
-			await entity_Delete.run();
-			break;
-		default:
-			console.log("Invalid mode");
-		}
-	await entity_List.run()
-},
-async editMode  (mode) {
-	switch(mode) {
-		case 'Add':
-			await this.addTask();
-			break;
-		case 'Edit':
-		case 'Delete':
-			await this.editTask();
-			break;
-		default:
-			console.log("Invalid mode");
-		}
-},
-	addTask () {
+	async select () {
+		await storeValue("editMode","Edit")	
+		await storeValue('prodTypeID',sel_Type.selectedOptionValue)
+		entity_List.run()
+	},
+	editModeRun: async () => {
+		tbl_Entity.selectedRowIndex === -1 ? entity_Add.run() : entity_Edit.run()
+		await entity_List.run()
+	},
+	async editMode  () {
+		tbl_Entity.selectedRowIndex === -1 ? this.add() : this.edit()
+	},
+	add () {
 		Ordr.setValue(0)
 		Name.setValue('')
 		description.setValue('')
 	},
-	editTask () {
+	edit () {
 		Ordr.setValue(tbl_Entity.selectedRow.task_ordr)
 		Name.setValue(tbl_Entity.selectedRow.task_nm)
 		description.setValue(tbl_Entity.selectedRow.task_desc)
