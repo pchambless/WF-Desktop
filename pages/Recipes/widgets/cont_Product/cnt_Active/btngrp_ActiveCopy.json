@@ -2,7 +2,7 @@
     "needsErrorInfo": false,
     "boxShadow": "none",
     "mobileBottomRow": 4,
-    "widgetName": "btngrp_Active",
+    "widgetName": "btngrp_ActiveCopy",
     "isCanvas": false,
     "dynamicPropertyPathList": [
         {"key": "groupButtons.groupButton2.onClick"},
@@ -50,22 +50,19 @@
     "hideCard": false,
     "mobileRightColumn": 24,
     "animateLoading": true,
-    "parentColumnSpace": 1.6875,
+    "parentColumnSpace": 1.50390625,
     "dynamicTriggerPathList": [
         {"key": "groupButtons.groupButton2.onClick"},
         {"key": "groupButtons.groupButton1.onClick"}
     ],
-    "leftColumn": 1,
-    "dynamicBindingPathList": [
-        {"key": "borderRadius"},
-        {"key": "isVisible"}
-    ],
+    "leftColumn": 0,
+    "dynamicBindingPathList": [{"key": "borderRadius"}],
     "key": "omg2bmpu8i",
     "orientation": "horizontal",
     "isDeprecated": false,
-    "rightColumn": 18,
+    "rightColumn": 46.54545454545455,
     "thumbnailSVG": "/static/media/thumbnail.eaa22f923be763e8779a46432554f1ed.svg",
-    "widgetId": "9frw6iyfe6",
+    "widgetId": "32r7i6195p",
     "onCanvasUI": {
         "focusBGCSSVar": "--on-canvas-ui-widget-focus",
         "disableParentSelection": false,
@@ -74,9 +71,9 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
     },
     "minWidth": 450,
-    "isVisible": "{{appsmith.store.roleID === 1 ? true : false}}",
+    "isVisible": "true",
     "version": 1,
-    "parentId": "hadkzu5rpr",
+    "parentId": "v0t7tdu8w4",
     "tags": ["Buttons"],
     "renderMode": "CANVAS",
     "isLoading": false,

@@ -106,22 +106,6 @@
             "placement": "CENTER",
             "isVisible": true,
             "isDisabled": false
-        },
-        "groupButton4molem9v8n": {
-            "itemType": "BUTTON",
-            "onClick": "{{navigateTo('Login', {}, 'SAME_WINDOW');}}",
-            "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-            "widgetId": "f267snw5ij",
-            "menuItems": {},
-            "index": 4,
-            "label": "Log Out",
-            "isVisible": true,
-            "buttonType": "SIMPLE",
-            "variant": "filled",
-            "id": "groupButton4molem9v8n",
-            "isDisabled": false,
-            "placement": "CENTER",
-            "isSeparator": false
         }
     },
     "type": "BUTTON_GROUP_WIDGET",
@@ -134,14 +118,10 @@
         {"key": "groupButtons.groupButtondsdl48htcb.menuItems.menuItem4e4soz7zk1.onClick"},
         {"key": "groupButtons.groupButtondsdl48htcb.menuItems.menuItemlgnc44yblt.onClick"},
         {"key": "groupButtons.groupButtondsdl48htcb.menuItems.menuItemn8htmo8dj2.onClick"},
-        {"key": "groupButtons.groupButton4molem9v8n.onClick"},
         {"key": "groupButtons.groupButtondsdl48htcb.menuItems.menuItemf5wwjdgk43.onClick"}
     ],
     "leftColumn": 9,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "groupButtons.groupButton4molem9v8n.buttonColor"}
-    ],
+    "dynamicBindingPathList": [{"key": "accentColor"}],
     "key": "ksc8rutbji",
     "labelTextSize": "0.875rem",
     "orientation": "vertical",

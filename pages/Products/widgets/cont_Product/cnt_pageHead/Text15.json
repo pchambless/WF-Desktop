@@ -32,7 +32,7 @@
     "text": "{{appsmith.store.acct_name}}",
     "key": "h1dp78kn3g",
     "isDeprecated": false,
-    "rightColumn": 63,
+    "rightColumn": 58,
     "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
     "textAlign": "CENTER",
     "dynamicHeight": "AUTO_HEIGHT",

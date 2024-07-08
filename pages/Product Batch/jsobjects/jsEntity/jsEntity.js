@@ -1,7 +1,6 @@
 export default {
 	async select () {
-		await storeValue("editMode","Edit")
-		this.edit()
+		await tbl_Entity.selectedRowIndex === -1 ? this.add : this.edit()
 		await batchIngr_Map.run()
 		await batchTask_List.run()
 		await rcpe_List.run()
@@ -12,6 +11,7 @@ export default {
     return bestBy;
 },
 	add () {
+		storeValue('editMode','Add')
 		batch_number.setValue(prod_Select.data[0].code)
 		batch_start.setValue('')
 		Location.setValue(prod_Select.data[0].location)
@@ -21,6 +21,7 @@ export default {
 		comments.setValue('')
 	},
 	edit () {
+		storeValue('editMode','Edit')
 		batch_number.setValue(tbl_Entity.selectedRow.batch_number)
 		batch_start.setValue(tbl_Entity.selectedRow.batch_date)
 		Location.setValue(tbl_Entity.selectedRow.location)

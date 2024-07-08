@@ -8,7 +8,7 @@
     "serverSideFiltering": false,
     "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.ingrID))(sel_ingr.options, sel_ingr.serverSideFiltering) }}",
     "animateLoading": true,
-    "leftColumn": 27,
+    "leftColumn": 20,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
@@ -51,7 +51,7 @@
     "key": "bceea8jr25",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
-    "rightColumn": 59,
+    "rightColumn": 52,
     "widgetId": "7nifj3fcdd",
     "optionValue": "value",
     "minWidth": 450,

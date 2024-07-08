@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 880,
+          "bottomRow": 820,
           "containerStyle": "none",
           "snapRows": 84,
           "parentRowSpace": 1,
@@ -78,7 +78,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async function () {\n  await storeValue('active', 'Y');\n  await storeValue('editMode', '');\n  await prodType_dd.run();\n  await sel_Type.setSelectedOption(appsmith.store.prodTypeID);\n  await prod_dd.run();\n  await sel_prod.setSelectedOption(appsmith.store.prodID);\n  await entity_List.run();\n}"
+                "async function () {\n  await storeValue('active', 'Y');\n  await storeValue('editMode', '');\n  await prodType_dd.run();\n  await sel_Type.setSelectedOption(appsmith.store.prodTypeID);\n  await prod_dd.run();\n  await sel_prod.setSelectedOption(appsmith.store.prodID);\n  await entity_List.run();\n  await tbl_Entity.setSelectedRowIndex(-1);\n}"
               ],
               "timeoutInMillisecond": 10000
             }

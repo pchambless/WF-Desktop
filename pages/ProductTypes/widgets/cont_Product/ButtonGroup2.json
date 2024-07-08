@@ -27,7 +27,7 @@
             "widgetId": "10hz7pw8ds",
             "menuItems": {},
             "index": 2,
-            "label": "Tasks",
+            "label": "Product Type Tasks",
             "isVisible": "{{tbl_Entity.selectedRowIndex > 0 ? true : false}}",
             "buttonType": "SIMPLE",
             "variant": "filled",
