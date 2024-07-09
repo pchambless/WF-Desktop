@@ -65,7 +65,7 @@
   "color": "#D9E7FF",
   "icon": "website",
   "unpublishedAppLayout": {
-    "type": "DESKTOP"
+    "type": "TABLET_LARGE"
   },
   "publishedAppLayout": {
     "type": "DESKTOP"

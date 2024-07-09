@@ -28,7 +28,7 @@
         {"key": "defaultModel"}
     ],
     "leftColumn": 0,
-    "defaultModel": "{\"title\": \"{{appsmith.store.acct_name}}\",\n\"rptDate\": \"Report Date: {{moment().format('YYYY-MM-DD')}}\",\n\"btchSelect\": \"{{entity_Trace.data[0]}}\",\n\"trace\": \"{{entity_Trace.data}}\",\n\"logo\": \"<img src=\\\"{{appsmith.store.logo}}\\\">\"\n}",
+    "defaultModel": "{\"title\": \"{{appsmith.store.acct_name}}\",\n\"rptDate\": \"Report Date: {{moment().format('YYYY-MM-DD')}}\",\n\"btchSelect\": \"{{entity_Trace.data[0] || []}}\",\n\"trace\": \"{{entity_Trace.data}}\",\n\"logo\": \"<img src=\\\"{{appsmith.store.logo}}\\\">\"\n}",
     "borderWidth": "1",
     "theme": "{{appsmith.theme}}",
     "onResetClick": "{{showAlert('Successfully reset!!', '');}}",

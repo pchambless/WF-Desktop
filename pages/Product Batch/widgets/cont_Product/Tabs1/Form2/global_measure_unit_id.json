@@ -35,7 +35,7 @@
     ],
     "isLoading": false,
     "borderRadius": "1.5rem",
-    "originalBottomRow": 31,
+    "originalBottomRow": 28,
     "needsErrorInfo": false,
     "mobileBottomRow": 26,
     "widgetName": "global_measure_unit_id",
@@ -65,7 +65,7 @@
     "mobileTopRow": 19,
     "optionLabel": "label",
     "responsiveBehavior": "fill",
-    "originalTopRow": 24,
+    "originalTopRow": 21,
     "mobileLeftColumn": 17,
     "maxDynamicHeight": 9000,
     "minDynamicHeight": 4

@@ -76,7 +76,7 @@
         }
     },
     "borderRadius": "1.5rem",
-    "columnUpdatedAt": 1720542455185,
+    "columnUpdatedAt": 1720547337646,
     "primaryColumnId": "id",
     "defaultSelectedRowIndices": [0],
     "needsErrorInfo": false,
@@ -86,6 +86,7 @@
     "columnOrder": [
         "purchase_date",
         "batch_number",
+        "vendor",
         "active",
         "id",
         "ingredient_id",
@@ -98,8 +99,7 @@
         "unit_price",
         "purchase_total_amount",
         "best_by_date",
-        "comments",
-        "vendor"
+        "comments"
     ],
     "dynamicPropertyPathList": [
         {"key": "tableData"},
@@ -107,7 +107,7 @@
     ],
     "compactMode": "SHORT",
     "displayName": "Table",
-    "bottomRow": 57,
+    "bottomRow": 54,
     "columnWidthMap": {
         "batch_number": 141,
         "purchase_date": 124
@@ -443,7 +443,7 @@
             "index": 2,
             "isDiscardVisible": true,
             "isVisible": true,
-            "label": "vendor",
+            "label": "Vendor",
             "fontStyle": "",
             "textColor": "",
             "columnType": "text",

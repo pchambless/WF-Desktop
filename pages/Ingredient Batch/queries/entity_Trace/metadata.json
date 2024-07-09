@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT *\nfrom   v_ingr_btch_trace\nwhere  ingr_btch_id = {{tbl_Entity.selectedRow.id}}\nand    prd_btch_nbr > ''",
+      "body": "SELECT * \nfrom   v_ingr_btch_trace\nwhere  ingr_btch_id = {{tbl_Entity.selectedRow.id}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
