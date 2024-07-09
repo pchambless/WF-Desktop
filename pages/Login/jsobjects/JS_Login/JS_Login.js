@@ -5,7 +5,7 @@ export default {
 			storeValue('email', appsmith.user.email)
 },
     login_func : async () => {
-				showAlert("Start");
+//				showAlert("Start");
         const md = forge.md.md5.create();
         md.update(login_password.text);
         storeValue('hash', md.digest().toHex());
