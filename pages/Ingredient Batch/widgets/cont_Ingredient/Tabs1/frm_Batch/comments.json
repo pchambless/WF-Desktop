@@ -1,7 +1,7 @@
 {
     "boxShadow": "none",
     "iconSVG": "/static/media/icon.9f505595.svg",
-    "topRow": 32,
+    "topRow": 31,
     "labelWidth": "12",
     "type": "INPUT_WIDGET_V2",
     "animateLoading": true,
@@ -28,7 +28,7 @@
     "mobileBottomRow": 117.19999999999996,
     "widgetName": "comments",
     "displayName": "Input",
-    "bottomRow": 42,
+    "bottomRow": 41,
     "parentRowSpace": 10,
     "autoFocus": false,
     "hideCard": false,
