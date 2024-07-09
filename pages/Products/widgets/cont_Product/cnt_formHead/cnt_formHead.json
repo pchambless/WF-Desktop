@@ -75,6 +75,7 @@
     "isLoading": false,
     "responsiveBehavior": "fill",
     "originalTopRow": 16,
+    "borderRadius": "1.5rem",
     "maxDynamicHeight": 9000,
     "originalBottomRow": 23,
     "minDynamicHeight": 10

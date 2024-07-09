@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select a.purchase_date, a.batch_number, a.`active`, a.ingredient_id, a.vendor_id\n, a.brand_id, a.lot_number, a.purchase_quantity, a.global_measure_unit_id\n, a.unit_quantity, a.unit_price, a.purchase_total_amount, a.best_by_date\n, a.comments, a.id\nfrom   ingredient_batches a\nwhere  a.ingredient_id = {{appsmith.store.ingrID}}\nand    active = {{appsmith.store.active}}\nORDER by purchase_date desc\nlimit 20\n\n",
+      "body": "select a.purchase_date, a.batch_number, f_vendor(vendor_id) vendor, a.`active`, a.ingredient_id, a.vendor_id\n, a.brand_id, a.lot_number, a.purchase_quantity, a.global_measure_unit_id\n, a.unit_quantity, a.unit_price, a.purchase_total_amount, a.best_by_date\n, a.comments, a.id\nfrom   ingredient_batches a\nwhere  a.ingredient_id = {{appsmith.store.ingrID}}\nand    active = {{appsmith.store.active}}\nORDER by purchase_date desc\nlimit 20\n\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

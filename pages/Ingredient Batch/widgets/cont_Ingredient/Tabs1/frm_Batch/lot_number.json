@@ -6,7 +6,7 @@
     "type": "INPUT_WIDGET_V2",
     "animateLoading": true,
     "resetOnSubmit": true,
-    "leftColumn": 0,
+    "leftColumn": 2,
     "dynamicBindingPathList": [
         {"key": "defaultText"},
         {"key": "accentColor"},
@@ -39,7 +39,7 @@
     "labelTextColor": "#3366FF",
     "key": "7nskb93eta",
     "labelTextSize": "0.875rem",
-    "rightColumn": 32,
+    "rightColumn": 34,
     "widgetId": "bc33k2p6f4",
     "minWidth": 450,
     "label": "Lot #:",

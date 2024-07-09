@@ -12,7 +12,7 @@
         "group"
     ],
     "topRow": 4,
-    "bottomRow": 89,
+    "bottomRow": 88,
     "parentRowSpace": 10,
     "type": "CONTAINER_WIDGET",
     "hideCard": false,
@@ -29,7 +29,7 @@
         "widgetName": "Canvas23",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 850,
+        "bottomRow": 840,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": false,
@@ -69,9 +69,9 @@
     "borderWidth": "1",
     "flexVerticalAlignment": "stretch",
     "key": "2q4z8xt4eu",
-    "backgroundColor": "#dcfce7",
+    "backgroundColor": "#fee2e2",
     "isDeprecated": false,
-    "rightColumn": 58,
+    "rightColumn": 62,
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "xogjm3vi2d",
     "containerStyle": "card",
@@ -88,6 +88,6 @@
     "borderRadius": "1.5rem",
     "mobileLeftColumn": 1,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 89,
+    "originalBottomRow": 88,
     "minDynamicHeight": 10
 }

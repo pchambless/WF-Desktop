@@ -1,4 +1,4 @@
-select a.purchase_date, a.batch_number, a.`active`, a.ingredient_id, a.vendor_id
+select a.purchase_date, a.batch_number, f_vendor(vendor_id) vendor, a.`active`, a.ingredient_id, a.vendor_id
 , a.brand_id, a.lot_number, a.purchase_quantity, a.global_measure_unit_id
 , a.unit_quantity, a.unit_price, a.purchase_total_amount, a.best_by_date
 , a.comments, a.id

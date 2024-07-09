@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select active act, a.name, code, description, grams_per_ounce, default_measure_unit, ingredient_type_id, a.id\nfrom  ingredients a\nwhere  a.ingredient_type_id = {{sel_Type.selectedOptionValue}}\nand active = {{appsmith.store.active}}\norder by name;",
+      "body": "select active act, a.name, code, description, grams_per_ounce\n,f_measure_unit(default_measure_unit) units, default_measure_unit, ingredient_type_id, a.id\nfrom  ingredients a\nwhere  a.ingredient_type_id = {{sel_Type.selectedOptionValue}}\nand active = {{appsmith.store.active}}\norder by name;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
