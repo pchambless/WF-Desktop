@@ -40,7 +40,7 @@
       "tbl_Entity.triggeredRow.prd_rcpe_id"
     ],
     "userSetOnLoad": false,
-    "confirmBeforeExecute": false,
+    "confirmBeforeExecute": true,
     "policies": [],
     "userPermissions": [],
     "createdAt": "2024-03-27T18:05:17Z"

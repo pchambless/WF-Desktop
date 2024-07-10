@@ -27,7 +27,8 @@
         {"key": "primaryColumns.purchase_total_amount.computedValue"},
         {"key": "primaryColumns.best_by_date.computedValue"},
         {"key": "primaryColumns.comments.computedValue"},
-        {"key": "primaryColumns.vendor.computedValue"}
+        {"key": "primaryColumns.vendor.computedValue"},
+        {"key": "primaryColumns.customColumn1.boxShadow"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 0,
@@ -76,7 +77,7 @@
         }
     },
     "borderRadius": "1.5rem",
-    "columnUpdatedAt": 1720547337646,
+    "columnUpdatedAt": 1720630716318,
     "primaryColumnId": "id",
     "defaultSelectedRowIndices": [0],
     "needsErrorInfo": false,
@@ -99,11 +100,13 @@
         "unit_price",
         "purchase_total_amount",
         "best_by_date",
-        "comments"
+        "comments",
+        "customColumn1"
     ],
     "dynamicPropertyPathList": [
         {"key": "tableData"},
-        {"key": "onRowSelected"}
+        {"key": "onRowSelected"},
+        {"key": "primaryColumns.customColumn1.onClick"}
     ],
     "compactMode": "SHORT",
     "displayName": "Table",
@@ -116,7 +119,10 @@
     "hideCard": false,
     "mobileRightColumn": 33,
     "parentColumnSpace": 15.47509765625,
-    "dynamicTriggerPathList": [{"key": "onRowSelected"}],
+    "dynamicTriggerPathList": [
+        {"key": "onRowSelected"},
+        {"key": "primaryColumns.customColumn1.onClick"}
+    ],
     "borderWidth": "1",
     "primaryColumns": {
         "comments": {
@@ -321,6 +327,45 @@
             "originalId": "purchase_quantity",
             "currencyCode": "USD",
             "cellBackground": "",
+            "verticalAlignment": "TOP"
+        },
+        "customColumn1": {
+            "boxShadow": "{{tbl_Entity.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+            "computedValue": "",
+            "onClick": "{{jsEntity.entityDelete()}}",
+            "buttonColor": "#fee2e2",
+            "isEditable": false,
+            "notation": "standard",
+            "alias": "Del",
+            "enableSort": true,
+            "isSaveVisible": true,
+            "id": "customColumn1",
+            "isDisabled": false,
+            "allowSameOptionsInNewRow": true,
+            "validation": {},
+            "isCellVisible": true,
+            "isDerived": true,
+            "textSize": "0.875rem",
+            "iconName": "delete",
+            "buttonStyle": "rgb(3, 179, 101)",
+            "allowCellWrapping": false,
+            "index": 10,
+            "isDiscardVisible": true,
+            "isVisible": true,
+            "label": "Del",
+            "labelColor": "#FFFFFF",
+            "columnType": "iconButton",
+            "thousandSeparator": true,
+            "horizontalAlignment": "LEFT",
+            "isCellEditable": false,
+            "borderRadius": "1.5rem",
+            "decimals": 0,
+            "width": 150,
+            "enableFilter": true,
+            "sticky": "",
+            "originalId": "customColumn1",
+            "currencyCode": "USD",
+            "customAlias": "",
             "verticalAlignment": "TOP"
         },
         "unit_price": {

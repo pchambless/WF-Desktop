@@ -48,7 +48,7 @@
     "rightColumn": 60,
     "widgetId": "cvm9ukmegy",
     "minWidth": 450,
-    "label": "Purchased",
+    "label": "Purch Dt",
     "parentId": "p4t23d4f2o",
     "labelAlignment": "left",
     "renderMode": "CANVAS",

@@ -6,7 +6,7 @@
     "labelWidth": "10",
     "type": "DATE_PICKER_WIDGET2",
     "animateLoading": true,
-    "leftColumn": 34,
+    "leftColumn": 36,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "defaultDate"},
