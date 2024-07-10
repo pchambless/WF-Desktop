@@ -69,6 +69,6 @@
     "mobileLeftColumn": 1,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "{{ appsmith.store.editMode === \"Add\" ? prod_Select.data[0].code : tbl_Entity.selectedRow.batch_number}}",
+    "defaultText": "{{ tbl_Entity.selectedRowIndex === -1 ? prod_Select.data[0].code : tbl_Entity.selectedRow.batch_number}}",
     "minDynamicHeight": 4
 }
