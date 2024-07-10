@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select concat(a.name,' (',code,')') name, a.id\nfrom  products a\nwhere  a.product_type_id = {{appsmith.store.prodTypeID}}\nand active = 'Y'\norder by name;",
+      "body": "select concat( '(',code,') ',a.name) name, a.id\nfrom  products a\nwhere  a.product_type_id = {{appsmith.store.prodTypeID}}\nand active = 'Y'\norder by name;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

@@ -10,7 +10,7 @@
           "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 720,
+          "bottomRow": 820,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -84,6 +84,28 @@
               "jsonPathKeys": [
                 "sel_Type.selectedOptionValue",
                 "appsmith.store.active"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Ingredients_ingr_List",
+              "name": "ingr_List",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "sel_Type.selectedOptionValue\t"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Ingredients_ingrType_Select",
+              "name": "ingrType_Select",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "sel_Type.selectedOptionValue"
               ],
               "timeoutInMillisecond": 10000
             }
