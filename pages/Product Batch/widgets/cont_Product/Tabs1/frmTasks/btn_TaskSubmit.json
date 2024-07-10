@@ -2,7 +2,7 @@
     "resetFormOnClick": false,
     "boxShadow": "none",
     "widgetName": "btn_TaskSubmit",
-    "onClick": "{{jsBatch.updateTask()\n}}",
+    "onClick": "{{jsMapping.updateTask()\n}}",
     "buttonColor": "rgb(3, 179, 101)",
     "dynamicPropertyPathList": [{"key": "onClick"}],
     "displayName": "Button",
