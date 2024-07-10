@@ -112,7 +112,7 @@
     ],
     "compactMode": "SHORT",
     "displayName": "Table",
-    "bottomRow": 54,
+    "bottomRow": 45,
     "columnWidthMap": {
         "prd_btch_nbr": 167,
         "act": 83,

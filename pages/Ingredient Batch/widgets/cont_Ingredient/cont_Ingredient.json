@@ -11,8 +11,8 @@
         "parent",
         "group"
     ],
-    "topRow": 4,
-    "bottomRow": 86,
+    "topRow": 0,
+    "bottomRow": 82,
     "parentRowSpace": 10,
     "type": "CONTAINER_WIDGET",
     "hideCard": false,
@@ -71,7 +71,7 @@
     "key": "2q4z8xt4eu",
     "backgroundColor": "#fee2e2",
     "isDeprecated": false,
-    "rightColumn": 62,
+    "rightColumn": 64,
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "xogjm3vi2d",
     "containerStyle": "card",
@@ -84,10 +84,10 @@
     "isLoading": false,
     "mobileTopRow": 54,
     "responsiveBehavior": "fill",
-    "originalTopRow": 4,
+    "originalTopRow": 0,
     "borderRadius": "1.5rem",
     "mobileLeftColumn": 1,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 86,
+    "originalBottomRow": 78,
     "minDynamicHeight": 10
 }

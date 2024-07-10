@@ -6,7 +6,7 @@
     "labelWidth": 5,
     "type": "SELECT_WIDGET",
     "serverSideFiltering": false,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( tbl_Entity.selectedRow.ingredient_type_id))(ingredient_type_id.options, ingredient_type_id.serverSideFiltering) }}",
+    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( sel_Type.selectedOptionValue))(ingredient_type_id.options, ingredient_type_id.serverSideFiltering) }}",
     "animateLoading": true,
     "leftColumn": 0,
     "dynamicBindingPathList": [
@@ -54,7 +54,7 @@
     "key": "xgq2xziud1",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
-    "rightColumn": 27,
+    "rightColumn": 41,
     "thumbnailSVG": "/static/media/thumbnail.9aef24cb159e9c6e4d0f1d7ca4fb0c79.svg",
     "widgetId": "mw5wp5rzxn",
     "optionValue": "value",

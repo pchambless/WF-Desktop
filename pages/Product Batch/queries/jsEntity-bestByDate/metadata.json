@@ -16,7 +16,7 @@
     "pageId": "Product Batch",
     "collectionId": "Product Batch_jsEntity",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 0,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
@@ -42,9 +42,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-07-05T22:33:16Z"
+    "createdAt": "2024-07-09T23:53:49Z"
   },
   "id": "Product Batch_jsEntity.bestByDate",
   "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_e00b8f2d-e240-49b9-9483-16ac572fb755"
+  "gitSyncId": "6668cf0988cf8166d347b04c_4ec43c73-e493-41f5-b9ad-d82a01446dab"
 }
