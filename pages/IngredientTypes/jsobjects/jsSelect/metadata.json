@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "jsSelect",
+    "pageId": "IngredientTypes",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "IngredientTypes_jsSelect",
+  "deleted": false,
+  "gitSyncId": "6668cf0988cf8166d347b04c_69a20ef7-e84f-4213-a742-f97e9df92259"
+}

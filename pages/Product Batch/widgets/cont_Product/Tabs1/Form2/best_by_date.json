@@ -50,7 +50,7 @@
     "labelPosition": "Top",
     "key": "rtfecedf0i",
     "labelTextSize": "0.875rem",
-    "defaultDate": "{{jsEntity.bestByDate(batch_start.formattedDate,daysAdd.text)}}",
+    "defaultDate": "{{jsForm.bestByDate(batch_start.formattedDate,daysAdd.text)}}",
     "isDeprecated": false,
     "rightColumn": 60,
     "thumbnailSVG": "/static/media/thumbnail.6f2ddea04e74f31810326bef3bc239b8.svg",

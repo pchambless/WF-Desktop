@@ -8,5 +8,9 @@ export default {
 		await entity_List.run()
 		await ingr_Select.run()
 		await entity_Last.run()
+	},
+	async selectEntity () {
+		await jsEntity.editMode()
+		entity_Trace.run()
 	}
 }

@@ -6,7 +6,8 @@
     "dynamicPropertyPathList": [
         {"key": "groupButtons.groupButton1.onClick"},
         {"key": "groupButtons.groupButton21nsaimf35.isVisible"},
-        {"key": "groupButtons.groupButton5eznm46ilq.isVisible"}
+        {"key": "groupButtons.groupButton5eznm46ilq.isVisible"},
+        {"key": "groupButtons.groupButtonv09109hfid.isVisible"}
     ],
     "displayName": "Button Group",
     "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
@@ -19,19 +20,18 @@
     "parentRowSpace": 10,
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
-        "groupButton5eznm46ilq": {
+        "groupButtonv09109hfid": {
             "itemType": "BUTTON",
             "onClick": "{{navigateTo('ProductTypeTasks', {}, 'SAME_WINDOW');}}",
             "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-            "iconName": "hand-right",
-            "widgetId": "10hz7pw8ds",
+            "widgetId": "yuiwaoow1x",
             "menuItems": {},
             "index": 2,
             "label": "Product Type Tasks",
-            "isVisible": "{{tbl_Entity.selectedRowIndex > 0 ? true : false}}",
+            "isVisible": "{{tbl_Entity.selectedRowIndex > -1 ? true : false}}",
             "buttonType": "SIMPLE",
             "variant": "filled",
-            "id": "groupButton5eznm46ilq",
+            "id": "groupButtonv09109hfid",
             "isDisabled": false,
             "placement": "CENTER",
             "isSeparator": false
@@ -74,19 +74,19 @@
     "dynamicTriggerPathList": [
         {"key": "groupButtons.groupButton1.onClick"},
         {"key": "groupButtons.groupButton21nsaimf35.onClick"},
-        {"key": "groupButtons.groupButton5eznm46ilq.onClick"}
+        {"key": "groupButtons.groupButtonv09109hfid.onClick"}
     ],
     "leftColumn": 1,
     "dynamicBindingPathList": [
         {"key": "groupButtons.groupButton21nsaimf35.buttonColor"},
         {"key": "groupButtons.groupButton21nsaimf35.isVisible"},
-        {"key": "groupButtons.groupButton5eznm46ilq.buttonColor"},
-        {"key": "groupButtons.groupButton5eznm46ilq.isVisible"}
+        {"key": "groupButtons.groupButtonv09109hfid.buttonColor"},
+        {"key": "groupButtons.groupButtonv09109hfid.isVisible"}
     ],
     "key": "o4ohcb5u1o",
     "orientation": "horizontal",
     "isDeprecated": false,
-    "rightColumn": 32,
+    "rightColumn": 36,
     "widgetId": "72a1rjhrm5",
     "minWidth": 450,
     "isVisible": true,

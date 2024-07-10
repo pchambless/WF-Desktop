@@ -9,31 +9,11 @@
       "isDefault": false
     },
     {
-      "id": "Product Batch",
-      "isDefault": false
-    },
-    {
       "id": "Ingredient Batch",
       "isDefault": false
     },
     {
-      "id": "receiptScanner",
-      "isDefault": false
-    },
-    {
-      "id": "Products",
-      "isDefault": false
-    },
-    {
-      "id": "Ingredients",
-      "isDefault": false
-    },
-    {
-      "id": "Recipes",
-      "isDefault": false
-    },
-    {
-      "id": "ProductTypes",
+      "id": "Product Batch",
       "isDefault": false
     },
     {
@@ -41,11 +21,31 @@
       "isDefault": false
     },
     {
+      "id": "Ingredients",
+      "isDefault": false
+    },
+    {
+      "id": "ProductTypes",
+      "isDefault": false
+    },
+    {
       "id": "ProductTypeTasks",
       "isDefault": false
     },
     {
+      "id": "Products",
+      "isDefault": false
+    },
+    {
+      "id": "Recipes",
+      "isDefault": false
+    },
+    {
       "id": "Shopping",
+      "isDefault": false
+    },
+    {
+      "id": "receiptScanner",
       "isDefault": false
     },
     {

@@ -15,5 +15,20 @@ export default {
 		await batchTask_List.clear()
 		await rcpe_List.run()
 		prod_Select.run()
-	}
+	},
+	async selectEntity () {
+		await tbl_Entity.selectedRowIndex === -1 ? jsForm.add : jsForm.edit()
+		await batchIngr_Map.run()
+		await batchTask_List.run()
+		await rcpe_List.run()
+		await entity_Select.run()
+	},
+	async selectIngredient () {
+		await storeValue('RcpeID',tbl_Recipe.selectedRow.prd_rcpe_id)
+		await storeValue('ingrID',tbl_Recipe.selectedRow.ingr_id)
+		await batchIngr_Map.run();
+		await batch_Choices.run()
+		await batch_Mapped.run()
+	},
+	
 }

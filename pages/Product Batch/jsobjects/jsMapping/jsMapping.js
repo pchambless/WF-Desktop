@@ -1,11 +1,5 @@
 export default {
-	async select () {
-		await storeValue('RcpeID',tbl_Recipe.selectedRow.prd_rcpe_id)
-		await storeValue('ingrID',tbl_Recipe.selectedRow.ingr_id)
-		await batchIngr_Map.run();
-		await batch_Choices.run()
-		await batch_Mapped.run()
-	},
+	
 	ingr_Map: async () => {
 		await prodIngrMap_Add.run();
 		await batch_Choices.run();
@@ -21,5 +15,10 @@ export default {
 	async mapping () {
 		await rcpe_List.run()
 		await task_List.run()
-	}
+	},
+	async updateTask () {
+		await batchTask_Edit.run()
+		await batchTask_List.run()
+}
+	
 }

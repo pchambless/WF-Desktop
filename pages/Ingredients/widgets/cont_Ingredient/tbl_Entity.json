@@ -20,7 +20,8 @@
         {"key": "primaryColumns.ingredient_type_id.computedValue"},
         {"key": "primaryColumns.id.computedValue"},
         {"key": "primaryColumns.act.computedValue"},
-        {"key": "primaryColumns.units.computedValue"}
+        {"key": "primaryColumns.units.computedValue"},
+        {"key": "primaryColumns.customColumn1.boxShadow"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 0,
@@ -69,7 +70,7 @@
         }
     },
     "borderRadius": "1.5rem",
-    "columnUpdatedAt": 1720539886839,
+    "columnUpdatedAt": 1720622429034,
     "originalBottomRow": 68,
     "primaryColumnId": "id",
     "defaultSelectedRowIndices": [0],
@@ -86,7 +87,8 @@
         "description",
         "ingredient_type_id",
         "id",
-        "act"
+        "act",
+        "customColumn1"
     ],
     "dynamicPropertyPathList": [
         {"key": "tableData"},
@@ -287,7 +289,7 @@
             "allowCellWrapping": false,
             "index": 2,
             "isDiscardVisible": true,
-            "isVisible": true,
+            "isVisible": false,
             "label": "description",
             "columnType": "text",
             "thousandSeparator": true,
@@ -299,6 +301,44 @@
             "sticky": "",
             "originalId": "description",
             "currencyCode": "USD",
+            "verticalAlignment": "CENTER"
+        },
+        "customColumn1": {
+            "boxShadow": "{{tbl_Entity.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+            "computedValue": "",
+            "buttonColor": "#fee2e2",
+            "isEditable": false,
+            "notation": "standard",
+            "alias": "Del",
+            "enableSort": true,
+            "isSaveVisible": true,
+            "id": "customColumn1",
+            "isDisabled": false,
+            "allowSameOptionsInNewRow": true,
+            "validation": {},
+            "isCellVisible": true,
+            "isDerived": true,
+            "textSize": "0.875rem",
+            "iconName": "delete",
+            "buttonStyle": "rgb(3, 179, 101)",
+            "allowCellWrapping": false,
+            "index": 7,
+            "isDiscardVisible": true,
+            "isVisible": true,
+            "label": "Del",
+            "labelColor": "#FFFFFF",
+            "columnType": "iconButton",
+            "thousandSeparator": true,
+            "horizontalAlignment": "LEFT",
+            "isCellEditable": false,
+            "borderRadius": "1.5rem",
+            "decimals": 0,
+            "width": 150,
+            "enableFilter": true,
+            "sticky": "right",
+            "originalId": "customColumn1",
+            "currencyCode": "USD",
+            "customAlias": "",
             "verticalAlignment": "CENTER"
         },
         "grams_per_ounce": {
@@ -398,7 +438,7 @@
             "verticalAlignment": "CENTER"
         }
     },
-    "onRowSelected": "{{jsIngr.select()}}",
+    "onRowSelected": "{{jsSelect.selectEntity()}}",
     "key": "lec7vvihs8",
     "canFreezeColumn": true,
     "isDeprecated": false,

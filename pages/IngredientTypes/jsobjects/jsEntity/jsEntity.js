@@ -5,5 +5,9 @@ export default {
 	},
 	async editMode  () {
 		tbl_Entity.selectedRowIndex === -1 ? jsForm.add() : jsForm.edit()
+	},
+	async entityDelete () {
+		await entity_Delete.run()
+		await entity_List.run()
 	}
 }

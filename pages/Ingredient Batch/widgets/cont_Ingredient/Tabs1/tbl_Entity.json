@@ -662,7 +662,7 @@
             "verticalAlignment": "TOP"
         }
     },
-    "onRowSelected": "{{await jsEntity.editMode()\nentity_Trace.run()}}",
+    "onRowSelected": "{{jsSelect.selectEntity()}}",
     "key": "pcimaal4bi",
     "canFreezeColumn": true,
     "isDeprecated": false,

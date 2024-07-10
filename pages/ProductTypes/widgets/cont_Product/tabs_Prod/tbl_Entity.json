@@ -82,7 +82,8 @@
     ],
     "dynamicPropertyPathList": [
         {"key": "tableData"},
-        {"key": "onRowSelected"}
+        {"key": "onRowSelected"},
+        {"key": "primaryColumns.customColumn2.onClick"}
     ],
     "compactMode": "SHORT",
     "displayName": "Table",
@@ -95,7 +96,10 @@
     "hideCard": false,
     "mobileRightColumn": 34,
     "parentColumnSpace": 14.2294921875,
-    "dynamicTriggerPathList": [{"key": "onRowSelected"}],
+    "dynamicTriggerPathList": [
+        {"key": "onRowSelected"},
+        {"key": "primaryColumns.customColumn2.onClick"}
+    ],
     "borderWidth": "1",
     "primaryColumns": {
         "account_id": {
@@ -196,6 +200,7 @@
         "customColumn2": {
             "boxShadow": "{{tbl_Entity.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
             "computedValue": "",
+            "onClick": "{{jsEntity.entityDelete()}}",
             "buttonColor": "#fee2e2",
             "isEditable": false,
             "notation": "standard",
@@ -232,7 +237,7 @@
             "verticalAlignment": "CENTER"
         }
     },
-    "onRowSelected": "{{jsEntity.select()}}",
+    "onRowSelected": "{{jsSelect.selectEntity()}}",
     "key": "aypg7auzol",
     "canFreezeColumn": true,
     "isDeprecated": false,

@@ -517,7 +517,7 @@
             "verticalAlignment": "CENTER"
         }
     },
-    "onRowSelected": "{{jsEntity.select()}}",
+    "onRowSelected": "{{jsSelect.selectEntity()}}",
     "key": "lec7vvihs8",
     "canFreezeColumn": true,
     "isDeprecated": false,

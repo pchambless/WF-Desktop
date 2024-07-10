@@ -18,5 +18,9 @@ export default {
 		global_measure_unit_id.setSelectedOption(tbl_Entity.selectedRow.global_measure_unit_id)
 		best_by_date.setValue(this.bestByDate(tbl_Entity.selectedRow.batch_date,daysAdd.text))
 		comments.setValue(tbl_Entity.selectedRow.comments)
+	},
+		bestByDate (batchDate, addDays) {
+    	const bestBy = moment(batchDate).add(addDays,'day');
+    	return bestBy;
 	}
 }
