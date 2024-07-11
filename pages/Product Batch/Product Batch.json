@@ -79,7 +79,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async function () {\n  await storeValue('active', 'Y');\n  await storeValue('editMode', '');\n  await sel_Type.setSelectedOption(appsmith.store.prodTypeID);\n  await sel_prod.setSelectedOption(appsmith.store.prodID);\n  await prod_Select.run();\n  await entity_List.run();\n  await tbl_Entity.setSelectedRowIndex(-1);\n  await batch_Last.run();\n  await rcpe_List.run();\n}"
+                "async function () {\n  await storeValue('active', 'Y');\n  await storeValue('editMode', '');\n  await sel_Type.setSelectedOption(appsmith.store.prodTypeID);\n  await prod_dd.run();\n  await sel_prod.setSelectedOption(appsmith.store.prodID);\n  await prod_Select.run();\n  await entity_List.run();\n  await tbl_Entity.setSelectedRowIndex(-1);\n  await batch_Last.run();\n  await rcpe_List.run();\n}"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -124,16 +124,6 @@
               "jsonPathKeys": [
                 "tbl_Recipe.selectedRow.ingr_id",
                 "tbl_Entity.selectedRow.id"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Product Batch_prod_dd",
-              "name": "prod_dd",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "sel_Type.selectedOptionValue"
               ],
               "timeoutInMillisecond": 10000
             }

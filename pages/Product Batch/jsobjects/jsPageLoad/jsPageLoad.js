@@ -3,6 +3,7 @@ export default {
 		await storeValue('active','Y')
 		await storeValue('editMode','')
 		await sel_Type.setSelectedOption(appsmith.store.prodTypeID)
+		await prod_dd.run()
 		await sel_prod.setSelectedOption(appsmith.store.prodID)
 		await prod_Select.run()
 		await entity_List.run()
