@@ -20,7 +20,7 @@
             "mobileBottomRow": 150,
             "widgetName": "Canvas39",
             "displayName": "Canvas",
-            "bottomRow": 620,
+            "bottomRow": 470,
             "topRow": 0,
             "parentRowSpace": 1,
             "type": "CANVAS_WIDGET",
@@ -118,7 +118,7 @@
         }
     ],
     "flexVerticalAlignment": "stretch",
-    "dynamicHeight": "FIXED",
+    "dynamicHeight": "AUTO_HEIGHT",
     "accentColor": "#231f20",
     "onCanvasUI": {
         "focusBGCSSVar": "--on-canvas-ui-widget-focus",
@@ -145,7 +145,7 @@
         {"key": "tabsObj.tab33p4oxesmg.isVisible"}
     ],
     "displayName": "Tabs",
-    "bottomRow": 77,
+    "bottomRow": 62,
     "parentRowSpace": 10,
     "hideCard": false,
     "shouldScrollContents": true,
@@ -186,5 +186,5 @@
     "originalTopRow": 11,
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
-    "minDynamicHeight": 15
+    "minDynamicHeight": 10
 }

@@ -80,7 +80,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async function () {\n  await storeValue('active', 'Y');\n  await ingrType_dd.run();\n  await sel_Type.setSelectedOption(appsmith.store.ingrTypeID);\n  await ingr_dd.run();\n  await sel_ingr.setSelectedOption(appsmith.store.ingrID);\n  await entity_List.run();\n  await entity_Last.run();\n}"
+                "async function () {\n  await storeValue('active', 'Y');\n  await ingrType_dd.run();\n  await sel_Type.setSelectedOption(appsmith.store.ingrTypeID || '');\n  await ingr_dd.run();\n  await sel_ingr.setSelectedOption(appsmith.store.ingrID || '');\n  await entity_List.run();\n  await entity_Last.run();\n}"
               ],
               "timeoutInMillisecond": 10000
             }
