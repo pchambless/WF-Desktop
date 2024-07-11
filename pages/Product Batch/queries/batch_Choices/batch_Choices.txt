@@ -4,7 +4,7 @@ where  a.ingr_id = {{tbl_Recipe.selectedRow.ingr_id}}
 and    a.ingr_btch_id not in 
 (select ingr_btch_id
  from   v_prd_btch_ingr_dtl
- where  prd_btch_id = {{tbl_Entity.selectedRow.prd_btch_id}}
+ where  prd_btch_id = {{tbl_Entity.selectedRow.id}}
  and    ingr_id = {{tbl_Recipe.selectedRow.ingr_id}})
  order by ingr_btch_id desc
  limit 20

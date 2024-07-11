@@ -111,8 +111,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "tbl_Entity.selectedRow.prd_btch_id",
-                "tbl_Recipe.selectedRow.ingr_id"
+                "tbl_Recipe.selectedRow.ingr_id",
+                "tbl_Entity.selectedRow.id"
               ],
               "timeoutInMillisecond": 10000
             },
