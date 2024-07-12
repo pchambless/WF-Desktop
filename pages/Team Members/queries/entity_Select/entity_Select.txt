@@ -1,0 +1,3 @@
+SELECT id, name
+from workers
+where id = {{tbl_Entity.selectedRow.id}};

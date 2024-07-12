@@ -16,10 +16,11 @@
             "widgetId": "5mxpmwj0q1",
             "menuItems": {
                 "menuItemq3u325c7td": {
+                    "onClick": "{{navigateTo('Team Members', {}, 'SAME_WINDOW');}}",
                     "widgetId": "3w8ixvjlps",
                     "index": 6,
                     "id": "menuItemq3u325c7td",
-                    "label": "Workers",
+                    "label": "Team Members",
                     "isDisabled": false,
                     "isVisible": true
                 },
@@ -64,6 +65,7 @@
                     "isVisible": true
                 },
                 "menuItemmmuk1ed8ji": {
+                    "onClick": "{{navigateTo('Brands', {}, 'SAME_WINDOW');}}",
                     "widgetId": "7zulplg8tp",
                     "index": 5,
                     "id": "menuItemmmuk1ed8ji",
@@ -144,7 +146,9 @@
         {"key": "groupButtons.groupButtondsdl48htcb.menuItems.menuItemlgnc44yblt.onClick"},
         {"key": "groupButtons.groupButtondsdl48htcb.menuItems.menuItemn8htmo8dj2.onClick"},
         {"key": "groupButtons.groupButtondsdl48htcb.menuItems.menuItemf5wwjdgk43.onClick"},
-        {"key": "groupButtons.groupButtondsdl48htcb.menuItems.menuItemvlsg83dwly.onClick"}
+        {"key": "groupButtons.groupButtondsdl48htcb.menuItems.menuItemvlsg83dwly.onClick"},
+        {"key": "groupButtons.groupButtondsdl48htcb.menuItems.menuItemmmuk1ed8ji.onClick"},
+        {"key": "groupButtons.groupButtondsdl48htcb.menuItems.menuItemq3u325c7td.onClick"}
     ],
     "leftColumn": 9,
     "dynamicBindingPathList": [{"key": "accentColor"}],

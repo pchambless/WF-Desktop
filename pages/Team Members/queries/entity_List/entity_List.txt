@@ -1,0 +1,5 @@
+SELECT id, name, account_id
+from  workers a
+where account_id = {{appsmith.store.acct_id}}
+and active = {{appsmith.store.active}}
+order by name

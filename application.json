@@ -55,6 +55,14 @@
     {
       "id": "Vendors",
       "isDefault": false
+    },
+    {
+      "id": "Brands",
+      "isDefault": false
+    },
+    {
+      "id": "Team Members",
+      "isDefault": false
     }
   ],
   "viewMode": false,

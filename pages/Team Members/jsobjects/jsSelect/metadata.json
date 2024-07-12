@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "jsSelect",
+    "pageId": "Team Members",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Team Members_jsSelect",
+  "deleted": false,
+  "gitSyncId": "6668cf0988cf8166d347b04c_8d12bd0e-d1c3-4fe7-adb4-fd5e6b4a7c3e"
+}

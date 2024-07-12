@@ -1,0 +1,10 @@
+insert into workers
+(name, account_id, created_at, created_by)
+VALUES
+(
+	{{Name.text}}
+	,{{appsmith.store.acct_id}}
+	,now()
+	,{{appsmith.store.user_id}}
+);
+	SET @newID = LAST_INSERT_ID()

@@ -1,0 +1,5 @@
+update brands
+set name = {{Name.text}}
+, updated_by = {{appsmith.store.user_id}}
+, updated_at = now()
+where id = {{tbl_Entity.selectedRow.id}}
