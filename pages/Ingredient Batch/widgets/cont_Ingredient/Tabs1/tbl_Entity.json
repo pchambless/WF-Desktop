@@ -113,6 +113,7 @@
     "bottomRow": 54,
     "columnWidthMap": {
         "batch_number": 141,
+        "vendor": 140,
         "purchase_date": 124
     },
     "parentRowSpace": 10,
