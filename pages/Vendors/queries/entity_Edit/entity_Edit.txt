@@ -1,0 +1,8 @@
+update vendors
+set name = {{Name.text}}
+, contact_name = {{contact_name.text}}
+, contact_phone = {{contact_phone.text}}
+, contact_email = {{contact_email.text}}
+, updated_at = now()
+, updated_by = {{appsmith.store.user_id}}
+where id = {{tbl_Entity.selectedRow.id}};

@@ -1,0 +1,4 @@
+SELECT ingr_name, ingr_btch_nbr, ingr_lot_nbr, purch_dtl, CONCAT('$', FORMAT(ifnull(purch_amt,''), 2)) purch_amt
+from v_ingr_btch_dtl
+where shop_event_id = {{tbl_Entity.selectedRow.shop_event_id}}
+;

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "jsForm",
+    "pageId": "Shopping",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Shopping_jsForm",
+  "deleted": false,
+  "gitSyncId": "6668cf0988cf8166d347b04c_f63b62bf-0cb7-4e2f-93d9-e0398db30e00"
+}

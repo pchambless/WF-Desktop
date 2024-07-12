@@ -1,0 +1,8 @@
+SELECT name
+, ifnull(contact_name,'') contact_name
+, ifnull(contact_phone,'') contact_phone
+, ifnull(contact_email,'') contact_email, id
+from vendors
+where account_id = {{appsmith.store.acct_id}}
+and active = {{appsmith.store.active}}
+order by active desc, name

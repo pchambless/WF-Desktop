@@ -1,0 +1,3 @@
+SELECT *
+from   ingredients
+where  id = {{sel_ingr.selectedOptionValue}}

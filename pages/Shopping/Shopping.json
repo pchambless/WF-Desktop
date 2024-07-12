@@ -10,7 +10,7 @@
           "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 920,
+          "bottomRow": 710,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -41,6 +41,16 @@
         },
         "layoutOnLoadActions": [
           [
+            {
+              "id": "Shopping_ingrType_dd",
+              "name": "ingrType_dd",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.acct_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "Shopping_vndr_dd",
               "name": "vndr_dd",
@@ -87,13 +97,45 @@
           ],
           [
             {
-              "id": "Shopping_jsBatch.batchList",
-              "name": "jsBatch.batchList",
-              "collectionId": "Shopping_jsBatch",
+              "id": "Shopping_entity_List",
+              "name": "entity_List",
               "confirmBeforeExecute": false,
-              "pluginType": "JS",
+              "pluginType": "DB",
               "jsonPathKeys": [
-                "async function () {\n  await entity_List.run();\n  let data = [];\n  data = entity_List.data.length ? entity_List.data : jsBatch.batchFirst();\n  return data;\n}"
+                "sel_vendor.selectedOptionValue",
+                "appsmith.store.acct_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Shopping_shop_List",
+              "name": "shop_List",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "tbl_Entity.selectedRow.shop_event_id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Shopping_batch_Last",
+              "name": "batch_Last",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "sel_ingr.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Shopping_ingr_Select",
+              "name": "ingr_Select",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "sel_ingr.selectedOptionValue"
               ],
               "timeoutInMillisecond": 10000
             }

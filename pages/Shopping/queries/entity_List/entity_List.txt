@@ -1,7 +1,6 @@
-select  *
-from v_ingr_btch_dtl a
-where  a.vndr_id = {{appsmith.store.vndrID}}
-and    active = {{appsmith.store.active}}
-ORDER by purchase_date desc
-limit 20
-
+SELECT *
+FROM v_shop_event a
+where account_id = {{appsmith.store.acct_id}}
+and vendor_id = {{sel_vendor.selectedOptionValue}}
+order by shop_date desc
+LIMIT 20;

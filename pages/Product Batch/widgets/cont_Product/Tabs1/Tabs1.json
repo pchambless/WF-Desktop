@@ -136,7 +136,7 @@
             ],
             "key": "lo72q7e23u",
             "isDeprecated": false,
-            "tabName": "Mapping",
+            "tabName": "Ingredient Mapping",
             "rightColumn": 438,
             "detachFromLayout": true,
             "dynamicHeight": "AUTO_HEIGHT",
@@ -274,7 +274,7 @@
             "isDuplicateLabel": false,
             "index": 1,
             "id": "tab1qy7y3lejz",
-            "label": "Mapping",
+            "label": "Ingredient Mapping",
             "isVisible": "{{tbl_Entity.selectedRowIndex\t> -1 ? true : false}}"
         },
         "tab1": {

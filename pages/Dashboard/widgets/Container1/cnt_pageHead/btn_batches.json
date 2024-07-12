@@ -15,6 +15,14 @@
             "iconName": "add-to-folder",
             "widgetId": "5mxpmwj0q1",
             "menuItems": {
+                "menuItemq3u325c7td": {
+                    "widgetId": "3w8ixvjlps",
+                    "index": 6,
+                    "id": "menuItemq3u325c7td",
+                    "label": "Workers",
+                    "isDisabled": false,
+                    "isVisible": true
+                },
                 "menuItemf5wwjdgk43": {
                     "onClick": "{{navigateTo('ProductTypeTasks', {}, 'SAME_WINDOW');}}",
                     "widgetId": "4t64ispw3k",
@@ -52,6 +60,23 @@
                     "index": 0,
                     "id": "menuItem4e4soz7zk1",
                     "label": "Ingredients",
+                    "isDisabled": false,
+                    "isVisible": true
+                },
+                "menuItemmmuk1ed8ji": {
+                    "widgetId": "7zulplg8tp",
+                    "index": 5,
+                    "id": "menuItemmmuk1ed8ji",
+                    "label": "Brands",
+                    "isDisabled": false,
+                    "isVisible": true
+                },
+                "menuItemvlsg83dwly": {
+                    "onClick": "{{navigateTo('Vendors', {}, 'SAME_WINDOW');}}",
+                    "widgetId": "12ao5f84ea",
+                    "index": 4,
+                    "id": "menuItemvlsg83dwly",
+                    "label": "Vendors",
                     "isDisabled": false,
                     "isVisible": true
                 }
@@ -118,7 +143,8 @@
         {"key": "groupButtons.groupButtondsdl48htcb.menuItems.menuItem4e4soz7zk1.onClick"},
         {"key": "groupButtons.groupButtondsdl48htcb.menuItems.menuItemlgnc44yblt.onClick"},
         {"key": "groupButtons.groupButtondsdl48htcb.menuItems.menuItemn8htmo8dj2.onClick"},
-        {"key": "groupButtons.groupButtondsdl48htcb.menuItems.menuItemf5wwjdgk43.onClick"}
+        {"key": "groupButtons.groupButtondsdl48htcb.menuItems.menuItemf5wwjdgk43.onClick"},
+        {"key": "groupButtons.groupButtondsdl48htcb.menuItems.menuItemvlsg83dwly.onClick"}
     ],
     "leftColumn": 9,
     "dynamicBindingPathList": [{"key": "accentColor"}],

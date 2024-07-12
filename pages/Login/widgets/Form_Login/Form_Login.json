@@ -6,7 +6,7 @@
     "displayName": "Form",
     "iconSVG": "/static/media/icon.ea3e08d1.svg",
     "topRow": 0,
-    "bottomRow": 26,
+    "bottomRow": 19,
     "parentRowSpace": 10,
     "type": "FORM_WIDGET",
     "hideCard": false,
@@ -19,7 +19,7 @@
         "widgetName": "Canvas1",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 250,
+        "bottomRow": 180,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": false,
@@ -57,6 +57,6 @@
     "originalTopRow": 0,
     "borderRadius": "1.5rem",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 27,
+    "originalBottomRow": 26,
     "minDynamicHeight": 4
 }

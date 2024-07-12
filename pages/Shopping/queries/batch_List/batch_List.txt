@@ -1,0 +1,6 @@
+select  *
+from v_ingr_btch_dtl a
+where  a.shop_event_id = {{tbl_Entity.selectedRow.shop_event_id}}
+ORDER by ingr_name
+limit 20
+

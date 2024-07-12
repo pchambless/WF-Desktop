@@ -1,13 +1,7 @@
-INSERT INTO ingredient_batches
-	(ingredient_id, vendor_id, brand_id
-	,lot_number, batch_number, purchase_date, purchase_quantity
-	,global_measure_unit_id, unit_quantity, unit_price, purchase_total_amount, best_by_date
-	,comments, created_by
-	)
-	VALUES
-	(
-		{{sel_ingr.selectedOptionValue }}, {{vendor_id.selectedOptionValue }}, {{brand_id.selectedOptionValue }},
-		{{lot_number.text || ''}}, {{batch_number.text }}, {{purchase_date.formattedDate }}, 
-		{{purchase_quantity.text}}, {{global_measure_unit_id.selectedOptionValue}}, {{unit_quantity.text }}, {{unit_price.text}}, {{purchase_total_amount.text}}, {{best_by_date.formattedDate || null}},
-    {{comments.text || ''}}, {{appsmith.store.user_id}}
-  );
+insert into shop_event
+(account_id, shop_date, vendor_id, created_by)
+VALUES
+({{appsmith.store.acct_id}}
+	,{{shop_date.formattedDate}}
+	,{{sel_vendor.selectedOptionValue}}
+  ,{{appsmith.store.user_id}});

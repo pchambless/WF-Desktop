@@ -51,6 +51,10 @@
     {
       "id": "wsConfig",
       "isDefault": false
+    },
+    {
+      "id": "Vendors",
+      "isDefault": false
     }
   ],
   "viewMode": false,

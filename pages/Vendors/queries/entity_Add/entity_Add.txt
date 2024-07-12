@@ -1,0 +1,12 @@
+insert into vendors
+(account_id, name, contact_name, contact_phone, contact_email, created_at, created_by)
+VALUES
+({{appsmith.store.acct_id}}
+	,{{Name.text}}
+	, {{contact_name.text}}
+	, {{contact_phone.text}}
+	, {{contact_email.text}}
+	,now()
+	,{{appsmith.store.user_id}})
+;
+	SET @newID = LAST_INSERT_ID()
