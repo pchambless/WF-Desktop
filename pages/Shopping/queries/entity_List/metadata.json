@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT *\nFROM v_shop_event a\nwhere account_id = {{appsmith.store.acct_id}}\nand vendor_id = {{sel_vendor.selectedOptionValue}}\norder by shop_date desc\nLIMIT 20;",
+      "body": "select  *\nfrom v_ingr_btch_dtl a\nwhere  a.shop_event_id = {{sel_Shop.selectedOptionValue}}\nORDER by ingr_name\nlimit 20\n\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,16 +36,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.acct_id",
-      "sel_vendor.selectedOptionValue"
+      "sel_Shop.selectedOptionValue"
     ],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-07-12T13:29:54Z"
+    "createdAt": "2023-03-24T17:26:22Z"
   },
   "id": "Shopping_entity_List",
   "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_07132765-d6be-4eb7-a214-c9773d431ee8"
+  "gitSyncId": "6668cf0988cf8166d347b04c_30d2745d-d983-46ae-b9cc-305ae2793bb0"
 }

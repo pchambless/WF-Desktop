@@ -1,0 +1,5 @@
+SELECT shop_event_id value, shop_date label
+FROM v_shop_event
+where vendor_id = {{sel_vendor.selectedOptionValue}}
+order by shop_date desc
+LIMIT 10;

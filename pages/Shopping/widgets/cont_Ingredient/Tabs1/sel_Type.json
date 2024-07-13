@@ -3,16 +3,17 @@
     "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
     "labelText": "Type",
     "topRow": 0,
-    "labelWidth": "4",
+    "labelWidth": "3",
     "type": "SELECT_WIDGET",
     "serverSideFiltering": false,
     "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.ingrTypeID))(sel_Type.options, sel_Type.serverSideFiltering) }}",
     "animateLoading": true,
-    "leftColumn": 0,
+    "leftColumn": 20,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "sourceData"},
-        {"key": "defaultOptionValue"}
+        {"key": "defaultOptionValue"},
+        {"key": "isVisible"}
     ],
     "labelStyle": "BOLD",
     "placeholderText": "Select Ingredient Type",
@@ -20,7 +21,7 @@
     "isRequired": false,
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
+    "isVisible": "{{sel_Shop.selectedOptionValue ? true : false}}",
     "version": 1,
     "tags": [
         "Suggested",
@@ -34,7 +35,8 @@
     "isFilterable": true,
     "dynamicPropertyPathList": [
         {"key": "sourceData"},
-        {"key": "onOptionChange"}
+        {"key": "onOptionChange"},
+        {"key": "isVisible"}
     ],
     "displayName": "Select",
     "searchTags": ["dropdown"],
@@ -45,11 +47,12 @@
     "parentColumnSpace": 6.53125,
     "dynamicTriggerPathList": [{"key": "onOptionChange"}],
     "labelPosition": "Left",
+    "labelTextColor": "#3366ff",
     "sourceData": "{{ingrType_dd.data}}",
     "key": "bceea8jr25",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
-    "rightColumn": 20,
+    "rightColumn": 39,
     "widgetId": "6mqck9hwo8",
     "optionValue": "value",
     "minWidth": 450,

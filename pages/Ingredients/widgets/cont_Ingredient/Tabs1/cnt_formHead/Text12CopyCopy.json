@@ -10,7 +10,7 @@
         "paragraph",
         "label"
     ],
-    "bottomRow": 5,
+    "bottomRow": 4,
     "parentRowSpace": 10,
     "type": "TEXT_WIDGET",
     "hideCard": false,
@@ -29,7 +29,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "{{tbl_Entity.selectedRowIndex === -1 ? \"Add\" : \"Edit\"}} Ingredient <strong>{{tbl_Entity.selectedRow.name || ''}}<\/strong> ",
+    "text": "{{tbl_Entity.selectedRowIndex === -1 ? \"Add\" : \"Edit\"}} <strong>{{tbl_Entity.selectedRow.name || ''}}<\/strong> ",
     "key": "r1dbwx8r17",
     "isDeprecated": false,
     "rightColumn": 37,
@@ -62,7 +62,7 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 2,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 4,
+    "originalBottomRow": 5,
     "fontSize": "1rem",
     "minDynamicHeight": 4
 }

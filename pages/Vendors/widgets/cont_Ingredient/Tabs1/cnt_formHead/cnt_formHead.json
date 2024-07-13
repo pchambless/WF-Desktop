@@ -13,7 +13,7 @@
         "group"
     ],
     "topRow": 0,
-    "bottomRow": 7,
+    "bottomRow": 6,
     "parentRowSpace": 10,
     "type": "CONTAINER_WIDGET",
     "hideCard": false,
@@ -29,7 +29,7 @@
         "detachFromLayout": true,
         "widgetId": "4vjit6j9pv",
         "containerStyle": "none",
-        "bottomRow": 70,
+        "bottomRow": 60,
         "topRow": 0,
         "parentRowSpace": 1,
         "isVisible": true,
@@ -74,9 +74,7 @@
     "renderMode": "CANVAS",
     "isLoading": false,
     "responsiveBehavior": "fill",
-    "originalTopRow": 17,
     "borderRadius": "1.5rem",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 23,
     "minDynamicHeight": 10
 }

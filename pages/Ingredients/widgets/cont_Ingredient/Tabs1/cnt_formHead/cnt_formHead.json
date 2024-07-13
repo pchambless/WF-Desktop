@@ -21,7 +21,7 @@
     "animateLoading": true,
     "parentColumnSpace": 4.375,
     "dynamicTriggerPathList": [],
-    "leftColumn": 33,
+    "leftColumn": 37,
     "dynamicBindingPathList": [],
     "children": [{
         "rightColumn": 280,
@@ -54,7 +54,7 @@
     "key": "djp6dmhzsd",
     "backgroundColor": "#FFFFFF",
     "isDeprecated": false,
-    "rightColumn": 60,
+    "rightColumn": 64,
     "thumbnailSVG": "/static/media/thumbnail.6cb355b93146b5347bbb048a568ed446.svg",
     "dynamicHeight": "FIXED",
     "widgetId": "qd00gxepja",

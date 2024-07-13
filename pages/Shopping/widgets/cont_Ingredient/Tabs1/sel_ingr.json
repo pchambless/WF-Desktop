@@ -8,12 +8,13 @@
     "serverSideFiltering": false,
     "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.vndrID))(sel_ingr.options, sel_ingr.serverSideFiltering) }}",
     "animateLoading": true,
-    "leftColumn": 24,
+    "leftColumn": 39,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
         {"key": "sourceData"},
-        {"key": "defaultOptionValue"}
+        {"key": "defaultOptionValue"},
+        {"key": "isVisible"}
     ],
     "labelStyle": "BOLD",
     "placeholderText": "Select Ingredient",
@@ -21,7 +22,7 @@
     "isRequired": false,
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
+    "isVisible": "{{sel_Type.selectedOptionValue ? true : false}}",
     "version": 1,
     "tags": [
         "Suggested",
@@ -35,7 +36,8 @@
     "isFilterable": true,
     "dynamicPropertyPathList": [
         {"key": "sourceData"},
-        {"key": "onOptionChange"}
+        {"key": "onOptionChange"},
+        {"key": "isVisible"}
     ],
     "displayName": "Select",
     "searchTags": ["dropdown"],
@@ -51,7 +53,7 @@
     "key": "bceea8jr25",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
-    "rightColumn": 48,
+    "rightColumn": 62,
     "widgetId": "8eu40yw2q5",
     "optionValue": "value",
     "minWidth": 450,

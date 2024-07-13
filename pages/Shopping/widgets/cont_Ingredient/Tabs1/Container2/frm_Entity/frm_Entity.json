@@ -1,0 +1,182 @@
+{
+    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+    "borderColor": "#3f3f46",
+    "widgetName": "frm_Entity",
+    "isCanvas": true,
+    "dynamicPropertyPathList": [{"key": "isVisible"}],
+    "displayName": "Form",
+    "iconSVG": "/static/media/icon.ea3e08d130e59c56867ae40114c10eed.svg",
+    "searchTags": ["group"],
+    "topRow": 6,
+    "bottomRow": 45,
+    "parentRowSpace": 10,
+    "type": "FORM_WIDGET",
+    "hideCard": false,
+    "shouldScrollContents": true,
+    "animateLoading": true,
+    "parentColumnSpace": 19.765625,
+    "dynamicTriggerPathList": [],
+    "leftColumn": 29,
+    "dynamicBindingPathList": [{"key": "boxShadow"}],
+    "children": [{
+        "mobileBottomRow": 1239.9999999999995,
+        "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+        "widgetName": "Canvas13Copy",
+        "displayName": "Canvas",
+        "topRow": 0,
+        "bottomRow": 390,
+        "parentRowSpace": 1,
+        "type": "CANVAS_WIDGET",
+        "canExtend": false,
+        "hideCard": true,
+        "minHeight": 100,
+        "mobileRightColumn": 64,
+        "useAutoLayout": true,
+        "parentColumnSpace": 1,
+        "dynamicTriggerPathList": [],
+        "leftColumn": 0,
+        "dynamicBindingPathList": [
+            {"key": "borderRadius"},
+            {"key": "boxShadow"}
+        ],
+        "positioning": "vertical",
+        "key": "0sxr5146k5",
+        "isDeprecated": false,
+        "rightColumn": 64,
+        "detachFromLayout": true,
+        "widgetId": "i2kr4nkfsj",
+        "containerStyle": "none",
+        "minWidth": 450,
+        "isVisible": true,
+        "version": 1,
+        "parentId": "e6x9fsgrt7",
+        "renderMode": "CANVAS",
+        "isLoading": false,
+        "mobileTopRow": 0,
+        "responsiveBehavior": "fill",
+        "mobileLeftColumn": 0,
+        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+        "flexLayers": [
+            {"children": [
+                {
+                    "id": "oefg7uex0h",
+                    "align": "start"
+                },
+                {
+                    "id": "uzpmjzw0t8",
+                    "align": "start"
+                }
+            ]},
+            {"children": [
+                {
+                    "id": "icrx6flknl",
+                    "align": "start"
+                },
+                {
+                    "id": "r653yok3fh",
+                    "align": "start"
+                }
+            ]},
+            {"children": [
+                {
+                    "id": "il9oo6vnkg",
+                    "align": "start"
+                },
+                {
+                    "id": "7yg59zgjfc",
+                    "align": "start"
+                }
+            ]},
+            {"children": [
+                {
+                    "id": "84an55bkhe",
+                    "align": "start"
+                },
+                {
+                    "id": "f84rzvwvib",
+                    "align": "start"
+                },
+                {
+                    "id": "2inlkl0bw7",
+                    "align": "start"
+                },
+                {
+                    "id": "v6lpyvxf3b",
+                    "align": "start"
+                }
+            ]},
+            {"children": [
+                {
+                    "id": "n3mrui2bsd",
+                    "align": "start"
+                },
+                {
+                    "id": "3srj1ecj14",
+                    "align": "start"
+                },
+                {
+                    "id": "96dc41czav",
+                    "align": "start"
+                },
+                {
+                    "id": "m9dz9nggbd",
+                    "align": "start"
+                },
+                {
+                    "id": "lejlhqddda",
+                    "align": "start"
+                }
+            ]},
+            {"children": [{
+                "id": "5fg7pdtb5j",
+                "align": "start"
+            }]},
+            {"children": [{
+                "id": "mo5k19uusw",
+                "align": "end"
+            }]},
+            {"children": [{
+                "id": "3j4om8lo6o",
+                "align": "start"
+            }]},
+            {"children": [{
+                "id": "7aa0oby4um",
+                "align": "start"
+            }]},
+            {"children": [{
+                "id": "je45s55ejz",
+                "align": "start"
+            }]},
+            {"children": [{
+                "id": "16ku40mh0t",
+                "align": "start"
+            }]},
+            {"children": [{
+                "id": "ubiqke3brt",
+                "align": "start"
+            }]},
+            {"children": [{
+                "id": "tjpcj4a6qs",
+                "align": "start"
+            }]}
+        ]
+    }],
+    "borderWidth": "1",
+    "positioning": "fixed",
+    "key": "90qm7tc82q",
+    "backgroundColor": "#f4f4f5",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "dynamicHeight": "AUTO_HEIGHT",
+    "widgetId": "e6x9fsgrt7",
+    "minWidth": 450,
+    "isVisible": "true",
+    "parentId": "9ug0nyh1h6",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "originalTopRow": 6,
+    "borderRadius": "1.5rem",
+    "maxDynamicHeight": 9000,
+    "originalBottomRow": 45,
+    "minDynamicHeight": 10
+}

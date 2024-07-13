@@ -8,8 +8,8 @@
     "displayName": "Form",
     "iconSVG": "/static/media/icon.b5185d0532af5856eedbf89336c549ae.svg",
     "searchTags": ["group"],
-    "topRow": 7,
-    "bottomRow": 30,
+    "topRow": 6,
+    "bottomRow": 29,
     "parentRowSpace": 10,
     "type": "FORM_WIDGET",
     "hideCard": false,
@@ -93,10 +93,10 @@
     "isLoading": false,
     "mobileTopRow": 55,
     "responsiveBehavior": "fill",
-    "originalTopRow": 7,
+    "originalTopRow": 6,
     "borderRadius": "1.5rem",
     "mobileLeftColumn": 29,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 30,
+    "originalBottomRow": 29,
     "minDynamicHeight": 10
 }

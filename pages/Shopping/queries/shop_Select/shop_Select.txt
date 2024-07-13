@@ -1,0 +1,3 @@
+SELECT *
+FROM v_shop_event
+where shop_event_id = {{sel_Shop.selectedOptionValue}}

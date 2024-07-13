@@ -9,7 +9,7 @@
     "iconSVG": "/static/media/icon.b5185d0532af5856eedbf89336c549ae.svg",
     "searchTags": ["group"],
     "topRow": 6,
-    "bottomRow": 39,
+    "bottomRow": 46,
     "parentRowSpace": 10,
     "type": "FORM_WIDGET",
     "hideCard": false,
@@ -18,7 +18,7 @@
     "animateLoading": true,
     "parentColumnSpace": 14.642333984375,
     "dynamicTriggerPathList": [],
-    "leftColumn": 33,
+    "leftColumn": 36,
     "dynamicBindingPathList": [],
     "children": [{
         "needsErrorInfo": false,
@@ -27,7 +27,7 @@
         "widgetName": "Canvas42Copy",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 330,
+        "bottomRow": 400,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": false,
@@ -74,7 +74,7 @@
     "key": "cr952dau7q",
     "backgroundColor": "#f4f4f5",
     "isDeprecated": false,
-    "rightColumn": 61,
+    "rightColumn": 64,
     "thumbnailSVG": "/static/media/thumbnail.3e92e6e159c53c6046da08eae3732a97.svg",
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "je4tzpvaq3",
@@ -97,6 +97,6 @@
     "borderRadius": "1.5rem",
     "mobileLeftColumn": 29,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 39,
+    "originalBottomRow": 46,
     "minDynamicHeight": 10
 }

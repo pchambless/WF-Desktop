@@ -8,7 +8,7 @@
     "iconSVG": "/static/media/icon.ea3e08d130e59c56867ae40114c10eed.svg",
     "searchTags": ["group"],
     "topRow": 6,
-    "bottomRow": 53,
+    "bottomRow": 49,
     "parentRowSpace": 10,
     "type": "FORM_WIDGET",
     "hideCard": false,
@@ -24,7 +24,7 @@
         "widgetName": "Canvas13Copy",
         "displayName": "Canvas",
         "topRow": 0,
-        "bottomRow": 470,
+        "bottomRow": 430,
         "parentRowSpace": 1,
         "type": "CANVAS_WIDGET",
         "canExtend": false,
@@ -173,6 +173,6 @@
     "originalTopRow": 6,
     "borderRadius": "1.5rem",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 53,
+    "originalBottomRow": 49,
     "minDynamicHeight": 10
 }

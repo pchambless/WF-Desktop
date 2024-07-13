@@ -1,0 +1,5 @@
+SELECT *
+FROM v_shop_event
+where account_id = {{appsmith.store.acct_id}}
+and vendor_id = {{sel_vendor.selectedOptionValue}}
+order by shop_date desc

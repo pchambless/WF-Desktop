@@ -1,10 +1,10 @@
 export default {
 	editModeRun: async () => {
-		tbl_Entity.selectedRowIndex === -1 ? entity_Add.run() : entity_Edit.run()
+		tbl_shopEvent.selectedRowIndex === -1 ? shop_Add.run() : entity_Edit.run()
 		await entity_List.run()
 	},
 	async editMode  () {
-		tbl_Entity.selectedRowIndex === -1 ? jsForm.add() : jsForm.edit()
+		tbl_shopEvent.selectedRowIndex === -1 ? jsForm.add() : jsForm.edit()
 	},
 	async entityDelete () {
 		await entity_Delete.run()

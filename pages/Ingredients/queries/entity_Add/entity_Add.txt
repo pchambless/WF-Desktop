@@ -1,4 +1,12 @@
 insert into ingredients
-(name, code, account_id, ingredient_type_id, description, grams_per_ounce, created_by)
+(name, code, account_id, ingredient_type_id, description, grams_per_ounce, default_measure_unit, default_vendor, created_by)
 VALUES
-({{Name.text}}, {{code.text}},{{appsmith.store.acct_id}}, {{sel_Type.selectedOptionValue}}, {{description.text}}, {{grams_per_ounce.text || 0}}, {{appsmith.store.user_id}});
+({{Name.text}}
+	, {{code.text}}
+	,{{appsmith.store.acct_id}}
+	, {{sel_Type.selectedOptionValue}}
+	, {{description.text}}
+	, {{grams_per_ounce.text || 0}}
+	, {{default_measure_unit.selectedOptionValue || 51}}
+	, {{default_vendor.selectedOptionValue || 0}}
+	, {{appsmith.store.user_id}});

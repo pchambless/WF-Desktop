@@ -22,7 +22,7 @@
             "mobileBottomRow": 150,
             "widgetName": "Canvas25",
             "displayName": "Canvas",
-            "bottomRow": 470,
+            "bottomRow": 530,
             "topRow": 0,
             "parentRowSpace": 1,
             "type": "CANVAS_WIDGET",
@@ -67,7 +67,7 @@
             "widgetName": "Canvas28",
             "displayName": "Canvas",
             "topRow": 1,
-            "bottomRow": 400,
+            "bottomRow": 530,
             "parentRowSpace": 1,
             "type": "CANVAS_WIDGET",
             "canExtend": false,
@@ -127,7 +127,7 @@
             ],
             "key": "e6r2r0p02d",
             "isDeprecated": false,
-            "tabName": "Shopping Detail",
+            "tabName": "Report",
             "rightColumn": 438,
             "detachFromLayout": true,
             "dynamicHeight": "AUTO_HEIGHT",
@@ -162,7 +162,7 @@
             "widgetName": "Canvas46",
             "displayName": "Canvas",
             "topRow": 1,
-            "bottomRow": 400,
+            "bottomRow": 530,
             "parentRowSpace": 1,
             "type": "CANVAS_WIDGET",
             "canExtend": false,
@@ -174,11 +174,12 @@
             "leftColumn": 0,
             "dynamicBindingPathList": [
                 {"key": "borderRadius"},
-                {"key": "boxShadow"}
+                {"key": "boxShadow"},
+                {"key": "tabName"}
             ],
             "key": "dehes6vtyv",
             "isDeprecated": false,
-            "tabName": "Shopping",
+            "tabName": "Shopping Days {{sel_vendor.selectedOptionLabel}}",
             "rightColumn": 438,
             "detachFromLayout": true,
             "dynamicHeight": "AUTO_HEIGHT",
@@ -215,7 +216,7 @@
     "tags": ["Layout"],
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 60,
+    "originalBottomRow": 73,
     "mobileBottomRow": 88,
     "widgetName": "Tabs1",
     "dynamicPropertyPathList": [
@@ -225,7 +226,7 @@
         {"key": "tabsObj.taborfncy3gzy.isVisible"}
     ],
     "displayName": "Tabs",
-    "bottomRow": 60,
+    "bottomRow": 73,
     "parentRowSpace": 10,
     "hideCard": false,
     "shouldScrollContents": true,
@@ -236,7 +237,7 @@
     "key": "9y5tx896pz",
     "backgroundColor": "#fee2e2",
     "isDeprecated": false,
-    "rightColumn": 63,
+    "rightColumn": 64,
     "widgetId": "5il155ehig",
     "defaultTab": "",
     "onTabSelected": "",
@@ -245,32 +246,32 @@
         "tabmrq3un6th8": {
             "widgetId": "7muwqf88cg",
             "isDuplicateLabel": false,
-            "index": 0,
+            "index": 3,
             "id": "tabmrq3un6th8",
-            "label": "Shopping",
+            "label": "Shopping Days Vendor",
             "isVisible": true
         },
         "tab1": {
             "widgetId": "n4674eq33w",
             "positioning": "vertical",
             "isDuplicateLabel": false,
-            "index": 1,
+            "index": 0,
             "label": "Ingredients",
             "id": "tab1",
-            "isVisible": "{{tbl_Entity.selectedRowIndex > -1 ? true : false}}"
+            "isVisible": "{{tbl_shopEvent.selectedRowIndex > -1 ? true : false}}"
         },
         "taborfncy3gzy": {
             "widgetId": "8uciiuu67l",
             "isDuplicateLabel": false,
-            "index": 2,
+            "index": 1,
             "id": "taborfncy3gzy",
-            "label": "Shopping Detail",
-            "isVisible": "{{tbl_Entity.selectedRowIndex > -1 ? true : false}}"
+            "label": "Report",
+            "isVisible": "{{tbl_shopEvent.selectedRowIndex > -1 ? true : false}}"
         },
         "tab8num6z8rq0": {
             "widgetId": "izu5fxn2oa",
             "isDuplicateLabel": false,
-            "index": 3,
+            "index": 2,
             "id": "tab8num6z8rq0",
             "label": "New Vendor/Brand",
             "isVisible": true

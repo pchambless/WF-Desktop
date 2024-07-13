@@ -10,7 +10,7 @@
           "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 1100,
+          "bottomRow": 770,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -54,6 +54,16 @@
             {
               "id": "Ingredients_ingrType_dd",
               "name": "ingrType_dd",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.acct_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Ingredients_vndr_dd",
+              "name": "vndr_dd",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [

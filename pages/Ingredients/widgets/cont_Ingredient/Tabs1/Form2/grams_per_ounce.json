@@ -1,13 +1,13 @@
 {
     "boxShadow": "none",
     "iconSVG": "/static/media/icon.f4dd498ee72f01127e5bfe3a1a8ad671.svg",
-    "topRow": 24,
+    "topRow": 7,
     "tooltip": "If anyone knows of a good website for Weight conversions, let Paul know.  He may be able to link it into Whatsfresh.\n",
     "labelWidth": 5,
     "type": "INPUT_WIDGET_V2",
     "animateLoading": true,
     "resetOnSubmit": true,
-    "leftColumn": 1,
+    "leftColumn": 41,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "defaultText"}
@@ -45,7 +45,7 @@
         "number",
         "textarea"
     ],
-    "bottomRow": 31,
+    "bottomRow": 14,
     "parentRowSpace": 10,
     "autoFocus": false,
     "hideCard": false,
@@ -56,7 +56,7 @@
     "key": "6gt6diz7fh",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
-    "rightColumn": 15,
+    "rightColumn": 55,
     "thumbnailSVG": "/static/media/thumbnail.a4eac1a16753ea7fc54cac7731f9ea6a.svg",
     "widgetId": "y7ytgkez10",
     "minWidth": 450,

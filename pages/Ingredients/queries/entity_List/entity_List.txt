@@ -1,5 +1,5 @@
-select active act, a.name, code, description, grams_per_ounce
-,f_measure_unit(default_measure_unit) units, default_measure_unit, ingredient_type_id, a.id
+select active act, a.name, code, f_vendor(default_vendor) vendor ,f_measure_unit(default_measure_unit) units ,description, grams_per_ounce
+, default_measure_unit, default_vendor, ingredient_type_id, a.id
 from  ingredients a
 where  a.ingredient_type_id = {{sel_Type.selectedOptionValue}}
 and active = {{appsmith.store.active}}

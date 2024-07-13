@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select id value, name label\nfrom vendors\nwhere account_id = {{appsmith.store.acct_id}}\norder by name\n",
+      "body": "select id value, name label\nfrom vendors\nwhere account_id = {{appsmith.store.acct_id}}\nand active = 'Y'\norder by name\n",
       "selfReferencingDataPaths": []
     },
     "executeOnLoad": true,

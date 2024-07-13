@@ -1,0 +1,7 @@
+insert into shop_event
+(account_id, shop_date, vendor_id, created_by)
+VALUES
+({{appsmith.store.acct_id}}
+	,{{shop_date.formattedDate}}
+	,{{sel_vendor.selectedOptionValue}}
+  ,{{appsmith.store.user_id}});

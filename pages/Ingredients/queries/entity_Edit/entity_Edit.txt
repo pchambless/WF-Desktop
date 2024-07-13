@@ -6,6 +6,7 @@ set name = {{Name.text}}
 , description = {{description.text}}
 , grams_per_ounce = {{grams_per_ounce.text}}
 , default_measure_unit = {{default_measure_unit.selectedOptionValue || 51}}
+, default_vendor = {{default_vendor.selectedOptionValue || 0}}
 , updated_by = {{appsmith.store.user_id}}
 , updated_at = now()
 where id = {{tbl_Entity.selectedRow.id}}
