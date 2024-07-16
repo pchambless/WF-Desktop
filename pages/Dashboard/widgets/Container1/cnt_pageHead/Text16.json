@@ -4,13 +4,13 @@
     "widgetName": "Text16",
     "iconSVG": "/static/media/icon.301748e14b0306a7b94ece2d9e2c11cc.svg",
     "displayName": "Text",
-    "topRow": 12,
+    "topRow": 9,
     "searchTags": [
         "typography",
         "paragraph",
         "label"
     ],
-    "bottomRow": 19,
+    "bottomRow": 20,
     "parentRowSpace": 10,
     "type": "TEXT_WIDGET",
     "hideCard": false,
@@ -20,7 +20,7 @@
     "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
     "parentColumnSpace": 12.93359375,
     "dynamicTriggerPathList": [],
-    "leftColumn": 44,
+    "leftColumn": 37,
     "dynamicBindingPathList": [
         {"key": "truncateButtonColor"},
         {"key": "fontFamily"},
@@ -28,7 +28,7 @@
     ],
     "shouldTruncate": false,
     "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "text": "<strong>Hint<\/strong>: Click F11 to go into full screen mode for best experience.",
+    "text": "<strong>Hint<\/strong>: Click F11 to go into full screen mode for best experience.\n\n<strong>Hint<\/strong>: Clicking on a row in a form will either activate <strong>Edit<\/strong> or <strong>Add<\/strong>.",
     "key": "va6a24bvr6",
     "isDeprecated": false,
     "rightColumn": 63,
@@ -57,11 +57,11 @@
     "renderMode": "CANVAS",
     "mobileTopRow": 9,
     "responsiveBehavior": "fill",
-    "originalTopRow": 12,
+    "originalTopRow": 9,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "mobileLeftColumn": 44,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 19,
+    "originalBottomRow": 20,
     "fontSize": "1rem",
     "minDynamicHeight": 4
 }

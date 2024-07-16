@@ -51,7 +51,7 @@
             "label": "Add",
             "id": "groupButton2",
             "placement": "CENTER",
-            "isVisible": "{{tbl_Entity.selectedRowIndex=== -1 ? false : true}}",
+            "isVisible": "false",
             "isDisabled": false
         }
     },
@@ -66,8 +66,7 @@
     "leftColumn": 38,
     "dynamicBindingPathList": [
         {"key": "borderRadius"},
-        {"key": "groupButtons.groupButton2.buttonColor"},
-        {"key": "groupButtons.groupButton2.isVisible"}
+        {"key": "groupButtons.groupButton2.buttonColor"}
     ],
     "key": "pafyvp4mo9",
     "orientation": "horizontal",

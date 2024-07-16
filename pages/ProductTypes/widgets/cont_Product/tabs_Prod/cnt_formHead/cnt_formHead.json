@@ -12,8 +12,8 @@
         "parent",
         "group"
     ],
-    "topRow": 0,
-    "bottomRow": 6,
+    "topRow": 2,
+    "bottomRow": 8,
     "parentRowSpace": 10,
     "type": "CONTAINER_WIDGET",
     "hideCard": false,
@@ -21,13 +21,13 @@
     "animateLoading": true,
     "parentColumnSpace": 4.375,
     "dynamicTriggerPathList": [],
-    "leftColumn": 24,
+    "leftColumn": 25,
     "dynamicBindingPathList": [],
     "children": [{
         "rightColumn": 280,
         "widgetName": "Canvas47",
         "detachFromLayout": true,
-        "widgetId": "bpfjrjz6df",
+        "widgetId": "8q04hkm5hc",
         "containerStyle": "none",
         "bottomRow": 60,
         "topRow": 0,
@@ -36,7 +36,7 @@
         "type": "CANVAS_WIDGET",
         "canExtend": false,
         "version": 1,
-        "parentId": "70dg1s4gol",
+        "parentId": "8e7eoyrggn",
         "props": {
             "detachFromLayout": true,
             "children": [],
@@ -54,10 +54,10 @@
     "key": "djp6dmhzsd",
     "backgroundColor": "#FFFFFF",
     "isDeprecated": false,
-    "rightColumn": 61,
+    "rightColumn": 59,
     "thumbnailSVG": "/static/media/thumbnail.6cb355b93146b5347bbb048a568ed446.svg",
     "dynamicHeight": "FIXED",
-    "widgetId": "70dg1s4gol",
+    "widgetId": "8e7eoyrggn",
     "containerStyle": "card",
     "onCanvasUI": {
         "focusBGCSSVar": "--on-canvas-ui-widget-focus",
@@ -74,7 +74,9 @@
     "renderMode": "CANVAS",
     "isLoading": false,
     "responsiveBehavior": "fill",
+    "originalTopRow": 17,
     "borderRadius": "1.5rem",
     "maxDynamicHeight": 9000,
+    "originalBottomRow": 23,
     "minDynamicHeight": 10
 }

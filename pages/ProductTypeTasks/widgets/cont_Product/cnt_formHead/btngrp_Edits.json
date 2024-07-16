@@ -20,8 +20,8 @@
         "click",
         "submit"
     ],
-    "topRow": 1,
-    "bottomRow": 5,
+    "topRow": 0,
+    "bottomRow": 4,
     "parentRowSpace": 10,
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
@@ -51,7 +51,7 @@
             "label": "Add",
             "id": "groupButton2",
             "placement": "CENTER",
-            "isVisible": "{{tbl_Entity.selectedRowIndex=== -1 ? false : true}}",
+            "isVisible": "false",
             "isDisabled": false
         }
     },
@@ -63,18 +63,17 @@
         {"key": "groupButtons.groupButton2.onClick"},
         {"key": "groupButtons.groupButtonfdsafiwzfc.onClick"}
     ],
-    "leftColumn": 37,
+    "leftColumn": 38,
     "dynamicBindingPathList": [
         {"key": "borderRadius"},
-        {"key": "groupButtons.groupButton2.buttonColor"},
-        {"key": "groupButtons.groupButton2.isVisible"}
+        {"key": "groupButtons.groupButton2.buttonColor"}
     ],
     "key": "pafyvp4mo9",
     "orientation": "horizontal",
     "isDeprecated": false,
-    "rightColumn": 63,
+    "rightColumn": 64,
     "thumbnailSVG": "/static/media/thumbnail.eaa22f923be763e8779a46432554f1ed.svg",
-    "widgetId": "qx5ih7d7cm",
+    "widgetId": "ps5n1fsew8",
     "onCanvasUI": {
         "focusBGCSSVar": "--on-canvas-ui-widget-focus",
         "disableParentSelection": false,
@@ -85,7 +84,7 @@
     "minWidth": 450,
     "isVisible": "true",
     "version": 1,
-    "parentId": "7ew5ll6mfu",
+    "parentId": "dqskz68oo1",
     "tags": ["Buttons"],
     "renderMode": "CANVAS",
     "isLoading": false,

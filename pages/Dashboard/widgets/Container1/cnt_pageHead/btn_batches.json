@@ -2,7 +2,10 @@
     "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
     "widgetName": "btn_batches",
     "isCanvas": false,
-    "dynamicPropertyPathList": [{"key": "groupButtons.groupButtonkspk9xhq3z.onClick"}],
+    "dynamicPropertyPathList": [
+        {"key": "groupButtons.groupButtonkspk9xhq3z.onClick"},
+        {"key": "groupButtons.groupButtonkx9y8ewdfb.isVisible"}
+    ],
     "displayName": "Button Group",
     "iconSVG": "/static/media/icon.d6773218.svg",
     "topRow": 9,
@@ -107,6 +110,21 @@
             "isVisible": true,
             "placement": "CENTER"
         },
+        "groupButtonkx9y8ewdfb": {
+            "itemType": "BUTTON",
+            "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+            "widgetId": "ylntlnhuax",
+            "menuItems": {},
+            "index": 4,
+            "label": "Start Test Bed Demo",
+            "isVisible": "{{appsmith.store.roleID === 1 ? true : false}}",
+            "buttonType": "SIMPLE",
+            "variant": "filled",
+            "id": "groupButtonkx9y8ewdfb",
+            "isDisabled": false,
+            "placement": "CENTER",
+            "isSeparator": false
+        },
         "groupButton1": {
             "onClick": "{{navigateTo('Ingredient Batch', {});}}",
             "buttonType": "SIMPLE",
@@ -150,12 +168,16 @@
         {"key": "groupButtons.groupButtondsdl48htcb.menuItems.menuItemmmuk1ed8ji.onClick"},
         {"key": "groupButtons.groupButtondsdl48htcb.menuItems.menuItemq3u325c7td.onClick"}
     ],
-    "leftColumn": 9,
-    "dynamicBindingPathList": [{"key": "accentColor"}],
+    "leftColumn": 0,
+    "dynamicBindingPathList": [
+        {"key": "accentColor"},
+        {"key": "groupButtons.groupButtonkx9y8ewdfb.buttonColor"},
+        {"key": "groupButtons.groupButtonkx9y8ewdfb.isVisible"}
+    ],
     "key": "ksc8rutbji",
     "labelTextSize": "0.875rem",
     "orientation": "vertical",
-    "rightColumn": 44,
+    "rightColumn": 35,
     "widgetId": "nkz214dth1",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "minWidth": 450,

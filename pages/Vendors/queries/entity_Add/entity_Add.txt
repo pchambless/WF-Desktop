@@ -3,9 +3,9 @@ insert into vendors
 VALUES
 ({{appsmith.store.acct_id}}
 	,{{Name.text}}
-	, {{contact_name.text}}
-	, {{contact_phone.text}}
-	, {{contact_email.text}}
+	, {{contact_name.text || ''}}
+	, {{contact_phone.text || ''}}
+	, {{contact_email.text || ''}}
 	,now()
 	,{{appsmith.store.user_id}})
 ;

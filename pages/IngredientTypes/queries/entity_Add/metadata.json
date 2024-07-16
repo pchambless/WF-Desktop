@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "insert into ingredient_types\n(name, description, account_id, created_at, created_by)\nVALUES\n({{Name.text}}, {{description.text}},{{appsmith.store.acct_id}},now(), {{appsmith.store.user_id}})\n",
+      "body": "insert into ingredient_types\n(name, description, account_id, created_at, created_by)\nVALUES\n({{Name.text}}, {{description.text || ''}},{{appsmith.store.acct_id}},now(), {{appsmith.store.user_id}})\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -39,7 +39,7 @@
       "Name.text",
       "appsmith.store.acct_id",
       "appsmith.store.user_id",
-      "description.text"
+      "description.text || ''"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

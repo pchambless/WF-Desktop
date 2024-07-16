@@ -6,6 +6,7 @@ export default {
 		storeValue('rpt_title',rpt_title.data)
 	},
 	myFun2: () => {
-		//write code here
+		storeValue('help',help.data)
+		console.log(appsmith.store.help)
 	}
 }

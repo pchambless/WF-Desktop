@@ -8,7 +8,7 @@
     "serverSideFiltering": false,
     "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.acct_id))(select_account.options, select_account.serverSideFiltering) }}",
     "animateLoading": true,
-    "leftColumn": 6,
+    "leftColumn": 0,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "sourceData"},
@@ -45,7 +45,7 @@
     "key": "tw8zlqwuon",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
-    "rightColumn": 41,
+    "rightColumn": 35,
     "widgetId": "wqpbmiwvzh",
     "optionValue": "value",
     "minWidth": 450,

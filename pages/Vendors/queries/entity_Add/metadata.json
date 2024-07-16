@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "insert into vendors\n(account_id, name, contact_name, contact_phone, contact_email, created_at, created_by)\nVALUES\n({{appsmith.store.acct_id}}\n\t,{{Name.text}}\n\t, {{contact_name.text}}\n\t, {{contact_phone.text}}\n\t, {{contact_email.text}}\n\t,now()\n\t,{{appsmith.store.user_id}})\n;\n\tSET @newID = LAST_INSERT_ID()\n",
+      "body": "insert into vendors\n(account_id, name, contact_name, contact_phone, contact_email, created_at, created_by)\nVALUES\n({{appsmith.store.acct_id}}\n\t,{{Name.text}}\n\t, {{contact_name.text || ''}}\n\t, {{contact_phone.text || ''}}\n\t, {{contact_email.text || ''}}\n\t,now()\n\t,{{appsmith.store.user_id}})\n;\n\tSET @newID = LAST_INSERT_ID()\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -39,9 +39,9 @@
       "Name.text",
       "appsmith.store.acct_id",
       "appsmith.store.user_id",
-      "contact_email.text",
-      "contact_name.text",
-      "contact_phone.text"
+      "contact_email.text || ''",
+      "contact_name.text || ''",
+      "contact_phone.text || ''"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

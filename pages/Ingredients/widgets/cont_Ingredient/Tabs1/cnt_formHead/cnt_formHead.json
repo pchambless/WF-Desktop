@@ -21,13 +21,13 @@
     "animateLoading": true,
     "parentColumnSpace": 4.375,
     "dynamicTriggerPathList": [],
-    "leftColumn": 37,
+    "leftColumn": 36,
     "dynamicBindingPathList": [],
     "children": [{
         "rightColumn": 280,
         "widgetName": "Canvas47",
         "detachFromLayout": true,
-        "widgetId": "oyv3q1ze4m",
+        "widgetId": "3ldn7h2wpp",
         "containerStyle": "none",
         "bottomRow": 60,
         "topRow": 0,
@@ -36,7 +36,7 @@
         "type": "CANVAS_WIDGET",
         "canExtend": false,
         "version": 1,
-        "parentId": "qd00gxepja",
+        "parentId": "jmm9u7ojci",
         "props": {
             "detachFromLayout": true,
             "children": [],
@@ -57,7 +57,7 @@
     "rightColumn": 64,
     "thumbnailSVG": "/static/media/thumbnail.6cb355b93146b5347bbb048a568ed446.svg",
     "dynamicHeight": "FIXED",
-    "widgetId": "qd00gxepja",
+    "widgetId": "jmm9u7ojci",
     "containerStyle": "card",
     "onCanvasUI": {
         "focusBGCSSVar": "--on-canvas-ui-widget-focus",
@@ -74,9 +74,9 @@
     "renderMode": "CANVAS",
     "isLoading": false,
     "responsiveBehavior": "fill",
-    "originalTopRow": 19,
+    "originalTopRow": 17,
     "borderRadius": "1.5rem",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 25,
+    "originalBottomRow": 23,
     "minDynamicHeight": 10
 }

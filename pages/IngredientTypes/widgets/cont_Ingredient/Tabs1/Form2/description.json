@@ -70,6 +70,6 @@
     "maxDynamicHeight": 9000,
     "shouldAllowAutofill": false,
     "iconAlign": "left",
-    "defaultText": "{{tbl_Entity.selectedRow.name}}",
+    "defaultText": "{{tbl_Entity.selectedRow.description}}",
     "minDynamicHeight": 4
 }

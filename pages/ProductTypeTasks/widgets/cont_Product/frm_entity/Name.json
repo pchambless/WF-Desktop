@@ -55,7 +55,7 @@
     "key": "6gt6diz7fh",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
-    "rightColumn": 42,
+    "rightColumn": 59,
     "thumbnailSVG": "/static/media/thumbnail.a4eac1a16753ea7fc54cac7731f9ea6a.svg",
     "widgetId": "4jzpt0ww4n",
     "minWidth": 450,
@@ -69,6 +69,6 @@
     "mobileLeftColumn": 1,
     "maxDynamicHeight": 9000,
     "iconAlign": "left",
-    "defaultText": "{{tbl_Entity.selectedRow.task_nm}}",
+    "defaultText": "{{tbl_Entity.selectedRow.name}}",
     "minDynamicHeight": 4
 }

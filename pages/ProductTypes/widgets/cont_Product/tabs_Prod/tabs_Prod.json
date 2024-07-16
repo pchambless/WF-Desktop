@@ -133,7 +133,7 @@
     "tags": ["Layout"],
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 77,
+    "originalBottomRow": 62,
     "needsErrorInfo": false,
     "mobileBottomRow": 20,
     "widgetName": "tabs_Prod",

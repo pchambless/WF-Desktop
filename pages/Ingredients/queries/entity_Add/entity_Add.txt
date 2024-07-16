@@ -5,7 +5,7 @@ VALUES
 	, {{code.text}}
 	,{{appsmith.store.acct_id}}
 	, {{sel_Type.selectedOptionValue}}
-	, {{description.text}}
+	, {{description.text || ''}}
 	, {{grams_per_ounce.text || 0}}
 	, {{default_measure_unit.selectedOptionValue || 51}}
 	, {{default_vendor.selectedOptionValue || 0}}

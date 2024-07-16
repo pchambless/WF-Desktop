@@ -27,7 +27,7 @@
     "groupButtons": {
         "groupButtonfdsafiwzfc": {
             "itemType": "BUTTON",
-            "onClick": "{{await jsEntity.editModeRun()\n}}",
+            "onClick": "{{await jsEntity.editModeRun()\nawait entity_List.run()}}",
             "buttonColor": "#86efac",
             "widgetId": "gjse2hepzr",
             "menuItems": {},
@@ -51,7 +51,7 @@
             "label": "Add",
             "id": "groupButton2",
             "placement": "CENTER",
-            "isVisible": "{{tbl_Entity.selectedRowIndex=== -1 ? false : true}}",
+            "isVisible": "false",
             "isDisabled": false
         }
     },
@@ -66,15 +66,14 @@
     "leftColumn": 38,
     "dynamicBindingPathList": [
         {"key": "borderRadius"},
-        {"key": "groupButtons.groupButton2.buttonColor"},
-        {"key": "groupButtons.groupButton2.isVisible"}
+        {"key": "groupButtons.groupButton2.buttonColor"}
     ],
     "key": "pafyvp4mo9",
     "orientation": "horizontal",
     "isDeprecated": false,
     "rightColumn": 64,
     "thumbnailSVG": "/static/media/thumbnail.eaa22f923be763e8779a46432554f1ed.svg",
-    "widgetId": "p98cbakgji",
+    "widgetId": "mkgwppwoec",
     "onCanvasUI": {
         "focusBGCSSVar": "--on-canvas-ui-widget-focus",
         "disableParentSelection": false,
@@ -85,7 +84,7 @@
     "minWidth": 450,
     "isVisible": "true",
     "version": 1,
-    "parentId": "bpfjrjz6df",
+    "parentId": "3llrsd68oi",
     "tags": ["Buttons"],
     "renderMode": "CANVAS",
     "isLoading": false,
