@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select\n  a.ingr_type\t\n,\ta.ingr_name name\n, a.ingr_code code\n, a.ingr_desc description\n, a.gms_per_oz\n,\tcount(ingr_btch_id) batches\n, sum(a.prd_btch_cnt) prod_batches\n,\tsum(a.purch_qty)  tot_qty\n,\tcast(min(a.unit_rate) as dec(5,2)) \tmin_rate\n,\tcast(max(a.unit_rate) as dec(5,2)) max_rate\n,\tcast(avg((ifnull(a.unit_price,0) / ifnull(a.unit_qty,1))) as dec(5,2)) avg_rate\n,\ta.purch_meas      units\n,\tsum(a.purch_total_amt) total_cost\n, a.ingr_type_id\n,  a.ingr_id\n,  a.acct_id\t\t\nfrom    \twhatsfresh.v_ingr_btch_dtl a\nwhere \ta.ingr_type_id = {{sel_Type.selectedOptionValue\t}}\t\nand     ingr_active = 'Y'\ngroup BY a.ingr_type, a.ingr_name, ingr_code, ingr_desc, a.purch_meas, a.ingr_id, a.acct_id\norder by a.ingr_type, a.ingr_name",
+      "body": "select *\nfrom    \twhatsfresh.v_ingr_btch_metrics a\nwhere \t  a.ingr_id = {{tbl_Entity.selectedRow.id}}\t\nand     ingr_active = 'Y'\norder by last_purchase desc",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "sel_Type.selectedOptionValue\t"
+      "tbl_Entity.selectedRow.id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

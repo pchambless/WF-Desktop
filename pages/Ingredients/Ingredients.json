@@ -10,7 +10,7 @@
           "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 770,
+          "bottomRow": 810,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -103,19 +103,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "sel_Type.selectedOptionValue\t"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Ingredients_ingrType_Select",
-              "name": "ingrType_Select",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "sel_Type.selectedOptionValue"
+                "tbl_Entity.selectedRow.id"
               ],
               "timeoutInMillisecond": 10000
             }

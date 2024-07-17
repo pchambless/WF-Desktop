@@ -1,5 +1,4 @@
 select *
-from v_ingr_btch_metrics
+from v_ingr_list
 where 	acct_id = {{appsmith.store.acct_id}}	
-and     ingr_active = 'Y'
 order by ingr_type, ingr_name

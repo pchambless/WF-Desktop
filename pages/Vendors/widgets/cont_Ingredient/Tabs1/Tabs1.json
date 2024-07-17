@@ -89,7 +89,7 @@
             ],
             "key": "e6r2r0p02d",
             "isDeprecated": false,
-            "tabName": "Vendor Report",
+            "tabName": "Report",
             "rightColumn": 930.6875,
             "detachFromLayout": true,
             "dynamicHeight": "AUTO_HEIGHT",
@@ -168,7 +168,7 @@
             "widgetId": "p86rpvcb8a",
             "index": 1,
             "id": "tabwa30hv6isa",
-            "label": "Vendor Report",
+            "label": "Report",
             "isVisible": "{{tbl_Entity.selectedRowIndex > -1 ? true : false}}"
         }
     },

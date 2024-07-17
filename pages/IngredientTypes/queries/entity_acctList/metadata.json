@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select *\nfrom v_ingr_btch_metrics\nwhere \tacct_id = {{appsmith.store.acct_id}}\t\nand     ingr_active = 'Y'\norder by ingr_type, ingr_name",
+      "body": "select *\nfrom v_ingr_list\nwhere \tacct_id = {{appsmith.store.acct_id}}\t\norder by ingr_type, ingr_name",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"

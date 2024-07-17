@@ -1,5 +1,12 @@
-SELECT id, name, account_id
-from  brands a
+SELECT name
+, a.account_id
+, count(b.ingr_btch_id) batches
+, concat('$',format(ifnull(sum(b.purch_total_amt),0),0)) total_spent
+, a.id
+from brands a
+left join v_ingr_btch_dtl b
+on a.id = b.brnd_id  
 where account_id = {{appsmith.store.acct_id}}
 and active = {{appsmith.store.active}}
-order by name
+group by a.`name`, a.id, a.account_id
+order by a.name, a.id

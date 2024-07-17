@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT name\n, ifnull(contact_name,'') contact_name\n, ifnull(contact_phone,'') contact_phone\n, ifnull(contact_email,'') contact_email, id\nfrom vendors\nwhere account_id = {{appsmith.store.acct_id}}\nand active = {{appsmith.store.active}}\norder by active desc, name",
+      "body": "SELECT name\n, a.account_id\n, ifnull(max(b.purch_date),'')   last_shop\n, count(b.ingr_btch_id) batches\n, concat('$',format(ifnull(sum(b.purch_total_amt),0),0)) total_amt\n, ifnull(contact_name,'') contact_name\n, ifnull(contact_phone,'') contact_phone\n, ifnull(contact_email,'') contact_email\n, a.id\nfrom vendors a\nleft join v_ingr_btch_dtl b\non a.id = b.vndr_id  \nand active = 'Y'\nwhere account_id = {{appsmith.store.acct_id}}\nand active = {{appsmith.store.active}}\ngroup by a.`name`, a.contact_name, a.contact_phone, a.contact_email, a.id, a.account_id\norder by a.name, a.id",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

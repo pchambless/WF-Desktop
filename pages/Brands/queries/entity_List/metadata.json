@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT id, name, account_id\nfrom  brands a\nwhere account_id = {{appsmith.store.acct_id}}\nand active = {{appsmith.store.active}}\norder by name",
+      "body": "SELECT name\n, a.account_id\n, count(b.ingr_btch_id) batches\n, concat('$',format(ifnull(sum(b.purch_total_amt),0),0)) total_spent\n, a.id\nfrom brands a\nleft join v_ingr_btch_dtl b\non a.id = b.brnd_id  \nwhere account_id = {{appsmith.store.acct_id}}\nand active = {{appsmith.store.active}}\ngroup by a.`name`, a.id, a.account_id\norder by a.name, a.id",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

@@ -1,5 +1,4 @@
-select active act, a.name, code, description, grams_per_ounce, default_measure_unit, ingredient_type_id, a.id
-from  ingredients a
-where  a.ingredient_type_id = {{tbl_Entity.selectedRow.id}}
-and active = 'Y'
-order by name;
+select *
+from v_ingr_list
+where 	ingr_type_id = {{tbl_Entity.selectedRow.id}}	
+order by ingr_type, ingr_name

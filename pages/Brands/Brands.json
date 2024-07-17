@@ -37,8 +37,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "appsmith.store.acct_id",
-                "appsmith.store.active"
+                "appsmith.store.active",
+                "appsmith.store.acct_id"
               ],
               "timeoutInMillisecond": 10000
             }
