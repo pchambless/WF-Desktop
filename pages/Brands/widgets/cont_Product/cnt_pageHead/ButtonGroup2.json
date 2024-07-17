@@ -5,7 +5,6 @@
     "isCanvas": false,
     "dynamicPropertyPathList": [
         {"key": "groupButtons.groupButton1.onClick"},
-        {"key": "groupButtons.groupButton21nsaimf35.isVisible"},
         {"key": "groupButtons.groupButton5eznm46ilq.isVisible"},
         {"key": "groupButtons.groupButtonv09109hfid.isVisible"}
     ],
@@ -59,7 +58,7 @@
             "menuItems": {},
             "index": 1,
             "label": "Shopping",
-            "isVisible": "true",
+            "isVisible": false,
             "buttonType": "SIMPLE",
             "buttonVariant": "filled",
             "id": "groupButton21nsaimf35",

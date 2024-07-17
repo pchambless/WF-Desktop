@@ -24,7 +24,7 @@
             "menuItems": {},
             "index": 2,
             "label": "Shopping",
-            "isVisible": true,
+            "isVisible": false,
             "buttonType": "SIMPLE",
             "variant": "filled",
             "id": "groupButtondu3eia8org",
