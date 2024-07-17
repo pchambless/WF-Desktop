@@ -110,7 +110,7 @@
     ],
     "compactMode": "SHORT",
     "displayName": "Table",
-    "bottomRow": 54,
+    "bottomRow": 50,
     "columnWidthMap": {
         "batch_number": 141,
         "vendor": 140,

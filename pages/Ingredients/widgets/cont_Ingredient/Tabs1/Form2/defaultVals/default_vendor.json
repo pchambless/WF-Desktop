@@ -14,7 +14,7 @@
         {"key": "sourceData"},
         {"key": "defaultOptionValue"}
     ],
-    "labelTooltip": "How do you usually buy this ingredient... in what measure?",
+    "labelTooltip": "Where do you usuall shop for this Ingredient?",
     "labelStyle": "BOLD",
     "placeholderText": "Select option",
     "isDisabled": false,
