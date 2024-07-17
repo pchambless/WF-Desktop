@@ -1,9 +1,8 @@
 UPDATE ingredient_batches
-SET 	vendor_id = {{vendor_id.selectedOptionValue}},
-	    brand_id = {{brand_id.selectedOptionValue}},
+SET 	brand_id = {{brand_id.selectedOptionValue}},
 		 	lot_number = {{lot_number.text || '-'}},
 		 	batch_number = {{batch_number.text}},
-			purchase_date = {{purchase_date.formattedDate}},
+			purchase_date = {{sel_Shop.selectedOptionLabel}},
 			purchase_quantity = {{purchase_quantity.text}},
 			global_measure_unit_id = {{global_measure_unit_id.selectedOptionValue}},
 			unit_quantity = {{unit_quantity.text}},
@@ -13,4 +12,4 @@ SET 	vendor_id = {{vendor_id.selectedOptionValue}},
 			best_by_date = {{best_by_date.formattedDate || null}},
 			updated_at = current_timestamp(),
 			updated_by = {{appsmith.store.user_id}}
-  	WHERE id = {{tbl_Entity.selectedRow.id}};
+  	WHERE id = {{tbl_Entity.selectedRow.ingr_btch_id}};

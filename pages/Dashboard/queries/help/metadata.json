@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * \nFROM wf_meta.v_help\n;",
+      "body": "SELECT * \nFROM wf_meta.v_help\norder by parent, ordr, name\n;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

@@ -1,18 +1,17 @@
 {
     "boxShadow": "none",
     "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-    "labelText": "Unit",
+    "labelText": "Unit Measure",
     "topRow": 0,
     "labelWidth": "4",
     "type": "SELECT_WIDGET",
     "serverSideFiltering": false,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( tbl_Entity.selectedRowIndex === -1 ? ingr_Select.data[0].default_measure_unit : tbl_Entity.selectedRow.global_meas_id))(global_measure_unit_id.options, global_measure_unit_id.serverSideFiltering) }}",
+    "defaultOptionValue": "",
     "animateLoading": true,
     "leftColumn": 33,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "sourceData"},
-        {"key": "defaultOptionValue"},
         {"key": "labelTextColor"},
         {"key": "borderRadius"}
     ],

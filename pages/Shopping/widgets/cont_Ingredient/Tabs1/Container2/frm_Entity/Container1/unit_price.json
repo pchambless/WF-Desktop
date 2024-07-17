@@ -8,7 +8,6 @@
     "resetOnSubmit": true,
     "leftColumn": 11.66666666666667,
     "dynamicBindingPathList": [
-        {"key": "defaultText"},
         {"key": "accentColor"},
         {"key": "borderRadius"}
     ],
@@ -53,6 +52,6 @@
     "maxDynamicHeight": 9000,
     "shouldAllowAutofill": false,
     "iconAlign": "left",
-    "defaultText": "{{tbl_Entity.selectedRow.unit_rate}}",
+    "defaultText": "",
     "minDynamicHeight": 4
 }

@@ -3,7 +3,7 @@
     "borderColor": "#dcfce7",
     "isCanvas": true,
     "iconSVG": "/static/media/icon.9e3d67c0af9c0bd092dc56240314e18a.svg",
-    "topRow": 16,
+    "topRow": 18,
     "type": "TABS_WIDGET",
     "animateLoading": true,
     "leftColumn": 0,
@@ -174,12 +174,11 @@
             "leftColumn": 0,
             "dynamicBindingPathList": [
                 {"key": "borderRadius"},
-                {"key": "boxShadow"},
-                {"key": "tabName"}
+                {"key": "boxShadow"}
             ],
             "key": "dehes6vtyv",
             "isDeprecated": false,
-            "tabName": "Shopping Days {{sel_vendor.selectedOptionLabel}}",
+            "tabName": "Shopping Days",
             "rightColumn": 438,
             "detachFromLayout": true,
             "dynamicHeight": "AUTO_HEIGHT",
@@ -216,7 +215,7 @@
     "tags": ["Layout"],
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 73,
+    "originalBottomRow": 75,
     "mobileBottomRow": 88,
     "widgetName": "Tabs1",
     "dynamicPropertyPathList": [
@@ -226,7 +225,7 @@
         {"key": "tabsObj.taborfncy3gzy.isVisible"}
     ],
     "displayName": "Tabs",
-    "bottomRow": 73,
+    "bottomRow": 75,
     "parentRowSpace": 10,
     "hideCard": false,
     "shouldScrollContents": true,
@@ -248,7 +247,7 @@
             "isDuplicateLabel": false,
             "index": 3,
             "id": "tabmrq3un6th8",
-            "label": "Shopping Days Vendor",
+            "label": "Shopping Days",
             "isVisible": true
         },
         "tab1": {
@@ -281,7 +280,7 @@
     "renderMode": "CANVAS",
     "mobileTopRow": 73,
     "responsiveBehavior": "fill",
-    "originalTopRow": 16,
+    "originalTopRow": 18,
     "mobileLeftColumn": 1,
     "maxDynamicHeight": 9000,
     "minDynamicHeight": 15

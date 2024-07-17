@@ -91,7 +91,7 @@
             "isDisabled": false,
             "key": "u491yqo4o6",
             "isDeprecated": false,
-            "tabName": "Ingredients Report",
+            "tabName": "Report",
             "rightColumn": 145.0283203125,
             "detachFromLayout": true,
             "dynamicHeight": "AUTO_HEIGHT",
@@ -168,7 +168,7 @@
             "widgetId": "fx982vs3vy",
             "positioning": "vertical",
             "index": 1,
-            "label": "Ingredients Report",
+            "label": "Report",
             "id": "tab2",
             "isVisible": true
         }

@@ -13,10 +13,10 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Shopping",
-    "collectionId": "Shopping_jsEntity",
+    "pageId": "Vendors",
+    "collectionId": "Vendors_jsEntity",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 0,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
@@ -35,9 +35,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-07-14T00:14:42Z"
+    "createdAt": "2024-07-16T21:25:03Z"
   },
-  "id": "Shopping_jsEntity.txtEditHdr",
+  "id": "Vendors_jsEntity.txtEditHdr",
   "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_42fc339d-079b-4515-843d-d3a81ca0f12b"
+  "gitSyncId": "6668cf0988cf8166d347b04c_984f9828-42bc-4cb0-bf12-4d224a9d8870"
 }

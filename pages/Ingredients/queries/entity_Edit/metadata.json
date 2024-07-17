@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "update ingredients\nset name = {{Name.text}}\n, code = {{code.text}}\n, account_id = {{appsmith.store.acct_id}}\n, ingredient_type_id = {{sel_Type.selectedOptionValue}} \n, description = {{description.text}}\n, grams_per_ounce = {{grams_per_ounce.text}}\n, default_measure_unit = {{default_measure_unit.selectedOptionValue || 51}}\n, default_vendor = {{default_vendor.selectedOptionValue || 0}}\n, updated_by = {{appsmith.store.user_id}}\n, updated_at = now()\nwhere id = {{tbl_Entity.selectedRow.id}}",
+      "body": "update ingredients\nset name = {{Name.text}}\n, code = {{code.text}}\n, account_id = {{appsmith.store.acct_id}}\n, ingredient_type_id = {{ingredient_type_id.selectedOptionValue}} \n, description = {{description.text}}\n, grams_per_ounce = {{grams_per_ounce.text}}\n, default_measure_unit = {{default_measure_unit.selectedOptionValue || 51}}\n, default_vendor = {{default_vendor.selectedOptionValue || 0}}\n, updated_by = {{appsmith.store.user_id}}\n, updated_at = now()\nwhere id = {{tbl_Entity.selectedRow.id}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -44,7 +44,7 @@
       "default_vendor.selectedOptionValue || 0",
       "description.text",
       "grams_per_ounce.text",
-      "sel_Type.selectedOptionValue",
+      "ingredient_type_id.selectedOptionValue",
       "tbl_Entity.selectedRow.id"
     ],
     "userSetOnLoad": false,

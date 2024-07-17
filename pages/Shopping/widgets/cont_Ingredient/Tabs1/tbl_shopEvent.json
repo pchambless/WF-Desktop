@@ -22,7 +22,8 @@
         {"key": "primaryColumns.shop_date.computedValue"},
         {"key": "primaryColumns.account_id.computedValue"},
         {"key": "primaryColumns.vendor_id.computedValue"},
-        {"key": "primaryColumns.shop_event_id.computedValue"}
+        {"key": "primaryColumns.shop_event_id.computedValue"},
+        {"key": "primaryColumns.vendor.computedValue"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 0,
@@ -71,7 +72,7 @@
         }
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "columnUpdatedAt": 1720880059280,
+    "columnUpdatedAt": 1721218452474,
     "primaryColumnId": "shop_event_id",
     "defaultSelectedRowIndices": [0],
     "needsErrorInfo": false,
@@ -87,7 +88,8 @@
         "shop_date",
         "account_id",
         "vendor_id",
-        "shop_event_id"
+        "shop_event_id",
+        "vendor"
     ],
     "dynamicPropertyPathList": [
         {"key": "tableData"},
@@ -95,7 +97,7 @@
     ],
     "compactMode": "SHORT",
     "displayName": "Table",
-    "bottomRow": 38,
+    "bottomRow": 37,
     "columnWidthMap": {
         "total_amount": 86,
         "customColumn1": 83,
@@ -263,6 +265,40 @@
             "sticky": "",
             "originalId": "total_amount",
             "currencyCode": "USD",
+            "verticalAlignment": "CENTER"
+        },
+        "vendor": {
+            "computedValue": "{{tbl_shopEvent.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"vendor\"]))}}",
+            "isEditable": false,
+            "notation": "standard",
+            "alias": "vendor",
+            "enableSort": true,
+            "isSaveVisible": true,
+            "id": "vendor",
+            "isDisabled": false,
+            "allowSameOptionsInNewRow": true,
+            "validation": {},
+            "isCellVisible": true,
+            "isDerived": false,
+            "textSize": "0.875rem",
+            "allowCellWrapping": false,
+            "index": 4,
+            "isDiscardVisible": true,
+            "isVisible": true,
+            "label": "vendor",
+            "fontStyle": "",
+            "textColor": "",
+            "columnType": "text",
+            "thousandSeparator": true,
+            "horizontalAlignment": "LEFT",
+            "isCellEditable": false,
+            "decimals": 0,
+            "width": 150,
+            "enableFilter": true,
+            "sticky": "",
+            "originalId": "vendor",
+            "currencyCode": "USD",
+            "cellBackground": "",
             "verticalAlignment": "CENTER"
         },
         "vendor_id": {

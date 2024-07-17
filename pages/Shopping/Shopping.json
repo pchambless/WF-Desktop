@@ -10,7 +10,7 @@
           "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 750,
+          "bottomRow": 770,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -90,7 +90,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async function () {\n  await vndr_dd.run();\n  await sel_vendor.setSelectedOption(appsmith.store.vndrID);\n}"
+                "async function () {\n  await vndr_dd.run();\n  await sel_vendor.setSelectedOption(appsmith.store.vndrID);\n  await shop_dd.run();\n  await sel_Shop.setSelectedOption(appsmith.store.shopID);\n  await ingrType_dd.run();\n  await sel_Type.setSelectedOption(appsmith.store.ingrTypeID);\n  await ingr_dd.run();\n  await sel_ingr.setSelectedOption(appsmith.store.ingrID);\n  await ingr_Select.run();\n  await entity_List.run();\n}"
               ],
               "timeoutInMillisecond": 10000
             }

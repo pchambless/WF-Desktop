@@ -1,3 +1,4 @@
 SELECT * 
 FROM wf_meta.v_help
+order by parent, ordr, name
 ;

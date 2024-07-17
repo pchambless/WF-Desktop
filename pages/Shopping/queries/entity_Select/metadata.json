@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT *\nfrom   ingredients\nwhere  id = {{sel_ingr.selectedOptionValue}}",
+      "body": "SELECT *\nfrom   v_ingr_btch_dtl\nwhere  ingr_btch_id = {{tbl_Entity.selectedRow.ingr_btch_id}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "sel_ingr.selectedOptionValue"
+      "tbl_Entity.selectedRow.ingr_btch_id"
     ],
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,

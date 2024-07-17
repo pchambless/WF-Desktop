@@ -20,7 +20,7 @@
     "parentColumnSpace": 14.642333984375,
     "dynamicTriggerPathList": [],
     "leftColumn": 25,
-    "dynamicBindingPathList": [{"key": "isVisible"}],
+    "dynamicBindingPathList": [],
     "children": [{
         "needsErrorInfo": false,
         "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
@@ -87,7 +87,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
     },
     "minWidth": 450,
-    "isVisible": "{{appsmith.store.editMode ? true : false}}",
+    "isVisible": "true",
     "parentId": "jlspvkpj5i",
     "tags": ["Layout"],
     "isLoading": false,

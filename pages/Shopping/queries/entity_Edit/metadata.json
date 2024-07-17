@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE ingredient_batches\nSET \tvendor_id = {{vendor_id.selectedOptionValue}},\n\t    brand_id = {{brand_id.selectedOptionValue}},\n\t\t \tlot_number = {{lot_number.text || '-'}},\n\t\t \tbatch_number = {{batch_number.text}},\n\t\t\tpurchase_date = {{purchase_date.formattedDate}},\n\t\t\tpurchase_quantity = {{purchase_quantity.text}},\n\t\t\tglobal_measure_unit_id = {{global_measure_unit_id.selectedOptionValue}},\n\t\t\tunit_quantity = {{unit_quantity.text}},\n\t\t\tunit_price = {{unit_price.text}},\n\t\t\tpurchase_total_amount = {{purchase_total_amount.text}},\n\t\t\tcomments = {{comments.text}},\n\t\t\tbest_by_date = {{best_by_date.formattedDate || null}},\n\t\t\tupdated_at = current_timestamp(),\n\t\t\tupdated_by = {{appsmith.store.user_id}}\n  \tWHERE id = {{tbl_Entity.selectedRow.id}};",
+      "body": "UPDATE ingredient_batches\nSET \tbrand_id = {{brand_id.selectedOptionValue}},\n\t\t \tlot_number = {{lot_number.text || '-'}},\n\t\t \tbatch_number = {{batch_number.text}},\n\t\t\tpurchase_date = {{sel_Shop.selectedOptionLabel}},\n\t\t\tpurchase_quantity = {{purchase_quantity.text}},\n\t\t\tglobal_measure_unit_id = {{global_measure_unit_id.selectedOptionValue}},\n\t\t\tunit_quantity = {{unit_quantity.text}},\n\t\t\tunit_price = {{unit_price.text}},\n\t\t\tpurchase_total_amount = {{purchase_total_amount.text}},\n\t\t\tcomments = {{comments.text}},\n\t\t\tbest_by_date = {{best_by_date.formattedDate || null}},\n\t\t\tupdated_at = current_timestamp(),\n\t\t\tupdated_by = {{appsmith.store.user_id}}\n  \tWHERE id = {{tbl_Entity.selectedRow.ingr_btch_id}};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -43,13 +43,12 @@
       "comments.text",
       "global_measure_unit_id.selectedOptionValue",
       "lot_number.text || '-'",
-      "purchase_date.formattedDate",
       "purchase_quantity.text",
       "purchase_total_amount.text",
-      "tbl_Entity.selectedRow.id",
+      "sel_Shop.selectedOptionLabel",
+      "tbl_Entity.selectedRow.ingr_btch_id",
       "unit_price.text",
-      "unit_quantity.text",
-      "vendor_id.selectedOptionValue"
+      "unit_quantity.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
