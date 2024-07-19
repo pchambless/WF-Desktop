@@ -12,6 +12,7 @@
         {"key": "defaultDate"},
         {"key": "borderRadius"}
     ],
+    "labelTooltip": "Optional",
     "labelStyle": "BOLD",
     "isDisabled": false,
     "isRequired": false,
