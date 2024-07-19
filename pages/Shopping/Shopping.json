@@ -10,7 +10,7 @@
           "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 770,
+          "bottomRow": 780,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -96,6 +96,16 @@
             }
           ],
           [
+            {
+              "id": "Shopping_entity_Trace",
+              "name": "entity_Trace",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "tbl_Entity.selectedRow.ingr_btch_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "Shopping_shopEvent_List",
               "name": "shopEvent_List",

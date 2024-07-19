@@ -4,4 +4,5 @@ join   accounts b
 on     a.acct_id = b.id
 where  user_id = {{ appsmith.store.user_id}}
 and    b.active = 'Y'
+ORDER BY account_name
 

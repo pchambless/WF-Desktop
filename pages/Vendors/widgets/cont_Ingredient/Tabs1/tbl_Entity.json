@@ -14,7 +14,6 @@
         {"key": "tableData"},
         {"key": "primaryColumns.name.computedValue"},
         {"key": "primaryColumns.id.computedValue"},
-        {"key": "defaultSelectedRowIndex"},
         {"key": "primaryColumns.customColumn1.boxShadow"},
         {"key": "primaryColumns.contact_name.computedValue"},
         {"key": "primaryColumns.contact_phone.computedValue"},
@@ -22,12 +21,13 @@
         {"key": "primaryColumns.account_id.computedValue"},
         {"key": "primaryColumns.last_shop.computedValue"},
         {"key": "primaryColumns.batches.computedValue"},
-        {"key": "primaryColumns.total_amt.computedValue"}
+        {"key": "primaryColumns.total_amt.computedValue"},
+        {"key": "defaultSelectedRowIndex"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 0,
     "delimiter": ",",
-    "defaultSelectedRowIndex": "{{tbl_Entity.tableData.findIndex(row => row.id === appsmith.store.ingrTypeID)}}",
+    "defaultSelectedRowIndex": "{{appsmith.store.vndrID)}}",
     "flexVerticalAlignment": "start",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "onCanvasUI": {
@@ -71,7 +71,7 @@
         }
     },
     "borderRadius": "1.5rem",
-    "columnUpdatedAt": 1721251731856,
+    "columnUpdatedAt": 1721405301726,
     "originalBottomRow": 44,
     "primaryColumnId": "id",
     "defaultSelectedRowIndices": [0],

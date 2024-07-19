@@ -35,5 +35,6 @@ export default {
 		await ingr_dd.run()
 		await sel_ingr.setSelectedOption(tbl_Entity.selectedRow.ingr_id)
 		await entity_Select.run()
+		await entity_Trace.run()
 	}
 }

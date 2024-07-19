@@ -103,7 +103,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "tbl_Entity.selectedRow.id"
+                "sel_Type.selectedOptionValue"
               ],
               "timeoutInMillisecond": 10000
             }

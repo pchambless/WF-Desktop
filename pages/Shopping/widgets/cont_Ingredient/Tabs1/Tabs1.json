@@ -3,7 +3,7 @@
     "borderColor": "#dcfce7",
     "isCanvas": true,
     "iconSVG": "/static/media/icon.9e3d67c0af9c0bd092dc56240314e18a.svg",
-    "topRow": 18,
+    "topRow": 19,
     "type": "TABS_WIDGET",
     "animateLoading": true,
     "leftColumn": 0,
@@ -13,7 +13,8 @@
         {"key": "boxShadow"},
         {"key": "isVisible"},
         {"key": "tabsObj.tab1.isVisible"},
-        {"key": "tabsObj.taborfncy3gzy.isVisible"}
+        {"key": "tabsObj.taborfncy3gzy.isVisible"},
+        {"key": "tabsObj.tab7cml197sqv.isVisible"}
     ],
     "children": [
         {
@@ -41,7 +42,7 @@
             "isDisabled": false,
             "key": "7av3wfke3v",
             "isDeprecated": false,
-            "tabName": "Ingredients",
+            "tabName": "Shopping List",
             "rightColumn": 164.25,
             "detachFromLayout": true,
             "dynamicHeight": "AUTO_HEIGHT",
@@ -204,6 +205,57 @@
             "maxDynamicHeight": 9000,
             "minDynamicHeight": 4,
             "flexLayers": []
+        },
+        {
+            "needsErrorInfo": false,
+            "tabId": "tab7cml197sqv",
+            "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+            "mobileBottomRow": 571,
+            "widgetName": "Canvas50",
+            "displayName": "Canvas",
+            "topRow": 1,
+            "bottomRow": 560,
+            "parentRowSpace": 1,
+            "type": "CANVAS_WIDGET",
+            "canExtend": false,
+            "hideCard": true,
+            "minHeight": 570,
+            "mobileRightColumn": 438,
+            "parentColumnSpace": 1,
+            "dynamicTriggerPathList": [],
+            "leftColumn": 0,
+            "dynamicBindingPathList": [
+                {"key": "borderRadius"},
+                {"key": "boxShadow"}
+            ],
+            "key": "g8gzef5jgu",
+            "isDeprecated": false,
+            "tabName": "Batch Trace",
+            "rightColumn": 438,
+            "detachFromLayout": true,
+            "dynamicHeight": "AUTO_HEIGHT",
+            "widgetId": "intccwt8zr",
+            "onCanvasUI": {
+                "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+                "disableParentSelection": true,
+                "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+                "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+                "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+            },
+            "containerStyle": "none",
+            "minWidth": 450,
+            "isVisible": true,
+            "version": 1,
+            "parentId": "5il155ehig",
+            "renderMode": "CANVAS",
+            "isLoading": false,
+            "mobileTopRow": 1,
+            "responsiveBehavior": "fill",
+            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+            "mobileLeftColumn": 0,
+            "maxDynamicHeight": 9000,
+            "minDynamicHeight": 4,
+            "flexLayers": []
         }
     ],
     "flexVerticalAlignment": "stretch",
@@ -215,17 +267,18 @@
     "tags": ["Layout"],
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 75,
+    "originalBottomRow": 76,
     "mobileBottomRow": 88,
     "widgetName": "Tabs1",
     "dynamicPropertyPathList": [
         {"key": "onTabSelected"},
         {"key": "isVisible"},
         {"key": "tabsObj.tab1.isVisible"},
-        {"key": "tabsObj.taborfncy3gzy.isVisible"}
+        {"key": "tabsObj.taborfncy3gzy.isVisible"},
+        {"key": "tabsObj.tab7cml197sqv.isVisible"}
     ],
     "displayName": "Tabs",
-    "bottomRow": 75,
+    "bottomRow": 76,
     "parentRowSpace": 10,
     "hideCard": false,
     "shouldScrollContents": true,
@@ -245,7 +298,7 @@
         "tabmrq3un6th8": {
             "widgetId": "7muwqf88cg",
             "isDuplicateLabel": false,
-            "index": 3,
+            "index": 4,
             "id": "tabmrq3un6th8",
             "label": "Shopping Days",
             "isVisible": true
@@ -255,7 +308,7 @@
             "positioning": "vertical",
             "isDuplicateLabel": false,
             "index": 0,
-            "label": "Ingredients",
+            "label": "Shopping List",
             "id": "tab1",
             "isVisible": "{{tbl_shopEvent.selectedRowIndex > -1 ? true : false}}"
         },
@@ -267,10 +320,18 @@
             "label": "Report",
             "isVisible": "{{tbl_shopEvent.selectedRowIndex > -1 ? true : false}}"
         },
+        "tab7cml197sqv": {
+            "widgetId": "intccwt8zr",
+            "isDuplicateLabel": false,
+            "index": 2,
+            "id": "tab7cml197sqv",
+            "label": "Batch Trace",
+            "isVisible": "{{tbl_Entity.selectedRowIndex > -1 ? true : false}}"
+        },
         "tab8num6z8rq0": {
             "widgetId": "izu5fxn2oa",
             "isDuplicateLabel": false,
-            "index": 2,
+            "index": 3,
             "id": "tab8num6z8rq0",
             "label": "New Vendor/Brand",
             "isVisible": true
@@ -280,7 +341,7 @@
     "renderMode": "CANVAS",
     "mobileTopRow": 73,
     "responsiveBehavior": "fill",
-    "originalTopRow": 18,
+    "originalTopRow": 19,
     "mobileLeftColumn": 1,
     "maxDynamicHeight": 9000,
     "minDynamicHeight": 15

@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select  *\nfrom v_ingr_btch_dtl a\nwhere  a.shop_event_id = {{sel_Shop.selectedOptionValue}}\nORDER by ingr_name\nlimit 20\n\n",
+      "body": "select  *\nfrom v_ingr_btch_dtl a\nwhere  a.shop_event_id = {{sel_Shop.selectedOptionValue}}\nAND  ingr_btch_active = {{appsmith.store.active}}\nORDER by ingr_name\nlimit 20\n\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,6 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
+      "appsmith.store.active",
       "sel_Shop.selectedOptionValue"
     ],
     "userSetOnLoad": true,

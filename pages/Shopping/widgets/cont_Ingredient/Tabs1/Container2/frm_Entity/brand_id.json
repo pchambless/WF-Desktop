@@ -16,9 +16,9 @@
         {"key": "borderRadius"}
     ],
     "labelStyle": "BOLD",
-    "placeholderText": "Select option",
+    "placeholderText": "Select Brand (Optional)",
     "isDisabled": false,
-    "isRequired": true,
+    "isRequired": false,
     "dynamicHeight": "FIXED",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
     "isVisible": true,

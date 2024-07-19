@@ -6,10 +6,19 @@
     "pluginType": "JS",
     "actions": [],
     "archivedActions": [],
-    "variables": [],
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ],
     "userPermissions": []
   },
   "id": "wsConfig_JSObject1",
   "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_fcb3058c-f7d5-43fe-a81d-6a4ff2264561"
+  "gitSyncId": "6668cf0988cf8166d347b04c_307bcecc-2d1f-4dd8-a4fb-63805fd145a0"
 }

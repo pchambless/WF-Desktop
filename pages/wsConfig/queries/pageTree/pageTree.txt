@@ -1,0 +1,3 @@
+SELECT  a.parentName, a.childName, a.parentID, a.childID
+from v_appsmith_hier a
+where entType = 'Page'

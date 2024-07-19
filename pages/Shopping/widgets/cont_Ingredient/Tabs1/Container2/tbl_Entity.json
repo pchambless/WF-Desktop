@@ -44,7 +44,9 @@
         {"key": "primaryColumns.vndr_id.computedValue"},
         {"key": "primaryColumns.brnd_id.computedValue"},
         {"key": "primaryColumns.meas_id.computedValue"},
-        {"key": "primaryColumns.shop_event_id.computedValue"}
+        {"key": "primaryColumns.shop_event_id.computedValue"},
+        {"key": "primaryColumns.customColumn1.boxShadow"},
+        {"key": "primaryColumns.customColumn1.borderRadius"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 0,
@@ -93,7 +95,7 @@
         }
     },
     "borderRadius": "1.5rem",
-    "columnUpdatedAt": 1721223125330,
+    "columnUpdatedAt": 1721406434217,
     "primaryColumnId": "ingr_btch_id",
     "defaultSelectedRowIndices": [0],
     "needsErrorInfo": false,
@@ -104,6 +106,7 @@
         "ingr_btch_nbr",
         "ingr_name",
         "purch_amt",
+        "customColumn1",
         "comments",
         "unit_price",
         "best_by_date",
@@ -138,20 +141,27 @@
     "dynamicPropertyPathList": [
         {"key": "tableData"},
         {"key": "onRowSelected"},
-        {"key": "isVisible"}
+        {"key": "isVisible"},
+        {"key": "primaryColumns.customColumn1.onClick"}
     ],
     "compactMode": "SHORT",
     "displayName": "Table",
     "bottomRow": 44,
     "columnWidthMap": {
+        "ingr_name": 135,
         "batch_number": 141,
-        "purchase_date": 124
+        "ingr_btch_nbr": 129,
+        "purchase_date": 124,
+        "purch_amt": 84
     },
     "parentRowSpace": 10,
     "hideCard": false,
     "mobileRightColumn": 33,
     "parentColumnSpace": 15.47509765625,
-    "dynamicTriggerPathList": [{"key": "onRowSelected"}],
+    "dynamicTriggerPathList": [
+        {"key": "onRowSelected"},
+        {"key": "primaryColumns.customColumn1.onClick"}
+    ],
     "borderWidth": "1",
     "primaryColumns": {
         "shop_event_id": {
@@ -313,7 +323,7 @@
             "textColor": "",
             "columnType": "number",
             "thousandSeparator": true,
-            "horizontalAlignment": "LEFT",
+            "horizontalAlignment": "RIGHT",
             "isCellEditable": false,
             "decimals": 0,
             "width": 150,
@@ -1004,6 +1014,44 @@
             "cellBackground": "",
             "verticalAlignment": "TOP"
         },
+        "customColumn1": {
+            "boxShadow": "{{tbl_Entity.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+            "computedValue": "",
+            "onClick": "{{jsEntity.entityDelete()}}",
+            "buttonColor": "#fee2e2",
+            "isEditable": false,
+            "notation": "standard",
+            "alias": "Del",
+            "enableSort": true,
+            "isSaveVisible": true,
+            "id": "customColumn1",
+            "isDisabled": false,
+            "allowSameOptionsInNewRow": true,
+            "validation": {},
+            "isCellVisible": true,
+            "isDerived": true,
+            "textSize": "0.875rem",
+            "buttonStyle": "rgb(3, 179, 101)",
+            "allowCellWrapping": false,
+            "index": 10,
+            "isDiscardVisible": true,
+            "isVisible": true,
+            "label": "Del",
+            "labelColor": "#FFFFFF",
+            "columnType": "iconButton",
+            "thousandSeparator": true,
+            "horizontalAlignment": "LEFT",
+            "isCellEditable": false,
+            "borderRadius": "{{tbl_Entity.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+            "decimals": 0,
+            "width": 150,
+            "enableFilter": true,
+            "sticky": "",
+            "originalId": "customColumn1",
+            "currencyCode": "USD",
+            "customAlias": "",
+            "verticalAlignment": "TOP"
+        },
         "purch_meas": {
             "computedValue": "{{tbl_Entity.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"purch_meas\"]))}}",
             "isEditable": false,
@@ -1188,7 +1236,7 @@
             "isCellVisible": true,
             "isDerived": false,
             "textSize": "0.875rem",
-            "allowCellWrapping": false,
+            "allowCellWrapping": true,
             "index": 1,
             "isDiscardVisible": true,
             "isVisible": true,

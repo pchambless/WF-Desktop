@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select acct_id value, account_name label\nfrom   v_wf_usr_dtl a\njoin   accounts b\non     a.acct_id = b.id\nwhere  user_id = {{ appsmith.store.user_id}}\nand    b.active = 'Y'\n\n",
+      "body": "select acct_id value, account_name label\nfrom   v_wf_usr_dtl a\njoin   accounts b\non     a.acct_id = b.id\nwhere  user_id = {{ appsmith.store.user_id}}\nand    b.active = 'Y'\nORDER BY account_name\n\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

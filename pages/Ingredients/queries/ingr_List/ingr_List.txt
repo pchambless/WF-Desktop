@@ -1,5 +1,5 @@
 select *
 from    	whatsfresh.v_ingr_btch_metrics a
-where 	  a.ingr_id = {{tbl_Entity.selectedRow.id}}	
+where 	  a.ingr_type_id = {{sel_Type.selectedOptionValue}}	
 and     ingr_active = 'Y'
-order by last_purchase desc
+order by ingr_name, last_purchase desc

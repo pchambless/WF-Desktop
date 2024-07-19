@@ -1,0 +1,4 @@
+SELECT * 
+from   v_ingr_btch_trace
+where  ingr_btch_id = {{tbl_Entity.selectedRow.ingr_btch_id}}
+order by prd_btch_date desc
