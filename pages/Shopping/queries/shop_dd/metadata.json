@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT shop_event_id value, shop_date label\nFROM v_shop_event\nwhere vendor_id = {{sel_vendor.selectedOptionValue}}\norder by shop_date desc\nLIMIT 10;",
+      "body": "SELECT shop_event_id value, shop_date label\nFROM v_shop_event\nwhere vendor_id = {{sel_vendor.selectedOptionValue}}\norder by shop_date desc\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

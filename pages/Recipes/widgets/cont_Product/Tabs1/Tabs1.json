@@ -133,7 +133,7 @@
     "tags": ["Layout"],
     "isLoading": false,
     "borderRadius": "1.5rem",
-    "originalBottomRow": 67,
+    "originalBottomRow": 80,
     "needsErrorInfo": false,
     "mobileBottomRow": 76,
     "widgetName": "Tabs1",

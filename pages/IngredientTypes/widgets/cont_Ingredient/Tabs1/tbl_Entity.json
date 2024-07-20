@@ -90,7 +90,7 @@
     ],
     "compactMode": "SHORT",
     "displayName": "Table",
-    "bottomRow": 36,
+    "bottomRow": 35,
     "columnWidthMap": {"name": 123},
     "parentRowSpace": 10,
     "hideCard": false,
