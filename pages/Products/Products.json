@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 650,
+          "bottomRow": 710,
           "containerStyle": "none",
           "snapRows": 84,
           "parentRowSpace": 1,
@@ -59,6 +59,18 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async function () {\n  await storeValue('active', 'Y');\n  await storeValue('editMode', '');\n  await type_dd.run();\n  await sel_Type.setSelectedOption(appsmith.store.prodTypeID);\n  await entity_List.run();\n  await tbl_Entity.setSelectedRowIndex(-1);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Products_entity_Batches",
+              "name": "entity_Batches",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "tbl_Entity.selectedRow.id"
               ],
               "timeoutInMillisecond": 10000
             }

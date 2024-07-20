@@ -1,0 +1,5 @@
+SELECT a.prd_btch_nbr, a.prd_btch_date, a.qty_meas, a.location 
+,a.btch_meas, a.best_by_date, a.prd_btch_id
+,a.prd_type_and_name  
+from   v_prd_btch_dtl a
+where  prd_id = {{tbl_Entity.selectedRow.id}}

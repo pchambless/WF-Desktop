@@ -1,0 +1,7 @@
+SELECT  a.ingr_type, a.ingr_name, a.ingr_code, a.ingr_desc
+,a.ingr_btch_nbr, a.purch_date, a.ingr_lot_nbr, a.purch_dtl, a.purch_amt 
+,a.vndr_name, a.brnd_name, a.ingr_btch_id
+FROM  v_ingr_btch_dtl a
+where ingr_id = {{tbl_Entity.selectedRow.id}}
+ORDER BY purch_date desc
+;

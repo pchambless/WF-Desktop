@@ -10,7 +10,7 @@
           "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 810,
+          "bottomRow": 770,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
@@ -86,6 +86,16 @@
             }
           ],
           [
+            {
+              "id": "Ingredients_entity_Batches",
+              "name": "entity_Batches",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "tbl_Entity.selectedRow.id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
             {
               "id": "Ingredients_entity_List",
               "name": "entity_List",

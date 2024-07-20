@@ -29,7 +29,8 @@
         {"key": "primaryColumns.comments.computedValue"},
         {"key": "primaryColumns.vendor.computedValue"},
         {"key": "primaryColumns.customColumn1.boxShadow"},
-        {"key": "primaryColumns.shop_event_id.computedValue"}
+        {"key": "primaryColumns.shop_event_id.computedValue"},
+        {"key": "primaryColumns.unit.computedValue"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 0,
@@ -78,7 +79,7 @@
         }
     },
     "borderRadius": "1.5rem",
-    "columnUpdatedAt": 1721480946952,
+    "columnUpdatedAt": 1721507263334,
     "primaryColumnId": "id",
     "defaultSelectedRowIndices": [0],
     "needsErrorInfo": false,
@@ -103,7 +104,8 @@
         "best_by_date",
         "comments",
         "customColumn1",
-        "shop_event_id"
+        "shop_event_id",
+        "unit"
     ],
     "dynamicPropertyPathList": [
         {"key": "tableData"},
@@ -507,6 +509,40 @@
             "cellBackground": "",
             "verticalAlignment": "TOP"
         },
+        "unit": {
+            "computedValue": "{{tbl_Entity.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"unit\"]))}}",
+            "isEditable": false,
+            "notation": "standard",
+            "alias": "unit",
+            "enableSort": true,
+            "isSaveVisible": true,
+            "id": "unit",
+            "isDisabled": false,
+            "allowSameOptionsInNewRow": true,
+            "validation": {},
+            "isCellVisible": true,
+            "isDerived": false,
+            "textSize": "0.875rem",
+            "allowCellWrapping": false,
+            "index": 15,
+            "isDiscardVisible": true,
+            "isVisible": true,
+            "label": "unit",
+            "fontStyle": "",
+            "textColor": "",
+            "columnType": "text",
+            "thousandSeparator": true,
+            "horizontalAlignment": "LEFT",
+            "isCellEditable": false,
+            "decimals": 0,
+            "width": 150,
+            "enableFilter": true,
+            "sticky": "",
+            "originalId": "unit",
+            "currencyCode": "USD",
+            "cellBackground": "",
+            "verticalAlignment": "TOP"
+        },
         "vendor": {
             "computedValue": "{{tbl_Entity.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"vendor\"]))}}",
             "isEditable": false,
@@ -761,7 +797,7 @@
     "renderMode": "CANVAS",
     "mobileTopRow": 0,
     "horizontalAlignment": "LEFT",
-    "isVisibleSearch": false,
+    "isVisibleSearch": true,
     "responsiveBehavior": "fill",
     "mobileLeftColumn": 0,
     "isVisiblePagination": false,

@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mysql-plugin",
   "unpublishedAction": {
-    "name": "entity_List",
+    "name": "entity_Batches",
     "datasource": {
       "name": "wf_stage",
       "pluginId": "mysql-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Ingredient Batch",
+    "pageId": "Ingredients",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select a.purchase_date, a.batch_number, f_vendor(vendor_id) vendor, a.`active`, a.ingredient_id, a.vendor_id\n, a.brand_id, a.lot_number, a.purchase_quantity, a.global_measure_unit_id, shop_event_id\n, a.unit_quantity, a.unit_price, a.purchase_total_amount, a.best_by_date,f_measure_unit(global_measure_unit_id) unit\n, a.comments, a.id\nfrom   ingredient_batches a\nwhere  a.ingredient_id = {{appsmith.store.ingrID}}\nand    active = {{appsmith.store.active}}\nORDER by purchase_date desc\nlimit 20\n\n",
+      "body": "SELECT  a.ingr_type, a.ingr_name, a.ingr_code, a.ingr_desc\n,a.ingr_btch_nbr, a.purch_date, a.ingr_lot_nbr, a.purch_dtl, a.purch_amt \n,a.vndr_name, a.brnd_name, a.ingr_btch_id\nFROM  v_ingr_btch_dtl a\nwhere ingr_id = {{tbl_Entity.selectedRow.id}}\nORDER BY purch_date desc\n;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,16 +36,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "appsmith.store.active",
-      "appsmith.store.ingrID"
+      "tbl_Entity.selectedRow.id"
     ],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-03-24T17:26:22Z"
+    "createdAt": "2024-07-20T18:50:17Z"
   },
-  "id": "Ingredient Batch_entity_List",
+  "id": "Ingredients_entity_Batches",
   "deleted": false,
-  "gitSyncId": "66045fda95164773a81f43e1_66045fdc95164773a81f4479"
+  "gitSyncId": "6668cf0988cf8166d347b04c_83a663d5-3a71-4cfc-802b-3877a1aeacd1"
 }
