@@ -1,6 +1,6 @@
 {
   "unpublishedCollection": {
-    "name": "jsTree",
+    "name": "menu",
     "pageId": "wsConfig",
     "pluginId": "js-plugin",
     "pluginType": "JS",
@@ -9,7 +9,7 @@
     "variables": [],
     "userPermissions": []
   },
-  "id": "wsConfig_jsTree",
+  "id": "wsConfig_menu",
   "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_fcb3058c-f7d5-43fe-a81d-6a4ff2264561"
+  "gitSyncId": "6668cf0988cf8166d347b04c_e42d908f-f8cb-4b68-9ccc-3afc4dadf79a"
 }

@@ -68,7 +68,7 @@
     "key": "2q4z8xt4eu",
     "backgroundColor": "#fee2e2",
     "isDeprecated": false,
-    "rightColumn": 63,
+    "rightColumn": 64,
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "xogjm3vi2d",
     "containerStyle": "card",
@@ -85,6 +85,6 @@
     "borderRadius": "1.5rem",
     "mobileLeftColumn": 1,
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 84,
+    "originalBottomRow": 77,
     "minDynamicHeight": 10
 }

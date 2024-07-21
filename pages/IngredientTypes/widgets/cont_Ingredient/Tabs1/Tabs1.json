@@ -176,7 +176,7 @@
     "renderMode": "CANVAS",
     "mobileTopRow": 62,
     "responsiveBehavior": "fill",
-    "originalTopRow": 12,
+    "originalTopRow": 13,
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
     "minDynamicHeight": 15

@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun1",
-    "fullyQualifiedName": "JSObject1.myFun1",
+    "name": "items",
+    "fullyQualifiedName": "menu.items",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,16 +14,15 @@
       "userPermissions": []
     },
     "pageId": "wsConfig",
-    "collectionId": "wsConfig_JSObject1",
+    "collectionId": "wsConfig_menu",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 0,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "jsArguments": []
     },
     "executeOnLoad": false,
-    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -36,9 +35,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2024-07-18T01:02:37Z"
+    "createdAt": "2024-07-21T15:09:19Z"
   },
-  "id": "wsConfig_JSObject1.myFun1",
+  "id": "wsConfig_menu.items",
   "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_6cde7a93-9973-440a-a1b3-7351589e7a56"
+  "gitSyncId": "6668cf0988cf8166d347b04c_847d5251-c6e6-4b13-9431-655ad6798cea"
 }
