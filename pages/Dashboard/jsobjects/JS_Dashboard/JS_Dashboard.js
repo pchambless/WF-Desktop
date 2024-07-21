@@ -5,7 +5,7 @@ export default {
 		await rpt_title.run()
 		storeValue('rpt_title',rpt_title.data)
 	},
-	myFun2: () => {
+	makeHelp: () => {
 		help.run()
 		storeValue('help',help.data)
 		console.log(appsmith.store.help)

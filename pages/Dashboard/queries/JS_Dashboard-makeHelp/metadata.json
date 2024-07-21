@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "myFun2",
-    "fullyQualifiedName": "JS_Dashboard.myFun2",
+    "name": "makeHelp",
+    "fullyQualifiedName": "JS_Dashboard.makeHelp",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -25,7 +25,7 @@
       "jsArguments": [],
       "isAsync": false
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
@@ -35,13 +35,13 @@
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
     "createdAt": "2024-03-27T18:05:15Z"
   },
-  "id": "Dashboard_JS_Dashboard.myFun2",
+  "id": "Dashboard_JS_Dashboard.makeHelp",
   "deleted": false,
   "gitSyncId": "66045fda95164773a81f43e1_66045fda95164773a81f4400"
 }
