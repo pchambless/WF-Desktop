@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "jsBack",
+    "pageId": "Ingredient Type",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Ingredient Type_jsBack",
+  "deleted": false,
+  "gitSyncId": "6668cf0988cf8166d347b04c_f9ebb60b-febd-47b7-9cd9-b0bd5001931c"
+}

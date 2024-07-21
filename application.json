@@ -9,7 +9,35 @@
       "isDefault": false
     },
     {
+      "id": "Ingredient Type",
+      "isDefault": false
+    },
+    {
+      "id": "Ingredient",
+      "isDefault": false
+    },
+    {
       "id": "Ingredient Batch",
+      "isDefault": false
+    },
+    {
+      "id": "Shopping",
+      "isDefault": false
+    },
+    {
+      "id": "Product Type",
+      "isDefault": false
+    },
+    {
+      "id": "Product Type Task",
+      "isDefault": false
+    },
+    {
+      "id": "Product",
+      "isDefault": false
+    },
+    {
+      "id": "Recipe",
       "isDefault": false
     },
     {
@@ -17,31 +45,15 @@
       "isDefault": false
     },
     {
-      "id": "IngredientTypes",
+      "id": "Vendor",
       "isDefault": false
     },
     {
-      "id": "Ingredients",
+      "id": "Brand",
       "isDefault": false
     },
     {
-      "id": "ProductTypes",
-      "isDefault": false
-    },
-    {
-      "id": "ProductTypeTasks",
-      "isDefault": false
-    },
-    {
-      "id": "Products",
-      "isDefault": false
-    },
-    {
-      "id": "Recipes",
-      "isDefault": false
-    },
-    {
-      "id": "Shopping",
+      "id": "Team Member",
       "isDefault": false
     },
     {
@@ -50,18 +62,6 @@
     },
     {
       "id": "wsConfig",
-      "isDefault": false
-    },
-    {
-      "id": "Vendors",
-      "isDefault": false
-    },
-    {
-      "id": "Brands",
-      "isDefault": false
-    },
-    {
-      "id": "Team Members",
       "isDefault": false
     }
   ],

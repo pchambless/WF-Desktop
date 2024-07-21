@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "jsPageLoad",
+    "pageId": "Team Member",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Team Member_jsPageLoad",
+  "deleted": false,
+  "gitSyncId": "6668cf0988cf8166d347b04c_4cdbb3ff-8bcc-439e-8849-4ded396082ab"
+}

@@ -26,7 +26,7 @@
             "menuItems": {
                 "menuItem5wh9xtwn0q": {
                     "backgroundColor": "#fee2e2",
-                    "onClick": "{{navigateTo('IngredientTypes', {}, 'SAME_WINDOW');}}",
+                    "onClick": "{{navigateTo('Ingredient Type', {}, 'SAME_WINDOW');}}",
                     "widgetId": "pxmvsae9kg",
                     "index": 0,
                     "id": "menuItem5wh9xtwn0q",
@@ -46,7 +46,7 @@
                 },
                 "menuItem6a4aub341w": {
                     "backgroundColor": "#fee2e2",
-                    "onClick": "{{navigateTo('Ingredients', {}, 'SAME_WINDOW');}}",
+                    "onClick": "{{navigateTo('Ingredient', {}, 'SAME_WINDOW');}}",
                     "widgetId": "ner55xd5om",
                     "index": 1,
                     "id": "menuItem6a4aub341w",
@@ -94,7 +94,7 @@
             "widgetId": "qpde28borb",
             "menuItems": {
                 "menuItemmgyo13wokg": {
-                    "onClick": "{{navigateTo('Vendors', {}, 'SAME_WINDOW');}}",
+                    "onClick": "{{navigateTo('Vendor', {}, 'SAME_WINDOW');}}",
                     "backgroundColor": "#dbeafe",
                     "widgetId": "gtaoe8f5qj",
                     "index": 0,
@@ -104,7 +104,7 @@
                     "isVisible": true
                 },
                 "menuItem1cyk27taql": {
-                    "onClick": "{{navigateTo('Team Members', {}, 'SAME_WINDOW');}}",
+                    "onClick": "{{navigateTo('Team Member', {}, 'SAME_WINDOW');}}",
                     "backgroundColor": "#dbeafe",
                     "widgetId": "l9mbmzyd9t",
                     "index": 2,
@@ -114,7 +114,7 @@
                     "isVisible": true
                 },
                 "menuItemgig6jzx5ub": {
-                    "onClick": "{{navigateTo('Brands', {}, 'SAME_WINDOW');}}",
+                    "onClick": "{{navigateTo('Brand', {}, 'SAME_WINDOW');}}",
                     "backgroundColor": "#dbeafe",
                     "widgetId": "apbaci6vzs",
                     "index": 1,
@@ -142,9 +142,9 @@
             "menuItems": {
                 "menuItemjyqy6lcgq9": {
                     "backgroundColor": "#dcfce7",
-                    "onClick": "{{navigateTo('Products', {}, 'SAME_WINDOW');}}",
+                    "onClick": "{{navigateTo('Product', {}, 'SAME_WINDOW');}}",
                     "widgetId": "yljicc7n8t",
-                    "index": 1,
+                    "index": 2,
                     "id": "menuItemjyqy6lcgq9",
                     "label": "Products",
                     "isDisabled": false,
@@ -152,7 +152,7 @@
                 },
                 "menuItembbydvhjhkw": {
                     "backgroundColor": "#dcfce7",
-                    "onClick": "{{navigateTo('ProductTypes', {}, 'SAME_WINDOW');}}",
+                    "onClick": "{{navigateTo('Product Type', {}, 'SAME_WINDOW');}}",
                     "widgetId": "0uvhc4b1k9",
                     "index": 0,
                     "id": "menuItembbydvhjhkw",
@@ -160,15 +160,35 @@
                     "isDisabled": false,
                     "isVisible": true
                 },
+                "menuItemkk3ib3nsfq": {
+                    "backgroundColor": "#dcfce7",
+                    "onClick": "{{navigateTo('Recipe', {}, 'SAME_WINDOW');}}",
+                    "widgetId": "m717yvyhkf",
+                    "index": 3,
+                    "id": "menuItemkk3ib3nsfq",
+                    "label": "Recipes",
+                    "isDisabled": false,
+                    "isVisible": true
+                },
                 "menuItembomt9fzmw7": {
                     "backgroundColor": "#dcfce7",
                     "onClick": "{{navigateTo('Product Batch', {}, 'SAME_WINDOW');}}",
                     "widgetId": "swny2ru2zy",
-                    "index": 2,
+                    "index": 4,
                     "id": "menuItembomt9fzmw7",
                     "label": "Batches",
                     "isDisabled": false,
                     "isVisible": false
+                },
+                "menuItemxeu1zv5gt1": {
+                    "backgroundColor": "#dcfce7",
+                    "onClick": "{{navigateTo('Product Type Task', {}, 'SAME_WINDOW');}}",
+                    "widgetId": "lhd6d3dxp5",
+                    "index": 1,
+                    "id": "menuItemxeu1zv5gt1",
+                    "label": "Type Tasks",
+                    "isDisabled": false,
+                    "isVisible": true
                 }
             },
             "index": 2,
@@ -198,9 +218,11 @@
         {"key": "groupButtons.groupButtonbv2dvqql0o.menuItems.menuItemmgyo13wokg.onClick"},
         {"key": "groupButtons.groupButtonbv2dvqql0o.menuItems.menuItemgig6jzx5ub.onClick"},
         {"key": "groupButtons.groupButtonbv2dvqql0o.menuItems.menuItem1cyk27taql.onClick"},
-        {"key": "groupButtons.groupButton007ky52dfr.menuItems.menuItem3prgefb43a.onClick"}
+        {"key": "groupButtons.groupButton007ky52dfr.menuItems.menuItem3prgefb43a.onClick"},
+        {"key": "groupButtons.groupButton7gnphpzkj0.menuItems.menuItemkk3ib3nsfq.onClick"},
+        {"key": "groupButtons.groupButton7gnphpzkj0.menuItems.menuItemxeu1zv5gt1.onClick"}
     ],
-    "leftColumn": 0,
+    "leftColumn": 1,
     "dynamicBindingPathList": [
         {"key": "groupButtons.groupButton007ky52dfr.onClick"},
         {"key": "groupButtons.groupButton7gnphpzkj0.onClick"}
@@ -208,8 +230,8 @@
     "key": "o4ohcb5u1o",
     "orientation": "horizontal",
     "isDeprecated": false,
-    "rightColumn": 29,
-    "widgetId": "vbqifhyy7r",
+    "rightColumn": 30,
+    "widgetId": "8683rof1un",
     "minWidth": 450,
     "isVisible": true,
     "version": 1,

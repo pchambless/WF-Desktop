@@ -1,0 +1,147 @@
+{
+  "unpublishedPage": {
+    "name": "Ingredient",
+    "slug": "ingredient",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "mobileBottomRow": 1100,
+          "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+          "widgetName": "MainContainer",
+          "topRow": 0,
+          "bottomRow": 770,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "minHeight": 1100,
+          "useAutoLayout": false,
+          "parentColumnSpace": 1,
+          "dynamicTriggerPathList": [],
+          "dynamicBindingPathList": [
+            {
+              "key": "borderRadius"
+            },
+            {
+              "key": "boxShadow"
+            }
+          ],
+          "leftColumn": 0,
+          "positioning": "fixed",
+          "backgroundColor": "none",
+          "rightColumn": 1296,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "containerStyle": "none",
+          "snapRows": 84,
+          "version": 89,
+          "mobileTopRow": 0,
+          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Ingredient_jsPageLoad.storePage",
+              "name": "jsPageLoad.storePage",
+              "collectionId": "Ingredient_jsPageLoad",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  await storeValue('last', appsmith.store.current);\n  await storeValue('current', 'Ingredient');\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Ingredient_measure_dd",
+              "name": "measure_dd",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Ingredient_ingrType_dd",
+              "name": "ingrType_dd",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.acct_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Ingredient_vndr_dd",
+              "name": "vndr_dd",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.acct_id"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Ingredient_jsPageLoad.load",
+              "name": "jsPageLoad.load",
+              "collectionId": "Ingredient_jsPageLoad",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  await storeValue('active', 'Y');\n  sel_Type.setSelectedOption(appsmith.store.ingrTypeID);\n  entity_List.run();\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Ingredient_entity_Batches",
+              "name": "entity_Batches",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "tbl_Entity.selectedRow.id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Ingredient_entity_List",
+              "name": "entity_List",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "sel_Type.selectedOptionValue",
+                "appsmith.store.active"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Ingredient_ingr_List",
+              "name": "ingr_List",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "sel_Type.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Ingredient",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": true
+  },
+  "deleted": false,
+  "gitSyncId": "66045fda95164773a81f43e1_026de9b9-d275-4d55-bda3-c30d02bdca53"
+}

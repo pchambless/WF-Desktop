@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "jsForm",
+    "pageId": "Product Type Task",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Product Type Task_jsForm",
+  "deleted": false,
+  "gitSyncId": "6668cf0988cf8166d347b04c_83a2d8ef-c6de-43cd-9377-ec118c869353"
+}
