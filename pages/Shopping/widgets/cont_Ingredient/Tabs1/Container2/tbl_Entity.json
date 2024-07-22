@@ -146,7 +146,7 @@
     ],
     "compactMode": "SHORT",
     "displayName": "Table",
-    "bottomRow": 44,
+    "bottomRow": 45,
     "columnWidthMap": {
         "ingr_name": 135,
         "batch_number": 141,

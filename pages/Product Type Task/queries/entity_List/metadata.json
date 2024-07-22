@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select task_ordr, task_nm name, task_desc, task_id, prd_type_id\nfrom  v_prd_type_tasks\nwhere prd_type_id = {{appsmith.store.prodTypeID}}\nand task_active = {{appsmith.store.active}}",
+      "body": "select task_ordr, task_nm name, task_desc, task_id, prd_type_id\nfrom  v_prd_type_tasks\nwhere prd_type_id = {{appsmith.store.prodTypeID}}\nand account_id = {{appsmith.store.acct_id}}\nand task_active = {{appsmith.store.active}}",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,6 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
+      "appsmith.store.acct_id",
       "appsmith.store.active",
       "appsmith.store.prodTypeID"
     ],

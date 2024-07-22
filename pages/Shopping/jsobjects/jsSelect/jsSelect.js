@@ -21,7 +21,6 @@ export default {
 		await ingr_Select.run()
 		await jsForm.add()
 		await entity_Last.run()
-//		await ingr_Select.run()
 	},
 	async selectEntity () {
 		await jsEntity.editMode()

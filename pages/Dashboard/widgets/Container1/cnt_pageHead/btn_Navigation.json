@@ -5,7 +5,8 @@
     "isCanvas": false,
     "dynamicPropertyPathList": [
         {"key": "groupButtons.groupButton1.onClick"},
-        {"key": "groupButtons.groupButton7gnphpzkj0.isVisible"}
+        {"key": "groupButtons.groupButton7gnphpzkj0.isVisible"},
+        {"key": "groupButtons.groupButton2f5ji0wcf0.isVisible"}
     ],
     "displayName": "Button Group",
     "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
@@ -230,7 +231,7 @@
     "key": "o4ohcb5u1o",
     "orientation": "horizontal",
     "isDeprecated": false,
-    "rightColumn": 35,
+    "rightColumn": 43,
     "widgetId": "59ab7nox13",
     "minWidth": 450,
     "isVisible": true,

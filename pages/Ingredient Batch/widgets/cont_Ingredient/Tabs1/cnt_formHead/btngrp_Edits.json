@@ -27,7 +27,7 @@
     "groupButtons": {
         "groupButtonfdsafiwzfc": {
             "itemType": "BUTTON",
-            "onClick": "{{await jsEntity.editModeRun()\nawait entity_List.run()}}",
+            "onClick": "{{await jsEntity.editModeRun()\n}}",
             "buttonColor": "#86efac",
             "widgetId": "gjse2hepzr",
             "menuItems": {},
