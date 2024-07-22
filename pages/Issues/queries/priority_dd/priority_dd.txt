@@ -1,0 +1,5 @@
+SELECT value, label 
+FROM dropdown
+where name = 'priority'
+ORDER by value
+LIMIT 10;

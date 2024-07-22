@@ -13,6 +13,7 @@ export default {
 			//onsucess function here
 			()=> {
 				storeValue('user_id', spUser_login.data && spUser_login.data[0].user_id );
+				storeValue('userName', spUser_login.data && spUser_login.data[0].user_name );
 				storeValue('acct_id', spUser_login.data && spUser_login.data[0].acct_id );
 				storeValue('acct_name', spUser_login.data && spUser_login.data[0].acct_name );
 				storeValue('procLocation', spUser_login.data && spUser_login.data[0].procLocation); 

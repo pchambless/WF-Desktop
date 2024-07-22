@@ -1,0 +1,7 @@
+<strong>Company:</strong> {{appsmith.store.acct_name}} <br>
+<strong>Submitted By:</strong> {{appsmith.store.userName}} <br><br>
+
+<strong>Page:</strong> {{page.text}} <br>
+<strong>Issue:</strong> {{Name.text}} <br>
+<strong>Priority:</strong> {{priority.selectedOptionLabel}} <br><br>
+<strong>Description:</strong> {{description.text}}

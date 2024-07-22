@@ -13,7 +13,7 @@
         "group"
     ],
     "topRow": 0,
-    "bottomRow": 15,
+    "bottomRow": 20,
     "parentRowSpace": 10,
     "type": "CONTAINER_WIDGET",
     "hideCard": false,
@@ -29,7 +29,7 @@
         "detachFromLayout": true,
         "widgetId": "03b0ykzmr1",
         "containerStyle": "none",
-        "bottomRow": 150,
+        "bottomRow": 200,
         "topRow": 0,
         "parentRowSpace": 1,
         "isVisible": true,
@@ -56,7 +56,7 @@
     "isDeprecated": false,
     "rightColumn": 64,
     "thumbnailSVG": "/static/media/thumbnail.6cb355b93146b5347bbb048a568ed446.svg",
-    "dynamicHeight": "AUTO_HEIGHT",
+    "dynamicHeight": "FIXED",
     "widgetId": "lm9o1uwrlz",
     "containerStyle": "card",
     "onCanvasUI": {
@@ -74,9 +74,7 @@
     "renderMode": "CANVAS",
     "isLoading": false,
     "responsiveBehavior": "fill",
-    "originalTopRow": 0,
     "borderRadius": "1.5rem",
     "maxDynamicHeight": 9000,
-    "originalBottomRow": 12,
     "minDynamicHeight": 10
 }

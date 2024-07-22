@@ -13,8 +13,8 @@
         "parent",
         "group"
     ],
-    "topRow": 9,
-    "bottomRow": 15,
+    "topRow": 6,
+    "bottomRow": 12,
     "parentRowSpace": 10,
     "type": "CONTAINER_WIDGET",
     "hideCard": false,
@@ -22,7 +22,7 @@
     "animateLoading": true,
     "parentColumnSpace": 1.50390625,
     "dynamicTriggerPathList": [],
-    "leftColumn": 40,
+    "leftColumn": 39,
     "dynamicBindingPathList": [{"key": "isVisible"}],
     "children": [{
         "rightColumn": 96.25,
@@ -55,7 +55,7 @@
     "key": "lllt2gc210",
     "backgroundColor": "#ffffff",
     "isDeprecated": false,
-    "rightColumn": 64,
+    "rightColumn": 63,
     "thumbnailSVG": "/static/media/thumbnail.6cb355b93146b5347bbb048a568ed446.svg",
     "dynamicHeight": "FIXED",
     "widgetId": "za49wcn0b8",

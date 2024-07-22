@@ -63,6 +63,10 @@
     {
       "id": "wsConfig",
       "isDefault": false
+    },
+    {
+      "id": "Issues",
+      "isDefault": false
     }
   ],
   "viewMode": false,

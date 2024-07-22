@@ -3,6 +3,7 @@ update users
 	where email = {{appsmith.user.email}}
 	;
 	select a.id user_id, b.id acct_id, b.name acct_name, b.default_location procLocation, a.role roleID
+	,concat(a.first_name,' ',substr(a.last_name,1,1)) user_name
 	from users a
 	join accounts b
 	on a.default_account_id = b.id

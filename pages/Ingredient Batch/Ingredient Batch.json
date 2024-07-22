@@ -10,7 +10,7 @@
           "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
           "widgetName": "MainContainer",
           "topRow": 0,
-          "bottomRow": 740,
+          "bottomRow": 770,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,

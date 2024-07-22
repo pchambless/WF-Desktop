@@ -1,0 +1,10 @@
+insert into issues
+(account_id, page, name, priority, description, created_by)
+VALUES
+({{appsmith.store.acct_id}}
+	, {{page.text}}
+	, {{Name.text}}
+	, {{priority.selectedOptionValue}}
+	, {{description.text}}
+	, {{appsmith.store.userName}}
+)

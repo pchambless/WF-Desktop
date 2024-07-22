@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "update users\n\tset last_login = current_timestamp()\n\twhere email = {{appsmith.user.email}}\n\t;\n\tselect a.id user_id, b.id acct_id, b.name acct_name, b.default_location procLocation, a.role roleID\n\tfrom users a\n\tjoin accounts b\n\ton a.default_account_id = b.id\n\twhere email = {{appsmith.user.email}}\n\t;\n\n",
+      "body": "update users\n\tset last_login = current_timestamp()\n\twhere email = {{appsmith.user.email}}\n\t;\n\tselect a.id user_id, b.id acct_id, b.name acct_name, b.default_location procLocation, a.role roleID\n\t,concat(a.first_name,' ',substr(a.last_name,1,1)) user_name\n\tfrom users a\n\tjoin accounts b\n\ton a.default_account_id = b.id\n\twhere email = {{appsmith.user.email}}\n\t;\n\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
