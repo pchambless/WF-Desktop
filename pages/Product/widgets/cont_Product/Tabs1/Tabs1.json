@@ -134,7 +134,7 @@
     "tags": ["Layout"],
     "isLoading": false,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 73,
+    "originalBottomRow": 71,
     "needsErrorInfo": false,
     "mobileBottomRow": 78,
     "widgetName": "Tabs1",
@@ -177,7 +177,7 @@
     "renderMode": "CANVAS",
     "mobileTopRow": 63,
     "responsiveBehavior": "fill",
-    "originalTopRow": 20,
+    "originalTopRow": 18,
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
     "minDynamicHeight": 15

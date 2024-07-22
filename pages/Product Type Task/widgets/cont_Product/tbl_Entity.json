@@ -62,7 +62,7 @@
     },
     "borderRadius": "1.5rem",
     "columnUpdatedAt": 1720916494915,
-    "originalBottomRow": 60,
+    "originalBottomRow": 56,
     "primaryColumnId": "task_id",
     "defaultSelectedRowIndices": [0],
     "mobileBottomRow": 28,
@@ -329,7 +329,7 @@
     "horizontalAlignment": "LEFT",
     "isVisibleSearch": false,
     "responsiveBehavior": "fill",
-    "originalTopRow": 21,
+    "originalTopRow": 17,
     "mobileLeftColumn": 0,
     "isVisiblePagination": false,
     "verticalAlignment": "CENTER"
