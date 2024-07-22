@@ -1,10 +1,16 @@
 select a.purchase_date, a.batch_number, f_vendor(vendor_id) vendor, a.`active`, a.ingredient_id, a.vendor_id
 , a.brand_id, a.lot_number, a.purchase_quantity, a.global_measure_unit_id, shop_event_id
 , a.unit_quantity, a.unit_price, a.purchase_total_amount, a.best_by_date,f_measure_unit(global_measure_unit_id) unit
-, a.comments, a.id
+, a.comments, a.id, ifnull(b.prd_btch_cnt,0) prd_btch_cnt
 from   ingredient_batches a
+left join 
+    (select ingredient_batch_id, count(product_batch_id) prd_btch_cnt
+	   from  product_batch_ingredients 
+	   group by ingredient_batch_id
+		) b
+on  a.id = b.ingredient_batch_id
 where  a.ingredient_id = {{appsmith.store.ingrID}}
 and    active = {{appsmith.store.active}}
 ORDER by purchase_date desc
-limit 20
+
 

@@ -122,7 +122,8 @@
         "ingr_btch_nbr": 196,
         "customColumn1": 66,
         "location": 100,
-        "batch_start": 98
+        "batch_start": 98,
+        "qty_meas": 124
     },
     "parentRowSpace": 10,
     "hideCard": false,

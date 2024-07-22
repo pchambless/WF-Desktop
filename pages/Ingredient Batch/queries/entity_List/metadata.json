@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select a.purchase_date, a.batch_number, f_vendor(vendor_id) vendor, a.`active`, a.ingredient_id, a.vendor_id\n, a.brand_id, a.lot_number, a.purchase_quantity, a.global_measure_unit_id, shop_event_id\n, a.unit_quantity, a.unit_price, a.purchase_total_amount, a.best_by_date,f_measure_unit(global_measure_unit_id) unit\n, a.comments, a.id\nfrom   ingredient_batches a\nwhere  a.ingredient_id = {{appsmith.store.ingrID}}\nand    active = {{appsmith.store.active}}\nORDER by purchase_date desc\nlimit 20\n\n",
+      "body": "select a.purchase_date, a.batch_number, f_vendor(vendor_id) vendor, a.`active`, a.ingredient_id, a.vendor_id\n, a.brand_id, a.lot_number, a.purchase_quantity, a.global_measure_unit_id, shop_event_id\n, a.unit_quantity, a.unit_price, a.purchase_total_amount, a.best_by_date,f_measure_unit(global_measure_unit_id) unit\n, a.comments, a.id, ifnull(b.prd_btch_cnt,0) prd_btch_cnt\nfrom   ingredient_batches a\nleft join \n    (select ingredient_batch_id, count(product_batch_id) prd_btch_cnt\n\t   from  product_batch_ingredients \n\t   group by ingredient_batch_id\n\t\t) b\non  a.id = b.ingredient_batch_id\nwhere  a.ingredient_id = {{appsmith.store.ingrID}}\nand    active = {{appsmith.store.active}}\nORDER by purchase_date desc\n\n\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

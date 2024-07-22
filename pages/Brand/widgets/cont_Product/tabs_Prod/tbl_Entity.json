@@ -18,7 +18,8 @@
         {"key": "primaryColumns.customColumn2.borderRadius"},
         {"key": "primaryColumns.customColumn2.boxShadow"},
         {"key": "primaryColumns.batches.computedValue"},
-        {"key": "primaryColumns.total_spent.computedValue"}
+        {"key": "primaryColumns.total_spent.computedValue"},
+        {"key": "primaryColumns.customColumn2.isCellVisible"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 0,
@@ -86,7 +87,8 @@
     "dynamicPropertyPathList": [
         {"key": "tableData"},
         {"key": "onRowSelected"},
-        {"key": "primaryColumns.customColumn2.onClick"}
+        {"key": "primaryColumns.customColumn2.onClick"},
+        {"key": "primaryColumns.customColumn2.isCellVisible"}
     ],
     "compactMode": "SHORT",
     "displayName": "Table",
@@ -284,7 +286,7 @@
             "isDisabled": false,
             "allowSameOptionsInNewRow": true,
             "validation": {},
-            "isCellVisible": true,
+            "isCellVisible": "{{tbl_Entity.processedTableData.map((currentRow, currentIndex) => ( currentRow.batches ? false : true))}}",
             "isDerived": true,
             "textSize": "0.875rem",
             "iconName": "delete",

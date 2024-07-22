@@ -22,7 +22,8 @@
         {"key": "primaryColumns.last_shop.computedValue"},
         {"key": "primaryColumns.batches.computedValue"},
         {"key": "primaryColumns.total_amt.computedValue"},
-        {"key": "defaultSelectedRowIndex"}
+        {"key": "defaultSelectedRowIndex"},
+        {"key": "primaryColumns.customColumn1.isCellVisible"}
     ],
     "needsHeightForContent": true,
     "leftColumn": 0,
@@ -94,7 +95,8 @@
     "dynamicPropertyPathList": [
         {"key": "tableData"},
         {"key": "onRowSelected"},
-        {"key": "primaryColumns.customColumn1.onClick"}
+        {"key": "primaryColumns.customColumn1.onClick"},
+        {"key": "primaryColumns.customColumn1.isCellVisible"}
     ],
     "compactMode": "SHORT",
     "displayName": "Table",
@@ -330,7 +332,7 @@
             "isDisabled": false,
             "allowSameOptionsInNewRow": true,
             "validation": {},
-            "isCellVisible": true,
+            "isCellVisible": "{{tbl_Entity.processedTableData.map((currentRow, currentIndex) => ( currentRow.batches ? false : true))}}",
             "isDerived": true,
             "textSize": "0.875rem",
             "iconName": "delete",
