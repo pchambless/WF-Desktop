@@ -1,0 +1,4 @@
+select user_name, owner, email, first_name, user_id, acct_id, acct_user_id, dflt_acct_id
+from   v_wf_usr_dtl a
+where acct_usr_active = 'Y'
+order by owner desc, user_name

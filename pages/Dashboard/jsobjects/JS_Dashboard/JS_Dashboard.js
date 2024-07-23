@@ -6,6 +6,7 @@ export default {
 		await rpt_title.run()
 		await user_List.run()
 		await user_Choice.run()
+		await acct_Activity.run()
 		await storeValue('isOwner', acct_Select.data[0].is_owner)
 		await storeValue('rpt_title',rpt_title.data)
 		

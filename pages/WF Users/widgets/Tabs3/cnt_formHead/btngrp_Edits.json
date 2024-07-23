@@ -1,0 +1,99 @@
+{
+    "needsErrorInfo": false,
+    "boxShadow": "none",
+    "mobileBottomRow": 4,
+    "widgetName": "btngrp_Edits",
+    "isCanvas": false,
+    "dynamicPropertyPathList": [
+        {"key": "groupButtons.groupButton2.onClick"},
+        {"key": "groupButtons.groupButton1.onClick"},
+        {"key": "groupButtons.groupButton3.onClick"},
+        {"key": "groupButtons.groupButtonfdsafiwzfc.onClick"},
+        {"key": "isVisible"},
+        {"key": "groupButtons.groupButton1.isVisible"},
+        {"key": "groupButtons.groupButton3.isVisible"},
+        {"key": "groupButtons.groupButton2.isVisible"}
+    ],
+    "displayName": "Button Group",
+    "iconSVG": "/static/media/icon.ae1401b479d77b1908271bdfed6d12ba.svg",
+    "searchTags": [
+        "click",
+        "submit"
+    ],
+    "topRow": 0,
+    "bottomRow": 4,
+    "parentRowSpace": 10,
+    "type": "BUTTON_GROUP_WIDGET",
+    "groupButtons": {
+        "groupButtonfdsafiwzfc": {
+            "itemType": "BUTTON",
+            "onClick": "{{await jsEntity.editModeRun()\n}}",
+            "buttonColor": "#86efac",
+            "widgetId": "gjse2hepzr",
+            "menuItems": {},
+            "index": 1,
+            "label": "Save",
+            "isVisible": true,
+            "buttonType": "SIMPLE",
+            "buttonVariant": "filled",
+            "id": "groupButtonfdsafiwzfc",
+            "isDisabled": false,
+            "placement": "CENTER",
+            "isSeparator": false
+        },
+        "groupButton2": {
+            "onClick": "{{tbl_Entity.setSelectedRowIndex(-1)\nawait storeValue('editMode','Add')}}",
+            "buttonType": "SIMPLE",
+            "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+            "widgetId": "",
+            "menuItems": {},
+            "index": 0,
+            "label": "Add",
+            "id": "groupButton2",
+            "placement": "CENTER",
+            "isVisible": "false",
+            "isDisabled": false
+        }
+    },
+    "hideCard": false,
+    "mobileRightColumn": 90,
+    "animateLoading": true,
+    "parentColumnSpace": 4.375,
+    "dynamicTriggerPathList": [
+        {"key": "groupButtons.groupButton2.onClick"},
+        {"key": "groupButtons.groupButtonfdsafiwzfc.onClick"}
+    ],
+    "leftColumn": 38,
+    "dynamicBindingPathList": [
+        {"key": "borderRadius"},
+        {"key": "groupButtons.groupButton2.buttonColor"}
+    ],
+    "key": "pafyvp4mo9",
+    "orientation": "horizontal",
+    "isDeprecated": false,
+    "rightColumn": 64,
+    "thumbnailSVG": "/static/media/thumbnail.eaa22f923be763e8779a46432554f1ed.svg",
+    "widgetId": "o6rjseur2m",
+    "onCanvasUI": {
+        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+        "disableParentSelection": false,
+        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+    },
+    "minWidth": 450,
+    "isVisible": "true",
+    "version": 1,
+    "parentId": "5o0obrcbi0",
+    "tags": ["Buttons"],
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 0,
+    "responsiveBehavior": "fill",
+    "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
+    "originalTopRow": 5,
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 26,
+    "originalBottomRow": 9,
+    "buttonVariant": "PRIMARY"
+}

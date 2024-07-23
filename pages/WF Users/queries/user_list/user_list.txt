@@ -1,0 +1,6 @@
+SELECT *
+, ifnull(DATE_FORMAT(last_login, '%Y-%m-%d'),'') login
+FROM   users
+where active = {{appsmith.store.active}}
+order by last_name, first_name
+

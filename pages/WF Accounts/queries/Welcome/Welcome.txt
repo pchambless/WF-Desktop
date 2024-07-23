@@ -1,0 +1,14 @@
+Dear {{tbl_AcctUsers.selectedRow.first_name}},<br><br>
+Welcome to <strong>Whatsfresh!</strong>!<br><br>
+
+We're excited to have <strong>{{sel_Acct.selectedOptionLabel}}</strong> on board and ready to start tracking the ingredients that make up your products. With our app, you can easily monitor and manage all the ingredients you use, helping you meet FDA requirements for Ingredient Traceability!<br><br>
+
+Get started today and revolutionize the way you trace the ingredients that make up your products. If you have any questions or need assistance, feel free to reach out to our support team at any time!<br><br>
+
+You can access WhatsFresh at <a href="https://whatsfresh.app/login">Whatsfresh</a> .  Use the password provided to you by the Whatsfresh team.
+
+Happy Making!<br><br>
+
+The Whatsfresh Team
+Paul: pc7900@gmail.com
+Joel: joel@twomenandagarden.com

@@ -67,6 +67,14 @@
     {
       "id": "Issues",
       "isDefault": false
+    },
+    {
+      "id": "WF Accounts",
+      "isDefault": false
+    },
+    {
+      "id": "WF Users",
+      "isDefault": false
     }
   ],
   "viewMode": false,

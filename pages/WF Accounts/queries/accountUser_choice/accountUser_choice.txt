@@ -1,0 +1,10 @@
+select concat(first_name, ' ', last_name) name, a.id 
+from   users a
+left join (select user_id 
+		 from accounts_users
+		 where account_id = {{appsmith.store.acctID}}
+		 and active = 'Y') b
+on  a.id = b.user_id
+where a.active = 'Y'
+and  ifnull(b.user_id,0) = 0
+ORDER by 1

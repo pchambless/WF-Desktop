@@ -1,0 +1,3 @@
+UPDATE accounts
+set deleted_at = {{tbl_Entity.triggeredRow.active === 'Y' ? moment().format('YYYY-MM-DD HH:mm:ss') : null}} 
+where id = {{tbl_Entity.triggeredRow.id}}

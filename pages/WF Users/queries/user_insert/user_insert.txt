@@ -1,0 +1,11 @@
+INSERT INTO users
+(last_name, first_name, email, password, default_account_id, role, created_by )
+VALUES
+(	{{last_name.text}}
+	,{{first_name.text}}
+	,{{email.text || ''}}
+  ,'New14User'
+	,{{default_account_id.selectedOptionValue}}
+	,{{role.selectedOptionValue}}
+	,2
+)

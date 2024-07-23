@@ -1,0 +1,4 @@
+SELECT id value, name label
+from   accounts
+where  active = 'Y'
+order by name

@@ -1,0 +1,3 @@
+update accounts
+SET payment_customer_code = null
+where id = {{tbl_Entity.triggeredRow.id}}

@@ -1,0 +1,4 @@
+select *
+from   v_account_tracking
+where acct_id = {{select_account.selectedOptionValue}}
+

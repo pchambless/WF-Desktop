@@ -6,7 +6,8 @@
     "dynamicPropertyPathList": [
         {"key": "groupButtons.groupButton1.onClick"},
         {"key": "groupButtons.groupButton7gnphpzkj0.isVisible"},
-        {"key": "groupButtons.groupButton2f5ji0wcf0.isVisible"}
+        {"key": "groupButtons.groupButton2f5ji0wcf0.isVisible"},
+        {"key": "groupButtons.groupButtonfasnig4w7w.isVisible"}
     ],
     "displayName": "Button Group",
     "iconSVG": "/static/media/icon.bb8db4853027d74a78963c3375841e4b.svg",
@@ -14,8 +15,8 @@
         "click",
         "submit"
     ],
-    "topRow": 12,
-    "bottomRow": 16,
+    "topRow": 11,
+    "bottomRow": 15,
     "parentRowSpace": 10,
     "type": "BUTTON_GROUP_WIDGET",
     "groupButtons": {
@@ -74,6 +75,44 @@
             "id": "groupButton007ky52dfr",
             "isDisabled": false,
             "placement": "CENTER"
+        },
+        "groupButtonfasnig4w7w": {
+            "itemType": "BUTTON",
+            "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+            "widgetId": "0g6nd2y5op",
+            "menuItems": {
+                "menuItem1ifn8g9sav": {
+                    "onClick": "{{navigateTo('WF Accounts', {}, 'SAME_WINDOW');}}",
+                    "backgroundColor": "{{appsmith.theme.colors.primaryColor}}",
+                    "widgetId": "vebfwaivf4",
+                    "index": 0,
+                    "id": "menuItem1ifn8g9sav",
+                    "label": "WF Accounts",
+                    "isDisabled": false,
+                    "isVisible": true,
+                    "textColor": "#ffffff"
+                },
+                "menuItemx8qvg3hw94": {
+                    "onClick": "{{navigateTo('WF Users', {}, 'SAME_WINDOW');}}",
+                    "backgroundColor": "{{appsmith.theme.colors.primaryColor}}",
+                    "widgetId": "5ec9l8c4sj",
+                    "index": 1,
+                    "id": "menuItemx8qvg3hw94",
+                    "label": "WF Users",
+                    "isDisabled": false,
+                    "isVisible": true,
+                    "textColor": "#ffffff"
+                }
+            },
+            "index": 4,
+            "label": "WF Management",
+            "isVisible": "{{appsmith.store.roleID ? true : false}}",
+            "buttonType": "MENU",
+            "variant": "filled",
+            "id": "groupButtonfasnig4w7w",
+            "isDisabled": false,
+            "placement": "CENTER",
+            "isSeparator": false
         },
         "groupButton1": {
             "onClick": "{{navigateTo('Dashboard', {})}}",
@@ -221,17 +260,23 @@
         {"key": "groupButtons.groupButtonbv2dvqql0o.menuItems.menuItem1cyk27taql.onClick"},
         {"key": "groupButtons.groupButton007ky52dfr.menuItems.menuItem3prgefb43a.onClick"},
         {"key": "groupButtons.groupButton7gnphpzkj0.menuItems.menuItemkk3ib3nsfq.onClick"},
-        {"key": "groupButtons.groupButton7gnphpzkj0.menuItems.menuItemxeu1zv5gt1.onClick"}
+        {"key": "groupButtons.groupButton7gnphpzkj0.menuItems.menuItemxeu1zv5gt1.onClick"},
+        {"key": "groupButtons.groupButtonfasnig4w7w.menuItems.menuItem1ifn8g9sav.onClick"},
+        {"key": "groupButtons.groupButtonfasnig4w7w.menuItems.menuItemx8qvg3hw94.onClick"}
     ],
-    "leftColumn": 6,
+    "leftColumn": 5,
     "dynamicBindingPathList": [
         {"key": "groupButtons.groupButton007ky52dfr.onClick"},
-        {"key": "groupButtons.groupButton7gnphpzkj0.onClick"}
+        {"key": "groupButtons.groupButton7gnphpzkj0.onClick"},
+        {"key": "groupButtons.groupButtonfasnig4w7w.buttonColor"},
+        {"key": "groupButtons.groupButtonfasnig4w7w.isVisible"},
+        {"key": "groupButtons.groupButtonfasnig4w7w.menuItems.menuItemx8qvg3hw94.backgroundColor"},
+        {"key": "groupButtons.groupButtonfasnig4w7w.menuItems.menuItem1ifn8g9sav.backgroundColor"}
     ],
     "key": "o4ohcb5u1o",
     "orientation": "horizontal",
     "isDeprecated": false,
-    "rightColumn": 43,
+    "rightColumn": 46,
     "widgetId": "59ab7nox13",
     "minWidth": 450,
     "isVisible": true,
@@ -243,9 +288,9 @@
     "mobileTopRow": 4,
     "responsiveBehavior": "fill",
     "childStylesheet": {"button": {"buttonColor": "{{appsmith.theme.colors.primaryColor}}"}},
-    "originalTopRow": 12,
+    "originalTopRow": 64,
     "borderRadius": "1.5rem",
     "mobileLeftColumn": 1,
-    "originalBottomRow": 16,
+    "originalBottomRow": 68,
     "buttonVariant": "PRIMARY"
 }

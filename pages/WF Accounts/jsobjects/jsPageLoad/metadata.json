@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "jsPageLoad",
+    "pageId": "WF Accounts",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "WF Accounts_jsPageLoad",
+  "deleted": false,
+  "gitSyncId": "6668cf0988cf8166d347b04c_1bee3481-5eea-4b9b-b894-b184a4cffaa4"
+}

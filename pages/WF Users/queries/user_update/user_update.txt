@@ -1,0 +1,9 @@
+UPDATE users
+set last_name =	{{last_name.text}}
+	, first_name = {{first_name.text}}
+	, email = {{email.text}}
+	, default_account_id ={{default_account_id.selectedOptionValue}}
+	, role = {{role.selectedOptionValue}}
+	, updated_at = CURRENT_TIMESTAMP()
+	, updated_by = 2
+where id = {{tbl_Entity.selectedRow.id}}

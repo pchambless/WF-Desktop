@@ -1,0 +1,8 @@
+INSERT into accounts_users
+(account_id, user_id, created_at, created_by)
+VALUES
+(	{{sel_Acct.selectedOptionValue}}
+	,{{tbl_AcctUser_choice.triggeredRow.id}}	
+	,CURRENT_TIMESTAMP()
+	,2
+)

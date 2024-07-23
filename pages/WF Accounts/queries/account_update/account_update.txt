@@ -1,0 +1,12 @@
+UPDATE accounts
+SET name = {{Name.text}}
+,description = {{description.text}}
+,street_address = {{street_address.text}}
+,url = {{url.text}}
+,payment_customer_code = {{payment_customer_code.text}}
+,city = {{city.text}}
+,state_code = {{state_code.text}}
+,zip_code = {{zip_code.text || '630'}}
+,updated_at = current_timestamp()
+,updated_by = 2
+where id = {{tbl_Entity.selectedRow.id}}

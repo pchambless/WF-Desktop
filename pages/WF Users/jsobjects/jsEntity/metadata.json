@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "jsEntity",
+    "pageId": "WF Users",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "WF Users_jsEntity",
+  "deleted": false,
+  "gitSyncId": "6668cf0988cf8166d347b04c_807936b9-d327-448f-a88f-a686354f2bab"
+}

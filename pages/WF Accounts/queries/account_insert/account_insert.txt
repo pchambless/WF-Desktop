@@ -1,0 +1,11 @@
+INSERT into accounts
+(name, description, street_address, city, state_code, zip_code, created_at, created_by)
+values
+({{jsnAccount.formData.name}}
+,{{jsnAccount.formData.description}}
+,{{jsnAccount.formData.street_address}}
+,{{jsnAccount.formData.city}}
+,{{jsnAccount.formData.state_code}}
+,{{jsnAccount.formData.zip_code}}
+,current_timestamp()
+,2)

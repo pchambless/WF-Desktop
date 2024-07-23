@@ -1,0 +1,10 @@
+SELECT id, name, street_address, city, state_code, zip_code, company_code
+, ifnull(url,'') url
+, payment_customer_code
+, active
+, concat(ifnull(street_address,''), ', ', ifnull(city,''), ' ',ifnull(state_code,''),' ', zip_code) address
+,case when ifnull(payment_customer_code,1) = 0  or payment_customer_code > '' then 1 else 0 end enrolled 
+,case when ifnull(payment_customer_code,1) = 0 or payment_customer_code > '' then '&#x2713' else '' end paying
+FROM accounts 
+where active = {{appsmith.store.active}}
+order by paying desc, name;
