@@ -14,7 +14,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 380,
+          "bottomRow": 740,
           "containerStyle": "none",
           "snapRows": 84,
           "parentRowSpace": 1,
@@ -60,6 +60,26 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "() => {\n  help.run();\n  storeValue('help', help.data);\n  console.log(appsmith.store.help);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Dashboard_user_Choice",
+              "name": "user_Choice",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "select_account.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Dashboard_user_List",
+              "name": "user_List",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "select_account.selectedOptionValue"
               ],
               "timeoutInMillisecond": 10000
             }

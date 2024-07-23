@@ -1,0 +1,2 @@
+delete from accounts_users
+where id = {{tbl_AcctUsers.triggeredRow.acct_user_id}}
