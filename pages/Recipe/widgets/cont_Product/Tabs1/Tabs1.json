@@ -133,7 +133,7 @@
     "tags": ["Layout"],
     "isLoading": false,
     "borderRadius": "1.5rem",
-    "originalBottomRow": 73,
+    "originalBottomRow": 69,
     "needsErrorInfo": false,
     "mobileBottomRow": 76,
     "widgetName": "Tabs1",
@@ -177,7 +177,7 @@
     "renderMode": "CANVAS",
     "mobileTopRow": 61,
     "responsiveBehavior": "fill",
-    "originalTopRow": 22,
+    "originalTopRow": 18,
     "mobileLeftColumn": 0,
     "maxDynamicHeight": 9000,
     "minDynamicHeight": 15

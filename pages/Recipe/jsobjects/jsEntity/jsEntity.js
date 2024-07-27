@@ -11,7 +11,7 @@ export default {
 		await entity_List.run()
 	},
 	txtEditHdr () {
-		let txt = tbl_Entity.selectedRowIndex === -1 || !entity_List.data.length ? "Add" : "Edit <strong>" + tbl_Entity.selectedRow.name + '</strong>'
+		let txt = tbl_Entity.selectedRowIndex === -1 || !entity_List.data.length ? "Add" : "Edit <strong>" + tbl_Entity.selectedRow.ingr_name + '</strong>'
 		return txt
 	}
 }

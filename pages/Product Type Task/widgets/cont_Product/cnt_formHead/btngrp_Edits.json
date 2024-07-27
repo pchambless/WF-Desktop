@@ -42,7 +42,7 @@
             "isSeparator": false
         },
         "groupButton2": {
-            "onClick": "{{tbl_Entity.setSelectedRowIndex(-1)\nawait storeValue('editMode','Add')}}",
+            "onClick": "{{tbl_Entity.setSelectedRowIndex(-1)}}",
             "buttonType": "SIMPLE",
             "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
             "widgetId": "",
@@ -51,7 +51,7 @@
             "label": "Add",
             "id": "groupButton2",
             "placement": "CENTER",
-            "isVisible": "false",
+            "isVisible": "{{txt_formHeader.text === 'Add' ? false : true}}",
             "isDisabled": false
         }
     },
@@ -66,14 +66,15 @@
     "leftColumn": 38,
     "dynamicBindingPathList": [
         {"key": "borderRadius"},
-        {"key": "groupButtons.groupButton2.buttonColor"}
+        {"key": "groupButtons.groupButton2.buttonColor"},
+        {"key": "groupButtons.groupButton2.isVisible"}
     ],
     "key": "pafyvp4mo9",
     "orientation": "horizontal",
     "isDeprecated": false,
     "rightColumn": 64,
     "thumbnailSVG": "/static/media/thumbnail.eaa22f923be763e8779a46432554f1ed.svg",
-    "widgetId": "ps5n1fsew8",
+    "widgetId": "39j09tj786",
     "onCanvasUI": {
         "focusBGCSSVar": "--on-canvas-ui-widget-focus",
         "disableParentSelection": false,
