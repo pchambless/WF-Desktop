@@ -1,11 +1,11 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_6848384b-9c9d-424d-980f-f6c57b3543a8",
+  "id": "wsConfig_back",
   "unpublishedCollection": {
     "name": "back",
     "pageId": "wsConfig",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "myVar1",
@@ -15,10 +15,6 @@
         "name": "myVar2",
         "value": "{}"
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "wsConfig_back",
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_6848384b-9c9d-424d-980f-f6c57b3543a8"
+    ]
+  }
 }

@@ -1,23 +1,17 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_8eead09e-ead4-4ded-8c72-f94583b8e89e",
   "unpublishedPage": {
-    "name": "Ingredient Type",
-    "slug": "ingredient-type",
+    "isHidden": true,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 1100,
-          "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-          "widgetName": "MainContainer",
-          "topRow": 0,
+          "backgroundColor": "none",
+          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
           "bottomRow": 580,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
+          "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
           "canExtend": true,
-          "minHeight": 1100,
-          "useAutoLayout": false,
-          "parentColumnSpace": 1,
-          "dynamicTriggerPathList": [],
+          "containerStyle": "none",
+          "detachFromLayout": true,
           "dynamicBindingPathList": [
             {
               "key": "borderRadius"
@@ -26,69 +20,27 @@
               "key": "boxShadow"
             }
           ],
+          "dynamicTriggerPathList": [],
           "leftColumn": 0,
+          "minHeight": 1100,
+          "mobileBottomRow": 1100,
+          "mobileTopRow": 0,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
           "positioning": "fixed",
-          "backgroundColor": "none",
           "rightColumn": 1296,
           "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "containerStyle": "none",
           "snapRows": 84,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "useAutoLayout": false,
           "version": 89,
-          "mobileTopRow": 0,
-          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Ingredient Type_entity_List",
-              "name": "entity_List",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.acct_id",
-                "appsmith.store.active"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Ingredient Type_jsBack.lastPage",
-              "name": "jsBack.lastPage",
-              "collectionId": "Ingredient Type_jsBack",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  let ar = appsmith.store.pages;\n  ar.unshift('Ingredient Type');\n  ar.splice(4);\n  storeValue('pages', ar);\n  return ar[1];\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Ingredient Type_ingr_List",
-              "name": "ingr_List",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "tbl_Entity.selectedRow.id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Ingredient Type",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": true
-  },
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_8eead09e-ead4-4ded-8c72-f94583b8e89e"
+    "name": "Ingredient Type",
+    "slug": "ingredient-type"
+  }
 }

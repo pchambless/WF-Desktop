@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_f2c3dc8b-5a59-49b4-9e29-14d0e5675bb2",
+  "id": "Product Batch_jsEntity",
   "unpublishedCollection": {
     "name": "jsEntity",
     "pageId": "Product Batch",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Product Batch_jsEntity",
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_f2c3dc8b-5a59-49b4-9e29-14d0e5675bb2"
+    "variables": []
+  }
 }

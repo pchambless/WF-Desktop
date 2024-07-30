@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_a95c0869-6893-4faf-af15-38d28991d2ec",
+  "id": "Product_jsPageLoad",
   "unpublishedCollection": {
     "name": "jsPageLoad",
     "pageId": "Product",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Product_jsPageLoad",
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_a95c0869-6893-4faf-af15-38d28991d2ec"
+    "variables": []
+  }
 }

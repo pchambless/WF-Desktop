@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_62810aaa-a876-4b9f-b9c6-94a2e4a856c6",
+  "id": "Ingredient Batch_jsForm",
   "unpublishedCollection": {
     "name": "jsForm",
     "pageId": "Ingredient Batch",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Ingredient Batch_jsForm",
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_62810aaa-a876-4b9f-b9c6-94a2e4a856c6"
+    "variables": []
+  }
 }

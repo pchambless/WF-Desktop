@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_d290ba06-5463-496b-939b-6370a440c677",
+  "id": "Recipe_jsForm",
   "unpublishedCollection": {
     "name": "jsForm",
     "pageId": "Recipe",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Recipe_jsForm",
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_d290ba06-5463-496b-939b-6370a440c677"
+    "variables": []
+  }
 }

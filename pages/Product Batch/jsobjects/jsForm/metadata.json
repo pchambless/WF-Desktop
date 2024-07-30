@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_7953c5c5-1445-42bf-836e-1caf8995437a",
+  "id": "Product Batch_jsForm",
   "unpublishedCollection": {
     "name": "jsForm",
     "pageId": "Product Batch",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Product Batch_jsForm",
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_7953c5c5-1445-42bf-836e-1caf8995437a"
+    "variables": []
+  }
 }

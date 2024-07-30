@@ -1,53 +1,67 @@
 {
-    "needsErrorInfo": false,
-    "boxShadow": "none",
-    "mobileBottomRow": 14,
-    "widgetName": "img_Receipt",
-    "onClick": "{{storeValue('logo',file_Receipt.files[0].data)}}",
-    "dynamicPropertyPathList": [{"key": "onClick"}],
-    "displayName": "Image",
-    "iconSVG": "/static/media/icon.0ca0b0d56b58addbf45114ae5a79e88a.svg",
-    "topRow": 0,
-    "bottomRow": 19,
-    "parentRowSpace": 10,
-    "type": "IMAGE_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 34,
-    "animateLoading": true,
-    "parentColumnSpace": 17.765625,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "imageShape": "RECTANGLE",
-    "leftColumn": 54,
-    "dynamicBindingPathList": [
-        {"key": "borderRadius"},
-        {"key": "image"}
-    ],
-    "defaultImage": "https://assets.appsmith.com/widgets/default.png",
-    "flexVerticalAlignment": "start",
-    "key": "ij7plorokt",
-    "image": "{{file_Receipt.files[0].data}}",
-    "isDeprecated": false,
-    "rightColumn": 62,
-    "objectFit": "contain",
-    "thumbnailSVG": "/static/media/thumbnail.74089bb21dfcb5890f6b106f93c3b9c8.svg",
-    "widgetId": "zwz1qpkgup",
-    "onCanvasUI": {
-        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
-        "disableParentSelection": false,
-        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
-        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
-        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 19,
+  "boxShadow": "none",
+  "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+  "displayName": "Image",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
     },
-    "isVisible": true,
-    "version": 1,
-    "parentId": "0",
-    "tags": ["Media"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 2,
-    "maxZoomLevel": 1,
-    "enableDownload": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 22,
-    "enableRotation": false
+    {
+      "key": "image"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.0ca0b0d56b58addbf45114ae5a79e88a.svg",
+  "image": "{{file_Receipt.files[0].data}}",
+  "imageShape": "RECTANGLE",
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ij7plorokt",
+  "leftColumn": 54,
+  "maxZoomLevel": 1,
+  "mobileBottomRow": 14,
+  "mobileLeftColumn": 22,
+  "mobileRightColumn": 34,
+  "mobileTopRow": 2,
+  "needsErrorInfo": false,
+  "objectFit": "contain",
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "onClick": "{{storeValue('logo',file_Receipt.files[0].data)}}",
+  "parentColumnSpace": 17.765625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 62,
+  "tags": [
+    "Media"
+  ],
+  "thumbnailSVG": "/static/media/thumbnail.74089bb21dfcb5890f6b106f93c3b9c8.svg",
+  "topRow": 0,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "zwz1qpkgup",
+  "widgetName": "img_Receipt"
 }

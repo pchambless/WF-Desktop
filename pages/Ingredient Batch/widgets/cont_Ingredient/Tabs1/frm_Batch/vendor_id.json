@@ -1,67 +1,87 @@
 {
-    "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-    "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-    "labelText": "Vendor",
-    "topRow": 4,
-    "labelWidth": "8",
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( tbl_Entity.selectedRowIndex === -1 ? ingr_Select.data[0].default_vendor : tbl_Entity.selectedRow.vendor_id))(vendor_id.options, vendor_id.serverSideFiltering) }}",
-    "animateLoading": true,
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "sourceData"},
-        {"key": "defaultOptionValue"},
-        {"key": "labelTextColor"},
-        {"key": "borderRadius"}
-    ],
-    "labelStyle": "BOLD",
-    "placeholderText": "Select option",
-    "isDisabled": false,
-    "isRequired": true,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "version": 1,
-    "onDropdownOpen": "{{vndr_dd.run()}}",
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 19,
-    "alignment": "start",
-    "mobileBottomRow": 48.4,
-    "widgetName": "vendor_id",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [
-        {"key": "onDropdownOpen"},
-        {"key": "sourceData"}
-    ],
-    "displayName": "Select",
-    "searchTags": ["dropdown"],
-    "bottomRow": 8,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "mobileRightColumn": 64,
-    "parentColumnSpace": 18.640625,
-    "dynamicTriggerPathList": [{"key": "onDropdownOpen"}],
-    "labelPosition": "Left",
-    "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
-    "sourceData": "{{vndr_dd.data}}",
-    "key": "xweafrj5o1",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 46,
-    "widgetId": "osgzc538yy",
-    "optionValue": "value",
-    "minWidth": 450,
-    "parentId": "p4t23d4f2o",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 41.8,
-    "optionLabel": "label",
-    "responsiveBehavior": "fill",
-    "originalTopRow": 15,
-    "mobileLeftColumn": 0,
-    "maxDynamicHeight": 9000,
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignment": "start",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8,
+  "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( tbl_Entity.selectedRowIndex === -1 ? ingr_Select.data[0].default_vendor : tbl_Entity.selectedRow.vendor_id))(vendor_id.options, vendor_id.serverSideFiltering) }}",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "labelTextColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onDropdownOpen"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onDropdownOpen"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "xweafrj5o1",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelStyle": "BOLD",
+  "labelText": "Vendor",
+  "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "8",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 48.4,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 41.8,
+  "onDropdownOpen": "{{vndr_dd.run()}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 19,
+  "originalTopRow": 15,
+  "parentColumnSpace": 18.640625,
+  "parentId": "p4t23d4f2o",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 46,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "{{vndr_dd.data}}",
+  "topRow": 4,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "osgzc538yy",
+  "widgetName": "vendor_id"
 }

@@ -1,20 +1,16 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_3ca7c71c-2226-45d4-acd7-c16594d1895e",
+  "id": "receiptScanner_jsExtract",
   "unpublishedCollection": {
     "name": "jsExtract",
     "pageId": "receiptScanner",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
     "variables": [
       {
         "name": "tableData",
         "value": "[]"
       }
-    ],
-    "userPermissions": []
-  },
-  "id": "receiptScanner_jsExtract",
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_3ca7c71c-2226-45d4-acd7-c16594d1895e"
+    ]
+  }
 }

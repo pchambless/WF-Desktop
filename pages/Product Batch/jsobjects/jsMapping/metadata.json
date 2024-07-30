@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "619679789c793d1e5ededc08_6484f525615adb203f30af6d",
+  "id": "Product Batch_jsMapping",
   "unpublishedCollection": {
     "name": "jsMapping",
     "pageId": "Product Batch",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Product Batch_jsMapping",
-  "deleted": false,
-  "gitSyncId": "619679789c793d1e5ededc08_6484f525615adb203f30af6d"
+    "variables": []
+  }
 }

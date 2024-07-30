@@ -1,62 +1,76 @@
 {
-    "resetFormOnClick": false,
-    "needsErrorInfo": false,
-    "boxShadow": "none",
-    "mobileBottomRow": 22,
-    "onClick": "{{navigateTo('https://whatsfresh.app/login', {}, 'NEW_WINDOW');}}",
-    "widgetName": "btn_oldWF",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [{"key": "onClick"}],
-    "iconSVG": "/static/media/icon.7a418b9e1899a550d7e8f33b48cbde12.svg",
-    "displayName": "Button",
-    "topRow": 67,
-    "searchTags": [
-        "click",
-        "submit"
-    ],
-    "bottomRow": 71,
-    "parentRowSpace": 10,
-    "type": "BUTTON_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 33,
-    "animateLoading": true,
-    "parentColumnSpace": 13.24609375,
-    "dynamicTriggerPathList": [{"key": "onClick"}],
-    "leftColumn": 19,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
-    "text": "Old Whatsfresh",
-    "isDisabled": false,
-    "key": "xss67awonj",
-    "isDeprecated": false,
-    "rightColumn": 45,
-    "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-    "isDefaultClickDisabled": true,
-    "widgetId": "cz2yswt15f",
-    "onCanvasUI": {
-        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
-        "disableParentSelection": false,
-        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
-        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
-        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 71,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
     },
-    "minWidth": 120,
-    "isVisible": true,
-    "version": 1,
-    "recaptchaType": "V3",
-    "parentId": "tc7gmxa74d",
-    "tags": ["Buttons"],
-    "isLoading": false,
-    "renderMode": "CANVAS",
-    "mobileTopRow": 18,
-    "responsiveBehavior": "hug",
-    "originalTopRow": 67,
-    "disabledWhenInvalid": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 17,
-    "originalBottomRow": 71,
-    "buttonVariant": "PRIMARY",
-    "placement": "CENTER"
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.7a418b9e1899a550d7e8f33b48cbde12.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "xss67awonj",
+  "leftColumn": 19,
+  "minWidth": 120,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 17,
+  "mobileRightColumn": 33,
+  "mobileTopRow": 18,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "onClick": "{{navigateTo('https://whatsfresh.app/login', {}, 'NEW_WINDOW');}}",
+  "originalBottomRow": 71,
+  "originalTopRow": 67,
+  "parentColumnSpace": 13.24609375,
+  "parentId": "tc7gmxa74d",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 45,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "text": "Old Whatsfresh",
+  "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
+  "topRow": 67,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "cz2yswt15f",
+  "widgetName": "btn_oldWF"
 }

@@ -1,67 +1,85 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
-    "labelText": "Account",
-    "topRow": 0,
-    "labelWidth": "4",
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.acctID))(sel_Acct.options, sel_Acct.serverSideFiltering) }}",
-    "animateLoading": true,
-    "leftColumn": 0,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "borderRadius"},
-        {"key": "sourceData"},
-        {"key": "defaultOptionValue"}
-    ],
-    "placeholderText": "Select Account",
-    "isDisabled": false,
-    "isRequired": false,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": true,
-    "version": 1,
-    "tags": [
-        "Suggested",
-        "Select"
-    ],
-    "isLoading": false,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 26,
-    "mobileBottomRow": 7,
-    "widgetName": "sel_Acct",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [
-        {"key": "sourceData"},
-        {"key": "onOptionChange"}
-    ],
-    "displayName": "Select",
-    "searchTags": ["dropdown"],
-    "bottomRow": 4,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "mobileRightColumn": 19,
-    "parentColumnSpace": 17.765625,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "labelPosition": "Left",
-    "sourceData": "{{account_dd.data}}",
-    "key": "dsfeyrwqmv",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 24,
-    "widgetId": "etijw0cfwi",
-    "optionValue": "value",
-    "minWidth": 450,
-    "parentId": "iosa1e4m97",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 0,
-    "optionLabel": "label",
-    "responsiveBehavior": "fill",
-    "originalTopRow": 19,
-    "mobileLeftColumn": 0,
-    "maxDynamicHeight": 9000,
-    "onOptionChange": "{{accountUser_list.run()\naccountUser_choice.run()}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.acctID))(sel_Acct.options, sel_Acct.serverSideFiltering) }}",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "dsfeyrwqmv",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelText": "Account",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "4",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 19,
+  "mobileTopRow": 0,
+  "onOptionChange": "{{accountUser_list.run()\naccountUser_choice.run()}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 26,
+  "originalTopRow": 19,
+  "parentColumnSpace": 17.765625,
+  "parentId": "iosa1e4m97",
+  "parentRowSpace": 10,
+  "placeholderText": "Select Account",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 24,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "{{account_dd.data}}",
+  "tags": [
+    "Suggested",
+    "Select"
+  ],
+  "topRow": 0,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "etijw0cfwi",
+  "widgetName": "sel_Acct"
 }

@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_4144c04d-7599-41fb-b52b-1be9e133f967",
+  "id": "Dashboard_jsUser",
   "unpublishedCollection": {
     "name": "jsUser",
     "pageId": "Dashboard",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Dashboard_jsUser",
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_4144c04d-7599-41fb-b52b-1be9e133f967"
+    "variables": []
+  }
 }

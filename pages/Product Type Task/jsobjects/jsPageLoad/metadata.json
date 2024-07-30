@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_058b32f4-5523-4682-9546-cce31d5977f0",
+  "id": "Product Type Task_jsPageLoad",
   "unpublishedCollection": {
     "name": "jsPageLoad",
     "pageId": "Product Type Task",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Product Type Task_jsPageLoad",
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_058b32f4-5523-4682-9546-cce31d5977f0"
+    "variables": []
+  }
 }

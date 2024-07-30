@@ -1,67 +1,85 @@
 {
-    "needsErrorInfo": false,
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "mobileBottomRow": 30,
-    "widgetName": "cw_IngrTrace",
-    "borderColor": "#E0DEDE",
-    "srcDoc": {
-        "css": ".app {\n  width: 850px;\n  justify-content: center;\n  border-radius: var(--appsmith-theme-borderRadius);\n  padding: 10px 10px;\n  border: 1px solid black;\n  box-sizing: border-box;\n  font-family: system-ui;\n  background: white;\n}\n\n.container {\n  display: grid;\n  grid-template-columns: repeat(6, 1fr);\n  grid-template-rows: auto;\n  grid-gap: 20px;\n  align-items: start;\n}\n\n.header {\n  display: grid;\n  padding: 6px;\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-template-areas: \"info info info \";\n  font-weight: bold;\n}\n\n.info {\n  grid-area: info;\n  border: 1px solid black;\n  padding: 10px;\n  border-radius: 10px;\n  text-align: center;\n}\n.info .rptDate {\n  color: blue;\n}\n.info h3 {\n  color: blue;\n}\n.info .info-tbl {\n  display: flex;\n  justify-content: center; /* Horizontally center the content */\n  align-items: center; /* Vertically center the content */\n}\n\n.type-container {\n  display: grid;\n  grid-template-columns: 1fr;\n  justify-content: space-between;\n  background-color: white;\n  padding: 2px;\n}\n\n.type {\n  display: grid;\n  margin: 2px;\n  box-shadow: 0 4px 2px lightgrey;\n  border-radius: 10px;\n  transition: 0.3s;\n}\n\n.type-hdr {\n  background-color: #d6f5d8;\n  border-radius: 10px;\n  border: 2px solid black;\n  padding: 2px;\n  color: blue;\n  font-size: 15px;\n  text-align: left;\n}\n\n.type-tbl {\n  width: 97%;\n  margin: 2px;\n  font-size: 13px;\n  border-radius: 9px;\n  transition: 0.3s;\n}\n\n.type-hdr-1 {\n  text-align: left;\n  width: 230px;\n  border: 2px solid black;\n  padding: 4px;\n}\n\n.type-hdr-2 {\n  text-align: center;\n  width: 30px;\n  border: 2px solid black;\n  padding: 7px;\n}\n\n.type-hdr-3 {\n  text-align: center;\n  width: 90px;\n  border: 2px solid black;\n  padding: 7px;\n}\n\n.type-col-1 {\n  background-color: #ffffe6;\n  text-align: left;\n  border: 1px solid blue;\n  padding: 3px;\n}\n\n.type-col-2 {\n  text-align: center;\n  border: 1px solid blue;\n  padding: 5px;\n}\n\n.type-col-3 {\n  text-align: center;\n  border: 1px solid blue;\n  padding: 7px;\n}",
-        "js": "class Helper {\n  static initApp() {\n    const title = document.getElementById(\"title\");\n    title.innerHTML = this.title();\n    const rptDate = document.getElementById(\"rptDate\");\n    rptDate.innerHTML = appsmith.model.rptDate;\n    const trace = document.getElementById(\"trace\");\n    trace.innerHTML = this.trace();\n  }\n  static title() {\n    const rptDtl = appsmith.model.title;\n    const btchDtl = JSON.parse(appsmith.model.btchSelect);\n    const html = `\n            <h2>${rptDtl}<\/h2><br>\n            <h3>Ingredient Tracing: ${btchDtl.ingr_name}<\/h3><br>\n\t\t\t\t\t\t\t<div class=\"info-tbl\">\n\t\t<table >\n\t\t\t<tr class=\"table-row\">\n\t\t\t\t<td class=\"type-col-1\">Batch<\/td>\n\t\t\t\t<td class=\"type-col-1\">${btchDtl.ingr_btch_nbr}<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr class=\"table-row\">\n\t\t\t\t<td class=\"type-col-1\">Purchase Date<\/td>\n\t\t\t\t<td class=\"type-col-1\">${btchDtl.purch_date}<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr class=\"table-row\">\n\t\t\t\t<td class=\"type-col-1\">Vendor<\/td>\n\t\t\t\t<td class=\"type-col-1\">${btchDtl.vndr_name}<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr class=\"table-row\">\n\t\t\t\t<td class=\"type-col-1\">Detail<\/td>\n\t\t\t\t<td class=\"type-col-1\">${btchDtl.purch_dtl}<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr class=\"table-row\">\n\t\t\t\t<td class=\"type-col-1\">Amount<\/td>\n\t\t\t\t<td class=\"type-col-1\">${btchDtl.purch_amt}<\/td>\n\t\t\t<\/tr>\n\t\t<\/table>\n\t<\/div><br>\n`;\n    return html;\n  }\n  static trace() {\n    const rptDtl = JSON.parse(appsmith.model.trace);\n    const btchSelect = JSON.parse(appsmith.model.btchSelect);\n    let html = `\n\t\t\t<div class=\"type-container\">\n\t\t\t\t<div class=\"type-hdr\">\t\n\t\t\t\t\t<h4>Product Batches<\/h4>\n\t\t\t\t<\/div>`;\n    html += `<div class=\"table-area\">\n\n\t\t\t\t<div class=\"table-area\">\n\t\t\t\t<table>\n\t\t\t\t\t<tr class=\"type-tbl\">\n\t\t\t\t\t\t<th class=\"type-hdr-1\">Product<\/th>\n\t\t\t\t\t\t<th class=\"type-hdr-3\">Batch<\/th>\n\t\t\t\t\t\t<th class=\"type-hdr-3\">Date<\/th>\n\t\t\t\t\t\t<th class=\"type-hdr-3\">Qty<\/th>\n\t\t\t\t\t\t<th class=\"type-hdr-3\">Produced At<\/th>\n\n\t\t\t\t\t<\/tr>`;\n    rptDtl.forEach(prd => {\n      html += `\n\t\t\t\t\t<tr class=\"table-row\">\n\t\t\t\t\t\t<td class=\"type-col-1\">${prd.prd}<\/td>\n\t\t\t\t\t\t<td class=\"type-col-2\">${prd.prd_btch_nbr}<\/td>\n\t\t\t\t\t\t<td class=\"type-col-3\">${prd.prd_btch_date}<\/td>\n\t\t\t\t\t\t<td class=\"type-col-3\">${prd.prd_qty_meas}s<\/td>\n\t\t\t\t\t\t<td class=\"type-col-3\">${prd.location}<\/td>\n\t\t\t\t\t<\/tr>`;\n    });\n    html += `\n\t\t\t\t<\/table>\n\t\t\t<\/div>`;\n    return html;\n  }\n}\nappsmith.onReady(() => {\n  appsmith.onModelChange(() => {\n    Helper.initApp();\n  });\n});",
-        "html": "<div class=\"app\">\n\t\t<button onclick=\"window.print();\" class=\"noPrint\">\n\t\t\tPrint Me\n\t\t<\/button>\n\t\t<div class=\"header\">\n\t\t\t<div class =\"info\">\n\t\t\t\t<div id=\"title\"><\/div>\n\t\t\t\t<div class=\"rptDate\">\n\t\t\t\t\t<div id=\"rptDate\"><\/div>\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t<\/div>\n\t\t<div id=\"trace\"><\/div>\n<\/div>"
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 56,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{\"title\": \"{{appsmith.store.acct_name}}\",\n\"rptDate\": \"Report Date: {{moment().format('YYYY-MM-DD')}}\",\n\"btchSelect\": \"{{entity_Trace.data[0] || []}}\",\n\"trace\": \"{{entity_Trace.data}}\"\n}",
+  "displayName": "Custom",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
     },
-    "isCanvas": false,
-    "displayName": "Custom",
-    "iconSVG": "/static/media/icon.ff37253a5ce2f5284c42ede26ce165f9.svg",
-    "searchTags": ["external"],
-    "topRow": 0,
-    "bottomRow": 56,
-    "parentRowSpace": 10,
-    "type": "CUSTOM_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 23,
-    "dynamicTriggerPathList": [{"key": "onResetClick"}],
-    "parentColumnSpace": 10.200927734375,
-    "dynamicBindingPathList": [
-        {"key": "theme"},
-        {"key": "borderRadius"},
-        {"key": "boxShadow"},
-        {"key": "defaultModel"}
-    ],
-    "leftColumn": 0,
-    "defaultModel": "{\"title\": \"{{appsmith.store.acct_name}}\",\n\"rptDate\": \"Report Date: {{moment().format('YYYY-MM-DD')}}\",\n\"btchSelect\": \"{{entity_Trace.data[0] || []}}\",\n\"trace\": \"{{entity_Trace.data}}\"\n}",
-    "borderWidth": "1",
-    "theme": "{{appsmith.theme}}",
-    "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
-    "events": ["onResetClick"],
-    "key": "iidv7fbf4j",
-    "backgroundColor": "#FFFFFF",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "thumbnailSVG": "/static/media/thumbnail.a7d7cde44fad9a0d4d490def43560a78.svg",
-    "dynamicHeight": "FIXED",
-    "isSearchWildcard": true,
-    "widgetId": "i3u3mjel5d",
-    "onCanvasUI": {
-        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
-        "disableParentSelection": false,
-        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
-        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
-        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+    {
+      "key": "borderRadius"
     },
-    "isVisible": true,
-    "version": 1,
-    "uncompiledSrcDoc": {
-        "css": ".app {\n\twidth: 850px;\n\tjustify-content: center;\n\tborder-radius: var(--appsmith-theme-borderRadius);\n\tpadding: 10px 10px;\n\t\tborder: 1px solid black;\n\tbox-sizing: border-box;\n\tfont-family: system-ui;\n\tbackground: white;\n}\n\n.container {\n\tdisplay: grid;\n\tgrid-template-columns: repeat(6, 1fr);\n\tgrid-template-rows: auto;\n\tgrid-gap: 20px;\n\talign-items: start;\n}\n\n.header {\n\tdisplay: grid;\n\tpadding: 6px;\n\tdisplay: grid;\n\tgrid-template-columns: repeat(3, 1fr);\n\tgrid-template-areas: \n\t\t\"info info info \";\n\tfont-weight: bold;\n}\n\n.info {\n\tgrid-area: info;\n\tborder: 1px solid black;\n\tpadding: 10px;\n\tborder-radius: 10px;\n\ttext-align: center;\n\t\n\t.rptDate {\n\tcolor: blue;\n\t}\n\th3 {\n\tcolor: blue;\n\t}\n\t\t.info-tbl {\n    display: flex;\n    justify-content: center; /* Horizontally center the content */\n    align-items: center; /* Vertically center the content */\n}\n}\n\t\n.type-container {\n    display: grid;\n    grid-template-columns: 1fr; \n    justify-content: space-between;\n    background-color: white;\n    padding: 2px;\n\n}\n\n.type {\n\tdisplay: grid;\n  margin: 2px;\n\tbox-shadow: 0 4px 2px lightgrey;\n\tborder-radius: 10px;\n\ttransition: 0.3s;\n\n}\n.type-hdr {\n\tbackground-color: #d6f5d8;\n\tborder-radius: 10px;\n\tborder: 2px solid black;\n\tpadding: 2px;\n\tcolor: blue;\n\tfont-size: 15px;\n\ttext-align: left;\n}\t\n\n.type-tbl {\n\twidth: 97%; \n\tmargin: 2px;\n\tfont-size: 13px;\n\tborder-radius: 9px;\n\ttransition: 0.3s;\n}\n\n\t.type-hdr-1 {\n\t\t\ttext-align: left;\n\t\t\twidth: 230px;\n\t\t\tborder: 2px solid black;\n\t\t\tpadding: 4px;\n\t\t}\n\t.type-hdr-2 {\n\t\t\ttext-align: center;\n\t\t\twidth: 30px;\n\t\t\tborder: 2px solid black;\n\t\t\tpadding: 7px;\n\t\t}\n\t.type-hdr-3 {\n\t\t\ttext-align: center;\n\t\t\twidth: 90px;\n\t\t\tborder: 2px solid black; \n\t\t\tpadding: 7px;\n\t\t}\n\t.type-col-1 {\n\t\t\tbackground-color: #ffffe6;\n\t\t\ttext-align: left;\n\t\t\tborder: 1px solid blue;\n\t\t\tpadding: 3px;\n\t\t}\n\t.type-col-2 {\n\t\t\ttext-align: center;\n\t\t\tborder: 1px solid blue;\n\t\t\tpadding: 5px;\n\t\t}\n\t.type-col-3 {\n\t\t\ttext-align: center;\n\t\t\tborder: 1px solid blue;\n\n\t\t\tpadding: 7px;\n\t\t}\n",
-        "js": "class Helper {\n    static initApp() {\n\n        const title = document.getElementById(\"title\");\n        title.innerHTML = this.title();\n\n        const rptDate = document.getElementById(\"rptDate\");\n        rptDate.innerHTML = appsmith.model.rptDate;\n\n        const trace = document.getElementById(\"trace\");\n        trace.innerHTML = this.trace();\n    }\n\n    static title() {\n        const rptDtl = appsmith.model.title;\n\t\t\t\tconst btchDtl = JSON.parse(appsmith.model.btchSelect)\n        const html = `\n            <h2>${rptDtl}<\/h2><br>\n            <h3>Ingredient Tracing: ${btchDtl.ingr_name}<\/h3><br>\n\t\t\t\t\t\t\t<div class=\"info-tbl\">\n\t\t<table >\n\t\t\t<tr class=\"table-row\">\n\t\t\t\t<td class=\"type-col-1\">Batch<\/td>\n\t\t\t\t<td class=\"type-col-1\">${btchDtl.ingr_btch_nbr}<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr class=\"table-row\">\n\t\t\t\t<td class=\"type-col-1\">Purchase Date<\/td>\n\t\t\t\t<td class=\"type-col-1\">${btchDtl.purch_date}<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr class=\"table-row\">\n\t\t\t\t<td class=\"type-col-1\">Vendor<\/td>\n\t\t\t\t<td class=\"type-col-1\">${btchDtl.vndr_name}<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr class=\"table-row\">\n\t\t\t\t<td class=\"type-col-1\">Detail<\/td>\n\t\t\t\t<td class=\"type-col-1\">${btchDtl.purch_dtl}<\/td>\n\t\t\t<\/tr>\n\t\t\t<tr class=\"table-row\">\n\t\t\t\t<td class=\"type-col-1\">Amount<\/td>\n\t\t\t\t<td class=\"type-col-1\">${btchDtl.purch_amt}<\/td>\n\t\t\t<\/tr>\n\t\t<\/table>\n\t<\/div><br>\n`;\n        return html;\n    }\n\nstatic trace() {\n        const rptDtl = JSON.parse(appsmith.model.trace);\n\t\t\t\tconst btchSelect = JSON.parse(appsmith.model.btchSelect)\n        let html = `\n\t\t\t<div class=\"type-container\">\n\t\t\t\t<div class=\"type-hdr\">\t\n\t\t\t\t\t<h4>Product Batches<\/h4>\n\t\t\t\t<\/div>`\n\t\t\t\thtml += `<div class=\"table-area\">\n\n\t\t\t\t<div class=\"table-area\">\n\t\t\t\t<table>\n\t\t\t\t\t<tr class=\"type-tbl\">\n\t\t\t\t\t\t<th class=\"type-hdr-1\">Product<\/th>\n\t\t\t\t\t\t<th class=\"type-hdr-3\">Batch<\/th>\n\t\t\t\t\t\t<th class=\"type-hdr-3\">Date<\/th>\n\t\t\t\t\t\t<th class=\"type-hdr-3\">Qty<\/th>\n\t\t\t\t\t\t<th class=\"type-hdr-3\">Produced At<\/th>\n\n\t\t\t\t\t<\/tr>`;\n\t\t\t\t\t\t\t \n\t\t\t\trptDtl.forEach(prd => {\n\t\t\t\t\thtml += `\n\t\t\t\t\t<tr class=\"table-row\">\n\t\t\t\t\t\t<td class=\"type-col-1\">${prd.prd}<\/td>\n\t\t\t\t\t\t<td class=\"type-col-2\">${prd.prd_btch_nbr}<\/td>\n\t\t\t\t\t\t<td class=\"type-col-3\">${prd.prd_btch_date}<\/td>\n\t\t\t\t\t\t<td class=\"type-col-3\">${prd.prd_qty_meas}s<\/td>\n\t\t\t\t\t\t<td class=\"type-col-3\">${prd.location}<\/td>\n\t\t\t\t\t<\/tr>`;\n        \t\t});\n\t\t\t\thtml += `\n\t\t\t\t<\/table>\n\t\t\t<\/div>`\n\n        return html;\n    }\n}\n\nappsmith.onReady(() => {\n    appsmith.onModelChange(() => {\n        Helper.initApp();\n    });\n});\n",
-        "html": "<div class=\"app\">\n\t\t<button onclick=\"window.print();\" class=\"noPrint\">\n\t\t\tPrint Me\n\t\t<\/button>\n\t\t<div class=\"header\">\n\t\t\t<div class =\"info\">\n\t\t\t\t<div id=\"title\"><\/div>\n\t\t\t\t<div class=\"rptDate\">\n\t\t\t\t\t<div id=\"rptDate\"><\/div>\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t<\/div>\n\t\t<div id=\"trace\"><\/div>\n<\/div>"
+    {
+      "key": "boxShadow"
     },
-    "parentId": "intccwt8zr",
-    "tags": ["Display"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 0,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 0,
-    "maxDynamicHeight": 9000,
-    "minDynamicHeight": 4
+    {
+      "key": "defaultModel"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.ff37253a5ce2f5284c42ede26ce165f9.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "iidv7fbf4j",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 30,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 23,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "parentColumnSpace": 10.200927734375,
+  "parentId": "intccwt8zr",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchTags": [
+    "external"
+  ],
+  "srcDoc": {
+    "css": ".app {\n  width: 850px;\n  justify-content: center;\n  border-radius: var(--appsmith-theme-borderRadius);\n  padding: 10px 10px;\n  border: 1px solid black;\n  box-sizing: border-box;\n  font-family: system-ui;\n  background: white;\n}\n\n.container {\n  display: grid;\n  grid-template-columns: repeat(6, 1fr);\n  grid-template-rows: auto;\n  grid-gap: 20px;\n  align-items: start;\n}\n\n.header {\n  display: grid;\n  padding: 6px;\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-template-areas: \"info info info \";\n  font-weight: bold;\n}\n\n.info {\n  grid-area: info;\n  border: 1px solid black;\n  padding: 10px;\n  border-radius: 10px;\n  text-align: center;\n}\n.info .rptDate {\n  color: blue;\n}\n.info h3 {\n  color: blue;\n}\n.info .info-tbl {\n  display: flex;\n  justify-content: center; /* Horizontally center the content */\n  align-items: center; /* Vertically center the content */\n}\n\n.type-container {\n  display: grid;\n  grid-template-columns: 1fr;\n  justify-content: space-between;\n  background-color: white;\n  padding: 2px;\n}\n\n.type {\n  display: grid;\n  margin: 2px;\n  box-shadow: 0 4px 2px lightgrey;\n  border-radius: 10px;\n  transition: 0.3s;\n}\n\n.type-hdr {\n  background-color: #d6f5d8;\n  border-radius: 10px;\n  border: 2px solid black;\n  padding: 2px;\n  color: blue;\n  font-size: 15px;\n  text-align: left;\n}\n\n.type-tbl {\n  width: 97%;\n  margin: 2px;\n  font-size: 13px;\n  border-radius: 9px;\n  transition: 0.3s;\n}\n\n.type-hdr-1 {\n  text-align: left;\n  width: 230px;\n  border: 2px solid black;\n  padding: 4px;\n}\n\n.type-hdr-2 {\n  text-align: center;\n  width: 30px;\n  border: 2px solid black;\n  padding: 7px;\n}\n\n.type-hdr-3 {\n  text-align: center;\n  width: 90px;\n  border: 2px solid black;\n  padding: 7px;\n}\n\n.type-col-1 {\n  background-color: #ffffe6;\n  text-align: left;\n  border: 1px solid blue;\n  padding: 3px;\n}\n\n.type-col-2 {\n  text-align: center;\n  border: 1px solid blue;\n  padding: 5px;\n}\n\n.type-col-3 {\n  text-align: center;\n  border: 1px solid blue;\n  padding: 7px;\n}",
+    "html": "<div class=\"app\">\n\t\t<button onclick=\"window.print();\" class=\"noPrint\">\n\t\t\tPrint Me\n\t\t</button>\n\t\t<div class=\"header\">\n\t\t\t<div class =\"info\">\n\t\t\t\t<div id=\"title\"></div>\n\t\t\t\t<div class=\"rptDate\">\n\t\t\t\t\t<div id=\"rptDate\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div id=\"trace\"></div>\n</div>",
+    "js": "class Helper {\n  static initApp() {\n    const title = document.getElementById(\"title\");\n    title.innerHTML = this.title();\n    const rptDate = document.getElementById(\"rptDate\");\n    rptDate.innerHTML = appsmith.model.rptDate;\n    const trace = document.getElementById(\"trace\");\n    trace.innerHTML = this.trace();\n  }\n  static title() {\n    const rptDtl = appsmith.model.title;\n    const btchDtl = JSON.parse(appsmith.model.btchSelect);\n    const html = `\n            <h2>${rptDtl}</h2><br>\n            <h3>Ingredient Tracing: ${btchDtl.ingr_name}</h3><br>\n\t\t\t\t\t\t\t<div class=\"info-tbl\">\n\t\t<table >\n\t\t\t<tr class=\"table-row\">\n\t\t\t\t<td class=\"type-col-1\">Batch</td>\n\t\t\t\t<td class=\"type-col-1\">${btchDtl.ingr_btch_nbr}</td>\n\t\t\t</tr>\n\t\t\t<tr class=\"table-row\">\n\t\t\t\t<td class=\"type-col-1\">Purchase Date</td>\n\t\t\t\t<td class=\"type-col-1\">${btchDtl.purch_date}</td>\n\t\t\t</tr>\n\t\t\t<tr class=\"table-row\">\n\t\t\t\t<td class=\"type-col-1\">Vendor</td>\n\t\t\t\t<td class=\"type-col-1\">${btchDtl.vndr_name}</td>\n\t\t\t</tr>\n\t\t\t<tr class=\"table-row\">\n\t\t\t\t<td class=\"type-col-1\">Detail</td>\n\t\t\t\t<td class=\"type-col-1\">${btchDtl.purch_dtl}</td>\n\t\t\t</tr>\n\t\t\t<tr class=\"table-row\">\n\t\t\t\t<td class=\"type-col-1\">Amount</td>\n\t\t\t\t<td class=\"type-col-1\">${btchDtl.purch_amt}</td>\n\t\t\t</tr>\n\t\t</table>\n\t</div><br>\n`;\n    return html;\n  }\n  static trace() {\n    const rptDtl = JSON.parse(appsmith.model.trace);\n    const btchSelect = JSON.parse(appsmith.model.btchSelect);\n    let html = `\n\t\t\t<div class=\"type-container\">\n\t\t\t\t<div class=\"type-hdr\">\t\n\t\t\t\t\t<h4>Product Batches</h4>\n\t\t\t\t</div>`;\n    html += `<div class=\"table-area\">\n\n\t\t\t\t<div class=\"table-area\">\n\t\t\t\t<table>\n\t\t\t\t\t<tr class=\"type-tbl\">\n\t\t\t\t\t\t<th class=\"type-hdr-1\">Product</th>\n\t\t\t\t\t\t<th class=\"type-hdr-3\">Batch</th>\n\t\t\t\t\t\t<th class=\"type-hdr-3\">Date</th>\n\t\t\t\t\t\t<th class=\"type-hdr-3\">Qty</th>\n\t\t\t\t\t\t<th class=\"type-hdr-3\">Produced At</th>\n\n\t\t\t\t\t</tr>`;\n    rptDtl.forEach(prd => {\n      html += `\n\t\t\t\t\t<tr class=\"table-row\">\n\t\t\t\t\t\t<td class=\"type-col-1\">${prd.prd}</td>\n\t\t\t\t\t\t<td class=\"type-col-2\">${prd.prd_btch_nbr}</td>\n\t\t\t\t\t\t<td class=\"type-col-3\">${prd.prd_btch_date}</td>\n\t\t\t\t\t\t<td class=\"type-col-3\">${prd.prd_qty_meas}s</td>\n\t\t\t\t\t\t<td class=\"type-col-3\">${prd.location}</td>\n\t\t\t\t\t</tr>`;\n    });\n    html += `\n\t\t\t\t</table>\n\t\t\t</div>`;\n    return html;\n  }\n}\nappsmith.onReady(() => {\n  appsmith.onModelChange(() => {\n    Helper.initApp();\n  });\n});"
+  },
+  "tags": [
+    "Display"
+  ],
+  "theme": "{{appsmith.theme}}",
+  "thumbnailSVG": "/static/media/thumbnail.a7d7cde44fad9a0d4d490def43560a78.svg",
+  "topRow": 0,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": ".app {\n\twidth: 850px;\n\tjustify-content: center;\n\tborder-radius: var(--appsmith-theme-borderRadius);\n\tpadding: 10px 10px;\n\t\tborder: 1px solid black;\n\tbox-sizing: border-box;\n\tfont-family: system-ui;\n\tbackground: white;\n}\n\n.container {\n\tdisplay: grid;\n\tgrid-template-columns: repeat(6, 1fr);\n\tgrid-template-rows: auto;\n\tgrid-gap: 20px;\n\talign-items: start;\n}\n\n.header {\n\tdisplay: grid;\n\tpadding: 6px;\n\tdisplay: grid;\n\tgrid-template-columns: repeat(3, 1fr);\n\tgrid-template-areas: \n\t\t\"info info info \";\n\tfont-weight: bold;\n}\n\n.info {\n\tgrid-area: info;\n\tborder: 1px solid black;\n\tpadding: 10px;\n\tborder-radius: 10px;\n\ttext-align: center;\n\t\n\t.rptDate {\n\tcolor: blue;\n\t}\n\th3 {\n\tcolor: blue;\n\t}\n\t\t.info-tbl {\n    display: flex;\n    justify-content: center; /* Horizontally center the content */\n    align-items: center; /* Vertically center the content */\n}\n}\n\t\n.type-container {\n    display: grid;\n    grid-template-columns: 1fr; \n    justify-content: space-between;\n    background-color: white;\n    padding: 2px;\n\n}\n\n.type {\n\tdisplay: grid;\n  margin: 2px;\n\tbox-shadow: 0 4px 2px lightgrey;\n\tborder-radius: 10px;\n\ttransition: 0.3s;\n\n}\n.type-hdr {\n\tbackground-color: #d6f5d8;\n\tborder-radius: 10px;\n\tborder: 2px solid black;\n\tpadding: 2px;\n\tcolor: blue;\n\tfont-size: 15px;\n\ttext-align: left;\n}\t\n\n.type-tbl {\n\twidth: 97%; \n\tmargin: 2px;\n\tfont-size: 13px;\n\tborder-radius: 9px;\n\ttransition: 0.3s;\n}\n\n\t.type-hdr-1 {\n\t\t\ttext-align: left;\n\t\t\twidth: 230px;\n\t\t\tborder: 2px solid black;\n\t\t\tpadding: 4px;\n\t\t}\n\t.type-hdr-2 {\n\t\t\ttext-align: center;\n\t\t\twidth: 30px;\n\t\t\tborder: 2px solid black;\n\t\t\tpadding: 7px;\n\t\t}\n\t.type-hdr-3 {\n\t\t\ttext-align: center;\n\t\t\twidth: 90px;\n\t\t\tborder: 2px solid black; \n\t\t\tpadding: 7px;\n\t\t}\n\t.type-col-1 {\n\t\t\tbackground-color: #ffffe6;\n\t\t\ttext-align: left;\n\t\t\tborder: 1px solid blue;\n\t\t\tpadding: 3px;\n\t\t}\n\t.type-col-2 {\n\t\t\ttext-align: center;\n\t\t\tborder: 1px solid blue;\n\t\t\tpadding: 5px;\n\t\t}\n\t.type-col-3 {\n\t\t\ttext-align: center;\n\t\t\tborder: 1px solid blue;\n\n\t\t\tpadding: 7px;\n\t\t}\n",
+    "html": "<div class=\"app\">\n\t\t<button onclick=\"window.print();\" class=\"noPrint\">\n\t\t\tPrint Me\n\t\t</button>\n\t\t<div class=\"header\">\n\t\t\t<div class =\"info\">\n\t\t\t\t<div id=\"title\"></div>\n\t\t\t\t<div class=\"rptDate\">\n\t\t\t\t\t<div id=\"rptDate\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div id=\"trace\"></div>\n</div>",
+    "js": "class Helper {\n    static initApp() {\n\n        const title = document.getElementById(\"title\");\n        title.innerHTML = this.title();\n\n        const rptDate = document.getElementById(\"rptDate\");\n        rptDate.innerHTML = appsmith.model.rptDate;\n\n        const trace = document.getElementById(\"trace\");\n        trace.innerHTML = this.trace();\n    }\n\n    static title() {\n        const rptDtl = appsmith.model.title;\n\t\t\t\tconst btchDtl = JSON.parse(appsmith.model.btchSelect)\n        const html = `\n            <h2>${rptDtl}</h2><br>\n            <h3>Ingredient Tracing: ${btchDtl.ingr_name}</h3><br>\n\t\t\t\t\t\t\t<div class=\"info-tbl\">\n\t\t<table >\n\t\t\t<tr class=\"table-row\">\n\t\t\t\t<td class=\"type-col-1\">Batch</td>\n\t\t\t\t<td class=\"type-col-1\">${btchDtl.ingr_btch_nbr}</td>\n\t\t\t</tr>\n\t\t\t<tr class=\"table-row\">\n\t\t\t\t<td class=\"type-col-1\">Purchase Date</td>\n\t\t\t\t<td class=\"type-col-1\">${btchDtl.purch_date}</td>\n\t\t\t</tr>\n\t\t\t<tr class=\"table-row\">\n\t\t\t\t<td class=\"type-col-1\">Vendor</td>\n\t\t\t\t<td class=\"type-col-1\">${btchDtl.vndr_name}</td>\n\t\t\t</tr>\n\t\t\t<tr class=\"table-row\">\n\t\t\t\t<td class=\"type-col-1\">Detail</td>\n\t\t\t\t<td class=\"type-col-1\">${btchDtl.purch_dtl}</td>\n\t\t\t</tr>\n\t\t\t<tr class=\"table-row\">\n\t\t\t\t<td class=\"type-col-1\">Amount</td>\n\t\t\t\t<td class=\"type-col-1\">${btchDtl.purch_amt}</td>\n\t\t\t</tr>\n\t\t</table>\n\t</div><br>\n`;\n        return html;\n    }\n\nstatic trace() {\n        const rptDtl = JSON.parse(appsmith.model.trace);\n\t\t\t\tconst btchSelect = JSON.parse(appsmith.model.btchSelect)\n        let html = `\n\t\t\t<div class=\"type-container\">\n\t\t\t\t<div class=\"type-hdr\">\t\n\t\t\t\t\t<h4>Product Batches</h4>\n\t\t\t\t</div>`\n\t\t\t\thtml += `<div class=\"table-area\">\n\n\t\t\t\t<div class=\"table-area\">\n\t\t\t\t<table>\n\t\t\t\t\t<tr class=\"type-tbl\">\n\t\t\t\t\t\t<th class=\"type-hdr-1\">Product</th>\n\t\t\t\t\t\t<th class=\"type-hdr-3\">Batch</th>\n\t\t\t\t\t\t<th class=\"type-hdr-3\">Date</th>\n\t\t\t\t\t\t<th class=\"type-hdr-3\">Qty</th>\n\t\t\t\t\t\t<th class=\"type-hdr-3\">Produced At</th>\n\n\t\t\t\t\t</tr>`;\n\t\t\t\t\t\t\t \n\t\t\t\trptDtl.forEach(prd => {\n\t\t\t\t\thtml += `\n\t\t\t\t\t<tr class=\"table-row\">\n\t\t\t\t\t\t<td class=\"type-col-1\">${prd.prd}</td>\n\t\t\t\t\t\t<td class=\"type-col-2\">${prd.prd_btch_nbr}</td>\n\t\t\t\t\t\t<td class=\"type-col-3\">${prd.prd_btch_date}</td>\n\t\t\t\t\t\t<td class=\"type-col-3\">${prd.prd_qty_meas}s</td>\n\t\t\t\t\t\t<td class=\"type-col-3\">${prd.location}</td>\n\t\t\t\t\t</tr>`;\n        \t\t});\n\t\t\t\thtml += `\n\t\t\t\t</table>\n\t\t\t</div>`\n\n        return html;\n    }\n}\n\nappsmith.onReady(() => {\n    appsmith.onModelChange(() => {\n        Helper.initApp();\n    });\n});\n"
+  },
+  "version": 1,
+  "widgetId": "i3u3mjel5d",
+  "widgetName": "cw_IngrTrace"
 }

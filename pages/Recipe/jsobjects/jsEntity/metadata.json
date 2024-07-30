@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_0b8817d7-6379-4136-b596-80cd1ae522af",
+  "id": "Recipe_jsEntity",
   "unpublishedCollection": {
     "name": "jsEntity",
     "pageId": "Recipe",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Recipe_jsEntity",
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_0b8817d7-6379-4136-b596-80cd1ae522af"
+    "variables": []
+  }
 }

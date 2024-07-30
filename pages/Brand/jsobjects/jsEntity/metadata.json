@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_b0cc6243-6f14-4334-97ca-0e091c5fe02b",
+  "id": "Brand_jsEntity",
   "unpublishedCollection": {
     "name": "jsEntity",
     "pageId": "Brand",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Brand_jsEntity",
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_b0cc6243-6f14-4334-97ca-0e091c5fe02b"
+    "variables": []
+  }
 }

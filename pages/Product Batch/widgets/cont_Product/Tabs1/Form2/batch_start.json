@@ -1,74 +1,90 @@
 {
-    "boxShadow": "none",
-    "dateFormat": "YYYY-MM-DD",
-    "iconSVG": "/static/media/icon.42ea2261c1fd35ebb9e4549b5028de76.svg",
-    "topRow": 0,
-    "labelWidth": 5,
-    "type": "DATE_PICKER_WIDGET2",
-    "animateLoading": true,
-    "leftColumn": 43,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "defaultDate"}
-    ],
-    "labelStyle": "BOLD",
-    "isDisabled": false,
-    "onDateSelected": "{{best_by_date.setValue(moment(batch_start).add(prod_Select.data[0].best_by_days,\"days\"))}}",
-    "isRequired": false,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "onCanvasUI": {
-        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
-        "disableParentSelection": false,
-        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
-        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
-        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 7,
+  "boxShadow": "none",
+  "closeOnSelection": true,
+  "dateFormat": "YYYY-MM-DD",
+  "datePickerType": "DATE_PICKER",
+  "defaultDate": "{{tbl_Entity.selectedRow.batch_date}}",
+  "displayName": "DatePicker",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
     },
-    "isVisible": true,
-    "datePickerType": "DATE_PICKER",
-    "version": 2,
-    "tags": ["Inputs"],
-    "isLoading": false,
-    "timePrecision": "None",
-    "borderRadius": "1.5rem",
-    "originalBottomRow": 13,
-    "closeOnSelection": true,
-    "needsErrorInfo": false,
-    "mobileBottomRow": 12,
-    "widgetName": "batch_start",
-    "minDate": "1920-12-31T18:30:00.000Z",
-    "dynamicPropertyPathList": [
-        {"key": "defaultDate"},
-        {"key": "onDateSelected"}
-    ],
-    "displayName": "DatePicker",
-    "searchTags": ["calendar"],
-    "bottomRow": 7,
-    "shortcuts": false,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "mobileRightColumn": 56,
-    "parentColumnSpace": 7.695026397705078,
-    "dynamicTriggerPathList": [{"key": "onDateSelected"}],
-    "labelPosition": "Top",
-    "key": "rtfecedf0i",
-    "labelTextSize": "0.875rem",
-    "defaultDate": "{{tbl_Entity.selectedRow.batch_date}}",
-    "isDeprecated": false,
-    "rightColumn": 60,
-    "thumbnailSVG": "/static/media/thumbnail.6f2ddea04e74f31810326bef3bc239b8.svg",
-    "widgetId": "ghfsoffm9u",
-    "minWidth": 450,
-    "label": "Batch Date",
-    "parentId": "kyhhukm2gy",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 5,
-    "responsiveBehavior": "fill",
-    "originalTopRow": 6,
-    "mobileLeftColumn": 36,
-    "maxDynamicHeight": 9000,
-    "firstDayOfWeek": 0,
-    "maxDate": "2121-12-27T12:29:00.000-06:00",
-    "minDynamicHeight": 4
+    {
+      "key": "defaultDate"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultDate"
+    },
+    {
+      "key": "onDateSelected"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onDateSelected"
+    }
+  ],
+  "firstDayOfWeek": 0,
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.42ea2261c1fd35ebb9e4549b5028de76.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "rtfecedf0i",
+  "label": "Batch Date",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "BOLD",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 43,
+  "maxDate": "2121-12-27T12:29:00.000-06:00",
+  "maxDynamicHeight": 9000,
+  "minDate": "1920-12-31T18:30:00.000Z",
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 12,
+  "mobileLeftColumn": 36,
+  "mobileRightColumn": 56,
+  "mobileTopRow": 5,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "onDateSelected": "{{best_by_date.setValue(moment(batch_start).add(prod_Select.data[0].best_by_days,\"days\"))}}",
+  "originalBottomRow": 13,
+  "originalTopRow": 6,
+  "parentColumnSpace": 7.695026397705078,
+  "parentId": "kyhhukm2gy",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 60,
+  "searchTags": [
+    "calendar"
+  ],
+  "shortcuts": false,
+  "tags": [
+    "Inputs"
+  ],
+  "thumbnailSVG": "/static/media/thumbnail.6f2ddea04e74f31810326bef3bc239b8.svg",
+  "timePrecision": "None",
+  "topRow": 0,
+  "type": "DATE_PICKER_WIDGET2",
+  "version": 2,
+  "widgetId": "ghfsoffm9u",
+  "widgetName": "batch_start"
 }

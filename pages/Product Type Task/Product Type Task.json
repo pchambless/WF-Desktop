@@ -1,83 +1,36 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_953cba8d-3298-40c4-b755-17cc28534d86",
   "unpublishedPage": {
-    "name": "Product Type Task",
-    "slug": "product-type-task",
+    "isHidden": true,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 2605.9999999999995,
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1296,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 580,
-          "containerStyle": "none",
-          "snapRows": 84,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 89,
-          "minHeight": 860,
-          "mobileTopRow": 0,
-          "useAutoLayout": false,
-          "parentColumnSpace": 1,
+          "containerStyle": "none",
+          "detachFromLayout": true,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
-          "positioning": "fixed"
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Product Type Task_entity_acctList",
-              "name": "entity_acctList",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.acct_id"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Product Type Task_type_dd",
-              "name": "type_dd",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.acct_id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Product Type Task_jsPageLoad.load",
-              "name": "jsPageLoad.load",
-              "collectionId": "Product Type Task_jsPageLoad",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  sel_Type.setSelectedOption(appsmith.store.prodTypeID);\n  entity_List.run();\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Product Type Task",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "minHeight": 860,
+          "mobileBottomRow": 2605.9999999999995,
+          "mobileTopRow": 0,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "positioning": "fixed",
+          "rightColumn": 1296,
+          "snapColumns": 64,
+          "snapRows": 84,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "useAutoLayout": false,
+          "version": 89,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": true
-  },
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_953cba8d-3298-40c4-b755-17cc28534d86"
+    "name": "Product Type Task",
+    "slug": "product-type-task"
+  }
 }

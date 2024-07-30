@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_fa4c83e2-8cdb-4dbe-92dc-23242ee227e1",
+  "id": "Ingredient Batch_jsEntity",
   "unpublishedCollection": {
     "name": "jsEntity",
     "pageId": "Ingredient Batch",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Ingredient Batch_jsEntity",
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_fa4c83e2-8cdb-4dbe-92dc-23242ee227e1"
+    "variables": []
+  }
 }

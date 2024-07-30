@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_c2d7ee20-8673-42aa-ad90-f5b0bde1823f",
+  "id": "Shopping_jsSelect",
   "unpublishedCollection": {
     "name": "jsSelect",
     "pageId": "Shopping",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Shopping_jsSelect",
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_c2d7ee20-8673-42aa-ad90-f5b0bde1823f"
+    "variables": []
+  }
 }

@@ -1,95 +1,32 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_fac87c2f-66af-434a-a80f-642114ede3e0",
   "unpublishedPage": {
-    "name": "WF Accounts",
-    "slug": "wf-accounts",
+    "isHidden": true,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1224,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 990,
-          "containerStyle": "none",
-          "snapRows": 76,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 89,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
           "minHeight": 780,
           "parentColumnSpace": 1,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "WF Accounts_accountTracking_list",
-              "name": "accountTracking_list",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "WF Accounts_accountUser_choice",
-              "name": "accountUser_choice",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.acctID"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "WF Accounts_account_dd",
-              "name": "account_dd",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "WF Accounts_jsPageLoad.load",
-              "name": "jsPageLoad.load",
-              "collectionId": "WF Accounts_jsPageLoad",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  await storeValue('active', 'Y');\n  entity_List.run();\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "WF Accounts_accountUser_list",
-              "name": "accountUser_list",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "sel_Acct.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "WF Accounts",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "parentRowSpace": 1,
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 76,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 89,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": true
-  },
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_fac87c2f-66af-434a-a80f-642114ede3e0"
+    "name": "WF Accounts",
+    "slug": "wf-accounts"
+  }
 }

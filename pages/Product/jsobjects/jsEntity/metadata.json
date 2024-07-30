@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_14cdd03a-4d62-43fe-9c2e-caa5a16d02b6",
+  "id": "Product_jsEntity",
   "unpublishedCollection": {
     "name": "jsEntity",
     "pageId": "Product",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Product_jsEntity",
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_14cdd03a-4d62-43fe-9c2e-caa5a16d02b6"
+    "variables": []
+  }
 }

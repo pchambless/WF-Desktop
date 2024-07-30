@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_f9b2600c-d053-4073-8423-cfa96d1197ba",
+  "id": "Brand_jsForm",
   "unpublishedCollection": {
     "name": "jsForm",
     "pageId": "Brand",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Brand_jsForm",
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_f9b2600c-d053-4073-8423-cfa96d1197ba"
+    "variables": []
+  }
 }

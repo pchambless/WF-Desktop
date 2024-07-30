@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_8c0aa66f-a8a8-4f20-84cb-448d2ecb158e",
+  "id": "Brand_jsSelect",
   "unpublishedCollection": {
     "name": "jsSelect",
     "pageId": "Brand",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Brand_jsSelect",
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_8c0aa66f-a8a8-4f20-84cb-448d2ecb158e"
+    "variables": []
+  }
 }

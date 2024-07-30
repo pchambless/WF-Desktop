@@ -1,58 +1,72 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-    "mobileBottomRow": 30,
-    "widgetName": "wfAccounts",
-    "borderColor": "#E0DEDE",
-    "srcDoc": {
-        "css": ".app {\n  height: 1000px;\n  width: 800px;\n  justify-content: center;\n  border-radius: var(--appsmith-theme-borderRadius);\n  padding: 29px 25px;\n  box-sizing: border-box;\n  font-family: \"Times New Roman\", Times, serif;\n  background: #fff;\n}\n\n@media print {\n  .noPrint {\n    display: none;\n  }\n}\n.container {\n  display: grid;\n  grid-template-columns: repeat(6, 1fr);\n  grid-template-rows: auto;\n  grid-gap: 20px;\n  align-items: start;\n}\n\n.header {\n  background-color: #d6f5d6;\n  padding: 10px;\n  display: grid;\n  grid-template-columns: repeat(6, 1fr);\n  grid-template-areas: \"wf-img info info info info\";\n  font-weight: bold;\n}\n\n.wf-img {\n  grid-area: wf-img;\n  width: 30px;\n  height: 30px;\n  border-radius: 8px;\n  padding: 1;\n}\n\n.info {\n  grid-area: info;\n  border: 1px solid black;\n  padding: 10px;\n  background-color: #f2f2f2;\n  border-radius: 10px;\n  text-align: center;\n}\n\n.rptDate {\n  color: blue;\n}\n\n.table-grid {\n  display: grid;\n  grid-area: table;\n  grid-template-columns: fr 0.5fr 0.7fr 1.8fr;\n  border: 1px solid black;\n}\n.table-grid .table-head {\n  font-weight: bold;\n  border-right: 1px solid black;\n  background-color: #f2f2f2;\n  border: 1px solid black;\n}\n.table-grid .table-head .hd-1 {\n  text-align: center;\n  border-right: 1px solid black;\n  padding: 7px;\n}\n.table-grid .table-head .hd-2 {\n  text-align: left;\n  border-right: 1px solid black;\n  padding: 7px;\n}\n.table-grid .table-head .hd-3 {\n  text-align: center;\n  border-right: 1px solid black;\n  padding: 7px;\n}\n.table-grid .table-head .hd-4 {\n  text-align: center;\n  padding: 7px;\n}\n.table-grid .table-row {\n  border: 1px solid black;\n}\n.table-grid .table-row .col-1 {\n  text-align: left;\n  border-right: 1px solid black;\n  padding: 7px;\n}\n.table-grid .table-row .col-2 {\n  text-align: center;\n  border-right: 1px solid black;\n  padding: 7px;\n}\n.table-grid .table-row .col-3 {\n  text-align: center;\n  border-right: 1px solid black;\n}\n.table-grid .table-row .col-4 {\n  text-align: center;\n  padding: 7px;\n}",
-        "js": "class Helper {\n  static initApp() {\n    const title = document.getElementById(\"title\");\n    title.innerHTML = appsmith.model.title;\n    const logo = document.getElementById(\"logo\");\n    logo.innerHTML = appsmith.model.logo;\n    const rptDate = document.getElementById(\"rptDate\");\n    rptDate.innerHTML = appsmith.model.rptDate;\n    rptDetail.innerHTML = this.rptHTML();\n  }\n  static rptHTML() {\n    let rptDtl = appsmith.model.data;\n    rptDtl = JSON.parse(rptDtl);\n    let html = ``;\n    html += `\n\t\t<body>\n\t\t\t<table class=\"table-grid\">\n\t\t     <tr class=\"table-head\">\n\t         <th class=\"hd-1\">Name<\/th>\n\t\t\t\t\t <th class=\"hd-2\">Stripe<\/th>\n\t\t\t\t   <th class=\"hd-3\">Address<\/th>\n\t\t\t\t   <th class=\"hd-4\">Website<\/th>\n         <\/tr>`;\n    rptDtl.forEach(acct => {\n      html += `\n\t\t\t\t\t\t\t<tr class=\"table-row\">\n\t\t\t\t\t\t\t\t\t<td class=\"col-1\">${acct.name}<\/td>\n\t\t\t\t\t\t\t\t\t<td class=\"col-2\">${acct.paying}<\/td>\n\t\t\t\t\t\t\t\t\t<td class=\"col-3\">${acct.address}<\/td>\n\t\t\t\t\t\t\t\t\t<td class=\"col-4\">${acct.url}<\/td>\n\t\t\t\t\t\t\t<\/tr>`;\n    });\n    html += `\n\t\t\t\t\t<\/table>\n\t\t\t<\/tbody>`;\n    return html;\n  }\n}\n\n//Start rendering the report when widget is ready\nappsmith.onReady(() => {\n  //rerender the report when the data changes\n  appsmith.onModelChange(() => {\n    Helper.initApp();\n  });\n});",
-        "html": "<div>\n\t<title>TNC Spring Fling<\/title>\n\n\t<div class=\"app\">\n\t\t<button onclick=\"window.print();\" class=\"noPrint\">\n\t\t\tPrint Me\n\t\t<\/button>\n\t\t<div class=\"header\">\n\t\t\t<div class=\"wf-img\">\n\t\t\t\t<div id=\"logo\"><\/div>\t\t\n\t\t\t<\/div>\n\t\t\t<div class =\"info\">\n\t\t\t\t<h2><div id=\"title\"><\/div><\/h2><br>\n\t\t\t\t<div class=\"rptDate\">\n\t\t\t\t\t<div id=\"rptDate\"><\/div>\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t<\/div>\n\t\t<div class=\"table-grid\">\n\t\t\t\t<div id=\"rptDetail\"><\/div>\n\t\t<\/div>\n<\/div>\n"
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 67,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{\n\"title\": \"Whatsfresh Accounts\",\n\"rptDate\": \"Date: {{moment().format('YYYY-MM-DD')}}\",\n\"data\": \"{{entity_List.data}}\",\n\"logo\": \"<img src=\\\"{{appsmith.store.logo}}\\\">\"\n}",
+  "displayName": "Custom",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
     },
-    "isCanvas": false,
-    "displayName": "Custom",
-    "iconSVG": "/static/media/icon.867bcc8399fa3f897d425d72690b86e4.svg",
-    "searchTags": ["external"],
-    "topRow": 0,
-    "bottomRow": 67,
-    "parentRowSpace": 10,
-    "type": "CUSTOM_WIDGET",
-    "hideCard": false,
-    "mobileRightColumn": 23,
-    "parentColumnSpace": 17.140625,
-    "dynamicTriggerPathList": [],
-    "dynamicBindingPathList": [
-        {"key": "theme"},
-        {"key": "borderRadius"},
-        {"key": "boxShadow"},
-        {"key": "defaultModel"}
-    ],
-    "leftColumn": 0,
-    "defaultModel": "{\n\"title\": \"Whatsfresh Accounts\",\n\"rptDate\": \"Date: {{moment().format('YYYY-MM-DD')}}\",\n\"data\": \"{{entity_List.data}}\",\n\"logo\": \"<img src=\\\"{{appsmith.store.logo}}\\\">\"\n}",
-    "borderWidth": "1",
-    "theme": "{{appsmith.theme}}",
-    "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
-    "events": ["onResetClick"],
-    "key": "yub0wm4rth",
-    "backgroundColor": "#FFFFFF",
-    "isDeprecated": false,
-    "rightColumn": 64,
-    "dynamicHeight": "FIXED",
-    "isSearchWildcard": true,
-    "widgetId": "1vg2v722b7",
-    "isVisible": true,
-    "version": 1,
-    "uncompiledSrcDoc": {
-        "css": ".app {\n\theight: 1000px;\n\twidth: 800px;\n\tjustify-content: center;\n\tborder-radius: var(--appsmith-theme-borderRadius);\n\tpadding: 29px 25px;\n\tbox-sizing: border-box;\n\tfont-family: \"Times New Roman\", Times, serif;\n\tbackground: #fff;\n}\n\n@media print {\n\t.noPrint {\n\tdisplay: none;\n\t}\n}\n\n.container {\n\tdisplay: grid;\n\tgrid-template-columns: repeat(6, 1fr);\n\tgrid-template-rows: auto;\n\tgrid-gap: 20px;\n\talign-items: start;\n}\n\n.header {\n\tbackground-color: #d6f5d6; \n\tpadding: 10px;\n\tdisplay: grid;\n\tgrid-template-columns: repeat(6, 1fr);\n\tgrid-template-areas: \n\t\t\"wf-img info info info info\";\n\tfont-weight: bold;\n}\n\n.wf-img {\n\tgrid-area: wf-img;\n\twidth: 30px;\n\theight: 30px;\n\tborder-radius: 8px;\n\tpadding: 1;\n}\n\n.info {\n\tgrid-area: info;\n\tborder: 1px solid black;\n\tpadding: 10px;\n\tbackground-color: #f2f2f2; \n\tborder-radius: 10px;\n\ttext-align: center;\n}\n\n.rptDate {\n\tcolor: blue;\n}\n\n\n.table-grid {\n\tdisplay: grid;\n\tgrid-area: table;\n\tgrid-template-columns: fr .5fr .7fr 1.8fr;\n\tborder: 1px solid black;\n\t\n\t.table-head {\n\t\tfont-weight: bold;\n\t\tborder-right: 1px solid black;\n\t\tbackground-color: #f2f2f2; \n\t\tborder: 1px solid black;\n\t\t.hd-1 {\n\t\t\ttext-align: center;\n\t\t\tborder-right: 1px solid black;\n\t\t\tpadding: 7px;\n\t\t}\n\t\t.hd-2 {\n\t\t\ttext-align: left;\n\t\t\tborder-right: 1px solid black; \n\t\t\tpadding: 7px;\n\t\t}\n\t\t.hd-3 {\n\t\t\ttext-align: center;\n\t\t\tborder-right: 1px solid black; \n\t\t\tpadding: 7px;\n\t\t}\n\t\t.hd-4 {\n\t\t\ttext-align: center;\n\t\t\tpadding: 7px;\n\t\t}\n\t}\n\t\n\t.table-row {\n\t\tborder: 1px solid black;\n\t\t.col-1 {\n\t\t\ttext-align: left;\n\t\t\tborder-right: 1px solid black;\n\t\t\tpadding: 7px;\n\t\t}\n\t\t.col-2 {\n\t\t\ttext-align: center;\n\t\t\tborder-right: 1px solid black; \n\t\t\tpadding: 7px;\n\t\t}\n\t\t.col-3 {\n\t\t\ttext-align: center;\n\t\t\tborder-right: 1px solid black; \n\t\t}\n\t\t.col-4 {\n\t\t\ttext-align: center;\n\t\t\tpadding: 7px;\n\t\t}\n\t}\n}\n\n\n\n\n\n\n\n\n\n\n",
-        "js": "class Helper {\n\tstatic initApp() {\n\t\t\n\t\tconst title = document.getElementById(\"title\");\n\t\ttitle.innerHTML = appsmith.model.title;\n\t\t\n\t\tconst logo = document.getElementById(\"logo\");\n\t\tlogo.innerHTML = appsmith.model.logo;\n\t\t\n\t\tconst rptDate = document.getElementById(\"rptDate\");\n\t\trptDate.innerHTML = appsmith.model.rptDate;\n\t\t\n\t\t\n\t\t\n\t\trptDetail.innerHTML = this.rptHTML();\n}\n\nstatic rptHTML() {\n\n\t\tlet rptDtl = appsmith.model.data;\n\t\trptDtl = JSON.parse(rptDtl);\n\t  let html = ``\n\t\thtml += `\n\t\t<body>\n\t\t\t<table class=\"table-grid\">\n\t\t     <tr class=\"table-head\">\n\t         <th class=\"hd-1\">Name<\/th>\n\t\t\t\t\t <th class=\"hd-2\">Stripe<\/th>\n\t\t\t\t   <th class=\"hd-3\">Address<\/th>\n\t\t\t\t   <th class=\"hd-4\">Website<\/th>\n         <\/tr>`;\n\n\t\t\trptDtl.forEach(acct => {\n\t\t\t\t\thtml += `\n\t\t\t\t\t\t\t<tr class=\"table-row\">\n\t\t\t\t\t\t\t\t\t<td class=\"col-1\">${acct.name}<\/td>\n\t\t\t\t\t\t\t\t\t<td class=\"col-2\">${acct.paying}<\/td>\n\t\t\t\t\t\t\t\t\t<td class=\"col-3\">${acct.address}<\/td>\n\t\t\t\t\t\t\t\t\t<td class=\"col-4\">${acct.url}<\/td>\n\t\t\t\t\t\t\t<\/tr>`;\n\t\t\t});\n\t\t\thtml += `\n\t\t\t\t\t<\/table>\n\t\t\t<\/tbody>`;\n\t\n\t\treturn html;\t\t\t\t\t\t\t\t\t\n\t}\n\n}\n\n//Start rendering the report when widget is ready\nappsmith.onReady(() => {\n\t//rerender the report when the data changes\n\tappsmith.onModelChange(() => {\n\t\tHelper.initApp();\n\t});\n});\n",
-        "html": "<div>\n\t<title>TNC Spring Fling<\/title>\n\n\t<div class=\"app\">\n\t\t<button onclick=\"window.print();\" class=\"noPrint\">\n\t\t\tPrint Me\n\t\t<\/button>\n\t\t<div class=\"header\">\n\t\t\t<div class=\"wf-img\">\n\t\t\t\t<div id=\"logo\"><\/div>\t\t\n\t\t\t<\/div>\n\t\t\t<div class =\"info\">\n\t\t\t\t<h2><div id=\"title\"><\/div><\/h2><br>\n\t\t\t\t<div class=\"rptDate\">\n\t\t\t\t\t<div id=\"rptDate\"><\/div>\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t<\/div>\n\t\t<div class=\"table-grid\">\n\t\t\t\t<div id=\"rptDetail\"><\/div>\n\t\t<\/div>\n<\/div>\n"
+    {
+      "key": "borderRadius"
     },
-    "parentId": "q20k04t2rr",
-    "tags": ["Display"],
-    "renderMode": "CANVAS",
-    "isLoading": false,
-    "mobileTopRow": 0,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 0,
-    "maxDynamicHeight": 9000,
-    "minDynamicHeight": 4
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "defaultModel"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "events": [
+    "onResetClick"
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.867bcc8399fa3f897d425d72690b86e4.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "yub0wm4rth",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 30,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 23,
+  "mobileTopRow": 0,
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "parentColumnSpace": 17.140625,
+  "parentId": "q20k04t2rr",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchTags": [
+    "external"
+  ],
+  "srcDoc": {
+    "css": ".app {\n  height: 1000px;\n  width: 800px;\n  justify-content: center;\n  border-radius: var(--appsmith-theme-borderRadius);\n  padding: 29px 25px;\n  box-sizing: border-box;\n  font-family: \"Times New Roman\", Times, serif;\n  background: #fff;\n}\n\n@media print {\n  .noPrint {\n    display: none;\n  }\n}\n.container {\n  display: grid;\n  grid-template-columns: repeat(6, 1fr);\n  grid-template-rows: auto;\n  grid-gap: 20px;\n  align-items: start;\n}\n\n.header {\n  background-color: #d6f5d6;\n  padding: 10px;\n  display: grid;\n  grid-template-columns: repeat(6, 1fr);\n  grid-template-areas: \"wf-img info info info info\";\n  font-weight: bold;\n}\n\n.wf-img {\n  grid-area: wf-img;\n  width: 30px;\n  height: 30px;\n  border-radius: 8px;\n  padding: 1;\n}\n\n.info {\n  grid-area: info;\n  border: 1px solid black;\n  padding: 10px;\n  background-color: #f2f2f2;\n  border-radius: 10px;\n  text-align: center;\n}\n\n.rptDate {\n  color: blue;\n}\n\n.table-grid {\n  display: grid;\n  grid-area: table;\n  grid-template-columns: fr 0.5fr 0.7fr 1.8fr;\n  border: 1px solid black;\n}\n.table-grid .table-head {\n  font-weight: bold;\n  border-right: 1px solid black;\n  background-color: #f2f2f2;\n  border: 1px solid black;\n}\n.table-grid .table-head .hd-1 {\n  text-align: center;\n  border-right: 1px solid black;\n  padding: 7px;\n}\n.table-grid .table-head .hd-2 {\n  text-align: left;\n  border-right: 1px solid black;\n  padding: 7px;\n}\n.table-grid .table-head .hd-3 {\n  text-align: center;\n  border-right: 1px solid black;\n  padding: 7px;\n}\n.table-grid .table-head .hd-4 {\n  text-align: center;\n  padding: 7px;\n}\n.table-grid .table-row {\n  border: 1px solid black;\n}\n.table-grid .table-row .col-1 {\n  text-align: left;\n  border-right: 1px solid black;\n  padding: 7px;\n}\n.table-grid .table-row .col-2 {\n  text-align: center;\n  border-right: 1px solid black;\n  padding: 7px;\n}\n.table-grid .table-row .col-3 {\n  text-align: center;\n  border-right: 1px solid black;\n}\n.table-grid .table-row .col-4 {\n  text-align: center;\n  padding: 7px;\n}",
+    "html": "<div>\n\t<title>TNC Spring Fling</title>\n\n\t<div class=\"app\">\n\t\t<button onclick=\"window.print();\" class=\"noPrint\">\n\t\t\tPrint Me\n\t\t</button>\n\t\t<div class=\"header\">\n\t\t\t<div class=\"wf-img\">\n\t\t\t\t<div id=\"logo\"></div>\t\t\n\t\t\t</div>\n\t\t\t<div class =\"info\">\n\t\t\t\t<h2><div id=\"title\"></div></h2><br>\n\t\t\t\t<div class=\"rptDate\">\n\t\t\t\t\t<div id=\"rptDate\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"table-grid\">\n\t\t\t\t<div id=\"rptDetail\"></div>\n\t\t</div>\n</div>\n",
+    "js": "class Helper {\n  static initApp() {\n    const title = document.getElementById(\"title\");\n    title.innerHTML = appsmith.model.title;\n    const logo = document.getElementById(\"logo\");\n    logo.innerHTML = appsmith.model.logo;\n    const rptDate = document.getElementById(\"rptDate\");\n    rptDate.innerHTML = appsmith.model.rptDate;\n    rptDetail.innerHTML = this.rptHTML();\n  }\n  static rptHTML() {\n    let rptDtl = appsmith.model.data;\n    rptDtl = JSON.parse(rptDtl);\n    let html = ``;\n    html += `\n\t\t<body>\n\t\t\t<table class=\"table-grid\">\n\t\t     <tr class=\"table-head\">\n\t         <th class=\"hd-1\">Name</th>\n\t\t\t\t\t <th class=\"hd-2\">Stripe</th>\n\t\t\t\t   <th class=\"hd-3\">Address</th>\n\t\t\t\t   <th class=\"hd-4\">Website</th>\n         </tr>`;\n    rptDtl.forEach(acct => {\n      html += `\n\t\t\t\t\t\t\t<tr class=\"table-row\">\n\t\t\t\t\t\t\t\t\t<td class=\"col-1\">${acct.name}</td>\n\t\t\t\t\t\t\t\t\t<td class=\"col-2\">${acct.paying}</td>\n\t\t\t\t\t\t\t\t\t<td class=\"col-3\">${acct.address}</td>\n\t\t\t\t\t\t\t\t\t<td class=\"col-4\">${acct.url}</td>\n\t\t\t\t\t\t\t</tr>`;\n    });\n    html += `\n\t\t\t\t\t</table>\n\t\t\t</tbody>`;\n    return html;\n  }\n}\n\n//Start rendering the report when widget is ready\nappsmith.onReady(() => {\n  //rerender the report when the data changes\n  appsmith.onModelChange(() => {\n    Helper.initApp();\n  });\n});"
+  },
+  "tags": [
+    "Display"
+  ],
+  "theme": "{{appsmith.theme}}",
+  "topRow": 0,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": ".app {\n\theight: 1000px;\n\twidth: 800px;\n\tjustify-content: center;\n\tborder-radius: var(--appsmith-theme-borderRadius);\n\tpadding: 29px 25px;\n\tbox-sizing: border-box;\n\tfont-family: \"Times New Roman\", Times, serif;\n\tbackground: #fff;\n}\n\n@media print {\n\t.noPrint {\n\tdisplay: none;\n\t}\n}\n\n.container {\n\tdisplay: grid;\n\tgrid-template-columns: repeat(6, 1fr);\n\tgrid-template-rows: auto;\n\tgrid-gap: 20px;\n\talign-items: start;\n}\n\n.header {\n\tbackground-color: #d6f5d6; \n\tpadding: 10px;\n\tdisplay: grid;\n\tgrid-template-columns: repeat(6, 1fr);\n\tgrid-template-areas: \n\t\t\"wf-img info info info info\";\n\tfont-weight: bold;\n}\n\n.wf-img {\n\tgrid-area: wf-img;\n\twidth: 30px;\n\theight: 30px;\n\tborder-radius: 8px;\n\tpadding: 1;\n}\n\n.info {\n\tgrid-area: info;\n\tborder: 1px solid black;\n\tpadding: 10px;\n\tbackground-color: #f2f2f2; \n\tborder-radius: 10px;\n\ttext-align: center;\n}\n\n.rptDate {\n\tcolor: blue;\n}\n\n\n.table-grid {\n\tdisplay: grid;\n\tgrid-area: table;\n\tgrid-template-columns: fr .5fr .7fr 1.8fr;\n\tborder: 1px solid black;\n\t\n\t.table-head {\n\t\tfont-weight: bold;\n\t\tborder-right: 1px solid black;\n\t\tbackground-color: #f2f2f2; \n\t\tborder: 1px solid black;\n\t\t.hd-1 {\n\t\t\ttext-align: center;\n\t\t\tborder-right: 1px solid black;\n\t\t\tpadding: 7px;\n\t\t}\n\t\t.hd-2 {\n\t\t\ttext-align: left;\n\t\t\tborder-right: 1px solid black; \n\t\t\tpadding: 7px;\n\t\t}\n\t\t.hd-3 {\n\t\t\ttext-align: center;\n\t\t\tborder-right: 1px solid black; \n\t\t\tpadding: 7px;\n\t\t}\n\t\t.hd-4 {\n\t\t\ttext-align: center;\n\t\t\tpadding: 7px;\n\t\t}\n\t}\n\t\n\t.table-row {\n\t\tborder: 1px solid black;\n\t\t.col-1 {\n\t\t\ttext-align: left;\n\t\t\tborder-right: 1px solid black;\n\t\t\tpadding: 7px;\n\t\t}\n\t\t.col-2 {\n\t\t\ttext-align: center;\n\t\t\tborder-right: 1px solid black; \n\t\t\tpadding: 7px;\n\t\t}\n\t\t.col-3 {\n\t\t\ttext-align: center;\n\t\t\tborder-right: 1px solid black; \n\t\t}\n\t\t.col-4 {\n\t\t\ttext-align: center;\n\t\t\tpadding: 7px;\n\t\t}\n\t}\n}\n\n\n\n\n\n\n\n\n\n\n",
+    "html": "<div>\n\t<title>TNC Spring Fling</title>\n\n\t<div class=\"app\">\n\t\t<button onclick=\"window.print();\" class=\"noPrint\">\n\t\t\tPrint Me\n\t\t</button>\n\t\t<div class=\"header\">\n\t\t\t<div class=\"wf-img\">\n\t\t\t\t<div id=\"logo\"></div>\t\t\n\t\t\t</div>\n\t\t\t<div class =\"info\">\n\t\t\t\t<h2><div id=\"title\"></div></h2><br>\n\t\t\t\t<div class=\"rptDate\">\n\t\t\t\t\t<div id=\"rptDate\"></div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"table-grid\">\n\t\t\t\t<div id=\"rptDetail\"></div>\n\t\t</div>\n</div>\n",
+    "js": "class Helper {\n\tstatic initApp() {\n\t\t\n\t\tconst title = document.getElementById(\"title\");\n\t\ttitle.innerHTML = appsmith.model.title;\n\t\t\n\t\tconst logo = document.getElementById(\"logo\");\n\t\tlogo.innerHTML = appsmith.model.logo;\n\t\t\n\t\tconst rptDate = document.getElementById(\"rptDate\");\n\t\trptDate.innerHTML = appsmith.model.rptDate;\n\t\t\n\t\t\n\t\t\n\t\trptDetail.innerHTML = this.rptHTML();\n}\n\nstatic rptHTML() {\n\n\t\tlet rptDtl = appsmith.model.data;\n\t\trptDtl = JSON.parse(rptDtl);\n\t  let html = ``\n\t\thtml += `\n\t\t<body>\n\t\t\t<table class=\"table-grid\">\n\t\t     <tr class=\"table-head\">\n\t         <th class=\"hd-1\">Name</th>\n\t\t\t\t\t <th class=\"hd-2\">Stripe</th>\n\t\t\t\t   <th class=\"hd-3\">Address</th>\n\t\t\t\t   <th class=\"hd-4\">Website</th>\n         </tr>`;\n\n\t\t\trptDtl.forEach(acct => {\n\t\t\t\t\thtml += `\n\t\t\t\t\t\t\t<tr class=\"table-row\">\n\t\t\t\t\t\t\t\t\t<td class=\"col-1\">${acct.name}</td>\n\t\t\t\t\t\t\t\t\t<td class=\"col-2\">${acct.paying}</td>\n\t\t\t\t\t\t\t\t\t<td class=\"col-3\">${acct.address}</td>\n\t\t\t\t\t\t\t\t\t<td class=\"col-4\">${acct.url}</td>\n\t\t\t\t\t\t\t</tr>`;\n\t\t\t});\n\t\t\thtml += `\n\t\t\t\t\t</table>\n\t\t\t</tbody>`;\n\t\n\t\treturn html;\t\t\t\t\t\t\t\t\t\n\t}\n\n}\n\n//Start rendering the report when widget is ready\nappsmith.onReady(() => {\n\t//rerender the report when the data changes\n\tappsmith.onModelChange(() => {\n\t\tHelper.initApp();\n\t});\n});\n"
+  },
+  "version": 1,
+  "widgetId": "1vg2v722b7",
+  "widgetName": "wfAccounts"
 }

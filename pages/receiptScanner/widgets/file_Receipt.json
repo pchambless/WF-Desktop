@@ -1,53 +1,71 @@
 {
-    "boxShadow": "none",
-    "mobileBottomRow": 18,
-    "widgetName": "file_Receipt",
-    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "dynamicPropertyPathList": [{"key": "onFilesSelected"}],
-    "iconSVG": "/static/media/icon.715769b31db833b32f40d9c90ec02de3.svg",
-    "displayName": "FilePicker",
-    "topRow": 7,
-    "searchTags": ["upload"],
-    "bottomRow": 11,
-    "parentRowSpace": 10,
-    "type": "FILE_PICKER_WIDGET_V2",
-    "allowedFileTypes": ["image/*"],
-    "hideCard": false,
-    "mobileRightColumn": 20,
-    "animateLoading": true,
-    "parentColumnSpace": 14.8125,
-    "dynamicTriggerPathList": [{"key": "onFilesSelected"}],
-    "leftColumn": 1,
-    "dynamicBindingPathList": [
-        {"key": "buttonColor"},
-        {"key": "borderRadius"}
-    ],
-    "isDisabled": false,
-    "key": "zslfjtb9c5",
-    "onFilesSelected": "{{storeValue('logo', file_Receipt.files[0].data )}}",
-    "isRequired": false,
-    "isDeprecated": false,
-    "rightColumn": 13,
-    "isDefaultClickDisabled": true,
-    "widgetId": "90tzwabgc1",
-    "minWidth": 120,
-    "isVisible": true,
-    "label": "Select Receipt File",
-    "maxFileSize": 5,
-    "dynamicTyping": true,
-    "version": 1,
-    "fileDataType": "Base64",
-    "parentId": "0",
-    "tags": ["Inputs"],
-    "isLoading": false,
-    "selectedFiles": [],
-    "renderMode": "CANVAS",
-    "mobileTopRow": 14,
-    "responsiveBehavior": "hug",
-    "originalTopRow": 7,
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "mobileLeftColumn": 4,
-    "originalBottomRow": 11,
-    "files": [],
-    "maxNumFiles": 1
+  "allowedFileTypes": [
+    "image/*"
+  ],
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 11,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "displayName": "FilePicker",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onFilesSelected"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onFilesSelected"
+    }
+  ],
+  "dynamicTyping": true,
+  "fileDataType": "Base64",
+  "files": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.715769b31db833b32f40d9c90ec02de3.svg",
+  "isDefaultClickDisabled": true,
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "zslfjtb9c5",
+  "label": "Select Receipt File",
+  "leftColumn": 1,
+  "maxFileSize": 5,
+  "maxNumFiles": 1,
+  "minWidth": 120,
+  "mobileBottomRow": 18,
+  "mobileLeftColumn": 4,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 14,
+  "onFilesSelected": "{{storeValue('logo', file_Receipt.files[0].data )}}",
+  "originalBottomRow": 11,
+  "originalTopRow": 7,
+  "parentColumnSpace": 14.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 13,
+  "searchTags": [
+    "upload"
+  ],
+  "selectedFiles": [],
+  "tags": [
+    "Inputs"
+  ],
+  "topRow": 7,
+  "type": "FILE_PICKER_WIDGET_V2",
+  "version": 1,
+  "widgetId": "90tzwabgc1",
+  "widgetName": "file_Receipt"
 }

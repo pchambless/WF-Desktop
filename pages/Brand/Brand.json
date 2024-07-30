@@ -1,72 +1,36 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_3d17a502-6696-4e93-84ac-32d38e6312b3",
   "unpublishedPage": {
-    "name": "Brand",
-    "slug": "brand",
+    "isHidden": true,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 2605.9999999999995,
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1296,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 680,
-          "containerStyle": "none",
-          "snapRows": 84,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 89,
-          "minHeight": 860,
-          "mobileTopRow": 0,
-          "useAutoLayout": false,
-          "parentColumnSpace": 1,
+          "containerStyle": "none",
+          "detachFromLayout": true,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
-          "positioning": "fixed"
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Brand_entity_List",
-              "name": "entity_List",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.active",
-                "appsmith.store.acct_id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Brand_jsPageLoad.load",
-              "name": "jsPageLoad.load",
-              "collectionId": "Brand_jsPageLoad",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Brand",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "minHeight": 860,
+          "mobileBottomRow": 2605.9999999999995,
+          "mobileTopRow": 0,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "positioning": "fixed",
+          "rightColumn": 1296,
+          "snapColumns": 64,
+          "snapRows": 84,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "useAutoLayout": false,
+          "version": 89,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": true
-  },
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_3d17a502-6696-4e93-84ac-32d38e6312b3"
+    "name": "Brand",
+    "slug": "brand"
+  }
 }

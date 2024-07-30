@@ -1,93 +1,36 @@
 {
+  "gitSyncId": "66045fda95164773a81f43e1_8cb9731e-aa3c-4bde-b745-02c7b61beb4b",
   "unpublishedPage": {
-    "name": "Product",
-    "slug": "product",
+    "isHidden": true,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 2605.9999999999995,
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1296,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 730,
-          "containerStyle": "none",
-          "snapRows": 84,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 89,
-          "minHeight": 860,
-          "mobileTopRow": 0,
-          "useAutoLayout": false,
-          "parentColumnSpace": 1,
+          "containerStyle": "none",
+          "detachFromLayout": true,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
-          "positioning": "fixed"
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Product_measure_dd",
-              "name": "measure_dd",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Product_type_dd",
-              "name": "type_dd",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.acct_id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Product_jsPageLoad.load",
-              "name": "jsPageLoad.load",
-              "collectionId": "Product_jsPageLoad",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  await storeValue('active', 'Y');\n  await storeValue('editMode', '');\n  await type_dd.run();\n  await sel_Type.setSelectedOption(appsmith.store.prodTypeID);\n  await entity_List.run();\n  await tbl_Entity.setSelectedRowIndex(-1);\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Product_entity_Batches",
-              "name": "entity_Batches",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "tbl_Entity.selectedRow.id"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Product",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "minHeight": 860,
+          "mobileBottomRow": 2605.9999999999995,
+          "mobileTopRow": 0,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "positioning": "fixed",
+          "rightColumn": 1296,
+          "snapColumns": 64,
+          "snapRows": 84,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "useAutoLayout": false,
+          "version": 89,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": true
-  },
-  "deleted": false,
-  "gitSyncId": "66045fda95164773a81f43e1_8cb9731e-aa3c-4bde-b745-02c7b61beb4b"
+    "name": "Product",
+    "slug": "product"
+  }
 }

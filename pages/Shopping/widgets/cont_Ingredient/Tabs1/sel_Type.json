@@ -1,70 +1,90 @@
 {
-    "boxShadow": "none",
-    "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
-    "labelText": "Type",
-    "topRow": 0,
-    "labelWidth": "3",
-    "type": "SELECT_WIDGET",
-    "serverSideFiltering": false,
-    "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.ingrTypeID))(sel_Type.options, sel_Type.serverSideFiltering) }}",
-    "animateLoading": true,
-    "leftColumn": 2,
-    "dynamicBindingPathList": [
-        {"key": "accentColor"},
-        {"key": "sourceData"},
-        {"key": "defaultOptionValue"},
-        {"key": "isVisible"}
-    ],
-    "labelStyle": "BOLD",
-    "placeholderText": "Select Ingredient Type",
-    "isDisabled": false,
-    "isRequired": false,
-    "dynamicHeight": "FIXED",
-    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-    "isVisible": "{{sel_Shop.selectedOptionValue ? true : false}}",
-    "version": 1,
-    "tags": [
-        "Suggested",
-        "Select"
-    ],
-    "isLoading": false,
-    "borderRadius": "1.5rem",
-    "originalBottomRow": 23,
-    "mobileBottomRow": 5,
-    "widgetName": "sel_Type",
-    "isFilterable": true,
-    "dynamicPropertyPathList": [
-        {"key": "sourceData"},
-        {"key": "onOptionChange"},
-        {"key": "isVisible"}
-    ],
-    "displayName": "Select",
-    "searchTags": ["dropdown"],
-    "bottomRow": 4,
-    "parentRowSpace": 10,
-    "hideCard": false,
-    "mobileRightColumn": 20,
-    "parentColumnSpace": 6.53125,
-    "dynamicTriggerPathList": [{"key": "onOptionChange"}],
-    "labelPosition": "Left",
-    "labelTextColor": "#3366ff",
-    "sourceData": "{{ingrType_dd.data}}",
-    "key": "bceea8jr25",
-    "labelTextSize": "0.875rem",
-    "isDeprecated": false,
-    "rightColumn": 21,
-    "widgetId": "6mqck9hwo8",
-    "optionValue": "value",
-    "minWidth": 450,
-    "parentId": "n4674eq33w",
-    "labelAlignment": "left",
-    "renderMode": "CANVAS",
-    "mobileTopRow": 0,
-    "optionLabel": "label",
-    "responsiveBehavior": "fill",
-    "originalTopRow": 19,
-    "mobileLeftColumn": 0,
-    "maxDynamicHeight": 9000,
-    "onOptionChange": "{{jsSelect.selType()\n}}",
-    "minDynamicHeight": 4
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.ingrTypeID))(sel_Type.options, sel_Type.serverSideFiltering) }}",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
+  "isDeprecated": false,
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{sel_Shop.selectedOptionValue ? true : false}}",
+  "key": "bceea8jr25",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelStyle": "BOLD",
+  "labelText": "Type",
+  "labelTextColor": "#3366ff",
+  "labelTextSize": "0.875rem",
+  "labelWidth": "3",
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 0,
+  "onOptionChange": "{{jsSelect.selType()\n}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 23,
+  "originalTopRow": 19,
+  "parentColumnSpace": 6.53125,
+  "parentId": "n4674eq33w",
+  "parentRowSpace": 10,
+  "placeholderText": "Select Ingredient Type",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 21,
+  "searchTags": [
+    "dropdown"
+  ],
+  "serverSideFiltering": false,
+  "sourceData": "{{ingrType_dd.data}}",
+  "tags": [
+    "Suggested",
+    "Select"
+  ],
+  "topRow": 0,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "6mqck9hwo8",
+  "widgetName": "sel_Type"
 }

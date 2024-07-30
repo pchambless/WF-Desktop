@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_036252f9-9546-45f3-abed-7f40b75de135",
+  "id": "Product_jsForm",
   "unpublishedCollection": {
     "name": "jsForm",
     "pageId": "Product",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Product_jsForm",
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_036252f9-9546-45f3-abed-7f40b75de135"
+    "variables": []
+  }
 }

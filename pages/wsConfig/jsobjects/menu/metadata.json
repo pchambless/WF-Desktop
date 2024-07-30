@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_e42d908f-f8cb-4b68-9ccc-3afc4dadf79a",
+  "id": "wsConfig_menu",
   "unpublishedCollection": {
     "name": "menu",
     "pageId": "wsConfig",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "wsConfig_menu",
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_e42d908f-f8cb-4b68-9ccc-3afc4dadf79a"
+    "variables": []
+  }
 }

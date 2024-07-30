@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_9dc8ce3f-cdfb-422f-b4ae-8f6ab6f476f1",
+  "id": "WF Accounts_jsAccount",
   "unpublishedCollection": {
     "name": "jsAccount",
     "pageId": "WF Accounts",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "WF Accounts_jsAccount",
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_9dc8ce3f-cdfb-422f-b4ae-8f6ab6f476f1"
+    "variables": []
+  }
 }

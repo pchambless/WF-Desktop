@@ -1,101 +1,36 @@
 {
+  "gitSyncId": "66045fda95164773a81f43e1_760e0702-a06d-4607-81e2-80f4c131be2a",
   "unpublishedPage": {
-    "name": "Recipe",
-    "slug": "recipe",
+    "isHidden": true,
     "layouts": [
       {
-        "viewMode": false,
         "dsl": {
-          "mobileBottomRow": 2605.9999999999995,
-          "widgetName": "MainContainer",
           "backgroundColor": "none",
-          "rightColumn": 1296,
-          "snapColumns": 64,
-          "detachFromLayout": true,
-          "widgetId": "0",
-          "topRow": 0,
           "bottomRow": 710,
-          "containerStyle": "none",
-          "snapRows": 84,
-          "parentRowSpace": 1,
-          "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 89,
-          "minHeight": 860,
-          "mobileTopRow": 0,
-          "useAutoLayout": false,
-          "parentColumnSpace": 1,
+          "containerStyle": "none",
+          "detachFromLayout": true,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
-          "positioning": "fixed"
-        },
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "Recipe_ingrType_dd",
-              "name": "ingrType_dd",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.acct_id"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Recipe_measure_dd",
-              "name": "measure_dd",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Recipe_prodType_dd",
-              "name": "prodType_dd",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.acct_id"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Recipe_prod_dd",
-              "name": "prod_dd",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "appsmith.store.prodTypeID"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Recipe_jsPageLoad.load",
-              "name": "jsPageLoad.load",
-              "collectionId": "Recipe_jsPageLoad",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async function () {\n  await storeValue('active', 'Y');\n  await storeValue('editMode', '');\n  await prodType_dd.run();\n  await sel_Type.setSelectedOption(appsmith.store.prodTypeID);\n  await prod_dd.run();\n  await sel_prod.setSelectedOption(appsmith.store.prodID);\n  await entity_List.run();\n  await tbl_Entity.setSelectedRowIndex(-1);\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
-        "layoutOnLoadActionErrors": [],
-        "validOnPageLoadActions": true,
-        "id": "Recipe",
-        "deleted": false,
-        "policies": [],
-        "userPermissions": []
+          "minHeight": 860,
+          "mobileBottomRow": 2605.9999999999995,
+          "mobileTopRow": 0,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "positioning": "fixed",
+          "rightColumn": 1296,
+          "snapColumns": 64,
+          "snapRows": 84,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "useAutoLayout": false,
+          "version": 89,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
       }
     ],
-    "userPermissions": [],
-    "policies": [],
-    "isHidden": true
-  },
-  "deleted": false,
-  "gitSyncId": "66045fda95164773a81f43e1_760e0702-a06d-4607-81e2-80f4c131be2a"
+    "name": "Recipe",
+    "slug": "recipe"
+  }
 }

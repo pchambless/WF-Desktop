@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "6668cf0988cf8166d347b04c_9f730544-8a1a-4f2c-8f1e-4660f858b5a2",
+  "id": "Ingredient_jsForm",
   "unpublishedCollection": {
     "name": "jsForm",
     "pageId": "Ingredient",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Ingredient_jsForm",
-  "deleted": false,
-  "gitSyncId": "6668cf0988cf8166d347b04c_9f730544-8a1a-4f2c-8f1e-4660f858b5a2"
+    "variables": []
+  }
 }
