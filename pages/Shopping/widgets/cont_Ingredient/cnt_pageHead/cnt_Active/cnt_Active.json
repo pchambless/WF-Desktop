@@ -4,11 +4,11 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "1.5rem",
   "borderWidth": "1",
-  "bottomRow": 12,
+  "bottomRow": 11,
   "boxShadow": "NONE",
   "children": [
     {
-      "bottomRow": 60,
+      "bottomRow": 50,
       "canExtend": false,
       "containerStyle": "none",
       "detachFromLayout": true,
@@ -56,7 +56,7 @@
   "isLoading": false,
   "isVisible": "{{appsmith.store.roleID === 1 ? true : false}}",
   "key": "lllt2gc210",
-  "leftColumn": 39,
+  "leftColumn": 40,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 10,
   "minWidth": 450,
@@ -75,7 +75,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
+  "rightColumn": 64,
   "searchTags": [
     "div",
     "parent",

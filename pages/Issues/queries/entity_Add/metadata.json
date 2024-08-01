@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "insert into issues\n(account_id, page, name, priority, description, created_by)\nVALUES\n({{appsmith.store.acct_id}}\n\t, {{page.text}}\n\t, {{Name.text}}\n\t, {{priority.selectedOptionValue}}\n\t, {{description.text}}\n\t, {{appsmith.store.userName}}\n)",
+      "body": "insert into issues\n(account_id, page, name, priority, description, created_by)\nVALUES\n({{appsmith.store.acct_id}}\n\t, {{page.text}}\n\t, {{Name.text}}\n\t, {{priority.selectedOptionValue}}\n\t, {{description.text}}\n\t, {{appsmith.user.email}}\n)",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

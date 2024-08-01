@@ -69,7 +69,7 @@
   "placeholderText": "Select Vendor",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 20,
+  "rightColumn": 19,
   "searchTags": [
     "dropdown"
   ],

@@ -159,7 +159,7 @@
       "responsiveBehavior": "fill",
       "rightColumn": 438,
       "tabId": "tab1qy7y3lejz",
-      "tabName": "Ingredient Mapping",
+      "tabName": "Mapping",
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
@@ -315,7 +315,7 @@
       "index": 1,
       "isDuplicateLabel": false,
       "isVisible": "{{tbl_Entity.selectedRowIndex\t> -1 ? true : false}}",
-      "label": "Ingredient Mapping",
+      "label": "Mapping",
       "widgetId": "vxmy9dt50w"
     },
     "tab56ic5xdvhl": {

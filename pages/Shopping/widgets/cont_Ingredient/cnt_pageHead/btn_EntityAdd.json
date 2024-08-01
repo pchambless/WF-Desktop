@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 20,
+  "bottomRow": 15,
   "boxShadow": "none",
   "buttonColor": "#86efac",
   "buttonVariant": "PRIMARY",
@@ -10,9 +10,6 @@
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
   "dynamicPropertyPathList": [
@@ -35,7 +32,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "4jph9b3r3e",
-  "leftColumn": 16,
+  "leftColumn": 39,
   "minWidth": 120,
   "mobileBottomRow": 18,
   "mobileLeftColumn": 32,
@@ -60,7 +57,7 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 40,
+  "rightColumn": 51,
   "searchTags": [
     "click",
     "submit"
@@ -68,9 +65,9 @@
   "tags": [
     "Buttons"
   ],
-  "text": "Add Receipt for {{sel_vendor.selectedOptionLabel}} ",
+  "text": "Add Receipt ",
   "thumbnailSVG": "/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 16,
+  "topRow": 11,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "3v9dygs0f8",

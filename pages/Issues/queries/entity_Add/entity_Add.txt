@@ -6,5 +6,5 @@ VALUES
 	, {{Name.text}}
 	, {{priority.selectedOptionValue}}
 	, {{description.text}}
-	, {{appsmith.store.userName}}
+	, {{appsmith.user.email}}
 )
