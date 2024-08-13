@@ -95,6 +95,9 @@
     },
     {
       "key": "groupButtons.groupButtonfasnig4w7w.menuItems.menuItemx8qvg3hw94.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonfasnig4w7w.menuItems.menuItem2miac8dla2.onClick"
     }
   ],
   "groupButtons": {
@@ -301,6 +304,15 @@
           "onClick": "{{navigateTo('WF Accounts', {}, 'SAME_WINDOW');}}",
           "textColor": "#ffffff",
           "widgetId": "vebfwaivf4"
+        },
+        "menuItem2miac8dla2": {
+          "id": "menuItem2miac8dla2",
+          "index": 2,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Stripe",
+          "onClick": "{{navigateTo('Stripe', {}, 'SAME_WINDOW');}}",
+          "widgetId": "5xish6n1aa"
         },
         "menuItemx8qvg3hw94": {
           "backgroundColor": "{{appsmith.theme.colors.primaryColor}}",

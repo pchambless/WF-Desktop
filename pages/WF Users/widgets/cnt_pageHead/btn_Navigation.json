@@ -19,6 +19,9 @@
     },
     {
       "key": "groupButtons.groupButtonfqajkr7isn.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton7o4u1g6dkm.buttonColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -74,6 +77,9 @@
     },
     {
       "key": "groupButtons.groupButtonfqajkr7isn.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton7o4u1g6dkm.onClick"
     }
   ],
   "groupButtons": {
@@ -212,6 +218,22 @@
       "onClick": "{{navigateTo('Ingredient Batch', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "widgetId": "ze6mnzl5kg"
+    },
+    "groupButton7o4u1g6dkm": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "id": "groupButton7o4u1g6dkm",
+      "index": 5,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Stripe",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Stripe', {}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "nzof20an6s"
     },
     "groupButtonbv2dvqql0o": {
       "buttonColor": "#dbeafe",

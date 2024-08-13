@@ -16,6 +16,18 @@
     },
     {
       "key": "groupButtons.groupButton7gnphpzkj0.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonfasnig4w7w.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonfasnig4w7w.isVisible"
+    },
+    {
+      "key": "groupButtons.groupButtonfasnig4w7w.menuItems.menuItemx8qvg3hw94.backgroundColor"
+    },
+    {
+      "key": "groupButtons.groupButtonfasnig4w7w.menuItems.menuItem1ifn8g9sav.backgroundColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -24,6 +36,12 @@
     },
     {
       "key": "groupButtons.groupButton7gnphpzkj0.isVisible"
+    },
+    {
+      "key": "groupButtons.groupButton2f5ji0wcf0.isVisible"
+    },
+    {
+      "key": "groupButtons.groupButtonfasnig4w7w.isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -71,6 +89,15 @@
     },
     {
       "key": "groupButtons.groupButton7gnphpzkj0.menuItems.menuItemxeu1zv5gt1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonfasnig4w7w.menuItems.menuItem1ifn8g9sav.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonfasnig4w7w.menuItems.menuItemx8qvg3hw94.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonfasnig4w7w.menuItems.menuItem2miac8dla2.onClick"
     }
   ],
   "groupButtons": {
@@ -88,7 +115,7 @@
         "menuItem3prgefb43a": {
           "backgroundColor": "#fee2e2",
           "id": "menuItem3prgefb43a",
-          "index": 2,
+          "index": 3,
           "isDisabled": false,
           "isVisible": true,
           "label": "Shopping",
@@ -100,9 +127,9 @@
           "id": "menuItem5wh9xtwn0q",
           "index": 0,
           "isDisabled": false,
-          "isVisible": false,
-          "label": "Ingredient Types",
-          "onClick": "{{navigateTo('Ingredient Types', {}, 'SAME_WINDOW');}}",
+          "isVisible": true,
+          "label": "Types",
+          "onClick": "{{navigateTo('Ingredient Type', {}, 'SAME_WINDOW');}}",
           "widgetId": "pxmvsae9kg"
         },
         "menuItem6a4aub341w": {
@@ -118,11 +145,11 @@
         "menuItem9x8mq5ci1n": {
           "backgroundColor": "#fee2e2",
           "id": "menuItem9x8mq5ci1n",
-          "index": 3,
+          "index": 2,
           "isDisabled": false,
           "isVisible": true,
-          "label": "Ingredient Batches",
-          "onClick": "{{navigateTo('Ingredient Batches', {}, 'SAME_WINDOW');}}",
+          "label": "Batches",
+          "onClick": "{{navigateTo('Ingredient Batch', {}, 'SAME_WINDOW');}}",
           "widgetId": "kjqvptwc60"
         }
       },
@@ -137,7 +164,7 @@
       "id": "groupButton1",
       "index": 0,
       "isDisabled": false,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Dashboard",
       "menuItems": {},
       "onClick": "{{navigateTo('Dashboard', {})}}",
@@ -255,6 +282,53 @@
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "qpde28borb"
+    },
+    "groupButtonfasnig4w7w": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "MENU",
+      "id": "groupButtonfasnig4w7w",
+      "index": 4,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": "{{appsmith.store.roleID ? true : false}}",
+      "itemType": "BUTTON",
+      "label": "WF Management",
+      "menuItems": {
+        "menuItem1ifn8g9sav": {
+          "backgroundColor": "{{appsmith.theme.colors.primaryColor}}",
+          "id": "menuItem1ifn8g9sav",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "WF Accounts",
+          "onClick": "{{navigateTo('WF Accounts', {}, 'SAME_WINDOW');}}",
+          "textColor": "#ffffff",
+          "widgetId": "vebfwaivf4"
+        },
+        "menuItem2miac8dla2": {
+          "id": "menuItem2miac8dla2",
+          "index": 2,
+          "isDisabled": false,
+          "isVisible": false,
+          "label": "Stripe",
+          "onClick": "{{navigateTo('Stripe', {}, 'SAME_WINDOW');}}",
+          "widgetId": "5xish6n1aa"
+        },
+        "menuItemx8qvg3hw94": {
+          "backgroundColor": "{{appsmith.theme.colors.primaryColor}}",
+          "id": "menuItemx8qvg3hw94",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "WF Users",
+          "onClick": "{{navigateTo('WF Users', {}, 'SAME_WINDOW');}}",
+          "textColor": "#ffffff",
+          "widgetId": "5ec9l8c4sj"
+        }
+      },
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "0g6nd2y5op"
     }
   },
   "hideCard": false,
@@ -271,14 +345,14 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 4,
   "orientation": "horizontal",
-  "originalBottomRow": 60,
-  "originalTopRow": 56,
+  "originalBottomRow": 68,
+  "originalTopRow": 64,
   "parentColumnSpace": 6.84375,
-  "parentId": "yvrdnat563",
+  "parentId": "wfzzdqp07j",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 30,
+  "rightColumn": 42,
   "searchTags": [
     "click",
     "submit"
@@ -289,6 +363,6 @@
   "topRow": 7,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,
-  "widgetId": "r418og0vyf",
+  "widgetId": "8nl9wh5t27",
   "widgetName": "btn_Navigation"
 }

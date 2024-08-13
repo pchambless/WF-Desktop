@@ -87,6 +87,10 @@
     {
       "id": "WF Users",
       "isDefault": false
+    },
+    {
+      "id": "Stripe",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

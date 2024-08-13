@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6668cf0988cf8166d347b04c_2a6ac7eb-64d9-4846-8697-761ecaf4a375",
+  "id": "Stripe_jsPrice",
+  "unpublishedCollection": {
+    "name": "jsPrice",
+    "pageId": "Stripe",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

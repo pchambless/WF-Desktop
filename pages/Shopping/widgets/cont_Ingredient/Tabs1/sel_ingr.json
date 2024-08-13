@@ -18,9 +18,6 @@
     },
     {
       "key": "defaultOptionValue"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -47,12 +44,12 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{sel_Type.selectedOptionValue ? true : false}}",
+  "isVisible": "true",
   "key": "bceea8jr25",
   "labelAlignment": "right",
   "labelPosition": "Left",
   "labelStyle": "BOLD",
-  "labelText": "Ingredient to Add",
+  "labelText": "Ingredient",
   "labelTextColor": "#3366ff",
   "labelTextSize": "0.875rem",
   "labelWidth": "9",

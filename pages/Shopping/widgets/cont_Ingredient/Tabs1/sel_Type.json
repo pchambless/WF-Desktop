@@ -15,9 +15,6 @@
     },
     {
       "key": "defaultOptionValue"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -44,7 +41,7 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{sel_Shop.selectedOptionValue ? true : false}}",
+  "isVisible": "true",
   "key": "bceea8jr25",
   "labelAlignment": "left",
   "labelPosition": "Left",

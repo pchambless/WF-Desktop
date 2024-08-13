@@ -323,7 +323,7 @@
   "isCanvas": true,
   "isDeprecated": false,
   "isLoading": false,
-  "isVisible": "{{sel_vendor.selectedOptionValue? true : false}}",
+  "isVisible": "{{sel_Shop.selectedOptionValue ? true : false}}",
   "key": "9y5tx896pz",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,

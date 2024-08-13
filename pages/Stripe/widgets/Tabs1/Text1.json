@@ -1,0 +1,56 @@
+{
+  "animateLoading": true,
+  "backgroundColor": "#fee2e2",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 10,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "195amwh6vj",
+  "leftColumn": 54,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 37,
+  "mobileRightColumn": 53,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "originalBottomRow": 10,
+  "originalTopRow": 5,
+  "overflow": "NONE",
+  "parentColumnSpace": 14.2890625,
+  "parentId": "ummrm60y6y",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "shouldTruncate": false,
+  "text": "Price: \n${{jsPrice.formatPrice(productPrice.data.unit_amount)}}/{{productPrice.data.recurring.interval}}",
+  "textAlign": "CENTER",
+  "textColor": "#231F20",
+  "topRow": 5,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "dp15yvrt47",
+  "widgetName": "Text1"
+}

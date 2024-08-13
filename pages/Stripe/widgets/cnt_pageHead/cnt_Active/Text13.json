@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 25,
+  "bottomRow": 4,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -12,27 +12,38 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1rem",
   "fontStyle": "BOLD",
   "hideCard": false,
-  "iconSVG": "/static/media/icon.a55b701a2ae86aa2c6718ecb7b4083f0.svg",
+  "iconSVG": "/static/media/icon.301748e14b0306a7b94ece2d9e2c11cc.svg",
   "isDeprecated": false,
   "isLoading": false,
-  "isVisible": true,
-  "key": "f49wv8l3rw",
-  "leftColumn": 51,
+  "isVisible": "{{appsmith.store.roleID === 1 ? true : false}}",
+  "key": "zewerkypyy",
+  "leftColumn": 46.54545454545455,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 5,
-  "mobileLeftColumn": 47,
-  "mobileRightColumn": 63,
-  "mobileTopRow": 1,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 12,
+  "mobileRightColumn": 28,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
   "onCanvasUI": {
     "disableParentSelection": false,
@@ -41,15 +52,15 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 25,
-  "originalTopRow": 19,
+  "originalBottomRow": 6,
+  "originalTopRow": 1,
   "overflow": "NONE",
-  "parentColumnSpace": 17.453125,
-  "parentId": "jt1v9q1djm",
+  "parentColumnSpace": 1.50390625,
+  "parentId": "lj3ifose28",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 62,
+  "rightColumn": 64,
   "searchTags": [
     "typography",
     "paragraph",
@@ -60,14 +71,14 @@
     "Suggested",
     "Content"
   ],
-  "text": "<a href=\"https://www.digitalocean.com/?refcode=774b81c3b346&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge\"><img src=\"https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%203.svg\" alt=\"DigitalOcean Referral Badge\" /></a>",
-  "textAlign": "LEFT",
-  "textColor": "#231F20",
+  "text": "{{appsmith.store.active === 'Y' ? 'Active' : 'Inactive'}}",
+  "textAlign": "CENTER",
+  "textColor": "#231f20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 19,
+  "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "zksx6otumf",
-  "widgetName": "Text3"
+  "widgetId": "2d04lc5db4",
+  "widgetName": "Text13"
 }
