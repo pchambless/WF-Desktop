@@ -5,12 +5,12 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 66,
+  "bottomRow": 64,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 490,
+      "bottomRow": 470,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -103,6 +103,51 @@
       "version": 1,
       "widgetId": "5n9zrai5ea",
       "widgetName": "Canvas8"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 470,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "zuxell01nu",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 530,
+      "minWidth": 450,
+      "mobileBottomRow": 531,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 1099.546875,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "spz3l18z88",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 1099.546875,
+      "tabId": "tab7xn8efcgx0",
+      "tabName": "Email Users",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "wb0kdm1yud",
+      "widgetName": "Canvas53"
     }
   ],
   "defaultTab": "Add / Edit",
@@ -136,7 +181,7 @@
   "mobileLeftColumn": 0,
   "mobileRightColumn": 3,
   "mobileTopRow": 0,
-  "originalBottomRow": 66,
+  "originalBottomRow": 67,
   "originalTopRow": 13,
   "parentColumnSpace": 17.453125,
   "parentId": "0",
@@ -162,6 +207,13 @@
       "label": "Report",
       "positioning": "vertical",
       "widgetId": "5n9zrai5ea"
+    },
+    "tab7xn8efcgx0": {
+      "id": "tab7xn8efcgx0",
+      "index": 2,
+      "isVisible": true,
+      "label": "Email Users",
+      "widgetId": "wb0kdm1yud"
     }
   },
   "tags": [

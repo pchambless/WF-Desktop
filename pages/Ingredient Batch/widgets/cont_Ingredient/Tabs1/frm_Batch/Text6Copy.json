@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 16,
+  "bottomRow": 17,
   "displayName": "Text",
   "dynamicBindingPathList": [
     {
@@ -33,7 +33,7 @@
   "mobileLeftColumn": 20,
   "mobileRightColumn": 84,
   "mobileTopRow": 24,
-  "originalBottomRow": 17,
+  "originalBottomRow": 16,
   "originalTopRow": 12,
   "overflow": "NONE",
   "parentColumnSpace": 11.0625,
@@ -55,7 +55,7 @@
   "text": "Total = Qty x Price",
   "textAlign": "CENTER",
   "textColor": "#be185d",
-  "topRow": 12,
+  "topRow": 13,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

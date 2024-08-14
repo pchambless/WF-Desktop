@@ -57,7 +57,7 @@
       "rightColumn": 380.484375,
       "shouldScrollContents": false,
       "tabId": "tab1",
-      "tabName": "Ingredients",
+      "tabName": "Products",
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
@@ -175,7 +175,7 @@
       "id": "tab1",
       "index": 0,
       "isVisible": true,
-      "label": "Ingredients",
+      "label": "Products",
       "positioning": "vertical",
       "widgetId": "xay2encrxs"
     },

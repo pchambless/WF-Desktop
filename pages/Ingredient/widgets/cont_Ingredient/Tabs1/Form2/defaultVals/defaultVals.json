@@ -4,11 +4,11 @@
   "borderColor": "#fbffc2",
   "borderRadius": "1.5rem",
   "borderWidth": "1",
-  "bottomRow": 28,
+  "bottomRow": 27,
   "boxShadow": "NONE",
   "children": [
     {
-      "bottomRow": 140,
+      "bottomRow": 130,
       "canExtend": false,
       "containerStyle": "none",
       "detachFromLayout": true,
@@ -59,7 +59,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 28,
+  "originalBottomRow": 27,
   "originalTopRow": 14,
   "parentColumnSpace": 4.306640625,
   "parentId": "ejagire6mi",
