@@ -6,7 +6,7 @@
 VALUES
   ({{sel_prod.selectedOptionValue}}, {{ingredient_id.selectedOptionValue}}
    ,{{global_measure_unit_id.selectedOptionValue}}, {{ingredient_order.text}}
-	 ,{{quantity.text}},{{comments.text}}
+	 ,{{quantity.text}},{{comments.text || ''}}
 	,current_timestamp(),
 		{{appsmith.store.user_id}}
   )

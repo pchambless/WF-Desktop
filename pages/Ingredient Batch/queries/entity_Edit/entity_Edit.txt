@@ -1,6 +1,6 @@
 UPDATE ingredient_batches
 SET 	vendor_id = {{vendor_id.selectedOptionValue}},
-	    brand_id = {{brand_id.selectedOptionValue}},
+	    brand_id = {{brand_id.selectedOptionValue || 0}},
 		 	lot_number = {{lot_number.text || '-'}},
 		 	batch_number = {{batch_number.text}},
 			purchase_date = {{purchase_date.formattedDate}},

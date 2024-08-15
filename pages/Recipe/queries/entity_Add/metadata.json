@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "\tINSERT INTO product_recipes\n  (product_id, ingredient_id\n\t , global_measure_unit_id, ingredient_order\n\t , quantity, comments\n\t , created_at, created_by )\nVALUES\n  ({{sel_prod.selectedOptionValue}}, {{ingredient_id.selectedOptionValue}}\n   ,{{global_measure_unit_id.selectedOptionValue}}, {{ingredient_order.text}}\n\t ,{{quantity.text}},{{comments.text}}\n\t,current_timestamp(),\n\t\t{{appsmith.store.user_id}}\n  )",
+      "body": "\tINSERT INTO product_recipes\n  (product_id, ingredient_id\n\t , global_measure_unit_id, ingredient_order\n\t , quantity, comments\n\t , created_at, created_by )\nVALUES\n  ({{sel_prod.selectedOptionValue}}, {{ingredient_id.selectedOptionValue}}\n   ,{{global_measure_unit_id.selectedOptionValue}}, {{ingredient_order.text}}\n\t ,{{quantity.text}},{{comments.text || ''}}\n\t,current_timestamp(),\n\t\t{{appsmith.store.user_id}}\n  )",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
