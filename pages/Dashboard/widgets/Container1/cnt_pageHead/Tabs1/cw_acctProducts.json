@@ -1,0 +1,85 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 67,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{\"title\": \"{{appsmith.store.acct_name}}\",\n\"rptDate\": \"Report Date: {{moment().format('YYYY-MM-DD')}}\",\n\"prodType\": \"{{acct_ProductTypes.data}}\",\n\"prodList\": \"{{acct_Products.data}}\"\n}",
+  "displayName": "Custom",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "defaultModel"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.ff37253a5ce2f5284c42ede26ce165f9.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "iidv7fbf4j",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 30,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 23,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "parentColumnSpace": 10.200927734375,
+  "parentId": "d4tdp9djk8",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchTags": [
+    "external"
+  ],
+  "srcDoc": {
+    "css": ".app {\n\twidth: 950px;\n\tjustify-content: center;\n\tborder-radius: var(--appsmith-theme-borderRadius);\n\tborder: 1px solid black;\n\tpadding: 15px 15px;\n\tbox-sizing: border-box;\n\tfont-family: system-ui;\n\tbackground: #fff;\n}\n\n.container {\n\tdisplay: grid;\n\tgrid-template-columns: repeat(3, 1fr);\n\tgrid-template-rows: auto;\n\tgrid-gap: 20px;\n\talign-items: start;\n}\n\n.header {\n\tdisplay: grid;\n\tbackground-color: white; \n\tpadding: 6px;\n\tdisplay: grid;\n\tgrid-template-columns: repeat(3, 1fr);\n\tgrid-template-areas: \n\t\t\"info info info\";\n\tfont-weight: bold;\n}\n\n.info {\n\tgrid-area: info;\n\tborder: 1px solid black;\n\tpadding: 10px;\n\tbackground-color: ; \n\tborder-radius: 10px;\n\ttext-align: center;\n\t\n\t.rptDate {\n\tcolor: blue;\n\t}\n\th3 {\n\tcolor: blue;\n\t}\n}\n\n.type {\n\tdisplay: grid;\n  margin: 2px;\n\tbox-shadow: 0 4px 2px lightgrey;\n\tborder-radius: 10px;\n\ttransition: 0.3s;\n}\n.type-hdr {\n\tbackground-color: #d6f5d8;\n\tborder-radius: 10px;\n\tborder: 1px solid black;\n\tpadding: 2px;\n\tcolor: blue;\n\tfont-size: 20px;\n\ttext-align: left;\n}\t\n\n.type-tbl {\n\twidth: 99%; \n\tmargin: 2px;\n\tfont-size: 13px;\n\tborder-radius: 9px;\n\ttransition: 0.3s;\n}\n\t.type-hdr-name {\n\t\t\ttext-align: left;\n\t\t\twidth: 180px;\n\t\t\tborder: 2px solid black;\n\t\t\tpadding: 4px;\n\t\t}\n  .type-hdr-code {\n\t\t\ttext-align: center;\n\t\t\twidth: 40px;\n\t\t\tborder: 2px solid black;\n\t\t\tpadding: 7px;\n\t\t}\n\t.type-hdr-2 {\n\t\t\ttext-align: center;\n\t\t\twidth: 90px;\n\t\t\tborder: 2px solid black;\n\t\t\tpadding: 7px;\n\t\t}\n\t.type-hdr-3 {\n\t\t\ttext-align: left;\n\t\t\twidth: 400px;\n\t\t\tborder: 2px solid black; \n\t\t\tpadding: 7px;\n\t\t}\n\t.type-hdr-4 {\n\t\t\ttext-align: left;\n\t\t\twidth: 90px;\n\t\t\tborder: 2px solid black; \n\t\t\tpadding: 7px;\n\t\t}\n\t.type-col-1 {\n\t\t\tbackground-color: #ffffe6;\n\t\t  font-weight: bold;\n\t\t\ttext-align: left;\n\t\t\tborder: 1px solid blue;\n\t\t\tpadding: 3px;\n\t\t}\n\t.type-col-2 {\n\t\t\ttext-align: center;\n\t\t\tborder: 1px solid blue;\n\t\t\tpadding: 5px;\n\t\t}\n\t.type-col-3 {\n\t\t\ttext-align: left;\n\t\t\tborder: 1px solid blue;\n\t\t\tpadding: 7px;\n\t\t}\n\n\n\n\n",
+    "html": "<div class=\"app\">\n\t<button onclick=\"window.print();\" class=\"noPrint\">\n\t\t\tPrint Me\n\t</button>\n\t<div class=\"header\">\n\t\t<div class =\"info\">\n\t\t\t<div id=\"title\"></div>\n\t\t\t<div class=\"rptDate\">\n\t\t\t\t<div id=\"rptDate\"></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div id=\"prodType\"></div>\n</div>",
+    "js": "class Helper {\n  static initApp() {\n    const title = document.getElementById(\"title\");\n    title.innerHTML = this.title();\n    const rptDate = document.getElementById(\"rptDate\");\n    rptDate.innerHTML = appsmith.model.rptDate;\n    const prodType = document.getElementById(\"prodType\");\n    prodType.innerHTML = this.prodType();\n  }\n  static title() {\n    const rptDtl = appsmith.model.title;\n    const html = `\n            <h2>${rptDtl}</h2><br>\n            <h3>Products<br>`;\n    return html;\n  }\n  static prodType() {\n    let html = '';\n    const rptDtl = JSON.parse(appsmith.model.prodType);\n    rptDtl.forEach(prodType => {\n      html += `<div class=\"table-area\">\n\t\t\t\t\t\t\t<table>\n\t\t\t\t\t\t\t\t<tr class=\"type-tbl\">\n\t\t\t\t\t\t\t\t\t<th class=\"type-hdr-code\">Code</th>\n\t\t\t\t\t\t\t\t\t<th class=\"type-hdr-name\">Product</th>\n\t\t\t\t\t\t\t\t\t<th class=\"type-hdr-3\">Description</th>\n\t\t\t\t\t\t\t\t\t<th class=\"type-hdr-4\">Location</th>\n\t\t\t\t\t\t\t\t\t<th class=\"type-hdr-4\">Best By</th>\n\t\t\t\t\t\t\t\t</tr>`;\n      html += this.prodList(prodType.id);\n      html += `\n\t\t\t\t\t\t</div>`;\n    });\n    return html;\n  }\n  static prodList(typeID) {\n    let html = '';\n    const rptDtl = JSON.parse(appsmith.model.prodList);\n    const filteredProd = rptDtl.filter(prod => prod.product_type_id === typeID);\n    html += `<div class=\"type-container\">\n\t\t\t\t<h5 class=\"type-hdr\">${filteredProd[0].prodType}</h5>`;\n    filteredProd.forEach(prod => {\n      html += `\n                <tr class=\"table-row\">\n\n\t\t\t\t\t\t\t\t\t\t<td class=\"type-col-2\">${prod.code}</td>\n\t\t\t\t\t\t\t\t\t  <td class=\"type-col-1\">${prod.product}</td>\n                    <td class=\"type-col-3\">${prod.description}</td>\n\t\t\t\t\t\t\t\t\t\t<td class=\"type-col-2\">${prod.location}</td>\n\t\t\t\t\t\t\t\t\t\t<td class=\"type-col-2\">${prod.best_by_days} Days</td>\n                </tr>`;\n    });\n    return html;\n  }\n}\nappsmith.onReady(() => {\n  appsmith.onModelChange(() => {\n    Helper.initApp();\n  });\n});"
+  },
+  "tags": [
+    "Display"
+  ],
+  "theme": "{{appsmith.theme}}",
+  "thumbnailSVG": "/static/media/thumbnail.a7d7cde44fad9a0d4d490def43560a78.svg",
+  "topRow": 1,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": ".app {\n\twidth: 950px;\n\tjustify-content: center;\n\tborder-radius: var(--appsmith-theme-borderRadius);\n\tborder: 1px solid black;\n\tpadding: 15px 15px;\n\tbox-sizing: border-box;\n\tfont-family: system-ui;\n\tbackground: #fff;\n}\n\n.container {\n\tdisplay: grid;\n\tgrid-template-columns: repeat(3, 1fr);\n\tgrid-template-rows: auto;\n\tgrid-gap: 20px;\n\talign-items: start;\n}\n\n.header {\n\tdisplay: grid;\n\tbackground-color: white; \n\tpadding: 6px;\n\tdisplay: grid;\n\tgrid-template-columns: repeat(3, 1fr);\n\tgrid-template-areas: \n\t\t\"info info info\";\n\tfont-weight: bold;\n}\n\n.info {\n\tgrid-area: info;\n\tborder: 1px solid black;\n\tpadding: 10px;\n\tbackground-color: ; \n\tborder-radius: 10px;\n\ttext-align: center;\n\t\n\t.rptDate {\n\tcolor: blue;\n\t}\n\th3 {\n\tcolor: blue;\n\t}\n}\n\n.type {\n\tdisplay: grid;\n  margin: 2px;\n\tbox-shadow: 0 4px 2px lightgrey;\n\tborder-radius: 10px;\n\ttransition: 0.3s;\n}\n.type-hdr {\n\tbackground-color: #d6f5d8;\n\tborder-radius: 10px;\n\tborder: 1px solid black;\n\tpadding: 2px;\n\tcolor: blue;\n\tfont-size: 20px;\n\ttext-align: left;\n}\t\n\n.type-tbl {\n\twidth: 99%; \n\tmargin: 2px;\n\tfont-size: 13px;\n\tborder-radius: 9px;\n\ttransition: 0.3s;\n}\n\t.type-hdr-name {\n\t\t\ttext-align: left;\n\t\t\twidth: 180px;\n\t\t\tborder: 2px solid black;\n\t\t\tpadding: 4px;\n\t\t}\n  .type-hdr-code {\n\t\t\ttext-align: center;\n\t\t\twidth: 40px;\n\t\t\tborder: 2px solid black;\n\t\t\tpadding: 7px;\n\t\t}\n\t.type-hdr-2 {\n\t\t\ttext-align: center;\n\t\t\twidth: 90px;\n\t\t\tborder: 2px solid black;\n\t\t\tpadding: 7px;\n\t\t}\n\t.type-hdr-3 {\n\t\t\ttext-align: left;\n\t\t\twidth: 400px;\n\t\t\tborder: 2px solid black; \n\t\t\tpadding: 7px;\n\t\t}\n\t.type-hdr-4 {\n\t\t\ttext-align: left;\n\t\t\twidth: 90px;\n\t\t\tborder: 2px solid black; \n\t\t\tpadding: 7px;\n\t\t}\n\t.type-col-1 {\n\t\t\tbackground-color: #ffffe6;\n\t\t  font-weight: bold;\n\t\t\ttext-align: left;\n\t\t\tborder: 1px solid blue;\n\t\t\tpadding: 3px;\n\t\t}\n\t.type-col-2 {\n\t\t\ttext-align: center;\n\t\t\tborder: 1px solid blue;\n\t\t\tpadding: 5px;\n\t\t}\n\t.type-col-3 {\n\t\t\ttext-align: left;\n\t\t\tborder: 1px solid blue;\n\t\t\tpadding: 7px;\n\t\t}\n\n\n\n\n",
+    "html": "<div class=\"app\">\n\t<button onclick=\"window.print();\" class=\"noPrint\">\n\t\t\tPrint Me\n\t</button>\n\t<div class=\"header\">\n\t\t<div class =\"info\">\n\t\t\t<div id=\"title\"></div>\n\t\t\t<div class=\"rptDate\">\n\t\t\t\t<div id=\"rptDate\"></div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div id=\"prodType\"></div>\n</div>",
+    "js": "class Helper {\n    static initApp() {\n        const title = document.getElementById(\"title\");\n        title.innerHTML = this.title();\n\n        const rptDate = document.getElementById(\"rptDate\");\n        rptDate.innerHTML = appsmith.model.rptDate;\n\n        const prodType = document.getElementById(\"prodType\");\n        prodType.innerHTML = this.prodType();\n    }\n\n    static title() {\n        const rptDtl = appsmith.model.title;\n\t\t\t\t const html = `\n            <h2>${rptDtl}</h2><br>\n            <h3>Products<br>`;\n        return html;\n    }\n\n    static prodType() {\n\t\t\t\tlet html = '';\n        const rptDtl = JSON.parse(appsmith.model.prodType);\n\t\t\t  rptDtl.forEach(prodType => {\n\t\t\t\thtml += `<div class=\"table-area\">\n\t\t\t\t\t\t\t<table>\n\t\t\t\t\t\t\t\t<tr class=\"type-tbl\">\n\t\t\t\t\t\t\t\t\t<th class=\"type-hdr-code\">Code</th>\n\t\t\t\t\t\t\t\t\t<th class=\"type-hdr-name\">Product</th>\n\t\t\t\t\t\t\t\t\t<th class=\"type-hdr-3\">Description</th>\n\t\t\t\t\t\t\t\t\t<th class=\"type-hdr-4\">Location</th>\n\t\t\t\t\t\t\t\t\t<th class=\"type-hdr-4\">Best By</th>\n\t\t\t\t\t\t\t\t</tr>`\n\t\t\t\t\t\t\t\thtml += this.prodList(prodType.id);\n\t\t\t\t\t\t\t  html += `\n\t\t\t\t\t\t</div>`\n\t\t\t\t});\n\n        return html;\n    }\nstatic prodList(typeID) {\n\t\t\t  let html = '';\n        const rptDtl = JSON.parse(appsmith.model.prodList);\n        const filteredProd = rptDtl.filter(prod => prod.product_type_id === typeID);\n\t\t\t         html += \n\t\t\t\t`<div class=\"type-container\">\n\t\t\t\t<h5 class=\"type-hdr\">${filteredProd[0].prodType}</h5>`;\n \n        filteredProd.forEach(prod => {\n            html += `\n                <tr class=\"table-row\">\n\n\t\t\t\t\t\t\t\t\t\t<td class=\"type-col-2\">${prod.code}</td>\n\t\t\t\t\t\t\t\t\t  <td class=\"type-col-1\">${prod.product}</td>\n                    <td class=\"type-col-3\">${prod.description}</td>\n\t\t\t\t\t\t\t\t\t\t<td class=\"type-col-2\">${prod.location}</td>\n\t\t\t\t\t\t\t\t\t\t<td class=\"type-col-2\">${prod.best_by_days} Days</td>\n                </tr>`;\n        });\n        return html;\n    }\n}\n\nappsmith.onReady(() => {\n    appsmith.onModelChange(() => {\n        Helper.initApp();\n    });\n});\n"
+  },
+  "version": 1,
+  "widgetId": "uubxwt0lid",
+  "widgetName": "cw_acctProducts"
+}

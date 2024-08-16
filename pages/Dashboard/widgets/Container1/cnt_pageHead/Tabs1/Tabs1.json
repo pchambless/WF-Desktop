@@ -5,12 +5,12 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 65,
+  "bottomRow": 88,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 460,
+      "bottomRow": 690,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -63,6 +63,51 @@
       "version": 1,
       "widgetId": "5smkw461cc",
       "widgetName": "Canvas52"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 690,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "an1nuvco8p",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 500,
+      "minWidth": 450,
+      "mobileBottomRow": 501,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 706.0083618164062,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "w4palh5jpb",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 706.0083618164062,
+      "tabId": "tabgntu0zxvrg",
+      "tabName": "All Products",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "d4tdp9djk8",
+      "widgetName": "Canvas53"
     }
   ],
   "defaultTab": "",
@@ -109,7 +154,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 65,
+  "originalBottomRow": 88,
   "originalTopRow": 15,
   "parentColumnSpace": 11.20648193359375,
   "parentId": "03b0ykzmr1",
@@ -127,6 +172,13 @@
       "label": "Users",
       "positioning": "vertical",
       "widgetId": "5smkw461cc"
+    },
+    "tabgntu0zxvrg": {
+      "id": "tabgntu0zxvrg",
+      "index": 1,
+      "isVisible": true,
+      "label": "All Products",
+      "widgetId": "d4tdp9djk8"
     }
   },
   "tags": [

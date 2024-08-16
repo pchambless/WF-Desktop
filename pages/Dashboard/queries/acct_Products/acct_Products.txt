@@ -1,0 +1,3 @@
+SELECT * 
+from v_products
+where account_id = {{appsmith.store.acct_id}};

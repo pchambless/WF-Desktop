@@ -1,0 +1,4 @@
+SELECT id, name 
+FROM product_types
+where account_id = {{appsmith.store.acct_id}}
+and active = 'Y'
