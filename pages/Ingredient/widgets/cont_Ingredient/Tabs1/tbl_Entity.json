@@ -120,6 +120,9 @@
   "dynamicTriggerPathList": [
     {
       "key": "onRowSelected"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -135,7 +138,7 @@
   "isVisibleDownload": false,
   "isVisibleFilters": false,
   "isVisiblePagination": false,
-  "isVisibleSearch": false,
+  "isVisibleSearch": true,
   "key": "lec7vvihs8",
   "label": "Data",
   "leftColumn": 0,
@@ -256,6 +259,7 @@
       "label": "Del",
       "labelColor": "#FFFFFF",
       "notation": "standard",
+      "onClick": "{{entity_Delete.run().then(() => {\n  entity_List.run();\n  ingr_List.run();\n});}}",
       "originalId": "customColumn1",
       "sticky": "",
       "textSize": "0.875rem",
@@ -557,7 +561,7 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 36,
+  "rightColumn": 34,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "tableData": "{{entity_List.data}}",

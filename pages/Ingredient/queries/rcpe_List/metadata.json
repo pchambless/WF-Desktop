@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6668cf0988cf8166d347b04c_4a275327-c085-4800-961a-c285a27b1813",
-  "id": "Ingredient_rpt_title",
+  "gitSyncId": "6668cf0988cf8166d347b04c_9a1bf018-a9b9-46e9-9244-a3b77afdf7fa",
+  "id": "Ingredient_rcpe_List",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT {{appsmith.store.acct_name}} acct_name;",
+      "body": "select prd_type_n_name, ifnull(ingr_qty_meas,'') ingr_meas, prd_id, prd_rcpe_id, ingr_id\nfrom   v_prd_rcpe_active a\nwhere  a.ingr_id = {{tbl_Entity.selectedRow.id}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,8 +27,8 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
-    "name": "rpt_title",
+    "executeOnLoad": true,
+    "name": "rcpe_List",
     "pageId": "Ingredient",
     "userSetOnLoad": false
   }

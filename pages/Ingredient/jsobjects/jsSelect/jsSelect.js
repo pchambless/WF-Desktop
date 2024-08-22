@@ -8,6 +8,8 @@ export default {
 		await storeValue('editMode','Edit')
 		await storeValue('ingrID', tbl_Entity.selectedRow.id)
 		await ingr_List.run()
+		await rcpe_List.run()
+		await rcpe_Head.run()
 		await entity_Batches.run()
 	}
 }

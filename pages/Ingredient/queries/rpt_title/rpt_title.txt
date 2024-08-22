@@ -1,1 +1,0 @@
-SELECT {{appsmith.store.acct_name}} acct_name;
