@@ -1,0 +1,90 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 57,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{\n\"parent\": \"{{doc_Parents.data}}\",\n\"detail\": \"{{doc_List.data}}\"\n}",
+  "displayName": "Custom",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "defaultModel"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onLinkClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onLinkClick"
+    }
+  ],
+  "events": [
+    "onLinkClick"
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.ff37253a5ce2f5284c42ede26ce165f9.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "iidv7fbf4j",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 30,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 23,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "onLinkClick": "{{navigateTo('', page, 'SAME_WINDOW');}}",
+  "parentColumnSpace": 10.200927734375,
+  "parentId": "l5xp0jn75h",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 59,
+  "searchTags": [
+    "external"
+  ],
+  "srcDoc": {
+    "css": ".app {\n  width: 950px;\n  justify-content: center;\n  border-radius: var(--appsmith-theme-borderRadius);\n  padding: 10px 10px;\n  box-sizing: border-box;\n  font-family: TimesNewRoman;\n  background: #fff;\n}\n\n.type-container {\n  display: grid;\n  grid-template-columns: 1fr;\n  justify-content: space-between;\n  background-color: white;\n  padding: 2px;\n}\n\n.type {\n  display: grid;\n  margin: 2px;\n  box-shadow: 0 4px 2px lightgrey;\n  border-radius: 10px;\n  transition: 0.3s;\n}\n\n.type-hdr {\n  background-color: #d6f5d8;\n  border-radius: 10px;\n  border: 2px solid black;\n  padding: 2px;\n  color: blue;\n  font-size: 20px;\n  text-align: left;\n}\n\n.type-tbl {\n  width: 97%;\n  margin: 2px;\n  font-size: 13px;\n  border-radius: 9px;\n  transition: 0.3s;\n}\n\n.tbl-hdr {\n  background-color: #f2f2f2;\n  width: 800px;\n}\n.tbl-hdr .type-hdr-code {\n  text-align: center;\n  width: 400px;\n  border: 2px solid black;\n  padding: 4px;\n}\n.tbl-hdr .type-hdr-name {\n  text-align: left;\n  width: 800px;\n  font-weight: bold;\n  border: 1px solid black;\n  padding: 4px;\n}\n.tbl-hdr .type-hdr-nbr {\n  text-align: right;\n  width: 50px;\n  border: 2px solid black;\n  padding: 7px;\n}\n.tbl-hdr .type-hdr-date {\n  text-align: center;\n  width: 90px;\n  border: 2px solid black;\n  padding: 7px;\n}\n.tbl-hdr .type-hdr-desc {\n  text-align: left;\n  width: 230px;\n  border: 1px solid black;\n  padding: 7px;\n}\n\n.type-col-code {\n  text-align: center;\n  border: 1px solid blue;\n  padding: 5px;\n}\n\n.type-col-name {\n  text-align: left;\n  padding: 3px;\n}\n\n.clickable-name {\n  /* Default styling (no link) */\n  color: #333; /* Default text color */\n  /* Other styles (font size, family, etc.) as needed */\n  /* If dtl.link is not empty, add the following styles */\n  text-decoration: underline; /* Underline the name */\n  color: blue; /* Make it a beautiful shade of blue */\n  cursor: pointer; /* Show a hand cursor on hover (because it's clickable) */\n}\n\n.type-col-nbr {\n  text-align: right;\n  border: 1px solid blue;\n  padding: 5px;\n}\n\n.type-col-date {\n  text-align: center;\n  border: 1px solid blue;\n  padding: 5px;\n}\n\n.type-col-desc {\n  text-align: left;\n  border: 1px solid blue;\n  padding: 7px;\n}\n\nol {\n  padding: 15px; /* Adjust as needed */\n  list-style-type: decimal;\n}",
+    "html": "<button onclick=\"window.print();\"class=\"noPrint\">\n    Print Me\n</button>\n<div class=\"app\">\n\t\t<div id=\"detail\"></div>\n</div>",
+    "js": "class Helper {\n  static initApp() {\n    const details = document.getElementById(\"detail\");\n    detail.innerHTML = this.detail();\n    const handleLink = () => {\n      appsmith.triggerEvent(\"linkClick\");\n    };\n  }\n  static detail() {\n    const rptDtl = JSON.parse(appsmith.model.parent);\n    let html = ``;\n    rptDtl.forEach(parent => {\n      html += `\n\t\t<div class=\"tbl-hdr\">\n    <table class=\"type-hdr\">\n    \t<tr>\n      \t<td class=\"type-hdr-name\">${parent.name}</td>\n     \t</tr>\n`;\n      html += this.details(parent.id);\n      html += `\n\t\t\t</table>`;\n    });\n    html += `\n\t</div>`; // Close the div container\n    return html;\n  }\n  static details(parentID) {\n    const rptDtl = JSON.parse(appsmith.model.detail);\n    const filtered = rptDtl.filter(dtl => dtl.parent_id === parentID);\n    let html = `\n    <div class=\"table-area\">\n      <table>`;\n    filtered.forEach(dtl => {\n      const linked = dtl.link > '' ? `<span class=\"clickable-name\">${dtl.name}</span>` : `<span class=\"type-col-name\">${dtl.name}</span>`;\n      html += `\n      <tr class=\"table-row\">\n        <td>${linked}</td>\n        <td class=\"type-col-desc\">${dtl.description}</td>\n      </tr>`;\n      function linkClick() {\n        appsmith.triggerEvent(\"linkClick\", {\n          page: dtl.link\n        });\n      }\n      ;\n    });\n    html += `\n      </table>\n    </div>`;\n    return html;\n  }\n}\nappsmith.onReady(() => {\n  appsmith.onModelChange(() => {\n    Helper.initApp();\n  });\n});"
+  },
+  "tags": [
+    "Display"
+  ],
+  "theme": "{{appsmith.theme}}",
+  "thumbnailSVG": "/static/media/thumbnail.a7d7cde44fad9a0d4d490def43560a78.svg",
+  "topRow": 0,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": ".app {\n\twidth: 950px;\n\tjustify-content: center;\n\tborder-radius: var(--appsmith-theme-borderRadius);\n\tpadding: 10px 10px;\n\tbox-sizing: border-box;\n\tfont-family: TimesNewRoman;\n\tbackground: #fff;\n}\n\n.type-container {\n    display: grid;\n    grid-template-columns: 1fr; \n    justify-content: space-between;\n    background-color: white;\n    padding: 2px;\n}\n\n.type {\n\tdisplay: grid;\n  margin: 2px;\n\tbox-shadow: 0 4px 2px lightgrey;\n\tborder-radius: 10px;\n\ttransition: 0.3s;\n\n}\n.type-hdr {\n\tbackground-color: #d6f5d8;\n\tborder-radius: 10px;\n\tborder: 2px solid black;\n\tpadding: 2px;\n\tcolor: blue;\n\tfont-size: 20px;\n\ttext-align: left;\n}\t\n\n.type-tbl {\n\twidth: 97%; \n\tmargin: 2px;\n\tfont-size: 13px;\n\tborder-radius: 9px;\n\ttransition: 0.3s;\n}\n.tbl-hdr {\n\tbackground-color: #f2f2f2;\n\twidth: 800px;\n\t.type-hdr-code {\n\t\t\ttext-align: center;\n\t\t\twidth: 400px;\n\t\t\tborder: 2px solid black;\n\t\t\tpadding: 4px;\n\t}\t\n\t.type-hdr-name {\n\t\t\ttext-align: left;\n\t\t\twidth: 800px;\n\t\t  font-weight: bold;\n\t\t\tborder: 1px solid black;\n\t\t\tpadding: 4px;\n\t}\t\n\t.type-hdr-nbr {\n\t\t\ttext-align: right;\n\t\t\twidth: 50px;\n\t\t\tborder: 2px solid black;\n\t\t\tpadding: 7px;\n\t\t}\n  \t.type-hdr-date {\n\t\t\ttext-align: center;\n\t\t\twidth: 90px;\n\t\t\tborder: 2px solid black;\n\t\t\tpadding: 7px;\n\t\t}\n\t.type-hdr-desc {\n\t\t\ttext-align: left;\n\t\t\twidth: 230px;\n\t\t\tborder: 1px solid black; \n\t\t\tpadding: 7px;\n\t\t}\n\t}\n\t.type-col-code {\n\t\t\ttext-align: center;\n\t\t\tborder: 1px solid blue;\n\t\t\tpadding: 5px;\n\t\t}\n\t.type-col-name {\n\t\t\ttext-align: left;\n\n\t\t\tpadding: 3px;\n\t\t}\n\t.clickable-name {\n    /* Default styling (no link) */\n    color: #333; /* Default text color */\n    /* Other styles (font size, family, etc.) as needed */\n\n    /* If dtl.link is not empty, add the following styles */\n    text-decoration: underline; /* Underline the name */\n    color: blue; /* Make it a beautiful shade of blue */\n    cursor: pointer; /* Show a hand cursor on hover (because it's clickable) */\n  }\n\t.type-col-nbr {\n\t\t\ttext-align: right;\n\t\t\tborder: 1px solid blue;\n\t\t\tpadding: 5px;\n\t\t}\n  \t.type-col-date {\n\t\t\ttext-align: center;\n\t\t\tborder: 1px solid blue;\n\t\t\tpadding: 5px;\n\t\t}\n\t.type-col-desc {\n\t\t\ttext-align: left;\n\t\t\tborder: 1px solid blue;\n\t\t\tpadding: 7px;\n\t\t}\n\tol {\n\t\tpadding: 15px; /* Adjust as needed */\n\t\tlist-style-type: decimal;\n\t}\n\n",
+    "html": "<button onclick=\"window.print();\"class=\"noPrint\">\n    Print Me\n</button>\n<div class=\"app\">\n\t\t<div id=\"detail\"></div>\n</div>",
+    "js": "class Helper {\n\t\nstatic initApp() {\n\n   const details = document.getElementById(\"detail\");\n   detail.innerHTML = this.detail();\n\n\tconst handleLink = () => {\n  \tappsmith.triggerEvent(\"linkClick\");\n\t}\n};\n\nstatic detail() {\n\t\tconst rptDtl = JSON.parse(appsmith.model.parent);\n\t\tlet html = ``;\n\t\n        rptDtl.forEach(parent => {\n            html += `\n\t\t<div class=\"tbl-hdr\">\n    <table class=\"type-hdr\">\n    \t<tr>\n      \t<td class=\"type-hdr-name\">${parent.name}</td>\n     \t</tr>\n`;\n\t\t\t\thtml += this.details(parent.id);\n\t\t\thtml += `\n\t\t\t</table>`\n        });\n        html += `\n\t</div>`; // Close the div container\n        return html;\n}\n\n\t\nstatic details(parentID) {\n  const rptDtl = JSON.parse(appsmith.model.detail);\n  const filtered = rptDtl.filter(dtl => dtl.parent_id === parentID);\n  let html = `\n    <div class=\"table-area\">\n      <table>`;\n  filtered.forEach(dtl => {\n    const linked = dtl.link > '' ? `<span class=\"clickable-name\">${dtl.name}</span>` : `<span class=\"type-col-name\">${dtl.name}</span>`;\n    html += `\n      <tr class=\"table-row\">\n        <td>${linked}</td>\n        <td class=\"type-col-desc\">${dtl.description}</td>\n      </tr>`;\n    function linkClick() {\n  \t\tappsmith.triggerEvent(\"linkClick\", { page: dtl.link })\n\t\t};\n  });\n  html += `\n      </table>\n    </div>`;\n  return html;\n}\n\n}\n\nappsmith.onReady(() => {\n    appsmith.onModelChange(() => {\n        Helper.initApp();\n    });\n});\n"
+  },
+  "version": 1,
+  "widgetId": "lnbnj4vke1",
+  "widgetName": "cw_ReportCopy"
+}

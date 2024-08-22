@@ -1,0 +1,7 @@
+SELECT a.ordr, a.name, a.link
+, replace(replace(a.description,'</li>\n',''),'\n','<br>') description, parent_id
+from procedures a
+join v_procParents b
+on a.parent_id = b.id
+where active = 'Y'
+ORDER BY b.ordr, a.ordr, a.name

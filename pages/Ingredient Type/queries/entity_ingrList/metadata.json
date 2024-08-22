@@ -1,6 +1,6 @@
 {
   "gitSyncId": "6668cf0988cf8166d347b04c_64f51d44-13b8-4179-9cc3-f915c714bf9c",
-  "id": "Ingredient Type_entity_acctList",
+  "id": "Ingredient Type_entity_ingrList",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "entity_acctList",
+    "name": "entity_ingrList",
     "pageId": "Ingredient Type",
     "userSetOnLoad": false
   }

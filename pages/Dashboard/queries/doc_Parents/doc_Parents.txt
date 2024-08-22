@@ -1,0 +1,3 @@
+SELECT id, ordr, name, description
+FROM v_procParents
+ORDER BY ordr, name
