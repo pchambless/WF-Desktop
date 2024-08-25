@@ -39,7 +39,7 @@
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "BOLD",
-  "labelText": "WF Role",
+  "labelText": "Default Account",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 25,
