@@ -15,11 +15,7 @@
       "key": "text"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -42,7 +38,7 @@
   "mobileRightColumn": 42,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClick": "{{Welcome.run()}}",
+  "onClick": "{{showModal(mdl_Welcome.name);}}",
   "originalBottomRow": 34,
   "originalTopRow": 30,
   "parentColumnSpace": 17.453125,

@@ -5,11 +5,12 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "Dear {{tbl_Entity.selectedRow.first_name}},<br><br>\nWelcome to <strong>Whatsfresh!</strong>!<br><br>\n\nWe're excited to have <strong>{{default_account_id.selectedOptionLabel}}</strong> on board and ready to start tracking the ingredients that make up your awesome products. With our app, you can easily monitor and manage all the ingredients you use, helping you meet FDA requirements for <strong>Ingredient Traceability!</strong><br><br>\n\nGet started today and revolutionize the way you trace the ingredients that make up your products. If you have any questions or need assistance, feel free to reach out to our support team at any time!<br><br>\n\nAfter setting up <strong>Appsmith</strong> (you should have received an email invite), you will be able to login at <a href=\"https://appsmith-tmg.whatsfresh.app/app/wf-desktop/login-6668cf0988cf8166d347b055\">Whatsfresh</a>.  The password you set up with Appsmith is all you'll need!\n\nBe sure and bookmark <a href=\"https://appsmith-tmg.whatsfresh.app/app/wf-desktop/login-6668cf0988cf8166d347b055\">Whatsfresh</a>.<br><br>\n\nHappy Making!<br><br>\n\nThe Whatsfresh Team<br>\nPaul: pc7900@gmail.com<br>\nJoel: joel@twomenandagarden.com",
+      "body": "{{wlcm_Body.text}}",
       "encodeParamsToggle": true,
       "formData": {
         "command": "SEND",
         "send": {
+          "attachments": "{{Getting_Started.files}}",
           "bodyType": "text/html",
           "cc": "pc7900@gmail.com",
           "from": "joel@twomenandagarden.com",
@@ -38,6 +39,9 @@
       },
       {
         "key": "body"
+      },
+      {
+        "key": "formData.send.attachments"
       }
     ],
     "executeOnLoad": false,

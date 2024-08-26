@@ -4,7 +4,7 @@ VALUES
 ({{Name.text}}
 	, {{code.text}}
 	,{{appsmith.store.acct_id}}
-	, {{sel_Type.selectedOptionValue}}
+	, {{ingredient_type_id.selectedOptionValue}}
 	, {{description.text || ''}}
 	, {{grams_per_ounce.text || 0}}
 	, {{default_measure_unit.selectedOptionValue || 51}}

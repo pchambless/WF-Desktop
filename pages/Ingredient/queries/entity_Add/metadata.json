@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "insert into ingredients\n(name, code, account_id, ingredient_type_id, description, grams_per_ounce, default_measure_unit, default_vendor, created_by)\nVALUES\n({{Name.text}}\n\t, {{code.text}}\n\t,{{appsmith.store.acct_id}}\n\t, {{sel_Type.selectedOptionValue}}\n\t, {{description.text || ''}}\n\t, {{grams_per_ounce.text || 0}}\n\t, {{default_measure_unit.selectedOptionValue || 51}}\n\t, {{default_vendor.selectedOptionValue || 0}}\n\t, {{appsmith.store.user_id}});",
+      "body": "insert into ingredients\n(name, code, account_id, ingredient_type_id, description, grams_per_ounce, default_measure_unit, default_vendor, created_by)\nVALUES\n({{Name.text}}\n\t, {{code.text}}\n\t,{{appsmith.store.acct_id}}\n\t, {{ingredient_type_id.selectedOptionValue}}\n\t, {{description.text || ''}}\n\t, {{grams_per_ounce.text || 0}}\n\t, {{default_measure_unit.selectedOptionValue || 51}}\n\t, {{default_vendor.selectedOptionValue || 0}}\n\t, {{appsmith.store.user_id}});",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
