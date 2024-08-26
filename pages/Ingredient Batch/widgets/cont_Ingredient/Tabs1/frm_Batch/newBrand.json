@@ -28,7 +28,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 4,
   "needsErrorInfo": false,
-  "onClick": "{{navigateTo('Brand', {}, 'SAME_WINDOW');}}",
+  "onClick": "{{showModal(mdl_Brand.name);}}",
   "parentColumnSpace": 8.4716796875,
   "parentId": "p4t23d4f2o",
   "parentRowSpace": 10,

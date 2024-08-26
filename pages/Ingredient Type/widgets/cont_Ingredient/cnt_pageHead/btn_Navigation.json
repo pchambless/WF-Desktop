@@ -125,7 +125,7 @@
           "isDisabled": false,
           "isVisible": true,
           "label": "Ingredient Batches",
-          "onClick": "{{navigateTo('Ingredient Batches', {}, 'SAME_WINDOW');}}",
+          "onClick": "{{navigateTo('Ingredient Batch', {}, 'SAME_WINDOW');}}",
           "widgetId": "kjqvptwc60"
         }
       },

@@ -234,7 +234,7 @@
     "tab8num6z8rq0": {
       "id": "tab8num6z8rq0",
       "index": 1,
-      "isVisible": true,
+      "isVisible": false,
       "label": "New Vendor/Brand",
       "widgetId": "izu5fxn2oa"
     },
