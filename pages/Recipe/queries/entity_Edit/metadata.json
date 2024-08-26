@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "update product_recipes\n set ingredient_order = {{ingredient_order.text}}\n , global_measure_unit_id = {{global_measure_unit_id.selectedOptionValue}}\n , quantity = {{quantity.text}}\n , comments = {{comments.text}}\n , updated_at = now()\n , updated_by = {{appsmith.store.user_id}}\n where id = {{tbl_Entity.selectedRow.prd_rcpe_id }};\n",
+      "body": "update product_recipes\n set ingredient_order = {{ingredient_order.text}}\n , global_measure_unit_id = {{global_measure_unit_id.selectedOptionValue}}\n , ingredient_id = {{ingredient_id.selectedOptionValue}}\n , quantity = {{quantity.text}}\n , comments = {{comments.text}}\n , updated_at = now()\n , updated_by = {{appsmith.store.user_id}}\n where id = {{tbl_Entity.selectedRow.prd_rcpe_id }};\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

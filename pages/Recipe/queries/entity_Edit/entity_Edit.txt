@@ -1,6 +1,7 @@
 update product_recipes
  set ingredient_order = {{ingredient_order.text}}
  , global_measure_unit_id = {{global_measure_unit_id.selectedOptionValue}}
+ , ingredient_id = {{ingredient_id.selectedOptionValue}}
  , quantity = {{quantity.text}}
  , comments = {{comments.text}}
  , updated_at = now()
