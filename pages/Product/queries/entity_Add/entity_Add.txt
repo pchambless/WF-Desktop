@@ -4,7 +4,7 @@ VALUES
 (	 {{Name.text}}
 	,{{code.text}}
 	,{{appsmith.store.acct_id}}
-	,{{sel_Type.selectedOptionValue}} 
+	,{{product_type_id.selectedOptionValue}} 
 	,{{description.text}}
 	,{{best_by_days.text}}
 	,{{global_measure_unit_id.selectedOptionValue}}

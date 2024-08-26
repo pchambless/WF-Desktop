@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "insert into products\n(name, code, account_id, product_type_id, description, best_by_days, global_measure_unit_id, location, created_by)\nVALUES\n(\t {{Name.text}}\n\t,{{code.text}}\n\t,{{appsmith.store.acct_id}}\n\t,{{sel_Type.selectedOptionValue}} \n\t,{{description.text}}\n\t,{{best_by_days.text}}\n\t,{{global_measure_unit_id.selectedOptionValue}}\n\t,{{Location.text}}\n\t,{{appsmith.store.user_id}}\n);",
+      "body": "insert into products\n(name, code, account_id, product_type_id, description, best_by_days, global_measure_unit_id, location, created_by)\nVALUES\n(\t {{Name.text}}\n\t,{{code.text}}\n\t,{{appsmith.store.acct_id}}\n\t,{{product_type_id.selectedOptionValue}} \n\t,{{description.text}}\n\t,{{best_by_days.text}}\n\t,{{global_measure_unit_id.selectedOptionValue}}\n\t,{{Location.text}}\n\t,{{appsmith.store.user_id}}\n);",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

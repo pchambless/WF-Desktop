@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "1.5rem",
-  "bottomRow": 7,
+  "bottomRow": 13,
   "boxShadow": "none",
   "defaultText": "{{tbl_Entity.selectedRow.name}}",
   "displayName": "Input",
@@ -57,7 +57,7 @@
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 28,
+  "rightColumn": 27,
   "searchTags": [
     "form",
     "text input",
@@ -70,7 +70,7 @@
     "Inputs"
   ],
   "thumbnailSVG": "/static/media/thumbnail.a4eac1a16753ea7fc54cac7731f9ea6a.svg",
-  "topRow": 0,
+  "topRow": 6,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "35ofg2jtxo",

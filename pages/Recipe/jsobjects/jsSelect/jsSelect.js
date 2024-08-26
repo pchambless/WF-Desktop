@@ -8,6 +8,7 @@ export default {
 	async selectProd () {
 		await storeValue('editMode','')
 		await entity_List.run()
+		await entity_Select.run()
 	},
 		async selectEntity () {
 		await storeValue('editMode','Edit')
