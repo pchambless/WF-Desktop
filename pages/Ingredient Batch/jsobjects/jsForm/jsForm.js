@@ -1,6 +1,6 @@
 export default {
 	add () {
-		batch_number.setValue({{ingr_Select.data[0].code}})
+		batch_number.setValue(ingr_Select.data[0].code)
 		lot_number.setValue('')
 		purchase_date.setValue('')
 		best_by_date.setValue('')
