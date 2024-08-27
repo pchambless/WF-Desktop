@@ -65,7 +65,7 @@
       "isVisible": "{{txt_formHeader.text === 'Add' ? false : true}}",
       "label": "Add",
       "menuItems": {},
-      "onClick": "{{tbl_Entity.setSelectedRowIndex(-1)}}",
+      "onClick": "{{tbl_Entity.setSelectedRowIndex(-1)\nbatch_number.setValue(ingr_Select.data[0].code)}}",
       "placement": "CENTER",
       "widgetId": ""
     },

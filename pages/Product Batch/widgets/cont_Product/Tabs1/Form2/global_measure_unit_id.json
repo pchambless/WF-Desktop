@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "1.5rem",
-  "bottomRow": 27,
+  "bottomRow": 26,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.editMode != 'Add' ? tbl_Entity.selectedRow.global_measure_unit_id :\nprod_Select.data[0].global_measure_unit_id))(global_measure_unit_id.options, global_measure_unit_id.serverSideFiltering) }}",
   "displayName": "Select",
@@ -39,7 +39,7 @@
   "labelText": "Units",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 28,
+  "leftColumn": 27,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -65,7 +65,7 @@
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 48,
+  "rightColumn": 47,
   "searchTags": [
     "dropdown"
   ],
@@ -76,7 +76,7 @@
     "Select"
   ],
   "thumbnailSVG": "/static/media/thumbnail.9aef24cb159e9c6e4d0f1d7ca4fb0c79.svg",
-  "topRow": 20,
+  "topRow": 19,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "qisfq7a2as",

@@ -4,6 +4,7 @@ export default {
 		await storeValue('editMode','')
 		await prod_dd.run()
 		await entity_List.clear()
+		this.selectProd()
 },
 	async selectProd () {
 		await storeValue('editMode','')

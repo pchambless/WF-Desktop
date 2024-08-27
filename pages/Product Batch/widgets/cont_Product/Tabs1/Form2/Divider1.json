@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "bottomRow": 20,
+  "bottomRow": 19,
   "capSide": 0,
   "capType": "nc",
   "displayName": "Divider",
@@ -44,7 +44,7 @@
   ],
   "thickness": 2,
   "thumbnailSVG": "/static/media/thumbnail.85250b0a5e6d690bf6499c965e769b14.svg",
-  "topRow": 16,
+  "topRow": 15,
   "type": "DIVIDER_WIDGET",
   "version": 1,
   "widgetId": "m18iyb7khq",

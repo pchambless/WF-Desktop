@@ -38,7 +38,7 @@
   "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
   "isDeprecated": false,
   "isDisabled": false,
-  "isFilterable": true,
+  "isFilterable": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,

@@ -2,6 +2,7 @@ select  *
 from v_ingr_btch_dtl a
 where  a.shop_event_id = {{sel_Shop.selectedOptionValue}}
 AND  ingr_btch_active = {{appsmith.store.active}}
+AND  acct_id = {{appsmith.store.acct_id}}
 ORDER by ingr_name
 limit 20
 

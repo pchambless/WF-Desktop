@@ -72,7 +72,7 @@
   "placeholderText": "Select Ingredient",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 45,
+  "rightColumn": 51,
   "searchTags": [
     "dropdown"
   ],
