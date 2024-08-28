@@ -10,5 +10,6 @@ export default {
 		await tbl_Entity.setSelectedRowIndex(-1)
 		await batch_Last.run()
 		await rcpe_List.run()
+		tbl_Entity.setSelectedRowIndex(-1)
 	}
 }

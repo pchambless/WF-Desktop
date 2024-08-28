@@ -62,10 +62,10 @@
       "id": "groupButton2",
       "index": 0,
       "isDisabled": false,
-      "isVisible": "{{txt_formHeader.text === 'Add' ? false : true}}",
+      "isVisible": "{{tbl_Entity.selectedRowIndex  > -1 ? false : true}}",
       "label": "Add",
       "menuItems": {},
-      "onClick": "{{tbl_Entity.setSelectedRowIndex(-1)}}",
+      "onClick": "{{tbl_Entity.setSelectedRowIndex(-1)\njsForm.add()}}",
       "placement": "CENTER",
       "widgetId": ""
     },
