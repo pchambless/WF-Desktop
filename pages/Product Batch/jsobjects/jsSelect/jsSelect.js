@@ -15,7 +15,7 @@ export default {
 		await batchIngr_Map.clear()
 		await batchTask_List.clear()
 		await rcpe_List.run()
-
+		await jsForm.add()
 	},
 	async selectEntity () {
 		await tbl_Entity.selectedRowIndex === -1 ? jsForm.add : jsForm.edit()
