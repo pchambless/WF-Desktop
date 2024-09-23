@@ -1,0 +1,15 @@
+SELECT name Name
+, ifnull(max(b.purch_date),'')   'Last Shop'
+, count(b.ingr_btch_id) 'Btch Cnt'
+, concat('$',format(ifnull(sum(b.purch_total_amt),0),0)) 'Total Spent'
+, ifnull(contact_name,'') Contact
+, ifnull(contact_phone,'') Phone
+, ifnull(contact_email,'') Email
+from vendors a
+left join v_ingr_btch_dtl b
+on a.id = b.vndr_id  
+and active = 'Y'
+where account_id = {{appsmith.store.acct_id}}
+and active = {{appsmith.store.active}}
+group by a.`name`, a.contact_name, a.contact_phone, a.contact_email, a.id, a.account_id
+order by count(b.ingr_btch_id) desc

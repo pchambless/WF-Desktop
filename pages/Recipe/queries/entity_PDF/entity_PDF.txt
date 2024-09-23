@@ -1,0 +1,5 @@
+Select a.ingr_ordr Ordr, a.ingr_name Ingredient, ifnull(ingr_qty_meas,'') Units, ingr_qty Qty
+, prd_ingr_desc Comments
+from v_prd_rcpe_dtl a
+where prd_id = {{sel_prod.selectedOptionValue}}
+and a.prd_rcpe_actv = {{appsmith.store.active}}

@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6668cf0988cf8166d347b04c_fe443337-9257-44fc-89b9-a338e5906868",
+  "id": "Ingredient_PDF",
+  "unpublishedCollection": {
+    "name": "PDF",
+    "pageId": "Ingredient",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

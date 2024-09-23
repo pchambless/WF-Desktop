@@ -119,6 +119,51 @@
       "version": 1,
       "widgetId": "57ws2p7n90",
       "widgetName": "Canvas38"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 570,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "q5a7o3m0mh",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 640,
+      "minWidth": 450,
+      "mobileBottomRow": 641,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 814.984375,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "96cbbf7gky",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 814.984375,
+      "tabId": "tab18i2q8wjib",
+      "tabName": "PDF",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "kwpw8y68c8",
+      "widgetName": "Canvas52"
     }
   ],
   "defaultTab": "Recipes",
@@ -162,7 +207,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 82,
+  "originalBottomRow": 37,
   "originalTopRow": 18,
   "parentColumnSpace": 12.734130859375,
   "parentId": "u6axqxl7ts",
@@ -180,6 +225,13 @@
       "label": "Recipes",
       "positioning": "vertical",
       "widgetId": "uxw3521b4n"
+    },
+    "tab18i2q8wjib": {
+      "id": "tab18i2q8wjib",
+      "index": 2,
+      "isVisible": true,
+      "label": "PDF",
+      "widgetId": "kwpw8y68c8"
     },
     "tab2": {
       "id": "tab2",

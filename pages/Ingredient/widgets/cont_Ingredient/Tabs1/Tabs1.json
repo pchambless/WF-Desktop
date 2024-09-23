@@ -219,6 +219,51 @@
       "version": 1,
       "widgetId": "3rfg4w1it5",
       "widgetName": "Canvas52"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 530,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "c8yo2wqcw7",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 520,
+      "minWidth": 450,
+      "mobileBottomRow": 521,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 1015.1982421875,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "jh4606z236",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 1015.1982421875,
+      "tabId": "tabie0hc06z66",
+      "tabName": "PDF",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "oelbqkinvo",
+      "widgetName": "Canvas53"
     }
   ],
   "defaultTab": "Ingredients",
@@ -260,7 +305,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 70,
+  "originalBottomRow": 37,
   "originalTopRow": 18,
   "parentColumnSpace": 16.1142578125,
   "parentId": "z4jk7yerww",
@@ -293,6 +338,13 @@
       "isVisible": true,
       "label": "Batch Report",
       "widgetId": "1mizpuw2tq"
+    },
+    "tabie0hc06z66": {
+      "id": "tabie0hc06z66",
+      "index": 4,
+      "isVisible": true,
+      "label": "PDF",
+      "widgetId": "oelbqkinvo"
     },
     "tabp0s4l237xl": {
       "id": "tabp0s4l237xl",

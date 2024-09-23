@@ -1,0 +1,132 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "displayName": "Button Group",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "groupButtons.groupButton2.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton2.isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonfdsafiwzfc.onClick"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "groupButtons.groupButton1.isVisible"
+    },
+    {
+      "key": "groupButtons.groupButton3.isVisible"
+    },
+    {
+      "key": "groupButtons.groupButton2.isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonfdsafiwzfc.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton2": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "id": "groupButton2",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": "{{txt_formHeader.text === 'Add' ? false : true}}",
+      "label": "Add",
+      "menuItems": {},
+      "onClick": "{{tbl_Entity.setSelectedRowIndex(-1)}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButtonfdsafiwzfc": {
+      "buttonColor": "#86efac",
+      "buttonType": "SIMPLE",
+      "buttonVariant": "filled",
+      "id": "groupButtonfdsafiwzfc",
+      "index": 1,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Save",
+      "menuItems": {},
+      "onClick": "{{await jsEntity.editModeRun()\nawait entity_List.run()}}",
+      "placement": "CENTER",
+      "widgetId": "gjse2hepzr"
+    }
+  },
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.ae1401b479d77b1908271bdfed6d12ba.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": "true",
+  "key": "pafyvp4mo9",
+  "leftColumn": 38,
+  "minWidth": 450,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 26,
+  "mobileRightColumn": 90,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "orientation": "horizontal",
+  "originalBottomRow": 9,
+  "originalTopRow": 5,
+  "parentColumnSpace": 4.375,
+  "parentId": "4vjit6j9pv",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchTags": [
+    "click",
+    "submit"
+  ],
+  "tags": [
+    "Buttons"
+  ],
+  "thumbnailSVG": "/static/media/thumbnail.eaa22f923be763e8779a46432554f1ed.svg",
+  "topRow": 0,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "4n3elayw1o",
+  "widgetName": "btngrp_Edits"
+}

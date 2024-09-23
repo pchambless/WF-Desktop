@@ -5,12 +5,12 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "1.5rem",
   "borderWidth": 1,
-  "bottomRow": 56,
+  "bottomRow": 74,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 370,
+      "bottomRow": 550,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -118,6 +118,51 @@
       "version": 1,
       "widgetId": "p86rpvcb8a",
       "widgetName": "Canvas26"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 550,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "c8yo2wqcw7",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 410,
+      "minWidth": 450,
+      "mobileBottomRow": 411,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 930.6875,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "z6s0zewg0r",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 930.6875,
+      "tabId": "tab1ovb8xd5au",
+      "tabName": "PDF",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "8zer251f0w",
+      "widgetName": "Canvas52"
     }
   ],
   "defaultTab": "",
@@ -164,7 +209,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 56,
+  "originalBottomRow": 74,
   "originalTopRow": 15,
   "parentColumnSpace": 14.5419921875,
   "parentId": "z4jk7yerww",
@@ -175,6 +220,13 @@
   "shouldScrollContents": true,
   "shouldShowTabs": true,
   "tabsObj": {
+    "tab1ovb8xd5au": {
+      "id": "tab1ovb8xd5au",
+      "index": 2,
+      "isVisible": true,
+      "label": "PDF",
+      "widgetId": "8zer251f0w"
+    },
     "tab2": {
       "id": "tab2",
       "index": 0,

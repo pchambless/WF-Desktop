@@ -10,6 +10,7 @@ export default {
 	async entityDelete () {
 		await entity_Delete.run()
 		await entity_List.run()
+		await entity_PDF.run()
 	},
 	txtEditHdr () {
 		let txt = tbl_Entity.selectedRowIndex === -1 || !entity_List.data.length ? "Add" : "Edit <strong>" + tbl_Entity.selectedRow.name + '</strong>'

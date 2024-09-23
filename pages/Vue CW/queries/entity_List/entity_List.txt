@@ -1,0 +1,5 @@
+SELECT name, description, id, active, account_id
+from ingredient_types
+where account_id = {{appsmith.store.acct_id}}
+and active = {{appsmith.store.active}}
+order by active desc, name

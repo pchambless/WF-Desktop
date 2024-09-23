@@ -3,6 +3,8 @@ export default {
 		await storeValue('ingrTypeID', sel_Type.selectedOptionValue)
 		entity_List.run()	
 		ingr_List.run()
+		ingr_PDF.run()
+		PDF.buildPDF()
 	},
 	async selectEntity () {
 		await storeValue('editMode','Edit')

@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6668cf0988cf8166d347b04c_64f51d44-13b8-4179-9cc3-f915c714bf9c",
+  "gitSyncId": "6668cf0988cf8166d347b04c_012b8fa9-aae2-4bbd-b59d-484f7c7067ab",
   "id": "Ingredient Type_entity_ingrList",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "select *\nfrom v_ingr_list\nwhere \tacct_id = {{appsmith.store.acct_id}}\t\norder by ingr_type, ingr_name",
+      "body": "select ingr_code Code, ingr_name Ingredient, gms_per_oz 'gms/Oz', dflt_meas Units, dflt_vndr Vendor, ingr_btch_cnt 'Btch Count', last_btch_date 'Last Date', last_btch_nbr 'Last Batch' \nfrom v_ingr_list\nwhere   ingr_type_id = {{tbl_Entity.selectedRow.id}}  \norder by ingr_type, ingr_name",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "entity_ingrList",
     "pageId": "Ingredient Type",
     "userSetOnLoad": false

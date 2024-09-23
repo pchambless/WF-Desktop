@@ -10,6 +10,7 @@ export default {
 		await storeValue('editMode','')
 		await entity_List.run()
 		await entity_Select.run()
+		await entity_PDF.run()
 	},
 		async selectEntity () {
 		await storeValue('editMode','Edit')

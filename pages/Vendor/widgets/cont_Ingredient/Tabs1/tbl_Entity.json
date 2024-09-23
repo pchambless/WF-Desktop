@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "1.5rem",
   "borderWidth": "1",
-  "bottomRow": 36,
+  "bottomRow": 48,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -46,7 +46,7 @@
   "columnWidthMap": {
     "batches": 72,
     "last_shop": 116,
-    "total_amt": 82
+    "total_amt": 99
   },
   "compactMode": "SHORT",
   "defaultPageSize": 0,
@@ -138,7 +138,7 @@
   "isVisibleDownload": false,
   "isVisibleFilters": false,
   "isVisiblePagination": false,
-  "isVisibleSearch": false,
+  "isVisibleSearch": true,
   "key": "aypg7auzol",
   "label": "Data",
   "leftColumn": 0,

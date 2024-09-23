@@ -96,6 +96,10 @@
     {
       "id": "Stripe",
       "isDefault": false
+    },
+    {
+      "id": "Vue CW",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
