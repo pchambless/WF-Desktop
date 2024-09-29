@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
-  "bottomRow": 53,
-  "docUrl": "{{PDF_IngrType.buildPDF()}}",
+  "bottomRow": 57,
+  "docUrl": "{{PDF_Brands.buildPDF()}}",
   "dynamicBindingPathList": [
     {
       "key": "docUrl"
@@ -19,10 +19,8 @@
   "mobileRightColumn": 24,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 111,
-  "originalTopRow": 59,
   "parentColumnSpace": 14.498046875,
-  "parentId": "8zer251f0w",
+  "parentId": "7lqaldp59e",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -30,6 +28,6 @@
   "topRow": 1,
   "type": "DOCUMENT_VIEWER_WIDGET",
   "version": 1,
-  "widgetId": "d33ut4m4pn",
+  "widgetId": "xu4eb3r80c",
   "widgetName": "pdfViewer"
 }

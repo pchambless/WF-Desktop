@@ -1,0 +1,10 @@
+SELECT name Name
+, count(b.ingr_btch_id) 'Batch Count'
+, concat('$',format(ifnull(sum(b.purch_total_amt),0),0)) 'Total $'
+from brands a
+left join v_ingr_btch_dtl b
+on a.id = b.brnd_id  
+where account_id = {{appsmith.store.acct_id}}
+and active = {{appsmith.store.active}}
+group by a.`name`, a.id, a.account_id
+order by a.name, a.id

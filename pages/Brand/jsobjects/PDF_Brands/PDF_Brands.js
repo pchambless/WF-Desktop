@@ -8,9 +8,9 @@ buildPDF () {
 		doc.setFont('times');
 // Build Report
 // Set the Content for Report Title, Title Value and Description
-		const title = "Vendor Count:  ";
+		const title = "Brand Count:  ";
 		const name = `${entity_PDF.data.length}`;
-	  const descr = 'Your list of all Active Vendors.  (If you no longer use a Vendor, you can delete them, and they will no longer show up in your dropdowns.)'
+	  const descr = 'Your list of all Active Brands.  (If you no longer use a Brand, you can delete them, and they will no longer show up in your dropdowns.)'
 		PDF_Constants.rptConstants(doc,title,name,descr);
 		this.rptData(doc)
 
@@ -27,12 +27,9 @@ rptData(doc) {
 // Name attributes
 		columnStyles: { 
       0: { fillColor: '#ffffe6', fontStyle: 'bold' , cellWidth: 40 },
-			1: { cellWidth: 22},
+			1: { cellWidth: 15, halign: 'right' },
 			2: { cellWidth: 15, halign: 'right' },
-			3: { cellWidth: 19, halign: 'right' },
-			4: { cellWidth: 30, halign: 'left' },
-			5: { cellWidth: 26, halign: 'left' },
-			6: { cellWidth: 26, halign: 'left' }
+			
     },
 		
 		font: 'times',

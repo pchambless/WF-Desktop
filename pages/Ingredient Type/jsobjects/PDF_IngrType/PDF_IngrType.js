@@ -8,9 +8,9 @@ buildPDF () {
 		doc.setFont('times');
 // Build Report
 // Set the Content for Report Title, Title Value and Description
-		const title = "Vendor Count:  ";
-		const name = `${entity_PDF.data.length}`;
-	  const descr = 'Your list of all Active Vendors.  (If you no longer use a Vendor, you can delete them, and they will no longer show up in your dropdowns.)'
+		const title = `Ingredient Type: `;
+		const name = tbl_Entity.selectedRow.name;
+	  const descr = tbl_Entity.selectedRow.description;
 		PDF_Constants.rptConstants(doc,title,name,descr);
 		this.rptData(doc)
 
@@ -26,13 +26,11 @@ rptData(doc) {
 		jspdf_autotable.default(doc, {
 // Name attributes
 		columnStyles: { 
-      0: { fillColor: '#ffffe6', fontStyle: 'bold' , cellWidth: 40 },
-			1: { cellWidth: 22},
-			2: { cellWidth: 15, halign: 'right' },
-			3: { cellWidth: 19, halign: 'right' },
-			4: { cellWidth: 30, halign: 'left' },
-			5: { cellWidth: 26, halign: 'left' },
-			6: { cellWidth: 26, halign: 'left' }
+      1: { fillColor: '#ffffe6', fontStyle: 'bold' , cellWidth: 40 },
+			0: { cellWidth: 15, halign: 'center', fontStyle: 'bold' },
+			2: { cellWidth: 17, halign: 'right' },
+			5: {cellWidth: 17, halign: 'center'}
+			
     },
 		
 		font: 'times',

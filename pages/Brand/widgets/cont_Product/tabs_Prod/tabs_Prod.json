@@ -5,12 +5,12 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 66,
+  "bottomRow": 69,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 470,
+      "bottomRow": 500,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -118,6 +118,51 @@
       "version": 1,
       "widgetId": "aapdpdvx82",
       "widgetName": "Canvas42"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 500,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "wjyu7yufvx",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 510,
+      "minWidth": 450,
+      "mobileBottomRow": 511,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 383.78125,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "li9cpxcttr",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 383.78125,
+      "tabId": "tabmdit7msvc5",
+      "tabName": "PDF",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "2d7b3tl2ba",
+      "widgetName": "Canvas53"
     }
   ],
   "defaultTab": "",
@@ -173,7 +218,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 66,
+  "originalBottomRow": 61,
   "originalTopRow": 15,
   "parentColumnSpace": 5.99658203125,
   "parentId": "u6axqxl7ts",
@@ -199,6 +244,13 @@
       "isVisible": "true",
       "label": "Report",
       "widgetId": "aapdpdvx82"
+    },
+    "tabmdit7msvc5": {
+      "id": "tabmdit7msvc5",
+      "index": 2,
+      "isVisible": true,
+      "label": "PDF",
+      "widgetId": "2d7b3tl2ba"
     }
   },
   "tags": [

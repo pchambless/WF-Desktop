@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6668cf0988cf8166d347b04c_1b1a1539-59b2-418b-8803-476516d7fa37",
-  "id": "Ingredient_ingr_PDF",
+  "gitSyncId": "6668cf0988cf8166d347b04c_97ddf0bf-bc9d-449b-80c0-665b1d060a1e",
+  "id": "Brand_entity_PDF",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "select ingr_code Code, ingr_name Ingredient, last_purchase 'Last Batch', recipes Recipes\n,prod_batches Batches, units Units, min_rate 'Min Rate', max_rate 'Max Rate', avg_rate 'Avg Rate'\nfrom    \twhatsfresh.v_ingr_btch_metrics a\nwhere \t  a.ingr_type_id = {{sel_Type.selectedOptionValue}}\t\nand     ingr_active = 'Y'\norder by ingr_name, last_purchase desc",
+      "body": "SELECT name Name\n, count(b.ingr_btch_id) 'Batch Count'\n, concat('$',format(ifnull(sum(b.purch_total_amt),0),0)) 'Total $'\nfrom brands a\nleft join v_ingr_btch_dtl b\non a.id = b.brnd_id  \nwhere account_id = {{appsmith.store.acct_id}}\nand active = {{appsmith.store.active}}\ngroup by a.`name`, a.id, a.account_id\norder by a.name, a.id",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,8 +28,8 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "ingr_PDF",
-    "pageId": "Ingredient",
+    "name": "entity_PDF",
+    "pageId": "Brand",
     "userSetOnLoad": false
   }
 }

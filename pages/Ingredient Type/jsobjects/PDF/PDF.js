@@ -31,9 +31,9 @@ buildPDF () {
 	
 tblData(doc) {
 // Extract headers dynamically from the first object in the data array
-		var tblHead = [Object.keys(entity_ingrList.data[0])];
+		var tblHead = [Object.keys(entity_PDF.data[0])];
 // Map the data to match the headers
-		var tblData = entity_ingrList.data.map(item => Object.values(item));
+		var tblData = entity_PDF.data.map(item => Object.values(item));
 	  var tblBody = [tblHead].concat(tblData);
 		console.log(tblData);
 		jspdf_autotable.default(doc, {
