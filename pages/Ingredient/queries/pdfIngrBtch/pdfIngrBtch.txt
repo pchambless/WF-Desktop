@@ -1,0 +1,6 @@
+SELECT  a.ingr_btch_nbr Batch, a.purch_date Date, a.vndr_name Vendor 
+, a.brnd_name Brand, a.ingr_lot_nbr 'Lot Nbr', a.purch_dtl Detail, a.purch_amt Amount 
+FROM  v_ingr_btch_dtl a
+where ingr_id = {{tbl_Entity.selectedRow.id}}
+ORDER BY purch_date desc
+;

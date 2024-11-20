@@ -16,5 +16,6 @@ export default {
 		storeValue('vndrID',tbl_Entity.selectedRow.vendor_id)
 		storeValue('shopID',tbl_Entity.selectedRow.shop_event_id)
 		entity_Trace.run()
+		pdfTrace.run()
 	}
 }

@@ -1,0 +1,4 @@
+select prd_type_n_name Product, 
+ifnull(ingr_qty_meas,'') Units
+from   v_prd_rcpe_active a
+where  a.ingr_id = {{tbl_Entity.selectedRow.id}}

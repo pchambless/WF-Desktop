@@ -4,6 +4,8 @@ export default {
 		storeValue('appName', 'whatsfresh')
 		storeValue('email', appsmith.user.email)
 		this.storeLogo;
+		pdfStoreCommon.reportStyles()
+		pdfStoreCommon.tableStyles()
 	},
 	login_func : async () => {
 		//				showAlert("Start");

@@ -5,12 +5,12 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 77,
+  "bottomRow": 70,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 550,
+      "bottomRow": 480,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -66,163 +66,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 570,
-      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-      "canExtend": true,
-      "detachFromLayout": true,
-      "displayName": "Canvas",
-      "dynamicBindingPathList": [
-        {
-          "key": "borderRadius"
-        },
-        {
-          "key": "boxShadow"
-        }
-      ],
-      "dynamicHeight": "AUTO_HEIGHT",
-      "dynamicTriggerPathList": [],
-      "flexLayers": [],
-      "hideCard": true,
-      "isDeprecated": false,
-      "isDisabled": false,
-      "isLoading": false,
-      "isVisible": true,
-      "key": "u491yqo4o6",
-      "leftColumn": 0,
-      "maxDynamicHeight": 9000,
-      "minDynamicHeight": 4,
-      "minHeight": 150,
-      "minWidth": 450,
-      "mobileBottomRow": 150,
-      "mobileLeftColumn": 0,
-      "mobileRightColumn": 145.0283203125,
-      "mobileTopRow": 0,
-      "needsErrorInfo": false,
-      "onCanvasUI": {
-        "disableParentSelection": true,
-        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
-        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
-        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
-        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
-      },
-      "parentColumnSpace": 1,
-      "parentId": "jh4606z236",
-      "parentRowSpace": 1,
-      "renderMode": "CANVAS",
-      "responsiveBehavior": "fill",
-      "rightColumn": 145.0283203125,
-      "shouldScrollContents": false,
-      "tabId": "tab2",
-      "tabName": "Report",
-      "topRow": 0,
-      "type": "CANVAS_WIDGET",
-      "version": 1,
-      "widgetId": "fx982vs3vy",
-      "widgetName": "Canvas49"
-    },
-    {
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 570,
-      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-      "canExtend": false,
-      "containerStyle": "none",
-      "detachFromLayout": true,
-      "displayName": "Canvas",
-      "dynamicBindingPathList": [
-        {
-          "key": "borderRadius"
-        },
-        {
-          "key": "boxShadow"
-        }
-      ],
-      "dynamicHeight": "AUTO_HEIGHT",
-      "dynamicTriggerPathList": [],
-      "flexLayers": [],
-      "hideCard": true,
-      "isDeprecated": false,
-      "isLoading": false,
-      "isVisible": true,
-      "key": "eimm6snamv",
-      "leftColumn": 0,
-      "maxDynamicHeight": 9000,
-      "minDynamicHeight": 4,
-      "minHeight": 590,
-      "minWidth": 450,
-      "mobileBottomRow": 591,
-      "mobileLeftColumn": 0,
-      "mobileRightColumn": 1015.1982421875,
-      "mobileTopRow": 1,
-      "needsErrorInfo": false,
-      "onCanvasUI": {
-        "disableParentSelection": true,
-        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
-        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
-        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
-        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
-      },
-      "parentColumnSpace": 1,
-      "parentId": "jh4606z236",
-      "parentRowSpace": 1,
-      "renderMode": "CANVAS",
-      "responsiveBehavior": "fill",
-      "rightColumn": 1015.1982421875,
-      "tabId": "tab8gbqynye6p",
-      "tabName": "Batch Report",
-      "topRow": 1,
-      "type": "CANVAS_WIDGET",
-      "version": 1,
-      "widgetId": "1mizpuw2tq",
-      "widgetName": "Canvas50"
-    },
-    {
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 590,
-      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-      "canExtend": false,
-      "containerStyle": "none",
-      "detachFromLayout": true,
-      "dynamicBindingPathList": [
-        {
-          "key": "borderRadius"
-        },
-        {
-          "key": "boxShadow"
-        }
-      ],
-      "dynamicHeight": "AUTO_HEIGHT",
-      "dynamicTriggerPathList": [],
-      "flexLayers": [],
-      "isLoading": false,
-      "isVisible": true,
-      "key": "3wxey415jk",
-      "leftColumn": 0,
-      "maxDynamicHeight": 9000,
-      "minDynamicHeight": 4,
-      "minHeight": 630,
-      "minWidth": 450,
-      "mobileBottomRow": 631,
-      "mobileLeftColumn": 0,
-      "mobileRightColumn": 1015.1982421875,
-      "mobileTopRow": 1,
-      "needsErrorInfo": false,
-      "parentColumnSpace": 1,
-      "parentId": "jh4606z236",
-      "parentRowSpace": 1,
-      "renderMode": "CANVAS",
-      "responsiveBehavior": "fill",
-      "rightColumn": 1015.1982421875,
-      "tabId": "tabp0s4l237xl",
-      "tabName": "Recipes",
-      "topRow": 1,
-      "type": "CANVAS_WIDGET",
-      "version": 1,
-      "widgetId": "3rfg4w1it5",
-      "widgetName": "Canvas52"
-    },
-    {
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 550,
+      "bottomRow": 530,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -258,12 +102,102 @@
       "responsiveBehavior": "fill",
       "rightColumn": 1015.1982421875,
       "tabId": "tabie0hc06z66",
-      "tabName": "PDF",
+      "tabName": "Summary",
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
       "widgetId": "oelbqkinvo",
       "widgetName": "Canvas53"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 540,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "mk80ea5jqz",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 630,
+      "minWidth": 450,
+      "mobileBottomRow": 631,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 1015.1982421875,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "jh4606z236",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 1015.1982421875,
+      "tabId": "tabylfcuiib1b",
+      "tabName": "Batches",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "lxjmc00mpf",
+      "widgetName": "Canvas54"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 520,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "mk80ea5jqz",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 600,
+      "minWidth": 450,
+      "mobileBottomRow": 601,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 1015.1982421875,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "jh4606z236",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 1015.1982421875,
+      "tabId": "tabayl7zktick",
+      "tabName": "Recipes",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "6527q46hb6",
+      "widgetName": "Canvas55"
     }
   ],
   "defaultTab": "Ingredients",
@@ -305,7 +239,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "originalBottomRow": 77,
+  "originalBottomRow": 70,
   "originalTopRow": 18,
   "parentColumnSpace": 16.1142578125,
   "parentId": "z4jk7yerww",
@@ -324,34 +258,26 @@
       "positioning": "vertical",
       "widgetId": "u5agdribo8"
     },
-    "tab2": {
-      "id": "tab2",
-      "index": 1,
-      "isVisible": true,
-      "label": "Report",
-      "positioning": "vertical",
-      "widgetId": "fx982vs3vy"
-    },
-    "tab8gbqynye6p": {
-      "id": "tab8gbqynye6p",
-      "index": 2,
-      "isVisible": true,
-      "label": "Batch Report",
-      "widgetId": "1mizpuw2tq"
-    },
-    "tabie0hc06z66": {
-      "id": "tabie0hc06z66",
-      "index": 4,
-      "isVisible": true,
-      "label": "PDF",
-      "widgetId": "oelbqkinvo"
-    },
-    "tabp0s4l237xl": {
-      "id": "tabp0s4l237xl",
+    "tabayl7zktick": {
+      "id": "tabayl7zktick",
       "index": 3,
       "isVisible": true,
       "label": "Recipes",
-      "widgetId": "3rfg4w1it5"
+      "widgetId": "6527q46hb6"
+    },
+    "tabie0hc06z66": {
+      "id": "tabie0hc06z66",
+      "index": 1,
+      "isVisible": true,
+      "label": "Summary",
+      "widgetId": "oelbqkinvo"
+    },
+    "tabylfcuiib1b": {
+      "id": "tabylfcuiib1b",
+      "index": 2,
+      "isVisible": true,
+      "label": "Batches",
+      "widgetId": "lxjmc00mpf"
     }
   },
   "tags": [

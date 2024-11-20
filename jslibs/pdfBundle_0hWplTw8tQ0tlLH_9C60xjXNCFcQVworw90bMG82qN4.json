@@ -1,0 +1,10 @@
+{
+  "accessor": [
+    "pdfBundle"
+  ],
+  "defs": "{\"!name\":\"LIB/pdfBundle\",\"pdfBundle\":{\"default\":{\"genHeader\":{\"!type\":\"fn()\"},\"genTable\":{\"!type\":\"fn()\"}},\"genHeader\":{\"!type\":\"fn()\"},\"genTable\":{\"!type\":\"fn()\"},\"__esModule\":{\"!type\":\"bool\"}}}",
+  "name": "pdfBundle",
+  "uidString": "pdfBundle_https://cdn.jsdelivr.net/npm/wf-jspdf@latest/dist/index.umd.js",
+  "url": "https://cdn.jsdelivr.net/npm/wf-jspdf@latest/dist/index.umd.js",
+  "version": ""
+}

@@ -1,0 +1,4 @@
+SELECT a.prd Product, a.prd_btch_nbr 'Batch', a.prd_btch_date Date, a.prd_btch_qty Quantity, a.location Location
+from   v_ingr_btch_trace a
+where  ingr_btch_id = {{tbl_Entity.selectedRow.id}}
+order by prd_btch_date desc

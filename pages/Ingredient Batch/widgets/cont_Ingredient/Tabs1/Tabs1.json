@@ -105,12 +105,11 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 570,
+      "bottomRow": 520,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
       "detachFromLayout": true,
-      "displayName": "Canvas",
       "dynamicBindingPathList": [
         {
           "key": "borderRadius"
@@ -122,41 +121,32 @@
       "dynamicHeight": "AUTO_HEIGHT",
       "dynamicTriggerPathList": [],
       "flexLayers": [],
-      "hideCard": true,
-      "isDeprecated": false,
       "isLoading": false,
       "isVisible": true,
-      "key": "e6r2r0p02d",
+      "key": "y4kw42bpz9",
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
-      "minHeight": 550,
+      "minHeight": 560,
       "minWidth": 450,
-      "mobileBottomRow": 551,
+      "mobileBottomRow": 561,
       "mobileLeftColumn": 0,
       "mobileRightColumn": 438,
       "mobileTopRow": 1,
       "needsErrorInfo": false,
-      "onCanvasUI": {
-        "disableParentSelection": true,
-        "focusBGCSSVar": "--on-canvas-ui-widget-focus",
-        "focusColorCSSVar": "--on-canvas-ui-widget-selection",
-        "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
-        "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
-      },
       "parentColumnSpace": 1,
       "parentId": "5il155ehig",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
       "rightColumn": 438,
-      "tabId": "taborfncy3gzy",
-      "tabName": "Batch Trace",
+      "tabId": "tab4xc2acf0eh",
+      "tabName": "Product Tracing",
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "8uciiuu67l",
-      "widgetName": "Canvas29"
+      "widgetId": "yhogkvkifj",
+      "widgetName": "Canvas54"
     }
   ],
   "defaultTab": "Batches",
@@ -173,9 +163,6 @@
     },
     {
       "key": "isVisible"
-    },
-    {
-      "key": "tabsObj.taborfncy3gzy.isVisible"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -212,7 +199,7 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 73,
   "onTabSelected": "",
-  "originalBottomRow": 75,
+  "originalBottomRow": 65,
   "originalTopRow": 19,
   "parentColumnSpace": 6.84375,
   "parentId": "z4jk7yerww",
@@ -231,19 +218,19 @@
       "positioning": "vertical",
       "widgetId": "n4674eq33w"
     },
+    "tab4xc2acf0eh": {
+      "id": "tab4xc2acf0eh",
+      "index": 2,
+      "isVisible": true,
+      "label": "Product Tracing",
+      "widgetId": "yhogkvkifj"
+    },
     "tab8num6z8rq0": {
       "id": "tab8num6z8rq0",
       "index": 1,
       "isVisible": false,
       "label": "New Vendor/Brand",
       "widgetId": "izu5fxn2oa"
-    },
-    "taborfncy3gzy": {
-      "id": "taborfncy3gzy",
-      "index": 2,
-      "isVisible": "{{tbl_Entity.selectedRowIndex > -1 ? true : false}}",
-      "label": "Batch Trace",
-      "widgetId": "8uciiuu67l"
     }
   },
   "tags": [

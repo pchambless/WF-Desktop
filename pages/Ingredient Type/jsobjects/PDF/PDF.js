@@ -1,50 +1,28 @@
 export default {
-
-buildPDF () {
-		// Initialize jsPDF
-		const doc = jspdf.jsPDF();
-		doc.text("",0,0);
-		doc.setFont('times')
-		this.tblHeader(doc);
-		this.tblData(doc)
-
-		return doc.output("dataurlstring")
-
-},
- tblHeader(doc) {
-	 // Define the header content
-	const acctName = appsmith.store.acct_name;
-	const title = "Ingredient Type: " + tbl_Entity.selectedRow.name + " (as of " + moment().format('YYYY-MM-DD') + ')';
-	 	doc.addImage(appsmith.store.wfLogo, 'JPEG', 10, 5, 20, 20)
-		doc.setFontSize(18);
-	  doc.setFont(undefined, 'bold')
-		doc.setTextColor("red");
-		doc.text(acctName, 105, 13, null, null, "center"); 
-		doc.setFontSize(14);
-		doc.setTextColor("black");
-		doc.text(title, 105, 22, null, null, "center"); 
-		doc.setLineWidth(.3);
-		doc.rect(10, 5, 190, 20);
-
-	 return doc;
- },
+buildPDF() {
+// Header Info
+	const orientation = 'landscape'
+	const title = 'Ingredient Type: ';
+	const name = tbl_Entity.selectedRow.name;
+	const descr = tbl_Entity.selectedRow.description;
+	var doc = pdfBundle.genHeader(orientation, appsmith.store.acct_name, title, name, descr);
 	
-tblData(doc) {
-// Extract headers dynamically from the first object in the data array
-		var tblHead = [Object.keys(entity_PDF.data[0])];
-// Map the data to match the headers
-		var tblData = entity_PDF.data.map(item => Object.values(item));
-	  var tblBody = [tblHead].concat(tblData);
-		console.log(tblData);
-		jspdf_autotable.default(doc, {
-    fillColor: 'green',
-		font: 'times',
-		head: tblBody[0],
-		body: tblData,
-		theme: 'striped',
-		startY: 30, // Adjust the Y position as needed
-		halign: 'left',
-		});
-		return doc;
+// 
+// Build the column Styles
+const columnStyles = { 
+   0: { cellWidth: 45, halign: 'center', fontStyle: 'bold' },
+      1: { cellWidth: 160, halign: 'left', fontStyle: 'bold', fillColor: '#ffffe6' },
+      2: { cellWidth: 50, halign: 'right' },
+      3: { cellWidth: 60, halign: 'center' },
+      4: { cellWidth: 100, halign: 'left' },
+      5: { cellWidth: 45, halign: 'right' },
+      6: { cellWidth: 70, halign: 'center' },
+      7: { cellWidth: 80, halign: 'center' },
+  };
+// Create the table
+  doc = pdfBundle.genTable(doc, entity_PDF.data, columnStyles, 91);
+
+	return doc.output("dataurlstring");
 }
 }
+

@@ -6,8 +6,10 @@ export default {
 	},
 	async editMode  () {
 		txt_formHeader.text === 'Add'  ? jsForm.add() : jsForm.edit()
-		ingr_PDF.run()
-		PDF.buildPDF()
+		pdfIngrSumry.run()
+		pdfIngrBtch.run()
+		pdfRcpe.run()
+
 	},
 	async entityDelete () {
 		await entity_Delete.run()

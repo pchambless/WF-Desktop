@@ -1,4 +1,4 @@
-select ingr_code Code, ingr_name Ingredient, gms_per_oz 'gms/Oz', dflt_meas Units, dflt_vndr Vendor, ingr_btch_cnt 'Btch Count', last_btch_date 'Last Date', last_btch_nbr 'Last Batch' 
+select ingr_code Code, ingr_name Ingredient, gms_per_oz 'gms/Oz', dflt_meas 'Unit Default', dflt_vndr Vendor, ingr_btch_cnt 'Btch Count', last_btch_date 'Last Date', last_btch_nbr 'Last Batch' 
 from v_ingr_list
 where   ingr_type_id = {{tbl_Entity.selectedRow.id}}  
 order by ingr_type, ingr_name

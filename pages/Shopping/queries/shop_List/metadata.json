@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT ingr_name, ingr_btch_nbr, ingr_lot_nbr, purch_dtl, CONCAT('$', FORMAT(ifnull(purch_amt,''), 2)) purch_amt\nfrom v_ingr_btch_dtl\nwhere shop_event_id = {{tbl_Entity.selectedRow.shop_event_id}}\n;",
+      "body": "SELECT ingr_name Ingredient, ingr_btch_nbr Batch, ingr_lot_nbr 'Lot Number', purch_dtl Detail, ifnull(purch_amt,'') Amount\nfrom v_ingr_btch_dtl\nwhere shop_event_id = {{tbl_Entity.selectedRow.shop_event_id}}\n;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "shop_List",
     "pageId": "Shopping",
     "userSetOnLoad": false

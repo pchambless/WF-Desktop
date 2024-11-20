@@ -8,6 +8,7 @@ export default {
 	async selectShop () {
 		await storeValue('shopID',sel_Shop.selectedOptionValue)
 		await entity_List.run()	
+		await shop_List.run()
 		await shop_Select.run()
 	},
 	async selType () {
@@ -25,6 +26,7 @@ export default {
 	async selectEntity () {
 		await jsEntity.editMode()
 		await shop_List.run()
+		await shop_Select.run()
 		await entity_List.run()
 //		entity_Trace.run()
 	},

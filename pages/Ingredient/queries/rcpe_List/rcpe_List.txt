@@ -1,3 +1,10 @@
-select prd_type_n_name, ifnull(ingr_qty_meas,'') ingr_meas, prd_id, prd_rcpe_id, ingr_id
-from   v_prd_rcpe_active a
-where  a.ingr_id = {{tbl_Entity.selectedRow.id}}
+SELECT 
+    prd_type_n_name,
+    IFNULL(ingr_qty_meas, '') AS ingr_meas, 
+    prd_id, 
+    prd_rcpe_id, 
+    ingr_id
+FROM 
+    v_prd_rcpe_active a
+WHERE 
+    a.ingr_id = {{tbl_Entity.selectedRow.id}}
