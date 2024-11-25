@@ -1,8 +1,8 @@
 {
   "gitSyncId": "6668cf0988cf8166d347b04c_23d7ea59-bf54-4c0d-b73b-450aea841a1b",
-  "id": "Recipe_PDF_Constants",
+  "id": "Recipe_PDF",
   "unpublishedCollection": {
-    "name": "PDF_Constants",
+    "name": "PDF",
     "pageId": "Recipe",
     "pluginId": "js-plugin",
     "pluginType": "JS",

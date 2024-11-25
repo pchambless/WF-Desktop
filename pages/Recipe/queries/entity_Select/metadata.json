@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "entity_Select",
     "pageId": "Recipe",
     "userSetOnLoad": false

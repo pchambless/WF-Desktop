@@ -5,7 +5,7 @@ buildPDF () {
 		doc.text("",0,0);
 		doc.setFont('times')
 // Build Report
-		PDF_Constants.rptConstants(doc)
+		PDF.rptConstants(doc)
 		this.rptName(doc);
 		this.rptData(doc)
 

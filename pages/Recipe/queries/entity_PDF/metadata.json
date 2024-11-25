@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "Select a.ingr_ordr Ordr, a.ingr_name Ingredient, ifnull(ingr_qty_meas,'') Units, ingr_qty Qty\n, prd_ingr_desc Comments\nfrom v_prd_rcpe_dtl a\nwhere prd_id = {{sel_prod.selectedOptionValue}}\nand a.prd_rcpe_actv = {{appsmith.store.active}}",
+      "body": "Select a.ingr_ordr Ordr, a.ingr_name Ingredient, ifnull(ingr_qty_meas,'') Measure, \n prd_ingr_desc Comments\nfrom v_prd_rcpe_dtl a\nwhere prd_id = {{sel_prod.selectedOptionValue}}\nand a.prd_rcpe_actv = {{appsmith.store.active}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
