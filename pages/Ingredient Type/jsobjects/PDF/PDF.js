@@ -20,9 +20,8 @@ const columnStyles = {
       7: { cellWidth: 80, halign: 'center' },
   };
 // Create the table
-  doc = pdfBundle.genTable(doc, entity_PDF.data, columnStyles, 91);
-
-	return doc.output("dataurlstring");
+  let result = pdfBundle.genTable(doc, entity_PDF.data, columnStyles, 91);
+	return result.doc.output("dataurlstring");
 }
 }
 

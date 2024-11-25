@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "ingr_List",
     "pageId": "Ingredient Type",
     "userSetOnLoad": false

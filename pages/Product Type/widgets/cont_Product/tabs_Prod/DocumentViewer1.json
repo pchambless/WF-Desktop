@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "bottomRow": 49,
+  "bottomRow": 38,
   "docUrl": "{{PDF.buildPDF()}}",
   "dynamicBindingPathList": [
     {
@@ -12,15 +12,15 @@
   "isCanvas": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "kx5qokrl59",
+  "key": "tc81bh9ya4",
   "leftColumn": 0,
-  "mobileBottomRow": 40,
+  "mobileBottomRow": 38,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 24,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "parentColumnSpace": 16.0625,
-  "parentId": "yhogkvkifj",
+  "parentColumnSpace": 14.7587890625,
+  "parentId": "aapdpdvx82",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -28,6 +28,6 @@
   "topRow": 0,
   "type": "DOCUMENT_VIEWER_WIDGET",
   "version": 1,
-  "widgetId": "jxe9be4yon",
+  "widgetId": "xvjfskhz1n",
   "widgetName": "DocumentViewer1"
 }

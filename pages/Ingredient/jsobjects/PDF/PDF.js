@@ -20,9 +20,8 @@ const columnStyles = {
 	    8: { cellWidth: 45, halign: 'center' },
   };
 // Create the table
-  doc = pdfBundle.genTable(doc, pdfIngrSumry.data, columnStyles, 91);
-
-	return doc.output("dataurlstring");
+  let result = pdfBundle.genTable(doc, pdfIngrSumry.data, columnStyles, 91);
+	return result.doc.output("dataurlstring");
 },
 pdfBatches () {
 	// Header Info
@@ -44,9 +43,8 @@ const columnStyles = {
 	7: { cellWidth: 0, halign: 'center' },
   };
 // Create the table
-  doc = pdfBundle.genTable(doc, pdfIngrBtch.data, columnStyles, 91);
-
-	return doc.output("dataurlstring");
+  let result = pdfBundle.genTable(doc, pdfIngrBtch.data, columnStyles, 91);
+	return result.doc.output("dataurlstring");
 },
 pdfRecipes() {
   // Header Info
@@ -62,9 +60,8 @@ pdfRecipes() {
     1: { cellWidth: 80, halign: 'left', fontStyle: 'normal' }
   };
 // Create the table
-  doc = pdfBundle.genTable(doc, pdfRcpe.data, columnStyles, 91);
-
-	return doc.output("dataurlstring");
+  let result = pdfBundle.genTable(doc, pdfRcpe.data, columnStyles, 91);
+	return result.doc.output("dataurlstring");
 
 }
 }

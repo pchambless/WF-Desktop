@@ -1,0 +1,4 @@
+select code Code, product Product, description Description, units Units, best_by_days 'Best By', location Location
+from v_products
+where   product_type_id = {{tbl_Entity.selectedRow.id}}  
+order by product

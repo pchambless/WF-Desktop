@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6668cf0988cf8166d347b04c_fff58a60-7b58-4b5f-b90a-8d7d7d359392",
-  "id": "Ingredient Batch_entity_Trace",
+  "gitSyncId": "6668cf0988cf8166d347b04c_cbbfcb3e-fde9-4896-9bcd-4ef05064b0fb",
+  "id": "Product Type_entity_PDF",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT ingr_btch_nbr, purch_date, vndr_name,brnd_name, purch_dtl, purch_amt\nfrom   v_ingr_btch_trace\nwhere  ingr_btch_id = {{tbl_Entity.selectedRow.id}}\norder by prd_btch_date desc",
+      "body": "select code Code, product Product, description Description, units Units, best_by_days 'Best By', location Location\nfrom v_products\nwhere   product_type_id = {{tbl_Entity.selectedRow.id}}  \norder by product",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -13,7 +13,7 @@
           "value": true
         }
       ],
-      "timeoutInMillisecond": 20000
+      "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
     "datasource": {
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
-    "name": "entity_Trace",
-    "pageId": "Ingredient Batch",
-    "userSetOnLoad": true
+    "executeOnLoad": true,
+    "name": "entity_PDF",
+    "pageId": "Product Type",
+    "userSetOnLoad": false
   }
 }

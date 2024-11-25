@@ -1,4 +1,4 @@
-select ordr, name, ifnull(description,'') description, product_type_id
+select ordr Ord, name Task, ifnull(description,'') Description
 from  tasks a
 where  a.product_type_id = {{appsmith.store.prodTypeID}}
 and active = 'Y'
