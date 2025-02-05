@@ -19,8 +19,10 @@ export default {
 	},
 	async selectEntity () {
 		await tbl_Entity.selectedRowIndex === -1 ? jsForm.add : jsForm.edit()
-		await batchIngr_Map.run()
-		await batchTask_List.run()
+		await docWorkSheet.setVisibility(false) 
+		await pdfWrkSht_Ingr.run()
+		await pdfWrlSht_Task.run()
+		await docWorkSheet.setVisibility(true)
 		await rcpe_List.run()
 		await entity_Select.run()
 	},

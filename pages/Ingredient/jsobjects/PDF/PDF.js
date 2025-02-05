@@ -5,7 +5,7 @@ pdfIngrInfo () {
 	const title = 'Ingredient Type: ';
 	const name = sel_Type.selectedOptionLabel;
 	const descr = 'This is a Summary of the Ingredient Batches for the selected Ingredient Type';
-	var doc = pdfBundle.genHeader(orientation, appsmith.store.acct_name, title, name, descr);	
+	var result = pdfBundle.genHeader(orientation, appsmith.store.acct_name, title, name, descr);	
 	
 	// Build the column Styles
 const columnStyles = { 
@@ -20,7 +20,7 @@ const columnStyles = {
 	    8: { cellWidth: 45, halign: 'center' },
   };
 // Create the table
-  let result = pdfBundle.genTable(doc, pdfIngrSumry.data, columnStyles, 91);
+  result = pdfBundle.genTable(result.doc, pdfIngrSumry.data, columnStyles, result.finalY);
 	return result.doc.output("dataurlstring");
 },
 pdfBatches () {
@@ -29,7 +29,7 @@ pdfBatches () {
 	const title = 'Ingredient Batches: ';
 	const name = tbl_Entity.selectedRow.name;
 	const descr = tbl_Entity.selectedRow.description;
-	var doc = pdfBundle.genHeader(orientation, appsmith.store.acct_name, title, name, descr);	
+	var result = pdfBundle.genHeader(orientation, appsmith.store.acct_name, title, name, descr);	
 	
 	// Build the column Styles
 const columnStyles = { 
@@ -43,7 +43,7 @@ const columnStyles = {
 	7: { cellWidth: 0, halign: 'center' },
   };
 // Create the table
-  let result = pdfBundle.genTable(doc, pdfIngrBtch.data, columnStyles, 91);
+  result = pdfBundle.genTable(result.doc, pdfIngrBtch.data, columnStyles, result.finalY);
 	return result.doc.output("dataurlstring");
 },
 pdfRecipes() {
@@ -52,7 +52,7 @@ pdfRecipes() {
   const title = 'Ingredient: ';
   const name = tbl_Entity.selectedRow.name;
   const descr = 'This ingredient is used in these recipes';
-  var doc = pdfBundle.genHeader(orientation, appsmith.store.acct_name, title, name, descr);
+  var result = pdfBundle.genHeader(orientation, appsmith.store.acct_name, title, name, descr);
   
   // Build the column styles
   const columnStyles = {
@@ -60,7 +60,7 @@ pdfRecipes() {
     1: { cellWidth: 80, halign: 'left', fontStyle: 'normal' }
   };
 // Create the table
-  let result = pdfBundle.genTable(doc, pdfRcpe.data, columnStyles, 91);
+  result = pdfBundle.genTable(result.doc, pdfRcpe.data, columnStyles, result.finalY);
 	return result.doc.output("dataurlstring");
 
 }

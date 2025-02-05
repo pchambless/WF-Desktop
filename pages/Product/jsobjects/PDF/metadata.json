@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6668cf0988cf8166d347b04c_979e3adf-c384-46c6-9506-449443e90ecf",
+  "id": "Product_PDF",
+  "unpublishedCollection": {
+    "name": "PDF",
+    "pageId": "Product",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

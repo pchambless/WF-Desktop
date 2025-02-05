@@ -4,8 +4,8 @@ buildPDF() {
 	const orientation = 'p'
 	const title = 'Recipe: ';
 	const name = sel_prod.selectedOptionLabel;
-	const descr = 'Ingredient List';
-	var doc = pdfBundle.genHeader(orientation, appsmith.store.acct_name, title, name, descr);
+	const descr = '';
+	var result = pdfBundle.genHeader(orientation, appsmith.store.acct_name, title, name, descr);
 	
 // 
 // Build the column Styles
@@ -16,7 +16,7 @@ const columnStyles = {
       3: { cellWidth: 160, halign: 'left' },
   };
 // Create the table
-  let result = pdfBundle.genTable(doc, entity_PDF.data, columnStyles, 91);
+  result = pdfBundle.genTable(result.doc, entity_PDF.data, columnStyles, result.finalY);
 	return result.doc.output("dataurlstring");
 }
 }

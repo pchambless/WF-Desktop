@@ -40,9 +40,10 @@
     "account_id",
     "vendor_id",
     "shop_event_id",
-    "vendor"
+    "vendor",
+    "uID"
   ],
-  "columnUpdatedAt": 1721218452474,
+  "columnUpdatedAt": 1732643529102,
   "columnWidthMap": {
     "customColumn1": 83,
     "items": 77,
@@ -103,6 +104,9 @@
     },
     {
       "key": "primaryColumns.vendor.computedValue"
+    },
+    {
+      "key": "primaryColumns.uID.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -404,6 +408,40 @@
       "notation": "standard",
       "originalId": "total_amount",
       "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "uID": {
+      "alias": "uID",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{tbl_shopEvent.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"uID\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "uID",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "uID",
+      "notation": "standard",
+      "originalId": "uID",
+      "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},

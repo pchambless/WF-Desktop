@@ -1,11 +1,11 @@
 export default {
 buildPDF() {
 // Header Info
-	const orientation = 'landscape'
+	const orientation = 'l'
 	const title = 'Ingredient Type: ';
 	const name = tbl_Entity.selectedRow.name;
-	const descr = tbl_Entity.selectedRow.description;
-	var doc = pdfBundle.genHeader(orientation, appsmith.store.acct_name, title, name, descr);
+	const descr = 'List of all the Ingredients for this Type';
+	var result = pdfBundle.genHeader(orientation, appsmith.store.acct_name, title, name, descr);
 	
 // 
 // Build the column Styles
@@ -20,7 +20,7 @@ const columnStyles = {
       7: { cellWidth: 80, halign: 'center' },
   };
 // Create the table
-  let result = pdfBundle.genTable(doc, entity_PDF.data, columnStyles, 91);
+  result = pdfBundle.genTable(result.doc, entity_PDF.data, columnStyles, result.finalY);
 	return result.doc.output("dataurlstring");
 }
 }

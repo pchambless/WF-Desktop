@@ -1,5 +1,5 @@
-SELECT a.prd_btch_nbr, a.prd_btch_date, a.qty_meas, a.location 
-,a.btch_meas, a.best_by_date, a.prd_btch_id
-,a.prd_type_and_name  
+SELECT a.prd_btch_nbr Batch, a.prd_btch_date Date, a.qty_meas Measure, a.location 'Made At' 
+, a.best_by_date 'Best By' 
 from   v_prd_btch_dtl a
 where  prd_id = {{tbl_Entity.selectedRow.id}}
+limit 100

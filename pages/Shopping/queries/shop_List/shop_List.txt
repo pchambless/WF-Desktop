@@ -1,4 +1,4 @@
-SELECT ingr_name Ingredient, ingr_btch_nbr Batch, ingr_lot_nbr 'Lot Number', purch_dtl Detail, ifnull(purch_amt,'') Amount
+SELECT ingr_btch_nbr Batch, ingr_name Ingredient, ingr_lot_nbr 'Lot Number', purch_dtl Detail, ifnull(purch_amt,'') Amount
 from v_ingr_btch_dtl
-where shop_event_id = {{tbl_Entity.selectedRow.shop_event_id}}
+where shop_event_id = {{sel_Shop.selectedOptionValue}}
 ;

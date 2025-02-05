@@ -1,0 +1,5 @@
+select ingr_ordr Ordr, ingr_name Ingredient, ingrMaps 'Ingr Batch(es): Vendor', prd_ingr_desc Description
+from   v_prdBtchIngr_Map
+where  prd_btch_id = {{tbl_Entity.selectedRow.id}}
+order by ingr_ordr
+;

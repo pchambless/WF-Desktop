@@ -2,7 +2,7 @@ export default {
 	async editModeRun  () {
 		txt_formHeader.text === 'Add'  ? entity_Add.run() : entity_Edit.run()
 		await entity_List.run()
-		await ingr_List.run()
+		await pdfIngrSumry.run()
 	},
 	async editMode  () {
 		txt_formHeader.text === 'Add'  ? jsForm.add() : jsForm.edit()

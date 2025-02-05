@@ -1,8 +1,5 @@
 select acct_id value, account_name label
 from   v_wf_usr_dtl a
-join   accounts b
-on     a.acct_id = b.id
-where  user_id = {{ appsmith.store.user_id}}
-and    b.active = 'Y'
+where  email = {{ appsmith.user.email}}
 ORDER BY account_name
 

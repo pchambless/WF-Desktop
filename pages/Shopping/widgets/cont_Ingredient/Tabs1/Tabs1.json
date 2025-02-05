@@ -5,12 +5,12 @@
   "borderColor": "#dcfce7",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 78,
+  "bottomRow": 73,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 530,
+      "bottomRow": 510,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -58,7 +58,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 530,
+      "bottomRow": 480,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -105,7 +105,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 580,
+      "bottomRow": 480,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -151,7 +151,7 @@
       "responsiveBehavior": "fill",
       "rightColumn": 438,
       "tabId": "taborfncy3gzy",
-      "tabName": "Report",
+      "tabName": "Receipt",
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
@@ -160,7 +160,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 530,
+      "bottomRow": 480,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -215,7 +215,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 560,
+      "bottomRow": 480,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -267,51 +267,6 @@
       "version": 1,
       "widgetId": "intccwt8zr",
       "widgetName": "Canvas50"
-    },
-    {
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 530,
-      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-      "canExtend": false,
-      "containerStyle": "none",
-      "detachFromLayout": true,
-      "dynamicBindingPathList": [
-        {
-          "key": "borderRadius"
-        },
-        {
-          "key": "boxShadow"
-        }
-      ],
-      "dynamicHeight": "AUTO_HEIGHT",
-      "dynamicTriggerPathList": [],
-      "flexLayers": [],
-      "isLoading": false,
-      "isVisible": true,
-      "key": "y4kw42bpz9",
-      "leftColumn": 0,
-      "maxDynamicHeight": 9000,
-      "minDynamicHeight": 4,
-      "minHeight": 570,
-      "minWidth": 450,
-      "mobileBottomRow": 571,
-      "mobileLeftColumn": 0,
-      "mobileRightColumn": 438,
-      "mobileTopRow": 1,
-      "needsErrorInfo": false,
-      "parentColumnSpace": 1,
-      "parentId": "5il155ehig",
-      "parentRowSpace": 1,
-      "renderMode": "CANVAS",
-      "responsiveBehavior": "fill",
-      "rightColumn": 438,
-      "tabId": "tab8uocd949al",
-      "tabName": "PDF Report",
-      "topRow": 1,
-      "type": "CANVAS_WIDGET",
-      "version": 1,
-      "widgetId": "v63qm3xufk",
-      "widgetName": "Canvas52"
     }
   ],
   "defaultTab": "",
@@ -379,7 +334,7 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 73,
   "onTabSelected": "",
-  "originalBottomRow": 78,
+  "originalBottomRow": 73,
   "originalTopRow": 21,
   "parentColumnSpace": 6.84375,
   "parentId": "z4jk7yerww",
@@ -401,7 +356,7 @@
     },
     "tab7cml197sqv": {
       "id": "tab7cml197sqv",
-      "index": 3,
+      "index": 2,
       "isDuplicateLabel": false,
       "isVisible": "{{tbl_Entity.selectedRowIndex > -1 ? true : false}}",
       "label": "Batch Trace",
@@ -409,23 +364,15 @@
     },
     "tab8num6z8rq0": {
       "id": "tab8num6z8rq0",
-      "index": 4,
+      "index": 3,
       "isDuplicateLabel": false,
       "isVisible": false,
       "label": "New Vendor/Brand",
       "widgetId": "izu5fxn2oa"
     },
-    "tab8uocd949al": {
-      "id": "tab8uocd949al",
-      "index": 2,
-      "isDuplicateLabel": false,
-      "isVisible": true,
-      "label": "PDF Report",
-      "widgetId": "v63qm3xufk"
-    },
     "tabmrq3un6th8": {
       "id": "tabmrq3un6th8",
-      "index": 5,
+      "index": 4,
       "isDuplicateLabel": false,
       "isVisible": true,
       "label": "Shopping Days",
@@ -436,7 +383,7 @@
       "index": 1,
       "isDuplicateLabel": false,
       "isVisible": "{{tbl_shopEvent.selectedRowIndex > -1 ? true : false}}",
-      "label": "Report",
+      "label": "Receipt",
       "widgetId": "8uciiuu67l"
     }
   },

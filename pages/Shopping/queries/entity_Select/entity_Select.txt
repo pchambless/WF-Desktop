@@ -1,3 +1,3 @@
-SELECT *
+SELECT ingr_btch_nbr, purch_date, vndr_name, brnd_name, purch_dtl, purch_amt
 from   v_ingr_btch_dtl
 where  ingr_btch_id = {{tbl_Entity.selectedRow.ingr_btch_id}}
