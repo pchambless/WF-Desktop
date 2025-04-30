@@ -37,15 +37,15 @@
     "email",
     "role",
     "user_id",
-    "acct_id",
     "acct_user_id",
     "dflt_acct_id",
     "owner",
     "customColumn2",
     "first_name",
-    "is_owner"
+    "is_owner",
+    "acctID"
   ],
-  "columnUpdatedAt": 1721698150237,
+  "columnUpdatedAt": 1738766214704,
   "columnWidthMap": {
     "acct_id": 92,
     "acct_user_id": 127,
@@ -89,9 +89,6 @@
       "key": "primaryColumns.user_id.computedValue"
     },
     {
-      "key": "primaryColumns.acct_id.computedValue"
-    },
-    {
       "key": "primaryColumns.acct_user_id.computedValue"
     },
     {
@@ -129,6 +126,9 @@
     },
     {
       "key": "primaryColumns.customColumn1.buttonColor"
+    },
+    {
+      "key": "primaryColumns.acctID.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -204,20 +204,21 @@
   "parentRowSpace": 10,
   "primaryColumnId": "acct_user_id",
   "primaryColumns": {
-    "acct_id": {
-      "alias": "acct_id",
+    "acctID": {
+      "alias": "acctID",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "#f4f4f5",
       "columnType": "number",
-      "computedValue": "{{tbl_AcctUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"acct_id\"]))}}",
+      "computedValue": "{{tbl_AcctUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"acctID\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "",
       "horizontalAlignment": "LEFT",
-      "id": "acct_id",
-      "index": 4,
+      "id": "acctID",
+      "index": 6,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -225,11 +226,12 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
-      "label": "acct_id",
+      "isVisible": true,
+      "label": "acctID",
       "notation": "standard",
-      "originalId": "acct_id",
+      "originalId": "acctID",
       "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},

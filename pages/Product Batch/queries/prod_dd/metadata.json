@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "prod_dd",
     "pageId": "Product Batch",
     "userSetOnLoad": true
