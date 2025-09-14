@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "menu.items",
     "name": "items",
     "pageId": "wsConfig",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

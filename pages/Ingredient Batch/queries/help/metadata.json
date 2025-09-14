@@ -23,10 +23,10 @@
       "pluginId": "mysql-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
     "fullyQualifiedName": "help",
     "name": "help",
     "pageId": "Ingredient Batch",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

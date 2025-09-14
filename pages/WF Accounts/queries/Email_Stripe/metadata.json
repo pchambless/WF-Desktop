@@ -26,10 +26,10 @@
       "pluginId": "smtp-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
     "fullyQualifiedName": "Email_Stripe",
     "name": "Email_Stripe",
     "pageId": "WF Accounts",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

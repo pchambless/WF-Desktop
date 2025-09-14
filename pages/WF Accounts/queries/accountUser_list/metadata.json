@@ -27,10 +27,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
     "fullyQualifiedName": "accountUser_list",
     "name": "accountUser_list",
     "pageId": "WF Accounts",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }

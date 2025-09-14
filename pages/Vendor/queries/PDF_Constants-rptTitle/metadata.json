@@ -35,10 +35,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "PDF_Constants.rptTitle",
     "name": "rptTitle",
     "pageId": "Vendor",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

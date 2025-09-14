@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "jsEntity.editModeRun",
     "name": "editModeRun",
     "pageId": "Team Member",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

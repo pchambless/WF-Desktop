@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "jsMapping.mapping",
     "name": "mapping",
     "pageId": "Product Batch",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

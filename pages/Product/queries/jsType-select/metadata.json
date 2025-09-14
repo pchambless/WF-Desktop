@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "jsType.select",
     "name": "select",
     "pageId": "Product",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

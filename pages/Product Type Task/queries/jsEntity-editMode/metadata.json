@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "jsEntity.editMode",
     "name": "editMode",
     "pageId": "Product Type Task",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

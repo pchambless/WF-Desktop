@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "ingr_dd",
     "pageId": "Ingredient Batch",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

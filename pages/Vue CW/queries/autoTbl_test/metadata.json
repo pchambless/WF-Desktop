@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "autoTbl_test",
     "pageId": "Vue CW",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

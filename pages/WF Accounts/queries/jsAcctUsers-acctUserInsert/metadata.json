@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "jsAcctUsers.acctUserInsert",
     "name": "acctUserInsert",
     "pageId": "WF Accounts",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -37,9 +37,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "issue_send",
     "pageId": "Issues",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

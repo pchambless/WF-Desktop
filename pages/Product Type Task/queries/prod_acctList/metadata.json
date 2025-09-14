@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "prod_acctList",
     "pageId": "Product Type Task",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

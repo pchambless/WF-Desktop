@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "jsForm.edit",
     "name": "edit",
     "pageId": "Shopping",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

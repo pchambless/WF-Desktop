@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "jsForm.edit",
     "name": "edit",
     "pageId": "Recipe",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

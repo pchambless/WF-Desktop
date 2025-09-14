@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "entity_Delete",
     "pageId": "Product",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

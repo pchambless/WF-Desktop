@@ -26,10 +26,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "jsPrice.formatPrice",
     "name": "formatPrice",
     "pageId": "Stripe",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

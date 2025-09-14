@@ -27,10 +27,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "accountUser_insert",
     "name": "accountUser_insert",
     "pageId": "WF Accounts",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

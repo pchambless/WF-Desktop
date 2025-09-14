@@ -22,9 +22,9 @@
       "name": "wf_stage",
       "pluginId": "mysql-plugin"
     },
-    "executeOnLoad": false,
     "name": "pdfHead",
     "pageId": "Ingredient Batch",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

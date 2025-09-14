@@ -27,10 +27,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "account_update",
     "name": "entity_Edit",
     "pageId": "WF Accounts",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

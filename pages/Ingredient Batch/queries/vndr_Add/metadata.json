@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "vndr_Add",
     "pageId": "Ingredient Batch",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

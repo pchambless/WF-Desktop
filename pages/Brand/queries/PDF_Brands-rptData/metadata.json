@@ -26,10 +26,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "PDF_Brands.rptData",
     "name": "rptData",
     "pageId": "Brand",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

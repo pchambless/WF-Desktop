@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "jsSelect.selectProd",
     "name": "selectProd",
     "pageId": "Recipe",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -60,10 +60,10 @@
       "pluginId": "Appsmith AI"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
     "fullyQualifiedName": "email_welcome",
     "name": "email_welcome",
     "pageId": "WF Accounts",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

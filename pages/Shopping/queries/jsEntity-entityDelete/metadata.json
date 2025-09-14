@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "jsEntity.entityDelete",
     "name": "entityDelete",
     "pageId": "Shopping",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

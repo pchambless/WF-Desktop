@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "jsEntity.txtEditHdr",
     "name": "txtEditHdr",
     "pageId": "Team Member",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

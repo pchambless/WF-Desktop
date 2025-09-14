@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "entity_Select",
     "pageId": "Product Batch",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "jsForm.add",
     "name": "add",
     "pageId": "Shopping",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

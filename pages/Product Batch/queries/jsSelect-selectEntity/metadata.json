@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "jsSelect.selectEntity",
     "name": "selectEntity",
     "pageId": "Product Batch",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

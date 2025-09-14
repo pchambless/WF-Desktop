@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "jsSelect.selectShop",
     "name": "selectShop",
     "pageId": "Shopping",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

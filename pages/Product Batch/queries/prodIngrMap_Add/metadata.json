@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "prodIngrMap_Add",
     "pageId": "Product Batch",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -26,10 +26,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "PDF_Vendor.rptData",
     "name": "rptData",
     "pageId": "Vendor",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

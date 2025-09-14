@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "PDF_Brands.buildPDF",
     "name": "buildPDF",
     "pageId": "Brand",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

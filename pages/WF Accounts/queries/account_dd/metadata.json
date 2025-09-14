@@ -23,10 +23,10 @@
       "pluginId": "mysql-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": true,
     "fullyQualifiedName": "account_dd",
     "name": "account_dd",
     "pageId": "WF Accounts",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }

@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "entity_Edit",
     "pageId": "Vue CW",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

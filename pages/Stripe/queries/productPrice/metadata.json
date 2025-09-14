@@ -37,9 +37,9 @@
         "key": "path"
       }
     ],
-    "executeOnLoad": false,
     "name": "productPrice",
     "pageId": "Stripe",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

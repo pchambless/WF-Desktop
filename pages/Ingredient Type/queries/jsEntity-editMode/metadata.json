@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "jsEntity.editMode",
     "name": "editMode",
     "pageId": "Ingredient Type",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

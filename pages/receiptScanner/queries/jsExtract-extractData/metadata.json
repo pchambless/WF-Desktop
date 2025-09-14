@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "jsExtract.extractData",
     "name": "extractData",
     "pageId": "receiptScanner",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

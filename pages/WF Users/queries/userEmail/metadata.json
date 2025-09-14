@@ -40,9 +40,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "userEmail",
     "pageId": "WF Users",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

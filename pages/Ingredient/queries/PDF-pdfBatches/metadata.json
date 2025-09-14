@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "PDF.pdfBatches",
     "name": "pdfBatches",
     "pageId": "Ingredient",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

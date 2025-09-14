@@ -26,10 +26,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "jsProduct.editMode",
     "name": "editMode",
     "pageId": "Product",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

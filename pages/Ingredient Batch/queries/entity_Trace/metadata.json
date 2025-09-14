@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "entity_Trace",
     "pageId": "Ingredient Batch",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": true
   }
 }

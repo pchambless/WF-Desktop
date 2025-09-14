@@ -70,9 +70,9 @@
         "key": "formData.imageEntity.input.data"
       }
     ],
-    "executeOnLoad": false,
     "name": "Midstate_Produce",
     "pageId": "receiptScanner",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

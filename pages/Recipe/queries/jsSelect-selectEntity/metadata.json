@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "jsSelect.selectEntity",
     "name": "selectEntity",
     "pageId": "Recipe",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

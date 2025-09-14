@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "PDF.pdfRecipes",
     "name": "pdfRecipes",
     "pageId": "Ingredient",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

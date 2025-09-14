@@ -44,10 +44,10 @@
         "key": "formData.send.attachments"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "Welcome",
     "name": "Welcome",
     "pageId": "WF Users",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

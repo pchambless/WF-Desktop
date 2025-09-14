@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "PDF.pdfIngrInfo",
     "name": "pdfIngrInfo",
     "pageId": "Ingredient",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
