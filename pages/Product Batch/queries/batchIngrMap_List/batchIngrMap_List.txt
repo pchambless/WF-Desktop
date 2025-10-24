@@ -1,5 +1,5 @@
 select *
-from v_prdBtchIngr_Map
+from whatsfresh.v_prdBtchIngr_Map
 where  prd_btch_id = {{tbl_Entity.selectedRow.id}}
 order by ingr_ordr
 	;

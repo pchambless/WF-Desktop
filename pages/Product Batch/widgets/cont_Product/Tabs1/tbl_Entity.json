@@ -51,9 +51,10 @@
     "oldUUID",
     "active",
     "batch_date",
+    "measure_id",
     "customColumn2"
   ],
-  "columnUpdatedAt": 1720364097958,
+  "columnUpdatedAt": 1750104672085,
   "columnWidthMap": {
     "act": 83,
     "batch_start": 98,
@@ -152,6 +153,9 @@
     },
     {
       "key": "primaryColumns.customColumn2.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.measure_id.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -716,6 +720,40 @@
       "label": "location",
       "notation": "standard",
       "originalId": "location",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "measure_id": {
+      "alias": "measure_id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{(() => { const tableData = tbl_Entity.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"measure_id\"])) :  currentRow[\"measure_id\"] })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "measure_id",
+      "index": 7,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "measure_id",
+      "notation": "standard",
+      "originalId": "measure_id",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

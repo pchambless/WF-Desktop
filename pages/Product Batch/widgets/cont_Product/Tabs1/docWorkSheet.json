@@ -1,6 +1,6 @@
 {
   "animateLoading": true,
-  "bottomRow": 44,
+  "bottomRow": 52,
   "docUrl": "{{PDF.buildPDF()}}",
   "dynamicBindingPathList": [
     {

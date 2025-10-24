@@ -44,7 +44,7 @@
       "isVisible": true,
       "label": "Active",
       "menuItems": {},
-      "onClick": "{{await storeValue('active','Y')\nawait entity_List.run()}}",
+      "onClick": "{{await storeValue('active',1)\nawait entity_List.run()}}",
       "placement": "CENTER",
       "widgetId": ""
     },
@@ -57,7 +57,7 @@
       "isVisible": true,
       "label": "Inactive",
       "menuItems": {},
-      "onClick": "{{await storeValue('active','')\nawait entity_List.run()}}",
+      "onClick": "{{await storeValue('active',0)\nawait entity_List.run()}}",
       "placement": "CENTER",
       "widgetId": ""
     }

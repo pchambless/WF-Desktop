@@ -1,5 +1,5 @@
 select a.name,code, description, a.id, a.product_type_id, best_by_days
-,f_measure_unit(global_measure_unit_id) Units, active, global_measure_unit_id, location
+,f_measure(measure_id) Units, active, global_measure_unit_id, location
 from  products a
 where  a.product_type_id = {{sel_Type.selectedOptionValue}}
 and  active = {{appsmith.store.active}}
