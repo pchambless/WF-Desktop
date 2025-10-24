@@ -1,6 +1,6 @@
 export default {
 	async load () {
-		await storeValue('active','Y')
+		await storeValue('active',1)
 		sel_Type.setSelectedOption(appsmith.store.ingrTypeID)
 		entity_List.run()
 	},
