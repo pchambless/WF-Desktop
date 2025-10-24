@@ -1,5 +1,5 @@
-select user_name, a.role, owner, email, first_name, user_id, acct_id, acct_user_id, dflt_acct_id, is_owner
+select user_name, a.role, owner, email, first_name, user_id, acct_user_id, dflt_acct_id, is_owner
 from   v_wf_usr_dtl a
-where  acct_id = {{sel_Acct.selectedOptionValue}}
-and acct_usr_active = 'Y'
+where  dflt_acct_id = {{sel_Acct.selectedOptionValue}}
+and acct_user_actv = 1
 order by owner desc, user_name

@@ -1,5 +1,5 @@
 select *
 from    	whatsfresh.v_ingr_btch_metrics a
 where 	acct_id = {{appsmith.store.acct_id}}	
-and     ingr_active = 'Y'
+and     ingr_active = 1
 order by a.ingr_type, a.ingr_name

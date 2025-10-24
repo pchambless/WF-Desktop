@@ -1,5 +1,5 @@
 select ordr, name, ifnull(description,'') description, product_type_id
 from  tasks a
 where  a.product_type_id = {{sel_Type.selectedOptionValue}}
-and active = 'Y'
+and active = 1
 order by ordr, name;

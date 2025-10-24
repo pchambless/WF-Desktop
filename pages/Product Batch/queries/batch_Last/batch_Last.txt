@@ -1,6 +1,6 @@
 select ifnull(batch_number,'') batch_number
 from   product_batches a
 where  product_id = {{appsmith.store.prodID}}
-and    active = 'Y'
+and    active = 1
 order by batch_start desc, batch_number desc
 limit 1

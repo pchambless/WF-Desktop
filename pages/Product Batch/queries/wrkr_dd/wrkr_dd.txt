@@ -1,5 +1,5 @@
 SELECT name value, name label
 FROM workers 
 where account_id = {{appsmith.store.acct_id}} 
-and active = 'Y'
+and active = 1
 ORDER BY name

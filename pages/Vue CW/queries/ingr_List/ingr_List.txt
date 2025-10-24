@@ -1,4 +1,0 @@
-select *
-from v_ingr_list
-where 	ingr_type_id = {{tbl_Entity.selectedRow.id}}	
-order by ingr_type, ingr_name

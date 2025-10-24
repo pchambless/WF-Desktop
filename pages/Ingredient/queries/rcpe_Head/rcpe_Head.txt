@@ -1,5 +1,5 @@
 select ingr_type, ingr_name, ingr_code, max(last_purchase) lastBatch
 from    whatsfresh.v_ingr_btch_metrics a
 where 	ingr_id = {{tbl_Entity.selectedRow.id}}	
-and     ingr_active = 'Y'
+and     ingr_active = 1
 group by ingr_type, ingr_name, ingr_code

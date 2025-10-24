@@ -1,4 +1,4 @@
 SELECT id value, name label
 from   accounts
-where  active = 'Y'
+where  active = 1
 order by name

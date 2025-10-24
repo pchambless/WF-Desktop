@@ -1,6 +1,6 @@
 select batch_number
 from   ingredient_batches a
 where  ingredient_id = {{sel_ingr.selectedOptionValue}}
-and    active = 'Y'
+and    active = 1
 order by purchase_date desc, batch_number desc
 limit 1

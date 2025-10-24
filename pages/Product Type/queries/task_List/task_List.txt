@@ -1,5 +1,5 @@
 select ordr Ord, name Task, ifnull(description,'') Description
 from  tasks a
 where  a.product_type_id = {{appsmith.store.prodTypeID}}
-and active = 'Y'
+and active = 1
 order by ordr, name;

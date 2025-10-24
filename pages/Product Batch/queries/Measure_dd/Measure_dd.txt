@@ -1,3 +1,4 @@
-select id value, value label
-from global_measure_units
-order by hover_text
+select id value, name label
+from measures
+where account_id = {{appsmith.store.acct_id}}
+order by name

@@ -1,6 +1,6 @@
 select a.name,code, ifnull(replace(description,'\n','<br>'),'') description, ifnull(location,'') location
-, f_measure_unit(global_measure_unit_id) unit, best_by_days,  a.id, a.product_type_id
+, whatsfresh.f_measure(measure_id) unit, best_by_days,  a.id, a.product_type_id
 from  products a
 where  a.product_type_id = {{appsmith.store.prodTypeID}}
-and active = 'Y'
+and active = 1
 order by code;

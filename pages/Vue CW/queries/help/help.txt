@@ -1,3 +1,0 @@
-SELECT * 
-FROM wf_meta.v_help
-;
