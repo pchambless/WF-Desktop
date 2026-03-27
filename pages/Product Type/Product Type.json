@@ -1,7 +1,7 @@
 {
   "gitSyncId": "6668cf0988cf8166d347b04c_2bb078e1-d0f0-40c2-ab2d-e45b8b0e1c33",
   "unpublishedPage": {
-    "isHidden": true,
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
@@ -31,6 +31,7 @@
       }
     ],
     "name": "Product Type",
-    "slug": "product-type"
+    "slug": "product-type",
+    "uniqueSlug": "product-type"
   }
 }

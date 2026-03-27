@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6668cf0988cf8166d347b04c_13075f64-f80a-43c8-bdcd-c229185dd014",
+  "id": "Ingredient Batch_n8nSelect",
+  "unpublishedCollection": {
+    "name": "n8nSelect",
+    "pageId": "Ingredient Batch",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

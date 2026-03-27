@@ -1,1 +1,0 @@
-call wf_meta.sp_deleteTestBed();

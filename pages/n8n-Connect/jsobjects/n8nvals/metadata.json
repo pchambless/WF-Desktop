@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6668cf0988cf8166d347b04c_394d27ef-664d-4f1f-bde1-d134b32fddb2",
+  "id": "n8n-Connect_n8nvals",
+  "unpublishedCollection": {
+    "name": "n8nvals",
+    "pageId": "n8n-Connect",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

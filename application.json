@@ -96,8 +96,16 @@
     {
       "id": "Stripe",
       "isDefault": false
+    },
+    {
+      "id": "n8n-Connect",
+      "isDefault": false
     }
   ],
+  "staticUrlSettings": {
+    "enabled": true,
+    "uniqueSlug": "appsmith-wf-v2"
+  },
   "unpublishedAppLayout": {
     "type": "TABLET_LARGE"
   },

@@ -1,0 +1,7 @@
+{
+  "function": {{appsmith.store.rptName}},
+  "params": { "userEmail": "{{appsmith.user.email}}" },
+    "source": {{appsmith.appName}},
+  "format": "html",
+    "type": "report"
+}

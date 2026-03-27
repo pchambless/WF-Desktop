@@ -63,7 +63,7 @@
     "Suggested",
     "Content"
   ],
-  "text": "{{select_account.selectedOptionLabel}} Users",
+  "text": "{{SelAccount.selectedOptionLabel}} Users",
   "textAlign": "CENTER",
   "textColor": "#231F20",
   "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",

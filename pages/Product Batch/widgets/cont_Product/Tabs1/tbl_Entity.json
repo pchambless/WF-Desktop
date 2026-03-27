@@ -40,7 +40,6 @@
     "best_by_date",
     "id",
     "product_id",
-    "global_measure_unit_id",
     "recipe_multiply_factor",
     "created_at",
     "created_by",
@@ -48,13 +47,12 @@
     "updated_by",
     "deleted_at",
     "deleted_by",
-    "oldUUID",
     "active",
     "batch_date",
     "measure_id",
     "customColumn2"
   ],
-  "columnUpdatedAt": 1750104672085,
+  "columnUpdatedAt": 1771779241278,
   "columnWidthMap": {
     "act": 83,
     "batch_start": 98,
@@ -116,9 +114,6 @@
       "key": "primaryColumns.batch_quantity.computedValue"
     },
     {
-      "key": "primaryColumns.global_measure_unit_id.computedValue"
-    },
-    {
       "key": "primaryColumns.recipe_multiply_factor.computedValue"
     },
     {
@@ -138,9 +133,6 @@
     },
     {
       "key": "primaryColumns.deleted_by.computedValue"
-    },
-    {
-      "key": "primaryColumns.oldUUID.computedValue"
     },
     {
       "key": "primaryColumns.active.computedValue"
@@ -626,40 +618,6 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "global_measure_unit_id": {
-      "alias": "global_measure_unit_id",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "number",
-      "computedValue": "{{(() => { const tableData = tbl_Entity.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"global_measure_unit_id\"])) :  currentRow[\"global_measure_unit_id\"] })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "global_measure_unit_id",
-      "index": 6,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "global_measure_unit_id",
-      "notation": "standard",
-      "originalId": "global_measure_unit_id",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "id": {
       "alias": "id",
       "allowCellWrapping": false,
@@ -754,40 +712,6 @@
       "label": "measure_id",
       "notation": "standard",
       "originalId": "measure_id",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "oldUUID": {
-      "alias": "oldUUID",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = tbl_Entity.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"oldUUID\"])) :  currentRow[\"oldUUID\"] })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "oldUUID",
-      "index": 16,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "oldUUID",
-      "notation": "standard",
-      "originalId": "oldUUID",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "select *\nfrom whatsfresh.v_prdBtchIngr_Map\nwhere  prd_btch_id = {{tbl_Entity.selectedRow.id}}\norder by ingr_ordr\n\t;",
+      "body": "select *\nfrom api_wf.wf_prdBtchIngr_Map\nwhere  product_batch_id = {{tbl_Entity.selectedRow.id}}\norder by ingrOrdr\n\t;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

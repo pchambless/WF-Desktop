@@ -1,0 +1,5 @@
+{
+  "query": {{qrySQL.text}},
+  "params": {},
+  "source": {{appsmith.user.email}}
+}

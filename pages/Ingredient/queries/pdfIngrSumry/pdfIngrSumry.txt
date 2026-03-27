@@ -1,6 +1,0 @@
-select ingr_code Code, ingr_name Ingredient, last_purchase 'Last Batch', recipes Recipes
-,prod_batches Batches, units Units, min_rate 'Min Rate', max_rate 'Max Rate', avg_rate 'Avg Rate'
-from    	whatsfresh.v_ingr_btch_metrics a
-where 	  a.ingr_type_id = {{sel_Type.selectedOptionValue}}	
-and     ingr_active = 1
-order by ingr_name, last_purchase desc

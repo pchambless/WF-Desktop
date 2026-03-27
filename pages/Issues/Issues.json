@@ -27,6 +27,7 @@
       }
     ],
     "name": "Issues",
-    "slug": "issues"
+    "slug": "issues",
+    "uniqueSlug": "issues"
   }
 }

@@ -27,6 +27,7 @@
       }
     ],
     "name": "WF Users",
-    "slug": "wf-users"
+    "slug": "wf-users",
+    "uniqueSlug": "wf-users"
   }
 }

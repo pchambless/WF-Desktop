@@ -27,6 +27,7 @@
       }
     ],
     "name": "WF Accounts",
-    "slug": "wf-accounts"
+    "slug": "wf-accounts",
+    "uniqueSlug": "wf-accounts"
   }
 }

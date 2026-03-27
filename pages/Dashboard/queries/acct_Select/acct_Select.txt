@@ -1,5 +1,0 @@
-SELECT * 
-FROM    v_wf_usr_dtl a
-where acctID = {{select_account.selectedOptionValue}}
-and  user_id = {{appsmith.store.user_id}}
-;

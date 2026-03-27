@@ -1,3 +1,0 @@
-SELECT * 
-FROM ingredients
-where id = {{tbl_Entity.selectedRow.id}};

@@ -27,6 +27,7 @@
       }
     ],
     "name": "wsConfig",
-    "slug": "wsconfig"
+    "slug": "wsconfig",
+    "uniqueSlug": "wsconfig"
   }
 }

@@ -1,5 +1,5 @@
 select *
-from whatsfresh.v_prdBtchIngr_Map
-where  prd_btch_id = {{tbl_Entity.selectedRow.id}}
-order by ingr_ordr
+from api_wf.wf_prdBtchIngr_Map
+where  product_batch_id = {{tbl_Entity.selectedRow.id}}
+order by ingrOrdr
 	;

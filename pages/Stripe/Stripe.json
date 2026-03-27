@@ -27,6 +27,7 @@
       }
     ],
     "name": "Stripe",
-    "slug": "stripe"
+    "slug": "stripe",
+    "uniqueSlug": "stripe"
   }
 }

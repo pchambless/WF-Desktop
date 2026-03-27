@@ -1,3 +1,0 @@
-UPDATE accounts_users
-SET is_owner = {{tbl_AcctUsers.triggeredRow.owner === 'Owner' ? 0 : 1}}
-where id = {{tbl_AcctUsers.triggeredRow.acct_user_id}}

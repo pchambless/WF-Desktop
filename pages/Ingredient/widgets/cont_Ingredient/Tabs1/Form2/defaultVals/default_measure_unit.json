@@ -71,7 +71,7 @@
     "dropdown"
   ],
   "serverSideFiltering": false,
-  "sourceData": "{{measure_dd.data}}",
+  "sourceData": "{{appsmith.store.meas_dd}}",
   "tags": [
     "Suggested",
     "Select"

@@ -1,0 +1,46 @@
+{
+  "animateLoading": true,
+  "borderColor": "#3b82f6",
+  "borderOpacity": 100,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 119,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "srcDoc"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "zx1s96habg",
+  "leftColumn": 0,
+  "mobileBottomRow": 40,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 26,
+  "mobileTopRow": 8,
+  "needsErrorInfo": false,
+  "originalBottomRow": 114,
+  "originalTopRow": 18,
+  "parentColumnSpace": 19.53125,
+  "parentId": "yhogkvkifj",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "source": "\n",
+  "srcDoc": "{{rpt_srce_trgt_hdr.data[0].html}}\n{{rpt_srce_trgt_body.data[0].html}}",
+  "topRow": 60,
+  "type": "IFRAME_WIDGET",
+  "version": 1,
+  "widgetId": "m6712tw900",
+  "widgetName": "ifrm_btch_trace"
+}

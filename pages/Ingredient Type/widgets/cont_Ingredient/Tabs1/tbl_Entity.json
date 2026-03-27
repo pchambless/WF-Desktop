@@ -35,16 +35,15 @@
     "description",
     "id",
     "account_id",
-    "customColumn1",
-    "active"
+    "customColumn1"
   ],
-  "columnUpdatedAt": 1720631082421,
+  "columnUpdatedAt": 1774496408209,
   "columnWidthMap": {
     "name": 123
   },
   "compactMode": "SHORT",
   "defaultPageSize": 0,
-  "defaultSelectedRowIndex": "{{tbl_Entity.tableData.findIndex(row => row.id === appsmith.store.ingrTypeID)}}",
+  "defaultSelectedRowIndex": "",
   "defaultSelectedRowIndices": [
     0
   ],
@@ -71,12 +70,6 @@
     },
     {
       "key": "primaryColumns.account_id.computedValue"
-    },
-    {
-      "key": "defaultSelectedRowIndex"
-    },
-    {
-      "key": "primaryColumns.active.computedValue"
     },
     {
       "key": "primaryColumns.customColumn1.boxShadow"
@@ -132,7 +125,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onRowSelected": "{{jsSelect.selectEntity()}}",
+  "onRowSelected": "{{n8nSelect.ingredient_type_id()}}",
   "originalBottomRow": 44,
   "originalTopRow": 7,
   "parentColumnSpace": 14.2294921875,
@@ -165,40 +158,6 @@
       "notation": "standard",
       "originalId": "account_id",
       "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "active": {
-      "alias": "active",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = tbl_Entity.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"active\"])) :  currentRow[\"active\"] })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "active",
-      "index": 4,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "active",
-      "notation": "standard",
-      "originalId": "active",
-      "sticky": "",
-      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -343,7 +302,7 @@
   "rightColumn": 27,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
-  "tableData": "{{entity_List.data}}",
+  "tableData": "{{grid_ingredient_types.data}}",
   "tags": [
     "Suggested",
     "Display"

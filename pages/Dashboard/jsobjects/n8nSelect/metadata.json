@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6668cf0988cf8166d347b04c_b2a6496e-1e3e-4aee-b229-6158be5956c5",
+  "id": "Dashboard_n8nSelect",
+  "unpublishedCollection": {
+    "name": "n8nSelect",
+    "pageId": "Dashboard",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

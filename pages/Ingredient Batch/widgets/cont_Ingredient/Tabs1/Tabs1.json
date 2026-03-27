@@ -5,7 +5,7 @@
   "borderColor": "#dcfce7",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 75,
+  "bottomRow": 74,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
@@ -105,7 +105,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 520,
+      "bottomRow": 1190,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -141,7 +141,7 @@
       "responsiveBehavior": "fill",
       "rightColumn": 438,
       "tabId": "tab4xc2acf0eh",
-      "tabName": "Product Tracing",
+      "tabName": "Batch Tracing",
       "topRow": 1,
       "type": "CANVAS_WIDGET",
       "version": 1,
@@ -160,9 +160,6 @@
     },
     {
       "key": "boxShadow"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -188,7 +185,7 @@
   "isCanvas": true,
   "isDeprecated": false,
   "isLoading": false,
-  "isVisible": "{{sel_ingr.selectedOptionValue? true : false}}",
+  "isVisible": "true",
   "key": "9y5tx896pz",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
@@ -199,8 +196,8 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 73,
   "onTabSelected": "",
-  "originalBottomRow": 75,
-  "originalTopRow": 19,
+  "originalBottomRow": 74,
+  "originalTopRow": 18,
   "parentColumnSpace": 6.84375,
   "parentId": "z4jk7yerww",
   "parentRowSpace": 10,
@@ -222,7 +219,7 @@
       "id": "tab4xc2acf0eh",
       "index": 2,
       "isVisible": true,
-      "label": "Product Tracing",
+      "label": "Batch Tracing",
       "widgetId": "yhogkvkifj"
     },
     "tab8num6z8rq0": {
@@ -236,7 +233,7 @@
   "tags": [
     "Layout"
   ],
-  "topRow": 19,
+  "topRow": 18,
   "type": "TABS_WIDGET",
   "version": 3,
   "widgetId": "5il155ehig",

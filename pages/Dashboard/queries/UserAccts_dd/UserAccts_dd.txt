@@ -1,5 +1,0 @@
-select acctID value, acctName label
-from   v_wf_usr_dtl a
-where  email = {{ appsmith.user.email}}
-ORDER BY acctName
-

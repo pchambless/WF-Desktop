@@ -27,6 +27,7 @@
       }
     ],
     "name": "receiptScanner",
-    "slug": "receiptscanner"
+    "slug": "receiptscanner",
+    "uniqueSlug": "receiptscanner"
   }
 }

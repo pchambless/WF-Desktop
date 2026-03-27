@@ -1,0 +1,7 @@
+{
+    "function": "whatsfresh.dd_accounts",
+    "params": { "userEmail": "{{appsmith.user.email}}" },
+    "source": {{appsmith.appName}},
+	  "format": "json",
+    "type": "json"
+}
