@@ -5,7 +5,7 @@
   "borderColor": "#dcfce7",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 68,
+  "bottomRow": 65,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
@@ -113,7 +113,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 450,
+      "bottomRow": 430,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -168,7 +168,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 450,
+      "bottomRow": 430,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -220,6 +220,51 @@
       "version": 1,
       "widgetId": "xsz1opklha",
       "widgetName": "Canvas44"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 410,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "cfq48kx9ln",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 510,
+      "minWidth": 450,
+      "mobileBottomRow": 511,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 431.15625,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "hwtwtfd009",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 431.15625,
+      "tabId": "tab9l1dugc5zl",
+      "tabName": "Edit",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "zy3io0n1t7",
+      "widgetName": "Canvas53"
     }
   ],
   "defaultTab": "Batches",
@@ -233,9 +278,6 @@
     },
     {
       "key": "boxShadow"
-    },
-    {
-      "key": "isVisible"
     },
     {
       "key": "tabsObj.tab1qy7y3lejz.isVisible"
@@ -279,7 +321,7 @@
   "isCanvas": true,
   "isDeprecated": false,
   "isLoading": false,
-  "isVisible": "{{sel_prod.selectedOptionValue? true : false}}",
+  "isVisible": "true",
   "key": "9y5tx896pz",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
@@ -290,14 +332,14 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 73,
   "onTabSelected": "",
-  "originalBottomRow": 70,
-  "originalTopRow": 19,
+  "originalBottomRow": 39,
+  "originalTopRow": 20,
   "parentColumnSpace": 6.84375,
   "parentId": "u6axqxl7ts",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 63,
   "shouldScrollContents": true,
   "shouldShowTabs": true,
   "tabsObj": {
@@ -312,7 +354,7 @@
     },
     "tab1qy7y3lejz": {
       "id": "tab1qy7y3lejz",
-      "index": 1,
+      "index": 2,
       "isDuplicateLabel": false,
       "isVisible": "{{tbl_Entity.selectedRowIndex\t> -1 ? true : false}}",
       "label": "Mapping",
@@ -320,15 +362,23 @@
     },
     "tab56ic5xdvhl": {
       "id": "tab56ic5xdvhl",
-      "index": 3,
+      "index": 4,
       "isDuplicateLabel": false,
       "isVisible": "{{tbl_Entity.selectedRowIndex\t> -1 ? true : false}}",
       "label": "Worksheet",
       "widgetId": "ile1o47r3s"
     },
+    "tab9l1dugc5zl": {
+      "id": "tab9l1dugc5zl",
+      "index": 1,
+      "isDuplicateLabel": false,
+      "isVisible": true,
+      "label": "Edit",
+      "widgetId": "zy3io0n1t7"
+    },
     "tablf2k6p9875": {
       "id": "tablf2k6p9875",
-      "index": 2,
+      "index": 3,
       "isDuplicateLabel": false,
       "isVisible": "{{tbl_Entity.selectedRowIndex\t> -1 ? true : false}}",
       "label": "Tasks",
@@ -338,7 +388,7 @@
   "tags": [
     "Layout"
   ],
-  "topRow": 19,
+  "topRow": 20,
   "type": "TABS_WIDGET",
   "version": 3,
   "widgetId": "hwtwtfd009",

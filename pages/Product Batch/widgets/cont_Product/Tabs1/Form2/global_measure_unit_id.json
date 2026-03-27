@@ -57,10 +57,10 @@
   },
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 28,
-  "originalTopRow": 21,
+  "originalBottomRow": 27,
+  "originalTopRow": 20,
   "parentColumnSpace": 7.9238128662109375,
-  "parentId": "kyhhukm2gy",
+  "parentId": "qmfpt0w8yd",
   "parentRowSpace": 10,
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
@@ -79,6 +79,6 @@
   "topRow": 19,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "qisfq7a2as",
+  "widgetId": "p5ttd06qz6",
   "widgetName": "global_measure_unit_id"
 }

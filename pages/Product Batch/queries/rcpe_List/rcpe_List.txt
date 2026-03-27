@@ -1,4 +1,0 @@
-	Select a.ingrOrdr, a.ingrName, a.ingredient_id, a.product_recipe_id	
-		from api_wf.wf_prodRcpeDtl a
-		where product_id = {{sel_prod.selectedOptionValue}}
-		and a.prodRcpeActv = 1
