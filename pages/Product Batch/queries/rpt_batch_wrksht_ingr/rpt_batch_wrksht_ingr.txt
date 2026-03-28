@@ -1,0 +1,7 @@
+{
+  "template_id": "17",  
+  "params": { "userEmail": {{appsmith.user.email}} },
+  "source": {{appsmith.appName}},
+  "format": "html",
+  "type": "report"
+}

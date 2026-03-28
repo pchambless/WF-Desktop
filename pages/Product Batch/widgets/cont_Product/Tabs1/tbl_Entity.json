@@ -145,7 +145,7 @@
   "mobileRightColumn": 31,
   "mobileTopRow": 5,
   "needsHeightForContent": true,
-  "onRowSelected": "",
+  "onRowSelected": "{{n8nSelect.product_batch_id()}}",
   "originalBottomRow": 67,
   "originalTopRow": 7,
   "parentColumnSpace": 6.53125,

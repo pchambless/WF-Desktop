@@ -1,0 +1,42 @@
+{
+  "animateLoading": true,
+  "borderColor": "rgb(3, 179, 101)",
+  "borderOpacity": 100,
+  "borderRadius": "1.5rem",
+  "borderWidth": "3",
+  "bottomRow": 58,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "srcDoc"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "3ua1wawiyk",
+  "leftColumn": 0,
+  "mobileBottomRow": 31,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 24,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 15.19140625,
+  "parentId": "ile1o47r3s",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "source": "",
+  "srcDoc": "{{rpt_batch_wrksht_hdr.data[0].html}}\n{{rpt_batch_wrksht_ingr.data[0].html}}\n{{rpt_batch_wrksht_tasks.data[0].html}}",
+  "title": "Batch Worksheet",
+  "topRow": 0,
+  "type": "IFRAME_WIDGET",
+  "version": 1,
+  "widgetId": "waubu4te79",
+  "widgetName": "Iframe1"
+}
