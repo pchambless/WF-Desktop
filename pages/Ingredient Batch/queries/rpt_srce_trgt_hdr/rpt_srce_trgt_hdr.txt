@@ -1,5 +1,5 @@
 {
-  "template_id": "1",
+  "template_name": "rpt_srce_trgt_hdr",
   "params": { "userEmail": "{{appsmith.user.email}}" },
     "source": {{appsmith.appName}},
     "format": "html",
