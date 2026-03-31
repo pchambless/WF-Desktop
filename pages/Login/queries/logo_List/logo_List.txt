@@ -1,3 +1,0 @@
-SELECT logo 
-FROM wfConfig
-where id = 1;

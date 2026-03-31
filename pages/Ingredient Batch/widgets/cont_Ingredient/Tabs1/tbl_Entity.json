@@ -141,7 +141,7 @@
     "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
-  "onRowSelected": "{{}}",
+  "onRowSelected": "{{n8nSelect.ingredient_batch_id()}}",
   "parentColumnSpace": 15.47509765625,
   "parentId": "n4674eq33w",
   "parentRowSpace": 10,

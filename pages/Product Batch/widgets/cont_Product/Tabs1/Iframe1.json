@@ -4,7 +4,7 @@
   "borderOpacity": 100,
   "borderRadius": "1.5rem",
   "borderWidth": "3",
-  "bottomRow": 58,
+  "bottomRow": 62,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "dynamicBindingPathList": [
     {

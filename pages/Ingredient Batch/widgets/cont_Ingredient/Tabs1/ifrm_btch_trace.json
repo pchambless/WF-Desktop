@@ -4,7 +4,7 @@
   "borderOpacity": 100,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 119,
+  "bottomRow": 59,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "dynamicBindingPathList": [
     {
@@ -38,7 +38,7 @@
   "rightColumn": 64,
   "source": "\n",
   "srcDoc": "{{rpt_srce_trgt_hdr.data[0].html}}\n{{rpt_srce_trgt_body.data[0].html}}",
-  "topRow": 60,
+  "topRow": 0,
   "type": "IFRAME_WIDGET",
   "version": 1,
   "widgetId": "m6712tw900",
