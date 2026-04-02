@@ -1,6 +1,5 @@
 {
   "template_name": "rpt_batch_wrksht_hdr",
-  "params": { "userEmail": {{appsmith.user.email}} },
   "source": {{appsmith.appName}},
   "format": "html",
   "type": "report"

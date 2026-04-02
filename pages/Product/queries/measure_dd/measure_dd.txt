@@ -1,4 +1,0 @@
-select id value, name label
-from measures
-where account_id = {{appsmith.store.acct_id}}
-order by name

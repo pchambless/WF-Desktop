@@ -1,6 +1,5 @@
 {
-  "template_id": "rpt_batch_wrksht_tasks",  
-  "params": { "userEmail": {{appsmith.user.email}} },
+  "template_name": "rpt_batch_wrksht_tasks",  
   "source": {{appsmith.appName}},
   "format": "html",
   "type": "report"

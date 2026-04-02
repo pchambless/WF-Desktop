@@ -67,7 +67,7 @@
     "dropdown"
   ],
   "serverSideFiltering": false,
-  "sourceData": "{{dd_product.data}}",
+  "sourceData": "{{products_dd.data}}",
   "tags": [
     "Suggested",
     "Select"

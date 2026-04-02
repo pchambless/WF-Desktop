@@ -1,6 +1,5 @@
 {
-    "function": "whatsfresh.dd_ingredients",
-    "params": { "userEmail": "{{appsmith.user.email}}" },
+    "template_name": "ingredients_dd",
     "source": {{appsmith.appName}},
 	  "format": "json",
     "type": "json"

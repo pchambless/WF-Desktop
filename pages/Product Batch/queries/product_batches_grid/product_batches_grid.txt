@@ -1,0 +1,6 @@
+{
+    "template_name": "product_batches_grid",
+    "source": "{{appsmith.appName}}",
+	  "format": "json",
+    "type": "json"
+}
