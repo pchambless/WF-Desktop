@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6668cf0988cf8166d347b04c_7ebbf1f9-3f2b-48d4-b828-2248a7fb7ccc",
-  "id": "Ingredient_grid_ingredient",
+  "gitSyncId": "6668cf0988cf8166d347b04c_017a879a-81db-45c9-a33f-cc819f81555d",
+  "id": "Dashboard_account_users_choices_grid",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n    \"function\": \"whatsfresh.tf_ingredients_grid\",\n    \"params\": { \"userEmail\": \"{{appsmith.user.email}}\" },\n    \"source\": \"{{appsmith.appName}}\",\n\t  \"format\": \"json\",\n    \"type\": \"json\"\n}",
+      "body": "{\n    \"template_name\": \"account_users_choices_grid\",\n    \"params\": { \"userEmail\": \"{{appsmith.user.email}}\" },\n    \"source\": \"{{appsmith.appName}}\",\n\t  \"format\": \"json\",\n    \"type\": \"json\"\n}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
@@ -21,6 +21,7 @@
       "httpMethod": "POST",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
+      "path": "",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -41,8 +42,8 @@
         "key": "body"
       }
     ],
-    "name": "grid_ingredient",
-    "pageId": "Ingredient",
+    "name": "account_users_choices_grid",
+    "pageId": "Dashboard",
     "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }

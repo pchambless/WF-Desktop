@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6668cf0988cf8166d347b04c_73ef6f9a-51b1-4506-a3c6-b329ff2be359",
-  "id": "Ingredient Type_grid_ingredient_types",
+  "gitSyncId": "6668cf0988cf8166d347b04c_7ebbf1f9-3f2b-48d4-b828-2248a7fb7ccc",
+  "id": "Ingredient_ingredient_grid",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n    \"function\": \"whatsfresh.tf_ingredient_types_grid\",\n    \"params\": { \"userEmail\": \"{{appsmith.user.email}}\" },\n     \"source\": \"{{appsmith.appName}}\",\n\t  \"format\": \"json\",\n    \"type\": \"json\"\n}",
+      "body": "{\n    \"template_name\": \"ingredients_grid\",\n    \"params\": { \"userEmail\": \"{{appsmith.user.email}}\" },\n    \"source\": \"{{appsmith.appName}}\",\n\t  \"format\": \"json\",\n    \"type\": \"json\"\n}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
@@ -41,9 +41,9 @@
         "key": "body"
       }
     ],
-    "name": "grid_ingredient_types",
-    "pageId": "Ingredient Type",
-    "runBehaviour": "ON_PAGE_LOAD",
-    "userSetOnLoad": true
+    "name": "ingredient_grid",
+    "pageId": "Ingredient",
+    "runBehaviour": "AUTOMATIC",
+    "userSetOnLoad": false
   }
 }

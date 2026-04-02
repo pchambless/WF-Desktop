@@ -6,6 +6,6 @@ export default {
 	ingredient_type_id: async () => {
 	await storeValue("setValsBody", [{ param_name: "ingredient_type_id", param_val: selIngredientType.selectedOptionValue }]);
 	await n8nVals.setVals();
-  grid_ingredient.run()
+  ingredient_grid.run()
   }
 }

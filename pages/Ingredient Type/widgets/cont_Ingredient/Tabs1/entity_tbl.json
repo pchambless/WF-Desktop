@@ -1,11 +1,13 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "allowAddNewRow": false,
   "animateLoading": true,
   "borderColor": "#E0DEDE",
-  "borderRadius": "1.5rem",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 35,
+  "bottomRow": 29,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "cachedTableData": {},
   "canFreezeColumn": true,
   "childStylesheet": {
     "button": {
@@ -34,24 +36,25 @@
     "name",
     "description",
     "id",
-    "account_id",
-    "customColumn1"
+    "account_id"
   ],
-  "columnUpdatedAt": 1774496408209,
-  "columnWidthMap": {
-    "name": 123
-  },
+  "columnUpdatedAt": 1774998942030,
+  "columnWidthMap": {},
   "compactMode": "SHORT",
+  "customIsLoading": false,
+  "customIsLoadingValue": "",
   "defaultPageSize": 0,
-  "defaultSelectedRowIndex": "",
+  "defaultSelectedRowIndex": 0,
   "defaultSelectedRowIndices": [
     0
   ],
   "delimiter": ",",
-  "displayName": "Table",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
     },
     {
       "key": "boxShadow"
@@ -70,65 +73,37 @@
     },
     {
       "key": "primaryColumns.account_id.computedValue"
-    },
-    {
-      "key": "primaryColumns.customColumn1.boxShadow"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
-    },
-    {
-      "key": "onRowSelected"
-    },
-    {
-      "key": "primaryColumns.customColumn1.onClick"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onRowSelected"
-    },
-    {
-      "key": "primaryColumns.customColumn1.onClick"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "enableClientSideSearch": true,
+  "endOfData": false,
   "flexVerticalAlignment": "start",
-  "hideCard": false,
   "horizontalAlignment": "LEFT",
-  "iconSVG": "/static/media/icon.c4395b694ca4b5a84741345b057b6866.svg",
+  "infiniteScrollEnabled": true,
   "inlineEditingSaveOption": "ROW_LEVEL",
-  "isDeprecated": false,
   "isLoading": false,
-  "isSortable": true,
+  "isSortable": false,
   "isVisible": true,
   "isVisibleDownload": false,
   "isVisibleFilters": false,
   "isVisiblePagination": false,
   "isVisibleSearch": false,
-  "key": "aypg7auzol",
+  "key": "nbd8b60fpd",
   "label": "Data",
-  "leftColumn": 1,
+  "leftColumn": 0,
   "minWidth": 450,
-  "mobileBottomRow": 28,
+  "mobileBottomRow": 29,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 34,
-  "mobileTopRow": 0,
+  "mobileRightColumn": 28,
+  "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "needsHeightForContent": true,
-  "onCanvasUI": {
-    "disableParentSelection": false,
-    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
-    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
-    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
-    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
-  },
-  "onRowSelected": "{{n8nSelect.ingredient_type_id()}}",
-  "originalBottomRow": 44,
-  "originalTopRow": 7,
-  "parentColumnSpace": 14.2294921875,
+  "parentColumnSpace": 13.931640625,
   "parentId": "fr7fwdb5zj",
   "parentRowSpace": 10,
   "primaryColumnId": "id",
@@ -138,7 +113,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "number",
-      "computedValue": "{{(() => { const tableData = tbl_Entity.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"account_id\"])) :  currentRow[\"account_id\"] })()}}",
+      "computedValue": "{{(() => { const tableData = entity_tbl.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"account_id\"])) : account_id })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -164,51 +139,12 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "customColumn1": {
-      "alias": "Del",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "borderRadius": "1.5rem",
-      "boxShadow": "{{tbl_Entity.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "#fee2e2",
-      "buttonStyle": "rgb(3, 179, 101)",
-      "columnType": "iconButton",
-      "computedValue": "",
-      "currencyCode": "USD",
-      "customAlias": "",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "iconName": "delete",
-      "id": "customColumn1",
-      "index": 5,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": true,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Del",
-      "labelColor": "#FFFFFF",
-      "notation": "standard",
-      "onClick": "{{jsEntity.entityDelete()}}",
-      "originalId": "customColumn1",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "description": {
       "alias": "description",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = tbl_Entity.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"description\"])) :  currentRow[\"description\"] })()}}",
+      "computedValue": "{{(() => { const tableData = entity_tbl.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"description\"])) : description })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -239,7 +175,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "number",
-      "computedValue": "{{(() => { const tableData = tbl_Entity.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"id\"])) :  currentRow[\"id\"] })()}}",
+      "computedValue": "{{(() => { const tableData = entity_tbl.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"id\"])) : id })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -270,7 +206,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "text",
-      "computedValue": "{{(() => { const tableData = tbl_Entity.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"name\"])) :  currentRow[\"name\"] })()}}",
+      "computedValue": "{{(() => { const tableData = entity_tbl.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"name\"])) : name })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -299,21 +235,16 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 27,
+  "rightColumn": 28,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
-  "tableData": "{{grid_ingredient_types.data}}",
-  "tags": [
-    "Suggested",
-    "Display"
-  ],
+  "tableData": "{{ingredient_types_grid.data}}",
   "textSize": "0.875rem",
-  "thumbnailSVG": "/static/media/thumbnail.d0492f06681daa69baf92b07d3829dfc.svg",
-  "topRow": 0,
+  "topRow": 1,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "jery73ii72",
-  "widgetName": "tbl_Entity"
+  "widgetId": "jxdf8fq9m3",
+  "widgetName": "entity_tbl"
 }

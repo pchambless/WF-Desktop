@@ -1,5 +1,5 @@
 {
-    "function": "whatsfresh.tf_ingredient_types_grid",
+    "template_name": "ingredient_types_grid",
     "params": { "userEmail": "{{appsmith.user.email}}" },
      "source": "{{appsmith.appName}}",
 	  "format": "json",

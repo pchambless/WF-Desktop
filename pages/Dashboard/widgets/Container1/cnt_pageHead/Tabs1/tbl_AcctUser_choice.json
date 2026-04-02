@@ -33,10 +33,11 @@
   },
   "columnOrder": [
     "customColumn1",
-    "name",
-    "id"
+    "id",
+    "f_user_name",
+    "email"
   ],
-  "columnUpdatedAt": 1713289122179,
+  "columnUpdatedAt": 1774998300873,
   "columnWidthMap": {
     "acct_id": 92,
     "acct_user_id": 127,
@@ -67,9 +68,6 @@
       "key": "tableData"
     },
     {
-      "key": "primaryColumns.name.computedValue"
-    },
-    {
       "key": "primaryColumns.id.computedValue"
     },
     {
@@ -77,6 +75,12 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "primaryColumns.f_user_name.computedValue"
+    },
+    {
+      "key": "primaryColumns.email.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -156,9 +160,77 @@
       "label": "Add",
       "labelColor": "#FFFFFF",
       "notation": "standard",
-      "onClick": "{{jsUser.userAdd()}}",
+      "onClick": "",
       "originalId": "customColumn1",
       "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "TOP",
+      "width": 150
+    },
+    "email": {
+      "alias": "email",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "#f4f4f5",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = tbl_AcctUser_choice.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"email\"])) : email })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "email",
+      "index": 2,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "email",
+      "notation": "standard",
+      "originalId": "email",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "TOP",
+      "width": 150
+    },
+    "f_user_name": {
+      "alias": "f_user_name",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "#f4f4f5",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = tbl_AcctUser_choice.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"f_user_name\"])) : f_user_name })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "f_user_name",
+      "index": 1,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Add User",
+      "notation": "standard",
+      "originalId": "f_user_name",
+      "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -196,38 +268,6 @@
       "validation": {},
       "verticalAlignment": "TOP",
       "width": 150
-    },
-    "name": {
-      "alias": "name",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "#f4f4f5",
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = tbl_AcctUser_choice.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"name\"])) :  currentRow[\"name\"] })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "name",
-      "index": 0,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "name",
-      "notation": "standard",
-      "originalId": "name",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "TOP",
-      "width": 150
     }
   },
   "renderMode": "CANVAS",
@@ -235,7 +275,7 @@
   "rightColumn": 61,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
-  "tableData": "{{user_Choice.data}}",
+  "tableData": "{{account_users_choices_grid.data}}",
   "tags": [
     "Suggested",
     "Display"

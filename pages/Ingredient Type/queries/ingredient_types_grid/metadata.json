@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6668cf0988cf8166d347b04c_6f81a985-9229-4563-a682-c191a0edca7a",
-  "id": "Ingredient Batch_rpt_srce_trgt_body",
+  "gitSyncId": "6668cf0988cf8166d347b04c_73ef6f9a-51b1-4506-a3c6-b329ff2be359",
+  "id": "Ingredient Type_ingredient_types_grid",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n  \"template_name\": \"rpt_srce_trgt_body\",\n  \"params\": { \"userEmail\": \"{{appsmith.user.email}}\" },\n    \"source\": {{appsmith.appName}},\n    \"format\": \"html\",\n    \"type\": \"report\"\n}",
+      "body": "{\n    \"template_name\": \"ingredient_types_grid\",\n    \"params\": { \"userEmail\": \"{{appsmith.user.email}}\" },\n     \"source\": \"{{appsmith.appName}}\",\n\t  \"format\": \"json\",\n    \"type\": \"json\"\n}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
@@ -21,7 +21,6 @@
       "httpMethod": "POST",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -42,9 +41,9 @@
         "key": "body"
       }
     ],
-    "name": "rpt_srce_trgt_body",
-    "pageId": "Ingredient Batch",
-    "runBehaviour": "AUTOMATIC",
-    "userSetOnLoad": false
+    "name": "ingredient_types_grid",
+    "pageId": "Ingredient Type",
+    "runBehaviour": "ON_PAGE_LOAD",
+    "userSetOnLoad": true
   }
 }

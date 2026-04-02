@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6668cf0988cf8166d347b04c_7f071ac3-0242-4d73-b7b8-200b8fba4c45",
-  "id": "Ingredient_dd_ingredient_type",
+  "gitSyncId": "6668cf0988cf8166d347b04c_1c924e77-e5c3-457b-be1d-d3799c1dee5a",
+  "id": "Dashboard_account_users_grid",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n    \"function\": \"whatsfresh.dd_ingredient_types\",\n    \"params\": { \"userEmail\": \"{{appsmith.user.email}}\" },\n    \"source\": \"{{appsmith.appName}}\",\n\t  \"format\": \"json\",\n    \"type\": \"json\"\n}",
+      "body": "{\n    \"template_name\": \"account_users_grid\",\n    \"params\": { \"userEmail\": \"{{appsmith.user.email}}\" },\n    \"source\": \"{{appsmith.appName}}\",\n\t  \"format\": \"json\",\n    \"type\": \"json\"\n}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
@@ -42,8 +42,8 @@
         "key": "body"
       }
     ],
-    "name": "dd_ingredient_type",
-    "pageId": "Ingredient",
+    "name": "account_users_grid",
+    "pageId": "Dashboard",
     "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }

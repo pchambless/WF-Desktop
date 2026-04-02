@@ -1,0 +1,7 @@
+{
+    "template_name": "ingredient_types_dd",
+    "params": { "userEmail": "{{appsmith.user.email}}" },
+    "source": "{{appsmith.appName}}",
+	  "format": "json",
+    "type": "json"
+}

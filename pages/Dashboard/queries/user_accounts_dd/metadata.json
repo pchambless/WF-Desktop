@@ -1,6 +1,6 @@
 {
   "gitSyncId": "6668cf0988cf8166d347b04c_bf075e64-aae2-4f0a-b3fc-ae88bbd321cc",
-  "id": "Dashboard_dd_account",
+  "id": "Dashboard_user_accounts_dd",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n    \"function\": \"whatsfresh.dd_accounts\",\n    \"params\": { \"userEmail\": \"{{appsmith.user.email}}\" },\n    \"source\": \"{{appsmith.appName}}\",\n\t  \"format\": \"json\",\n    \"type\": \"json\"\n}",
+      "body": "{\n    \"template_name\": \"user_accounts_dd\",\n    \"params\": { \"userEmail\": \"{{appsmith.user.email}}\" },\n    \"source\": \"{{appsmith.appName}}\",\n\t  \"format\": \"json\",\n    \"type\": \"json\"\n}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
@@ -42,7 +42,7 @@
         "key": "body"
       }
     ],
-    "name": "dd_account",
+    "name": "user_accounts_dd",
     "pageId": "Dashboard",
     "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": true
