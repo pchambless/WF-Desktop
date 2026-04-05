@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n  \"template_name\": \"rpt_batch_wrksht_hdr\",\n  \"source\": {{appsmith.appName}},\n  \"format\": \"html\",\n  \"type\": \"report\"\n}\n",
+      "body": "{\n  \"template_name\": \"rpt_batch_wrksht_hdr\",\n  \"source\": {{appsmith.appName}},\n  \"format\": \"html\"\n}\n",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {

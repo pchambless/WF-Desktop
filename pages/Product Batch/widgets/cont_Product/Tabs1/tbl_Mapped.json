@@ -292,7 +292,7 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 36,
+  "rightColumn": 37,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "tableData": "{{batch_Mapped.data}}",

@@ -94,9 +94,16 @@
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
+    },
+    {
+      "key": "onRowSelected"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onRowSelected"
+    }
+  ],
   "enableClientSideSearch": true,
   "endOfData": false,
   "flexVerticalAlignment": "start",
@@ -118,9 +125,11 @@
   "mobileRightColumn": 34,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
+  "onRowSelected": "{{n8nSelect.product_id()}}",
   "parentColumnSpace": 15.4375,
   "parentId": "xay2encrxs",
   "parentRowSpace": 10,
+  "primaryColumnId": "id",
   "primaryColumns": {
     "account_id": {
       "alias": "account_id",

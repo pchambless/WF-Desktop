@@ -31,14 +31,15 @@
     }
   },
   "columnOrder": [
-    "ingrOrdr",
     "ingrName",
+    "ingrOrdr",
     "ingredient_id",
     "product_recipe_id"
   ],
-  "columnUpdatedAt": 1771999026065,
+  "columnUpdatedAt": 1775319044122,
   "columnWidthMap": {
     "customColumn1": 77,
+    "ingrName": 144,
     "ingr_ordr": 62
   },
   "compactMode": "SHORT",

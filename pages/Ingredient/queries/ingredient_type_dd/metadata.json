@@ -44,7 +44,7 @@
     ],
     "name": "ingredient_type_dd",
     "pageId": "Ingredient",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

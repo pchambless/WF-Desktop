@@ -22,5 +22,8 @@ product_batch_id: async () => {
   await rpt_batch_wrksht_hdr.run();
   await rpt_batch_wrksht_ingr.run();
 	await rpt_batch_wrksht_tasks.run();
+  // Ingredient batch trace
+	await rpt_trgt_srce_hdr.run();
+	await rpt_trgt_srce_body.run()
   }
 }

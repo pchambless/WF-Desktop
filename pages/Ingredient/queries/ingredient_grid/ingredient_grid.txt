@@ -1,7 +1,5 @@
 {
     "template_name": "ingredients_grid",
-    "params": { "userEmail": "{{appsmith.user.email}}" },
     "source": "{{appsmith.appName}}",
-	  "format": "json",
-    "type": "json"
+	  "format": "json"
 }

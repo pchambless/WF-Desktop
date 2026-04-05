@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6668cf0988cf8166d347b04c_c3944b9a-258a-4fb4-975e-5b308dc5f312",
-  "id": "Ingredient Batch_dd_ingredient",
+  "gitSyncId": "6668cf0988cf8166d347b04c_8a9383f0-da68-45b0-bcb2-92d1697f46bf",
+  "id": "Product Batch_rpt_trgt_srce_body",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n    \"template_name\": \"ingredients_dd\",\n    \"source\": {{appsmith.appName}},\n\t  \"format\": \"json\"\n}",
+      "body": "{\n  \"template_name\": \"rpt_trgt_srce_body\",\n  \"source\": {{appsmith.appName}},\n  \"format\": \"html\"\n}\n",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
@@ -21,7 +21,6 @@
       "httpMethod": "POST",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -42,8 +41,8 @@
         "key": "body"
       }
     ],
-    "name": "dd_ingredient",
-    "pageId": "Ingredient Batch",
+    "name": "rpt_trgt_srce_body",
+    "pageId": "Product Batch",
     "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }

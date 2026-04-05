@@ -1,6 +1,5 @@
 {
     "template_name": "ingredients_dd",
     "source": {{appsmith.appName}},
-	  "format": "json",
-    "type": "json"
+	  "format": "json"
 }

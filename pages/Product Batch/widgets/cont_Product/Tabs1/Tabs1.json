@@ -5,12 +5,12 @@
   "borderColor": "#dcfce7",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 55,
+  "bottomRow": 89,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 310,
+      "bottomRow": 650,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -58,7 +58,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 620,
+      "bottomRow": 650,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -113,7 +113,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 430,
+      "bottomRow": 650,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -168,7 +168,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 430,
+      "bottomRow": 650,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -223,7 +223,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 390,
+      "bottomRow": 650,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -265,6 +265,51 @@
       "version": 1,
       "widgetId": "zy3io0n1t7",
       "widgetName": "Canvas53"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 650,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "ck80smqf7h",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 680,
+      "minWidth": 450,
+      "mobileBottomRow": 681,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 438,
+      "mobileTopRow": 1,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "hwtwtfd009",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 438,
+      "tabId": "tabkks3yoarxi",
+      "tabName": "Trace Ingredients",
+      "topRow": 1,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "m42c2p2qu5",
+      "widgetName": "Canvas54"
     }
   ],
   "defaultTab": "Batches",
@@ -289,7 +334,7 @@
       "key": "tabsObj.tablf2k6p9875.isVisible"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "onTabSelected"
@@ -332,14 +377,14 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 73,
   "onTabSelected": "",
-  "originalBottomRow": 55,
+  "originalBottomRow": 89,
   "originalTopRow": 20,
   "parentColumnSpace": 6.84375,
   "parentId": "u6axqxl7ts",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 63,
   "shouldScrollContents": true,
   "shouldShowTabs": true,
   "tabsObj": {
@@ -375,6 +420,13 @@
       "isVisible": true,
       "label": "Edit",
       "widgetId": "zy3io0n1t7"
+    },
+    "tabkks3yoarxi": {
+      "id": "tabkks3yoarxi",
+      "index": 5,
+      "isVisible": true,
+      "label": "Trace Ingredients",
+      "widgetId": "m42c2p2qu5"
     },
     "tablf2k6p9875": {
       "id": "tablf2k6p9875",
