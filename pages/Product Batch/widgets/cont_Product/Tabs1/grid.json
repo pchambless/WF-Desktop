@@ -39,10 +39,11 @@
     "location",
     "best_by_date"
   ],
-  "columnUpdatedAt": 1775304658655,
+  "columnUpdatedAt": 1775993456930,
   "columnWidthMap": {
     "event_date": 143,
     "id": 74,
+    "location": 202,
     "qty_measure": 135
   },
   "compactMode": "SHORT",

@@ -216,6 +216,7 @@
       "label": "event_date",
       "notation": "standard",
       "originalId": "event_date",
+      "outputFormat": "YYYY-MM-DD",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

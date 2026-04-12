@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n  \"template_name\": \"rpt_trgt_srce_body\",\n  \"source\": {{appsmith.appName}},\n  \"format\": \"html\"\n}\n",
+      "body": "{\n  \"template_name\": \"rpt_trgt_srce_body\",\n  \"source\": {{appsmith.appName}}\n}\n",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {

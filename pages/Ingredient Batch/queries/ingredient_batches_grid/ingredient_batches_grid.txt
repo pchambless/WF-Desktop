@@ -1,5 +1,4 @@
 {
     "template_name": "ingredient_batches_grid",
-    "source": "{{appsmith.appName}}",
-	  "format": "json"
+    "source": "{{appsmith.appName}}"
 }

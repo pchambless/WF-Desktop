@@ -1,5 +1,4 @@
 {
   "template_name": "rpt_batch_wrksht_ingr",  
-  "source": {{appsmith.appName}},
-  "format": "html"
+  "source": {{appsmith.appName}}
 }

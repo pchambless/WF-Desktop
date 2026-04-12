@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n    \"template_name\": \"ingredient_batches_grid\",\n    \"source\": \"{{appsmith.appName}}\",\n\t  \"format\": \"json\"\n}",
+      "body": "{\n    \"template_name\": \"ingredient_batches_grid\",\n    \"source\": \"{{appsmith.appName}}\"\n}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {

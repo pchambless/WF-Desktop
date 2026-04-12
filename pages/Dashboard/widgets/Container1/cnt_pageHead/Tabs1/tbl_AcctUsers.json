@@ -32,15 +32,15 @@
     }
   },
   "columnOrder": [
-    "customColumn1",
-    "f_user_name",
+    "customColumn2",
+    "owner",
+    "user_name",
     "user_email",
     "is_owner",
-    "id",
-    "account_id",
-    "customColumn2"
+    "account_user_id",
+    "account_id"
   ],
-  "columnUpdatedAt": 1774998077799,
+  "columnUpdatedAt": 1775960407478,
   "columnWidthMap": {
     "acct_id": 92,
     "acct_user_id": 127,
@@ -73,40 +73,28 @@
       "key": "tableData"
     },
     {
-      "key": "primaryColumns.customColumn1.borderRadius"
-    },
-    {
-      "key": "primaryColumns.customColumn1.boxShadow"
-    },
-    {
       "key": "primaryColumns.customColumn2.boxShadow"
-    },
-    {
-      "key": "primaryColumns.is_owner.computedValue"
     },
     {
       "key": "primaryColumns.customColumn2.isCellVisible"
     },
     {
-      "key": "primaryColumns.customColumn1.isDisabled"
+      "key": "primaryColumns.owner.computedValue"
     },
     {
-      "key": "primaryColumns.customColumn1.buttonColor"
-    },
-    {
-      "key": "primaryColumns.id.computedValue"
-    },
-    {
-      "key": "primaryColumns.account_id.computedValue"
-    },
-    {
-      "key": "primaryColumns.f_user_name.computedValue"
+      "key": "primaryColumns.user_name.computedValue"
     },
     {
       "key": "primaryColumns.user_email.computedValue"
     },
     {
-      "key": "primaryColumns.customColumn1.iconName"
+      "key": "primaryColumns.is_owner.computedValue"
+    },
+    {
+      "key": "primaryColumns.account_user_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.account_id.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -114,31 +102,13 @@
       "key": "tableData"
     },
     {
-      "key": "primaryColumns.customColumn1.onClick"
-    },
-    {
-      "key": "primaryColumns.customColumn1.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.customColumn1.iconName"
-    },
-    {
       "key": "primaryColumns.customColumn2.onClick"
     },
     {
       "key": "primaryColumns.customColumn2.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.customColumn1.isDisabled"
-    },
-    {
-      "key": "primaryColumns.customColumn1.buttonColor"
     }
   ],
   "dynamicTriggerPathList": [
-    {
-      "key": "primaryColumns.customColumn1.onClick"
-    },
     {
       "key": "primaryColumns.customColumn2.onClick"
     }
@@ -187,7 +157,7 @@
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "account_id",
-      "index": 1,
+      "index": 5,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -207,41 +177,34 @@
       "verticalAlignment": "TOP",
       "width": 150
     },
-    "customColumn1": {
-      "alias": "Owner",
+    "account_user_id": {
+      "alias": "account_user_id",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "borderRadius": "{{tbl_AcctUsers.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-      "boxShadow": "{{tbl_AcctUsers.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "{{tbl_AcctUsers.processedTableData.map((currentRow, currentIndex) => ( currentRow.is_owner ? '#86efac' : '#fff'))}}",
-      "buttonStyle": "rgb(3, 179, 101)",
-      "buttonVariant": "PRIMARY",
       "cellBackground": "#f4f4f5",
-      "columnType": "iconButton",
-      "computedValue": "",
+      "columnType": "number",
+      "computedValue": "{{(() => { const tableData = tbl_AcctUsers.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"account_user_id\"])) : account_user_id })()}}",
       "currencyCode": "USD",
-      "customAlias": "",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "",
       "horizontalAlignment": "LEFT",
-      "iconName": "{{(() => { const tableData = tbl_AcctUsers.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (tbl_AcctUsers.processedTableData.map((currentRow, currentIndex) => ())) : tbl_AcctUsers.processedTableData.map((currentRow, currentIndex) => () })()}}",
-      "id": "customColumn1",
-      "index": 7,
+      "id": "account_user_id",
+      "index": 4,
       "isCellEditable": false,
-      "isCellVisible": "true",
-      "isDerived": true,
-      "isDisabled": "{{tbl_AcctUsers.processedTableData.map((currentRow, currentIndex) => ( appsmith.store.isOwner ? false : true))}}",
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Owner",
-      "labelColor": "#FFFFFF",
+      "isVisible": false,
+      "label": "account_user_id",
       "notation": "standard",
-      "onClick": "",
-      "originalId": "customColumn1",
-      "sticky": "left",
+      "originalId": "account_user_id",
+      "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -288,81 +251,13 @@
       "verticalAlignment": "TOP",
       "width": 150
     },
-    "f_user_name": {
-      "alias": "f_user_name",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "#f4f4f5",
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = tbl_AcctUsers.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"f_user_name\"])) : f_user_name })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "f_user_name",
-      "index": 2,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "User",
-      "notation": "standard",
-      "originalId": "f_user_name",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "TOP",
-      "width": 150
-    },
-    "id": {
-      "alias": "id",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "#f4f4f5",
-      "columnType": "number",
-      "computedValue": "{{(() => { const tableData = tbl_AcctUsers.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"id\"])) : id })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "id",
-      "index": 0,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "id",
-      "notation": "standard",
-      "originalId": "id",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "TOP",
-      "width": 150
-    },
     "is_owner": {
       "alias": "is_owner",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "#f4f4f5",
       "columnType": "number",
-      "computedValue": "{{(() => { const tableData = tbl_AcctUsers.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( currentRow[\"is_owner\"])) :  currentRow[\"is_owner\"] })()}}",
+      "computedValue": "{{(() => { const tableData = tbl_AcctUsers.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"is_owner\"])) : is_owner })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -370,7 +265,7 @@
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "is_owner",
-      "index": 9,
+      "index": 3,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -382,6 +277,40 @@
       "label": "is_owner",
       "notation": "standard",
       "originalId": "is_owner",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "TOP",
+      "width": 150
+    },
+    "owner": {
+      "alias": "owner",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "#f4f4f5",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = tbl_AcctUsers.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"owner\"])) : owner })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "owner",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "owner",
+      "notation": "standard",
+      "originalId": "owner",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -404,7 +333,7 @@
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "user_email",
-      "index": 3,
+      "index": 2,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -416,6 +345,40 @@
       "label": "user_email",
       "notation": "standard",
       "originalId": "user_email",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "TOP",
+      "width": 150
+    },
+    "user_name": {
+      "alias": "user_name",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "#f4f4f5",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = tbl_AcctUsers.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"user_name\"])) : user_name })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "user_name",
+      "index": 1,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "user_name",
+      "notation": "standard",
+      "originalId": "user_name",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
