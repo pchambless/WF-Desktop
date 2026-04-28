@@ -1,6 +1,7 @@
 export default {
 	login_func: async () => {
   this.storeLogo();
+	showAlert('Attempting Login', 'Action');
 	await api_login.run();
   if (api_login.data.success === true) {
 		showAlert(api_login.data.message, 'Success');
