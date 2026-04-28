@@ -3,7 +3,8 @@ export default {
   this.storeLogo();
 	await api_login.run();
   if (api_login.data.success === true) {
-    navigateTo('Dashboard', {});
+		showAlert(api_login.data.message, 'Success');
+    navigateTo('Dashboard');
   } else {
     showAlert(api_login.data.message, 'error');
   }
