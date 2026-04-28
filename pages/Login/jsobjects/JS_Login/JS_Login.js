@@ -1,5 +1,5 @@
 export default {
-	login_func: async () => {
+async login_func  () {
   this.storeLogo();
 	showAlert('Attempting Login', 'Action');
 	await api_login.run();
