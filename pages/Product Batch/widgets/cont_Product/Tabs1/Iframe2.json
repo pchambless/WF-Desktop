@@ -32,7 +32,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 63,
   "source": "",
   "srcDoc": "{{rpt_trgt_srce_hdr.data[0].html}}\n{{rpt_trgt_srce_body.data[0].html}}",
   "topRow": 0,
