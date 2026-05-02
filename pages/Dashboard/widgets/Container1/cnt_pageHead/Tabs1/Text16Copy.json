@@ -12,9 +12,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -31,7 +28,7 @@
   "iconSVG": "/static/media/icon.301748e14b0306a7b94ece2d9e2c11cc.svg",
   "isDeprecated": false,
   "isLoading": false,
-  "isVisible": "{{appsmith.store.isOwner ? true : false}}",
+  "isVisible": "true",
   "key": "yvncx4mdpr",
   "leftColumn": 33,
   "maxDynamicHeight": 9000,

@@ -71,9 +71,6 @@
       "key": "primaryColumns.customColumn1.boxShadow"
     },
     {
-      "key": "isVisible"
-    },
-    {
       "key": "primaryColumns.id.computedValue"
     },
     {
@@ -108,7 +105,7 @@
   "isDeprecated": false,
   "isLoading": false,
   "isSortable": true,
-  "isVisible": "{{appsmith.store.isOwner ? true : false}}",
+  "isVisible": "true",
   "isVisibleDownload": false,
   "isVisibleFilters": false,
   "isVisiblePagination": false,
