@@ -1,8 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 8,
-  "displayName": "Text",
+  "bottomRow": 4,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -12,9 +11,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -22,12 +18,9 @@
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1rem",
   "fontStyle": "BOLD",
-  "hideCard": false,
-  "iconSVG": "/static/media/icon.301748e14b0306a7b94ece2d9e2c11cc.svg",
-  "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "yvncx4mdpr",
+  "key": "oxoyohvpxm",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
@@ -37,40 +30,21 @@
   "mobileRightColumn": 16,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onCanvasUI": {
-    "disableParentSelection": false,
-    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
-    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
-    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
-    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
-  },
-  "originalBottomRow": 23,
-  "originalTopRow": 19,
   "overflow": "NONE",
-  "parentColumnSpace": 11.20648193359375,
+  "parentColumnSpace": 13.619140625,
   "parentId": "5smkw461cc",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 30,
-  "searchTags": [
-    "typography",
-    "paragraph",
-    "label"
-  ],
+  "rightColumn": 63,
   "shouldTruncate": false,
-  "tags": [
-    "Suggested",
-    "Content"
-  ],
-  "text": "{{SelAccount.selectedOptionLabel}} Users",
+  "text": "*** Not available functionality.  This will be in the real app. ***",
   "textAlign": "CENTER",
-  "textColor": "#231F20",
-  "thumbnailSVG": "/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
-  "topRow": 4,
+  "textColor": "#be185d",
+  "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "qk1dmnaphl",
-  "widgetName": "Text16"
+  "widgetId": "u6uq92o19q",
+  "widgetName": "Text17"
 }
