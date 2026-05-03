@@ -1,4 +1,4 @@
 {
-  "email": {{ userEmail.text }},
+  "email": {{ userEmail.text.toLowerCase() }},
   "password": {{ userPassword.text }}
 }
