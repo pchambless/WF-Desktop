@@ -1,3 +1,0 @@
-SELECT *, ifnull(description,'No Description') descr
-FROM products
-where id = {{sel_prod.selectedOptionValue}};

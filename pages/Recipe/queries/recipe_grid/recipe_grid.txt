@@ -1,0 +1,4 @@
+{
+    "template_name": "recipe_grid",
+    "source": "{{appsmith.appName}}"
+}

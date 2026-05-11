@@ -4,7 +4,9 @@ async login_func  () {
 	showAlert('Attempting Login', 'Action');
 	await api_login.run();
   if (api_login.data.success === true) {
+		storeValue('userEmail', userEmail.text.toLowerCase())
 		showAlert(api_login.data.message, 'Success');
+		
     navigateTo('Dashboard');
   } else {
     showAlert(api_login.data.message, 'error');

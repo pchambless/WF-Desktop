@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 18,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.prodID))(sel_prod.options, sel_prod.serverSideFiltering) }}",
+  "defaultOptionValue": "",
   "displayName": "Select",
   "dynamicBindingPathList": [
     {
@@ -18,9 +18,6 @@
     },
     {
       "key": "labelTextColor"
-    },
-    {
-      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -47,7 +44,7 @@
   "iconSVG": "/static/media/icon.a7b19dc8b31d68fcff57f1d2c0084a18.svg",
   "isDeprecated": false,
   "isDisabled": false,
-  "isFilterable": false,
+  "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
@@ -59,7 +56,7 @@
   "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
   "labelTextSize": "0.875rem",
   "labelWidth": "5",
-  "leftColumn": 22,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -67,10 +64,10 @@
   "mobileLeftColumn": 0,
   "mobileRightColumn": 20,
   "mobileTopRow": 0,
-  "onDropdownOpen": "{{prod_dd.run()}}",
-  "onOptionChange": "{{jsSelect.selectProd()}}",
-  "optionLabel": "name",
-  "optionValue": "id",
+  "onDropdownOpen": "",
+  "onOptionChange": "{{n8nSelect.product_id()}}",
+  "optionLabel": "label",
+  "optionValue": "value",
   "originalBottomRow": 18,
   "originalTopRow": 14,
   "parentColumnSpace": 6.53125,
@@ -79,12 +76,12 @@
   "placeholderText": "Select Product",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 47,
+  "rightColumn": 25,
   "searchTags": [
     "dropdown"
   ],
   "serverSideFiltering": false,
-  "sourceData": "{{prod_dd.data}}",
+  "sourceData": "{{products_dd.data}}",
   "tags": [
     "Suggested",
     "Select"

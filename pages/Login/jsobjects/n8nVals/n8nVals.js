@@ -1,7 +1,7 @@
 export default {
   setVals: async () => {
     const body = {
-      email: appsmith.user.email,
+      email: appsmith.store.userEmail,
       vals: appsmith.store.setValsBody
     };
     const response = await fetch("https://n8n.whatsfresh.app/webhook/setvals", {
@@ -13,7 +13,7 @@ export default {
   },
 	clearVals: async () => {
     const body = {
-      email: appsmith.user.email,
+      email: appsmith.store.userEmail,
       params: appsmith.store.setClearsBody
     };
     const response = await fetch("https://n8n.whatsfresh.app/webhook/clearvals", {
